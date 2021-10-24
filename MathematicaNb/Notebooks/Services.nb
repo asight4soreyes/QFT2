@@ -1,0 +1,2079 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     83891,       2071]
+NotebookOptionsPosition[     78724,       1980]
+NotebookOutlinePosition[     79764,       2009]
+CellTagsIndexPosition[     79681,       2004]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"fullFoil", " ", "=", " ", "140"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"partialFoil", " ", "=", " ", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"womensCut", " ", "=", " ", "70"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mensCut", " ", "=", " ", "48"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"keratinExp", " ", "=", " ", "150"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"color", " ", "=", " ", "83"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fullFoiliage", " ", "=", " ", "170"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"partFoiliage", " ", "=", " ", "140"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"shampStyle", " ", "=", " ", "48"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"glaze", " ", "=", " ", "20"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Combo1", " ", "=", " ", 
+   RowBox[{"womensCut", " ", "+", " ", "partialFoil"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Combo2", " ", "=", " ", 
+   RowBox[{"womensCut", "+", " ", "color"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Combo3", " ", "=", " ", 
+   RowBox[{"womensCut", " ", "+", " ", "fullFoil"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Combo4", " ", "=", " ", 
+   RowBox[{"womensCut", "+", " ", "keratinExp"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Combo5", " ", "=", " ", 
+   RowBox[{"womensCut", " ", "+", " ", "fullFoiliage"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Combo6", " ", "=", " ", 
+   RowBox[{"womensCut", " ", "+", " ", "partFoiliage"}]}], " ", 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Combo7", " ", "=", " ", 
+   RowBox[{"womensCut", " ", "+", " ", "glaze"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"extraservice1", "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"extraservice2", " ", "=", " ", "0"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.818164859814105*^9, 3.818164947410706*^9}, {
+   3.818165084257255*^9, 3.8181651164898567`*^9}, 3.818170522737571*^9, {
+   3.818170564751032*^9, 3.8181707151610126`*^9}, {3.8181707565049887`*^9, 
+   3.818170799096374*^9}, {3.8181708359634132`*^9, 3.8181709362030897`*^9}, {
+   3.8181709872735863`*^9, 3.818171010008851*^9}, {3.818173261485318*^9, 
+   3.818173277625931*^9}, {3.818173317082643*^9, 3.818173317158311*^9}, {
+   3.818173362765812*^9, 3.818173362889083*^9}, {3.818177607690674*^9, 
+   3.818177619384783*^9}, 3.818178659714549*^9, {3.818178747561398*^9, 
+   3.8181788832454576`*^9}, 3.818179014860628*^9, {3.81817968926904*^9, 
+   3.8181796952851*^9}, {3.8181810324116793`*^9, 3.81818105909171*^9}},
+ CellLabel->
+  "In[178]:=",ExpressionUUID->"d0e372ae-0cd1-41a8-9f2b-a80f617343f7"],
+
+Cell[BoxData[
+ FormBox["90", TraditionalForm]], "Output",
+ CellChangeTimes->{3.818181059404641*^9},
+ CellLabel->
+  "Out[194]=",ExpressionUUID->"5c2bf6f6-cd0d-4215-be2b-fad0132d214f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"e4bffd51-406e-4527-8067-f8b0fe4ab337"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TableForm", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "Combo5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", " ", "Combo4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "Combo3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "Combo6"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "Combo1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "fullFoiliage"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "Combo2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "keratinExp"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "fullFoil"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "partFoiliage"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"11", ",", "partialFoil"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"12", ",", "Combo7"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"13", ",", "color"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"14", ",", "womensCut"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"15", ",", "mensCut"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "shampStyle"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", "glaze"}], "}"}]}], "}"}], ",", 
+   RowBox[{"TableHeadings", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Service\>\"", ",", "\"\<Service Total ($)\>\""}], "}"}]}],
+      "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.818176037390665*^9, 3.818176091586061*^9}, {
+   3.818176150402903*^9, 3.818176205312105*^9}, 3.818176237877742*^9, {
+   3.818176545796432*^9, 3.818176554318749*^9}, {3.818177045662216*^9, 
+   3.818177088769717*^9}, {3.818177649749773*^9, 3.818177668119358*^9}, {
+   3.818177698214272*^9, 3.81817804122093*^9}, {3.81817891166501*^9, 
+   3.818178917636504*^9}, {3.818179138785355*^9, 3.818179165109249*^9}, {
+   3.818179225252776*^9, 3.818179356223431*^9}, {3.8181793993005457`*^9, 
+   3.8181795045650463`*^9}, {3.818181128718368*^9, 3.818181170792012*^9}},
+ CellLabel->
+  "In[203]:=",ExpressionUUID->"688e9d5b-e358-43e3-a438-1d807aa04921"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["\<\"Service\"\>",
+        HoldForm], 
+       TagBox["\<\"Service Total ($)\"\>",
+        HoldForm]},
+      {"1", "240"},
+      {"2", "220"},
+      {"3", "210"},
+      {"4", "210"},
+      {"5", "170"},
+      {"6", "170"},
+      {"7", "153"},
+      {"8", "150"},
+      {"9", "140"},
+      {"10", "140"},
+      {"11", "100"},
+      {"12", "90"},
+      {"13", "83"},
+      {"14", "70"},
+      {"15", "48"},
+      {"16", "48"},
+      {"17", "20"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, TableHeadings -> {None, {"Service", "Service Total ($)"}}]]], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.818176238436927*^9, 3.8181765557119617`*^9, 3.818177054577282*^9, 
+   3.818177093474881*^9, 3.818177200611651*^9, 3.8181772672111197`*^9, {
+   3.818177505890963*^9, 3.818177524384231*^9}, 3.818177707828372*^9, 
+   3.818177742919641*^9, 3.8181778934173727`*^9, {3.818177925831254*^9, 
+   3.8181779539312677`*^9}, 3.8181780114214287`*^9, 3.818178042008634*^9, 
+   3.818179357829221*^9, {3.818179479507022*^9, 3.818179508910884*^9}, 
+   3.818179909308855*^9, 3.81818093208528*^9, {3.818181171189555*^9, 
+   3.818181199412281*^9}},
+ CellLabel->
+  "Out[203]//TableForm=",ExpressionUUID->"8dc6f894-f732-45af-a926-\
+3407d6fe8f29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Service Option\>\"", ",", "\"\<Service Total ($)\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"LabelStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Times New Roman\>\""}], ",", 
+      RowBox[{"GrayLevel", "[", "0", "]"}]}], "}"}]}], ",", " ", 
+   RowBox[{"Joined", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.818176172311816*^9, 3.8181761774228373`*^9}, {
+  3.818177154595995*^9, 3.818177194102915*^9}, {3.818177261773551*^9, 
+  3.818177262178553*^9}, {3.818177488865735*^9, 3.818177520981627*^9}, {
+  3.818179526278749*^9, 3.818179528797166*^9}, {3.818179882036352*^9, 
+  3.818179900101619*^9}, {3.818179955314582*^9, 3.8181799609732313`*^9}, {
+  3.8181809193127823`*^9, 3.818180921359211*^9}},
+ CellLabel->
+  "In[204]:=",ExpressionUUID->"af0094bd-213b-4356-8f39-382d8e6aa0d2"],
+
+Cell[BoxData[
+ FormBox[
+  GraphicsBox[{{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{1., 240.}, {2., 220.}, {3., 210.}, {4., 210.}, {5., 170.}, {
+      6., 170.}, {7., 153.}, {8., 150.}, {9., 140.}, {10., 140.}, {11., 
+      100.}, {12., 90.}, {13., 83.}, {14., 70.}, {15., 48.}, {16., 48.}, {17.,
+       20.}}]}, {{}, {}}},
+   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+   Axes->{True, True},
+   AxesLabel->{None, None},
+   AxesOrigin->{0, 0},
+   DisplayFunction->Identity,
+   Frame->{{True, True}, {True, True}},
+   FrameLabel->{{
+      FormBox["\"Service Total ($)\"", TraditionalForm], None}, {
+      FormBox["\"Service Option\"", TraditionalForm], None}},
+   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+   GridLines->{None, None},
+   GridLinesStyle->Directive[
+     GrayLevel[0.5, 0.4]],
+   LabelStyle->{FontFamily -> "Times New Roman", 
+     GrayLevel[0]},
+   Method->{
+    "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
+     "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+         Identity[
+          Part[#, 1]], 
+         Identity[
+          Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+         Identity[
+          Part[#, 1]], 
+         Identity[
+          Part[#, 2]]}& )}},
+   PlotRange->{{0, 17.}, {0, 240.}},
+   PlotRangeClipping->True,
+   PlotRangePadding->{{
+      Scaled[0.02], 
+      Scaled[0.02]}, {
+      Scaled[0.02], 
+      Scaled[0.05]}},
+   Ticks->{Automatic, Automatic}], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.818176178262376*^9, 3.81817624363267*^9, 3.81817655936933*^9, 
+   3.8181771577231817`*^9, {3.818177195157123*^9, 3.8181772032178793`*^9}, {
+   3.818177262926126*^9, 3.8181772716525087`*^9}, {3.818177500828899*^9, 
+   3.818177528725853*^9}, 3.818178048314151*^9, 3.8181794889102707`*^9, 
+   3.818179529641597*^9, 3.8181799129111958`*^9, {3.818180921838375*^9, 
+   3.8181809352852*^9}, {3.818181193089471*^9, 3.818181202210656*^9}},
+ CellLabel->
+  "Out[204]=",ExpressionUUID->"56f486c7-736a-4d71-a0dc-d1818265f8f3"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "Combo5", ",", "Combo4", ",", "Combo3", ",", "Combo6", ",", "Combo1", 
+      ",", "fullFoiliage", ",", "Combo2", ",", "keratinExp", ",", "fullFoil", 
+      ",", "partFoiliage", ",", "partialFoil", ",", "Combo7", ",", "color", 
+      ",", "womensCut", ",", "mensCut", ",", "shampStyle", ",", "glaze"}], 
+     "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data2", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Full Foilyage + Cut\>\"", ",", "\"\<Keratin Express + Cut\>\"", ",", 
+     "\"\<Full Foil + Cut\>\"", ",", "\"\<Partial Foilyage + Cut\>\"", ",", 
+     "\"\<Partial Foil + Cut\>\"", ",", "\"\<Full Foilyage\>\"", ",", 
+     "\"\<Cut + Color\>\"", ",", "\"\<Keratin Express\>\"", ",", 
+     "\"\<Full Foil\>\"", ",", "\"\<Partial Foilyage\>\"", ",", 
+     "\"\<Partial Foil\>\"", ",", "\"\<Glaze + Cut\>\"", ",", "\"\<Color\>\"",
+      ",", "\"\<Women's Cut\>\"", ",", "\"\<Men's Cut\>\"", ",", 
+     "\"\<Shampoo & Style\>\"", ",", "\"\<Glaze\>\""}], "}"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.818180184737006*^9, 3.818180209775079*^9}, 
+   3.8181802453556213`*^9, {3.818180580912195*^9, 3.818180600819373*^9}, {
+   3.818180664709029*^9, 3.8181806652709217`*^9}, {3.818180702782898*^9, 
+   3.818180842434143*^9}, {3.818180885768169*^9, 3.818180891221291*^9}, {
+   3.8181810982445393`*^9, 3.818181111604594*^9}, {3.8181816814159927`*^9, 
+   3.818181722346613*^9}, 3.81818181514788*^9, {3.818181927788227*^9, 
+   3.818181996320668*^9}, {3.818182135592745*^9, 3.8181821850345087`*^9}, {
+   3.8181822447562847`*^9, 3.818182477024322*^9}},
+ CellLabel->
+  "In[253]:=",ExpressionUUID->"0b20f838-66d0-4a25-a10d-7f052e2c5b91"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BarChart", "[", 
+  RowBox[{"data", ",", " ", 
+   RowBox[{"PlotTheme", "\[Rule]", " ", "\"\<Business\>\""}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", "\"\<Service Total ($)\>\""}], "}"}]}], ",", 
+   RowBox[{"LabelStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Times New Roman\>\""}], ",", 
+      RowBox[{"GrayLevel", "[", "0", "]"}]}], "}"}]}], ",", 
+   RowBox[{"ChartLabels", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{"data2", ",", "Below", ",", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{"#", ",", 
+         RowBox[{"Pi", "/", "2.2"}]}], "]"}], "&"}]}], "]"}]}], ",", " ", 
+   RowBox[{"LabelingFunction", "\[Rule]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Placed", "[", 
+       RowBox[{
+        RowBox[{"Row", "[", 
+         RowBox[{"{", 
+          RowBox[{"\"\<$\>\"", ",", "#"}], "}"}], "]"}], ",", "Above"}], 
+       "]"}], "&"}], ")"}]}], ",", 
+   RowBox[{"BarSpacing", "\[Rule]", "0.5"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8181802584116898`*^9, 3.8181802673043756`*^9}, {
+   3.8181805204407997`*^9, 3.818180548000469*^9}, {3.818181253658188*^9, 
+   3.818181254052161*^9}, {3.818181600704021*^9, 3.818181663892646*^9}, {
+   3.818181782884514*^9, 3.818181800442953*^9}, {3.8181818311010933`*^9, 
+   3.818181910788413*^9}, {3.818182501742715*^9, 3.8181825018176813`*^9}, {
+   3.818182533658527*^9, 3.818182533768708*^9}, {3.818182649722574*^9, 
+   3.818182761071527*^9}, 3.8181828586915283`*^9, {3.81818293124927*^9, 
+   3.8181829690576687`*^9}},
+ CellLabel->
+  "In[255]:=",ExpressionUUID->"a51e33b3-2004-460d-aba4-7029d907fc1a"],
+
+Cell[BoxData[
+ FormBox[
+  GraphicsBox[{
+    {Opacity[0], 
+     PointBox[{{0.33333333333333326`, 0.}, {17.333333333333336`, 
+      0.}}]}, {{}, 
+     {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[0.581],
+       Thickness[Small]}], 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{0.6666666666666666, 0.}, {1.3333333333333335, 240.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{1.6666666666666667, 0.}, {2.3333333333333335, 220.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{2.666666666666667, 0.}, {3.333333333333334, 210.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{3.6666666666666674, 0.}, {4.333333333333334, 210.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{4.666666666666667, 0.}, {5.333333333333334, 170.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{5.666666666666667, 0.}, {6.333333333333334, 170.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{6.666666666666667, 0.}, {7.333333333333334, 153.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{7.666666666666667, 0.}, {8.333333333333334, 150.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{8.666666666666668, 0.}, {9.333333333333334, 140.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{9.666666666666668, 0.}, {10.333333333333334, 140.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{10.666666666666668, 0.}, {11.333333333333334, 100.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{11.666666666666668, 0.}, {12.333333333333334, 90.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{12.666666666666668, 0.}, {13.333333333333334, 83.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{13.666666666666668, 0.}, {14.333333333333334, 70.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{14.666666666666668, 0.}, {15.333333333333334, 48.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{15.666666666666668, 0.}, {16.333333333333336, 48.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{16.666666666666668, 0.}, {17.333333333333336, 20.},
+        RoundingRadius->0]}}, {}, {}}, {}, {InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foilyage + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {1., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "240"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {1., 240.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Keratin Express + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {2., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "220"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {2., 220.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foil + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {3.0000000000000004, 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "210"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {3.0000000000000004, 210.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foilyage + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {4.000000000000001, 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "210"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {4.000000000000001, 210.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foil + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {5., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "170"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {5., 170.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foilyage\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {6., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "170"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {6., 170.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Cut + Color\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {7., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "153"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {7., 153.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Keratin Express\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {8., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "150"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {8., 150.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foil\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {9., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "140"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {9., 140.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foilyage\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {10., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "140"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {10., 140.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foil\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {11., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "100"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {11., 100.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Glaze + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {12., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "90"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {12., 90.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Color\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {13., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "83"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {13., 83.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Women's Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {14., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "70"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {14., 70.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Men's Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {15., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "48"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {15., 48.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Shampoo & Style\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {16., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "48"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {16., 48.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Glaze\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {17., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "20"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {17., 20.}], 
+      ImageScaled[{0.5, 0}]]}, {}, {}, {}},
+   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+   Axes->{False, False},
+   AxesLabel->{None, None},
+   AxesOrigin->{0.33333333333333326`, 0.},
+   CoordinatesToolOptions:>{"DisplayFunction" -> ({
+       Identity[
+        Part[#, 1]], 
+       Identity[
+        Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+       Identity[
+        Part[#, 1]], 
+       Identity[
+        Part[#, 2]]}& )},
+   DisplayFunction->Identity,
+   Frame->True,
+   FrameLabel->{{
+      FormBox["\"Service Total ($)\"", TraditionalForm], None}, {None, None}},
+   
+   FrameStyle->{{
+      StrokeForm[
+       Opacity[0]], 
+      StrokeForm[
+       Opacity[0]]}, {Automatic, None}},
+   FrameTicks->FrontEndValueCache[{{Charting`FindScaledTicks[
+        (Charting`SimpleTicks[#, #2, 6]& )[
+         SlotSequence[1]], {Identity, Identity}]& , None}, {{{1., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {2., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {
+        3.0000000000000004`, 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {
+        4.000000000000001, 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {5., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {6., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {7., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {8., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {9., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {10., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {11., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {12., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {13., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {14., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {15., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {16., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {17., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}}, 
+       None}}, {{{{0., 
+         FormBox["0", TraditionalForm], {0.01, 0.}}, {50., 
+         FormBox["50", TraditionalForm], {0.01, 0.}}, {100., 
+         FormBox["100", TraditionalForm], {0.01, 0.}}, {150., 
+         FormBox["150", TraditionalForm], {0.01, 0.}}, {200., 
+         FormBox["200", TraditionalForm], {0.01, 0.}}, {250., 
+         FormBox["250", TraditionalForm], {0.01, 0.}}}, None}, {{{1., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {2., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        3.0000000000000004`, 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        4.000000000000001, 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {5., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {6., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {7., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {8., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {9., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        10., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        11., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        12., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        13., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        14., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        15., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        16., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        17., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}}, 
+       None}}],
+   GridLines->{None, Automatic},
+   GridLinesStyle->Directive[
+     GrayLevel[0.4, 0.5], 
+     AbsoluteThickness[1], 
+     AbsoluteDashing[{1, 2}]],
+   LabelStyle->{FontFamily -> "Times New Roman", 
+     GrayLevel[0]},
+   PlotRange->{{All, All}, {All, All}},
+   PlotRangePadding->{{
+      Scaled[0.02], 
+      Scaled[0.02]}, {None, 
+      Scaled[0.05]}},
+   Ticks->{None, Automatic}], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.818180268266522*^9, 3.818180549472598*^9, 3.8181806757880583`*^9, 
+   3.81818090027514*^9, 3.81818094555554*^9, 3.818181117652614*^9, 
+   3.8181811881205387`*^9, 3.818181254752528*^9, {3.818181639311594*^9, 
+   3.818181664264001*^9}, 3.818181729859462*^9, {3.818181784487822*^9, 
+   3.8181819111715393`*^9}, 3.8181821909385357`*^9, {3.818182485741832*^9, 
+   3.818182502281595*^9}, 3.818182534048811*^9, {3.8181826619987707`*^9, 
+   3.818182724441071*^9}, 3.818182762532568*^9, 3.8181828610105762`*^9, {
+   3.8181829433595743`*^9, 3.818182969484474*^9}, 3.818183648000389*^9},
+ CellLabel->
+  "Out[255]=",ExpressionUUID->"1442ed52-03c9-4638-b247-b59d62f80d82"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"%248", ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->
+  "In[256]:=",ExpressionUUID->"082cfc6c-ea2b-4ad3-b0fa-21f5eddfbe72"],
+
+Cell[BoxData[
+ FormBox[
+  GraphicsBox[{
+    {Opacity[0], 
+     PointBox[{{0.33333333333333326`, 0.}, {17.333333333333336`, 
+      0.}}]}, {{}, 
+     {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[0.581],
+       Thickness[Small]}], 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{0.6666666666666666, 0.}, {1.3333333333333335, 240.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{1.6666666666666667, 0.}, {2.3333333333333335, 220.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{2.666666666666667, 0.}, {3.333333333333334, 210.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{3.6666666666666674, 0.}, {4.333333333333334, 210.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{4.666666666666667, 0.}, {5.333333333333334, 170.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{5.666666666666667, 0.}, {6.333333333333334, 170.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{6.666666666666667, 0.}, {7.333333333333334, 153.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{7.666666666666667, 0.}, {8.333333333333334, 150.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{8.666666666666668, 0.}, {9.333333333333334, 140.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{9.666666666666668, 0.}, {10.333333333333334, 140.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{10.666666666666668, 0.}, {11.333333333333334, 100.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{11.666666666666668, 0.}, {12.333333333333334, 90.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{12.666666666666668, 0.}, {13.333333333333334, 83.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{13.666666666666668, 0.}, {14.333333333333334, 70.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{14.666666666666668, 0.}, {15.333333333333334, 48.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{15.666666666666668, 0.}, {16.333333333333336, 48.},
+        RoundingRadius->0]}, 
+      {RGBColor[0.976, 0.6848, 0.26480000000000004`], EdgeForm[{Opacity[
+       0.581], Thickness[Small]}], 
+       RectangleBox[{16.666666666666668, 0.}, {17.333333333333336, 20.},
+        RoundingRadius->0]}}, {}, {}}, {}, {InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foilyage + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {1., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "240"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {1., 240.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Keratin Express + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {2., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "220"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {2., 220.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foil + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {3.0000000000000004, 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "210"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {3.0000000000000004, 210.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foilyage + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {4.000000000000001, 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "210"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {4.000000000000001, 210.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foil + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {5., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "170"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {5., 170.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foilyage\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {6., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "170"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {6., 170.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Cut + Color\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {7., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "153"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {7., 153.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Keratin Express\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {8., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "150"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {8., 150.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Full Foil\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {9., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "140"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {9., 140.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foilyage\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {10., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "140"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {10., 140.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Partial Foil\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {11., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "100"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {11., 100.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Glaze + Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {12., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "90"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {12., 90.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Color\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {13., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "83"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {13., 83.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Women's Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {14., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "70"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {14., 70.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Men's Cut\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {15., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "48"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {15., 48.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Shampoo & Style\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {16., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "48"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {16., 48.}], 
+      ImageScaled[{0.5, 0}]], InsetBox[
+      StyleBox[
+       RotationBox["\<\"Glaze\"\>",
+        BoxRotation->1.427996660722633],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, -4}, {17., 0.}], 
+      ImageScaled[{0.5, 1}]], InsetBox[
+      StyleBox[
+       TemplateBox[{"\"$\"", "20"},
+        "RowDefault"],
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"Times New Roman",
+       FontColor->GrayLevel[0]], Offset[{0, 4}, {17., 20.}], 
+      ImageScaled[{0.5, 0}]]}, {}, {}, {}},
+   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+   Axes->{False, False},
+   AxesLabel->{None, None},
+   AxesOrigin->{0.33333333333333326`, 0.},
+   CoordinatesToolOptions:>{"DisplayFunction" -> ({
+       Identity[
+        Part[#, 1]], 
+       Identity[
+        Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+       Identity[
+        Part[#, 1]], 
+       Identity[
+        Part[#, 2]]}& )},
+   DisplayFunction->Identity,
+   Frame->True,
+   FrameLabel->{{
+      FormBox["\"Service Total ($)\"", TraditionalForm], None}, {None, None}},
+   
+   FrameStyle->{{
+      StrokeForm[
+       Opacity[0]], 
+      StrokeForm[
+       Opacity[0]]}, {Automatic, None}},
+   FrameTicks->FrontEndValueCache[{{Charting`FindScaledTicks[
+        (Charting`SimpleTicks[#, #2, 6]& )[
+         SlotSequence[1]], {Identity, Identity}]& , None}, {{{1., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {2., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {
+        3.0000000000000004`, 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {
+        4.000000000000001, 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {5., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {6., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {7., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {8., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {9., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {10., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {11., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {12., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {13., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {14., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {15., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {16., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {17., 
+         FormBox[
+          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}}, 
+       None}}, {{{{0., 
+         FormBox["0", TraditionalForm], {0.01, 0.}}, {50., 
+         FormBox["50", TraditionalForm], {0.01, 0.}}, {100., 
+         FormBox["100", TraditionalForm], {0.01, 0.}}, {150., 
+         FormBox["150", TraditionalForm], {0.01, 0.}}, {200., 
+         FormBox["200", TraditionalForm], {0.01, 0.}}, {250., 
+         FormBox["250", TraditionalForm], {0.01, 0.}}}, None}, {{{1., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {2., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        3.0000000000000004`, 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        4.000000000000001, 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {5., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {6., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {7., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {8., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {9., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        10., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        11., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        12., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        13., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        14., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        15., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        16., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}, {
+        17., 
+         FormBox[
+          TemplateBox[{0.}, "Spacer1"], TraditionalForm], {0.004, 0.}}}, 
+       None}}],
+   GridLines->{None, Automatic},
+   GridLinesStyle->Directive[
+     GrayLevel[0.4, 0.5], 
+     AbsoluteThickness[1], 
+     AbsoluteDashing[{1, 2}]],
+   ImageSize->Large,
+   LabelStyle->{FontFamily -> "Times New Roman", 
+     GrayLevel[0]},
+   PlotRange->{{All, All}, {All, All}},
+   PlotRangePadding->{{
+      Scaled[0.02], 
+      Scaled[0.02]}, {None, 
+      Scaled[0.05]}},
+   Ticks->{None, Automatic}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.818183021998547*^9, 3.818183651237125*^9},
+ CellLabel->
+  "Out[256]=",ExpressionUUID->"5dbaf6d8-0b0a-4361-aca7-b40e3097229a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"240", "*", "n1"}], ")"}], "+", "220", "+", "210", "+", "210", "+",
+   "170", "+", "170", "+", "153", "+", "150", "+", "140", "+", "140", "+", 
+  "100", "+", "90", "+", "83", "+", "70", "+", "48", "+", "48", "+", 
+  "20"}]], "Input",
+ CellChangeTimes->{{3.820585575651927*^9, 3.820585645533064*^9}, {
+  3.82058579371378*^9, 
+  3.8205857997400417`*^9}},ExpressionUUID->"5463b292-7142-4d50-b569-\
+81edafab710e"],
+
+Cell[BoxData["2262"], "Input",
+ CellChangeTimes->{3.820585684664576*^9},
+ CellLabel->
+  "In[246]:=",ExpressionUUID->"ab8b6288-abb6-49dc-9c86-1e806e3f3d8d"],
+
+Cell[BoxData["2262"], "Output",
+ CellChangeTimes->{3.820585684716866*^9},
+ CellLabel->
+  "Out[246]=",ExpressionUUID->"2ba56863-0eb3-4515-9b2b-fcda0d8cea0e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "/", "17"}]], "Input",
+ CellChangeTimes->{{3.8205856746931753`*^9, 3.820585682935197*^9}},
+ CellLabel->
+  "In[247]:=",ExpressionUUID->"74a58537-4e87-4996-bf2c-136a6c5806e6"],
+
+Cell[BoxData[
+ FractionBox["2262", "17"]], "Output",
+ CellChangeTimes->{{3.820585676606605*^9, 3.820585686471622*^9}},
+ CellLabel->
+  "Out[247]=",ExpressionUUID->"38822e9d-4b90-4a13-8e13-1c321f15b0f6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  FractionBox["2262", "17"], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->
+  "In[248]:=",ExpressionUUID->"5fc5227f-7047-408d-8230-8c9952fe331a"],
+
+Cell[BoxData["133.05882352941177`"], "Output",
+ CellChangeTimes->{3.820585689352072*^9},
+ CellLabel->
+  "Out[248]=",ExpressionUUID->"d4c175b6-952f-4ffb-8cb7-08956cec1b94"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.818181414391333*^9, 3.818181555792385*^9}, 
+   3.8181816737863197`*^9},ExpressionUUID->"9d3463dc-4fce-4371-b1f6-\
+540ee536d677"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{"\<\"1\"\>", ",", "\<\"2\"\>", ",", "\<\"3\"\>", ",", "\<\"4\"\>", 
+    ",", "\<\"5\"\>", ",", "\<\"6\"\>", ",", "\<\"7\"\>", ",", "\<\"8\"\>", 
+    ",", "\<\"9\"\>", ",", "\<\"10\"\>", ",", "\<\"11\"\>", ",", "\<\"12\"\>",
+     ",", "\<\"13\"\>", ",", "\<\"14\"\>", ",", "\<\"15\"\>", 
+    ",", "\<\"16\"\>", ",", "\<\"17\"\>"}], "}"}], TraditionalForm]], "Output",\
+
+ CellChangeTimes->{3.818181443365736*^9, 3.818181556494824*^9},
+ CellLabel->
+  "Out[207]=",ExpressionUUID->"0071c430-6749-4f80-a453-137976be73ea"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"BarChart", "[", 
+  RowBox[{"data", ",", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<GDP Per Capita\>\""}], ",", 
+   RowBox[{"ChartLabels", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{"countries", ",", "Below", ",", 
+      RowBox[{
+       RowBox[{"Rotate", "[", 
+        RowBox[{"#", ",", 
+         RowBox[{"Pi", "/", "2.4"}]}], "]"}], "&"}]}], "]"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"BarChart", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+   RowBox[{"LabelingFunction", "\[Rule]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Placed", "[", 
+       RowBox[{
+        RowBox[{"Row", "[", 
+         RowBox[{"{", 
+          RowBox[{"\"\<$\>\"", ",", "#"}], "}"}], "]"}], ",", "Above"}], 
+       "]"}], "&"}], ")"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8181817668319798`*^9, 3.818181766846278*^9}, {
+  3.8181828404839153`*^9, 
+  3.818182841860742*^9}},ExpressionUUID->"b41eb118-2960-4194-b7ea-\
+95426c285492"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Client List", "Section",
+ CellChangeTimes->{{3.818171020189632*^9, 
+  3.818171024430599*^9}},ExpressionUUID->"4c8a20a1-549d-44a5-82cd-\
+74c0f5a54425"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Adam Cox\>\"", ",", 
+    RowBox[{"Spacer", "[", "20", "]"}], ",", "mensCut"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Alex Looney\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "womensCut"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Alexis Goldman\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "Combo2"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Alli Kuzma\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "Combo1"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Allison Rogers\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "Combo1"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Amy Mathews\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "womensCut"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Amy Marsaudon\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "womensCut"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Amy Minnick\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "Combo1"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Andrew Mosteller\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "mensCut"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Anna Rose Wascher\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "Combo1"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Annette Cox\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "womensCut"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<April Woyshner\>\"", ",", 
+    RowBox[{"Spacer", "[", "30", "]"}], ",", "womensCut"}], "}"}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.818165124231311*^9, 3.8181651414324923`*^9}, {
+  3.8181710775015373`*^9, 3.818171121056076*^9}, {3.818171685256802*^9, 
+  3.8181716947155123`*^9}, {3.818171876404755*^9, 3.818171998486565*^9}, {
+  3.818172305150682*^9, 3.818172323553748*^9}, {3.818172375428141*^9, 
+  3.818172520585865*^9}, {3.8181725562708797`*^9, 3.818172570490196*^9}, {
+  3.8181726104187727`*^9, 3.8181726514571323`*^9}, {3.818172906712234*^9, 
+  3.818172952594351*^9}, {3.818172985696122*^9, 3.818173142423872*^9}, {
+  3.818173193457891*^9, 3.818173250974763*^9}, {3.818173410454549*^9, 
+  3.8181735087476377`*^9}, {3.818173543248432*^9, 
+  3.8181736013544197`*^9}},ExpressionUUID->"f3891e16-a8d1-4303-8e9c-\
+cd3c736a1321"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Adam Cox\"", 
+   TemplateBox[{20}, "Spacer1"], "48"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.818173558923505*^9},
+ CellLabel->
+  "Out[199]=",ExpressionUUID->"6553690d-2155-4527-a2ca-ee25b4cdddce"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Alex Looney\"", 
+   TemplateBox[{30}, "Spacer1"], "70"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.8181735589265137`*^9},
+ CellLabel->
+  "Out[200]=",ExpressionUUID->"c6c041ec-1d04-4602-81c5-34d27b2d8df9"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Alexis Goldman\"", 
+   TemplateBox[{30}, "Spacer1"], "153"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.818173558929182*^9},
+ CellLabel->
+  "Out[201]=",ExpressionUUID->"ef02e8ed-5fd6-4942-9e62-bff68c2214d2"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Alli Kuzma\"", 
+   TemplateBox[{30}, "Spacer1"], "170"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.818173558934219*^9},
+ CellLabel->
+  "Out[202]=",ExpressionUUID->"496c0e1f-ad6c-49ee-b324-6e7f68b4c4c9"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Allison Rogers\"", 
+   TemplateBox[{30}, "Spacer1"], "170"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.818173558937316*^9},
+ CellLabel->
+  "Out[203]=",ExpressionUUID->"52fff0bc-19eb-4262-af08-1f94ac925c04"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Amy Mathews\"", 
+   TemplateBox[{30}, "Spacer1"], "70"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.81817355894103*^9},
+ CellLabel->
+  "Out[204]=",ExpressionUUID->"57405490-b253-4eb8-b597-cf89aa8b28f5"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Amy Marsaudon\"", 
+   TemplateBox[{30}, "Spacer1"], "70"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.818173558944027*^9},
+ CellLabel->
+  "Out[205]=",ExpressionUUID->"1f1aaa73-20fe-4e11-8214-f67398ee5148"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Amy Minnick\"", 
+   TemplateBox[{30}, "Spacer1"], "170"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.818173558946961*^9},
+ CellLabel->
+  "Out[206]=",ExpressionUUID->"370a8003-7dc1-411c-a5bd-6be5b265ab08"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Andrew Mosteller\"", 
+   TemplateBox[{30}, "Spacer1"], "48"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.81817355895043*^9},
+ CellLabel->
+  "Out[207]=",ExpressionUUID->"b4339b31-fa7f-4730-b03c-762887ef48d1"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Anna Rose Wascher\"", 
+   TemplateBox[{30}, "Spacer1"], "170"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.818173558953185*^9},
+ CellLabel->
+  "Out[208]=",ExpressionUUID->"79bc3ab6-7fc7-464d-bd00-a7e3b0b29e44"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Annette Cox\"", 
+   TemplateBox[{30}, "Spacer1"], "70"},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.8181651515686626`*^9, 3.818165158603244*^9}, {
+   3.818171085597722*^9, 3.818171126016924*^9}, 3.818171400238009*^9, {
+   3.818171698013401*^9, 3.818171707689074*^9}, 3.818172001411882*^9, 
+   3.818172442832679*^9, 3.8181724762647247`*^9, {3.8181725080430737`*^9, 
+   3.818172522254498*^9}, 3.8181725716610117`*^9, {3.818172641293812*^9, 
+   3.818172651747254*^9}, 3.818172959301038*^9, 3.81817302251816*^9, 
+   3.8181730649809103`*^9, 3.818173116310978*^9, 3.818173149245694*^9, 
+   3.8181732194291887`*^9, {3.818173251471058*^9, 3.818173283264866*^9}, 
+   3.818173382070237*^9, 3.818173444466612*^9, 3.818173500414781*^9, 
+   3.8181735589558573`*^9},
+ CellLabel->
+  "Out[209]=",ExpressionUUID->"7fc0b4e0-bf0d-41f1-8cfa-c12de2994196"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "SystemDialogInput", "nprmtv", 
+    "\"\\!\\(\\*FormBox[\\\"SystemDialogInput\\\", TraditionalForm]\\) is not \
+currently supported within preemptive evaluations.\"", 2, 250, 20, 
+    27847570818709488644, "Local"},
+   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.818183583611012*^9},
+ CellTags->"PredictiveInterface",
+ CellLabel->"",ExpressionUUID->"dc034230-949e-4a36-868e-81c3a5b660b8"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "SystemDialogInput", "nprmtv", 
+    "\"\\!\\(\\*FormBox[\\\"SystemDialogInput\\\", TraditionalForm]\\) is not \
+currently supported within preemptive evaluations.\"", 2, 251, 22, 
+    27847570818709488644, "Local"},
+   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.818183599912079*^9},
+ CellTags->"PredictiveInterface",
+ CellLabel->"",ExpressionUUID->"4e6ea81f-1e3b-4049-b580-15551e64eb80"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "SystemDialogInput", "nprmtv", 
+    "\"\\!\\(\\*FormBox[\\\"SystemDialogInput\\\", TraditionalForm]\\) is not \
+currently supported within preemptive evaluations.\"", 2, 252, 24, 
+    27847570818709488644, "Local"},
+   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.818183619454451*^9},
+ CellTags->"PredictiveInterface",
+ CellLabel->"",ExpressionUUID->"e03120a2-2388-473a-8dcf-85aa1a226410"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "SystemDialogInput", "nprmtv", 
+    "\"\\!\\(\\*FormBox[\\\"SystemDialogInput\\\", TraditionalForm]\\) is not \
+currently supported within preemptive evaluations.\"", 2, 257, 26, 
+    27847570818709488644, "Local"},
+   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.818183660272078*^9},
+ CellTags->"PredictiveInterface",
+ CellLabel->"",ExpressionUUID->"4f93ad17-62a3-48d3-9277-edb2a7c303f5"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1258, 768},
+WindowMargins->{{56, Automatic}, {Automatic, 16}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9397fa15-6879-4208-94f5-5852231419d2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PredictiveInterface"->{
+  Cell[76827, 1930, 465, 10, 34, "Message",ExpressionUUID->"dc034230-949e-4a36-868e-81c3a5b660b8",
+   CellTags->"PredictiveInterface"],
+  Cell[77295, 1942, 465, 10, 34, "Message",ExpressionUUID->"4e6ea81f-1e3b-4049-b580-15551e64eb80",
+   CellTags->"PredictiveInterface"],
+  Cell[77763, 1954, 465, 10, 34, "Message",ExpressionUUID->"e03120a2-2388-473a-8dcf-85aa1a226410",
+   CellTags->"PredictiveInterface"],
+  Cell[78231, 1966, 465, 10, 34, "Message",ExpressionUUID->"4f93ad17-62a3-48d3-9277-edb2a7c303f5",
+   CellTags->"PredictiveInterface"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PredictiveInterface", 79113, 1992}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2876, 68, 667, "Input",ExpressionUUID->"d0e372ae-0cd1-41a8-9f2b-a80f617343f7"],
+Cell[3459, 92, 182, 4, 47, "Output",ExpressionUUID->"5c2bf6f6-cd0d-4215-be2b-fad0132d214f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3678, 101, 74, 0, 101, "Section",ExpressionUUID->"e4bffd51-406e-4527-8067-f8b0fe4ab337"],
+Cell[CellGroupData[{
+Cell[3777, 105, 2178, 54, 140, "Input",ExpressionUUID->"688e9d5b-e358-43e3-a438-1d807aa04921"],
+Cell[5958, 161, 1782, 53, 517, "Output",ExpressionUUID->"8dc6f894-f732-45af-a926-3407d6fe8f29"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7777, 219, 1022, 21, 78, "Input",ExpressionUUID->"af0094bd-213b-4356-8f39-382d8e6aa0d2"],
+Cell[8802, 242, 2105, 51, 381, "Output",ExpressionUUID->"56f486c7-736a-4d71-a0dc-d1818265f8f3"]
+}, Open  ]],
+Cell[10922, 296, 1786, 33, 202, "Input",ExpressionUUID->"0b20f838-66d0-4a25-a10d-7f052e2c5b91"],
+Cell[CellGroupData[{
+Cell[12733, 333, 1744, 39, 140, "Input",ExpressionUUID->"a51e33b3-2004-460d-aba4-7029d907fc1a"],
+Cell[14480, 374, 23216, 587, 479, "Output",ExpressionUUID->"1442ed52-03c9-4638-b247-b59d62f80d82"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37733, 966, 229, 6, 46, "Input",ExpressionUUID->"082cfc6c-ea2b-4ad3-b0fa-21f5eddfbe72"],
+Cell[37965, 974, 22700, 580, 675, "Output",ExpressionUUID->"5dbaf6d8-0b0a-4361-aca7-b40e3097229a"]
+}, Open  ]],
+Cell[60680, 1557, 460, 10, 46, "Input",ExpressionUUID->"5463b292-7142-4d50-b569-81edafab710e"],
+Cell[61143, 1569, 155, 3, 46, "Input",ExpressionUUID->"ab8b6288-abb6-49dc-9c86-1e806e3f3d8d"],
+Cell[61301, 1574, 156, 3, 52, "Output",ExpressionUUID->"2ba56863-0eb3-4515-9b2b-fcda0d8cea0e"],
+Cell[CellGroupData[{
+Cell[61482, 1581, 201, 4, 46, "Input",ExpressionUUID->"74a58537-4e87-4996-bf2c-136a6c5806e6"],
+Cell[61686, 1587, 201, 4, 68, "Output",ExpressionUUID->"38822e9d-4b90-4a13-8e13-1c321f15b0f6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[61924, 1596, 183, 5, 68, "Input",ExpressionUUID->"5fc5227f-7047-408d-8230-8c9952fe331a"],
+Cell[62110, 1603, 171, 3, 52, "Output",ExpressionUUID->"d4c175b6-952f-4ffb-8cb7-08956cec1b94"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[62318, 1611, 177, 3, 46, "Input",ExpressionUUID->"9d3463dc-4fce-4371-b1f6-540ee536d677"],
+Cell[62498, 1616, 566, 11, 47, "Output",ExpressionUUID->"0071c430-6749-4f80-a453-137976be73ea"]
+}, Open  ]],
+Cell[63079, 1630, 1002, 28, 109, "Input",ExpressionUUID->"b41eb118-2960-4194-b7ea-95426c285492"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[64118, 1663, 156, 3, 101, "Section",ExpressionUUID->"4c8a20a1-549d-44a5-82cd-74c0f5a54425"],
+Cell[CellGroupData[{
+Cell[64299, 1670, 2889, 71, 419, "Input",ExpressionUUID->"f3891e16-a8d1-4303-8e9c-cd3c736a1321"],
+Cell[67191, 1743, 868, 15, 52, "Output",ExpressionUUID->"6553690d-2155-4527-a2ca-ee25b4cdddce"],
+Cell[68062, 1760, 873, 15, 52, "Output",ExpressionUUID->"c6c041ec-1d04-4602-81c5-34d27b2d8df9"],
+Cell[68938, 1777, 875, 15, 52, "Output",ExpressionUUID->"ef02e8ed-5fd6-4942-9e62-bff68c2214d2"],
+Cell[69816, 1794, 871, 15, 52, "Output",ExpressionUUID->"496c0e1f-ad6c-49ee-b324-6e7f68b4c4c9"],
+Cell[70690, 1811, 875, 15, 52, "Output",ExpressionUUID->"52fff0bc-19eb-4262-af08-1f94ac925c04"],
+Cell[71568, 1828, 870, 15, 52, "Output",ExpressionUUID->"57405490-b253-4eb8-b597-cf89aa8b28f5"],
+Cell[72441, 1845, 873, 15, 52, "Output",ExpressionUUID->"1f1aaa73-20fe-4e11-8214-f67398ee5148"],
+Cell[73317, 1862, 872, 15, 52, "Output",ExpressionUUID->"370a8003-7dc1-411c-a5bd-6be5b265ab08"],
+Cell[74192, 1879, 875, 15, 52, "Output",ExpressionUUID->"b4339b31-fa7f-4730-b03c-762887ef48d1"],
+Cell[75070, 1896, 878, 15, 52, "Output",ExpressionUUID->"79bc3ab6-7fc7-464d-bd00-a7e3b0b29e44"],
+Cell[75951, 1913, 873, 15, 52, "Output",ExpressionUUID->"7fc0b4e0-bf0d-41f1-8cfa-c12de2994196"],
+Cell[76827, 1930, 465, 10, 34, "Message",ExpressionUUID->"dc034230-949e-4a36-868e-81c3a5b660b8",
+ CellTags->"PredictiveInterface"],
+Cell[77295, 1942, 465, 10, 34, "Message",ExpressionUUID->"4e6ea81f-1e3b-4049-b580-15551e64eb80",
+ CellTags->"PredictiveInterface"],
+Cell[77763, 1954, 465, 10, 34, "Message",ExpressionUUID->"e03120a2-2388-473a-8dcf-85aa1a226410",
+ CellTags->"PredictiveInterface"],
+Cell[78231, 1966, 465, 10, 34, "Message",ExpressionUUID->"4f93ad17-62a3-48d3-9277-edb2a7c303f5",
+ CellTags->"PredictiveInterface"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

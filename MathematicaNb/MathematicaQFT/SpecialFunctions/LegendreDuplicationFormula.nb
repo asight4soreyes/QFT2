@@ -1,0 +1,468 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11519,        458]
+NotebookOptionsPosition[      9951,        396]
+NotebookOutlinePosition[     10305,        412]
+CellTagsIndexPosition[     10262,        409]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Legendre Duplication Formula", "Title"],
+
+Cell[CellGroupData[{
+
+Cell["Author", "Subsection"],
+
+Cell["\<\
+Eric W. Weisstein
+August 11, 2003\
+\>", "Text"],
+
+Cell[TextData[{
+ "This notebook downloaded from ",
+ ButtonBox["http://mathworld.wolfram.com/notebooks/SpecialFunctions/\
+LegendreDuplicationFormula.nb",
+  BaseStyle->"Hyperlink",
+  ButtonData:>{
+    URL["http://mathworld.wolfram.com/notebooks/SpecialFunctions/\
+LegendreDuplicationFormula.nb"], None}],
+ "."
+}], "Text"],
+
+Cell[TextData[{
+ "For more information, see Eric's ",
+ StyleBox["MathWorld",
+  FontSlant->"Italic"],
+ " entry ",
+ ButtonBox["http://mathworld.wolfram.com/LegendreDuplicationFormula.html",
+  BaseStyle->"Hyperlink",
+  ButtonData:>{
+    URL["http://mathworld.wolfram.com/LegendreDuplicationFormula.html"], 
+    None}],
+ "."
+}], "Text"],
+
+Cell["\<\
+\[Copyright]2005 Wolfram Research, Inc. except for portions noted otherwise\
+\>", "Text"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Derivation", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["u", 
+     RowBox[{"m", "-", "1"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", "u"}], ")"}], 
+     RowBox[{"n", "-", "1"}]]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"u", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Re", "[", "m", "]"}], ">", "0"}], "&&", 
+    RowBox[{
+     RowBox[{"Re", "[", "n", "]"}], ">", "0"}]}], ",", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"Gamma", "[", "m", "]"}], " ", 
+     RowBox[{"Gamma", "[", "n", "]"}]}], 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"m", "+", "n"}], "]"}]], ",", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "-", "u"}], ")"}], 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "n"}]], " ", 
+      SuperscriptBox["u", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "m"}]]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"u", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"Assumptions", "\[Rule]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Re", "[", "m", "]"}], "\[LessEqual]", "0"}], "||", 
+       RowBox[{
+        RowBox[{"Re", "[", "n", "]"}], "\[LessEqual]", "0"}]}]}]}], "]"}]}], 
+  "]"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"2", 
+    RowBox[{"FullSimplify", "[", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["x", 
+         RowBox[{
+          RowBox[{"2", "m"}], "-", "1"}]], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", 
+           SuperscriptBox["x", "2"]}], ")"}], 
+         RowBox[{"n", "-", "1"}]]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"Assumptions", "\[Rule]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Re", "[", "m", "]"}], ">", "0"}], "&&", 
+         RowBox[{
+          RowBox[{"Re", "[", "n", "]"}], ">", "0"}]}]}]}], "]"}], "]"}]}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"FunctionExpand", "[", 
+    RowBox[{"Beta", "[", 
+     RowBox[{"m", ",", "n"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+  "}"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     RowBox[{"Gamma", "[", "m", "]"}], " ", 
+     RowBox[{"Gamma", "[", "n", "]"}]}], 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"m", "+", "n"}], "]"}]], ",", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"Gamma", "[", "m", "]"}], " ", 
+     RowBox[{"Gamma", "[", "n", "]"}]}], 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"m", "+", "n"}], "]"}]]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{"1", "+", "x"}], "2"], ")"}], 
+     RowBox[{"z", "-", "1"}]], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        FractionBox[
+         RowBox[{"1", "+", "x"}], "2"]}], ")"}], 
+      RowBox[{"z", "-", "1"}]], "/", "2"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"Assumptions", "\[Rule]", 
+    RowBox[{
+     RowBox[{"Re", "[", "z", "]"}], ">", "0"}]}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"1", "-", 
+     RowBox[{"2", " ", "z"}]}]], " ", 
+   SqrtBox["\[Pi]"], " ", 
+   RowBox[{"Gamma", "[", "z", "]"}]}], 
+  RowBox[{"Gamma", "[", 
+   RowBox[{
+    FractionBox["1", "2"], "+", "z"}], "]"}]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"2", " ", 
+  SuperscriptBox["2", 
+   RowBox[{"1", "-", 
+    RowBox[{"2", "z"}]}]], 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       RowBox[{"x", "^", "2"}]}], ")"}], 
+     RowBox[{"z", "-", "1"}]], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+    RowBox[{"Assumptions", "\[Rule]", 
+     RowBox[{
+      RowBox[{"Re", "[", "z", "]"}], ">", "0"}]}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"1", "-", 
+     RowBox[{"2", " ", "z"}]}]], " ", 
+   SqrtBox["\[Pi]"], " ", 
+   RowBox[{"Gamma", "[", "z", "]"}]}], 
+  RowBox[{"Gamma", "[", 
+   RowBox[{
+    FractionBox["1", "2"], "+", "z"}], "]"}]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"Gamma", "[", "z", "]"}], 
+      RowBox[{"Gamma", "[", "z", "]"}]}], 
+     RowBox[{"Gamma", "[", 
+      RowBox[{"2", "z"}], "]"}]], "\[Equal]", 
+    RowBox[{
+     SuperscriptBox["2", 
+      RowBox[{"1", "-", 
+       RowBox[{"2", "z"}]}]], 
+     FractionBox[
+      RowBox[{
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "/", "2"}], "]"}], 
+       RowBox[{"Gamma", "[", "z", "]"}]}], 
+      RowBox[{"Gamma", "[", 
+       RowBox[{"z", "+", 
+        RowBox[{"1", "/", "2"}]}], "]"}]]}]}], ",", 
+   RowBox[{"Gamma", "[", 
+    RowBox[{"2", "z"}], "]"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Gamma", "[", 
+     RowBox[{"2", " ", "z"}], "]"}], "\[Rule]", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        RowBox[{"2", " ", "z"}]}]], " ", 
+      RowBox[{"Gamma", "[", "z", "]"}], " ", 
+      RowBox[{"Gamma", "[", 
+       RowBox[{
+        FractionBox["1", "2"], "+", "z"}], "]"}]}], 
+     SqrtBox["\[Pi]"]]}], "}"}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"2", "\[Pi]"}], ")"}], 
+   RowBox[{
+    RowBox[{"-", "1"}], "/", "2"}]], 
+  SuperscriptBox["2", 
+   RowBox[{
+    RowBox[{"2", "z"}], "-", 
+    RowBox[{"1", "/", "2"}]}]], 
+  RowBox[{"Gamma", "[", "z", "]"}], 
+  RowBox[{"Gamma", "[", 
+   RowBox[{"z", "+", 
+    RowBox[{"1", "/", "2"}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", 
+     RowBox[{"2", " ", "z"}]}]], " ", 
+   RowBox[{"Gamma", "[", "z", "]"}], " ", 
+   RowBox[{"Gamma", "[", 
+    RowBox[{
+     FractionBox["1", "2"], "+", "z"}], "]"}]}], 
+  SqrtBox["\[Pi]"]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"2", "\[Pi]"}], ")"}], 
+        RowBox[{
+         RowBox[{"-", "1"}], "/", "2"}]], 
+       SuperscriptBox["2", 
+        RowBox[{
+         RowBox[{"2", "z"}], "-", 
+         RowBox[{"1", "/", "2"}]}]], 
+       RowBox[{"Gamma", "[", "z", "]"}], 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"z", "+", 
+         RowBox[{"1", "/", "2"}]}], "]"}]}], "-", 
+      RowBox[{"Gamma", "[", 
+       RowBox[{"2", "z"}], "]"}]}], "/.", 
+     RowBox[{"z", "\[Rule]", 
+      RowBox[{"Random", "[", 
+       RowBox[{"Complex", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "2"}], "-", 
+           RowBox[{"2", "I"}]}], ",", 
+          RowBox[{"2", "+", 
+           RowBox[{"2", "I"}]}]}], "}"}]}], "]"}]}]}], ",", 
+    RowBox[{"{", "10", "}"}]}], "]"}], "//", "Chop"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0"}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FunctionExpand", "[", 
+  RowBox[{"Gamma", "[", 
+   RowBox[{"2", "z"}], "]"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Gamma", "[", 
+  RowBox[{"2", " ", "z"}], "]"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"2", "\[Pi]"}], ")"}], 
+    RowBox[{
+     RowBox[{"-", "1"}], "/", "2"}]], 
+   SuperscriptBox["2", 
+    RowBox[{
+     RowBox[{"2", "z"}], "-", 
+     RowBox[{"1", "/", "2"}]}]], 
+   RowBox[{"Gamma", "[", "z", "]"}], 
+   RowBox[{"Gamma", "[", 
+    RowBox[{"z", "+", 
+     RowBox[{"1", "/", "2"}]}], "]"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Gamma", "[", 
+  RowBox[{"2", " ", "z"}], "]"}]], "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{760, 849},
+WindowMargins->{{319, Automatic}, {Automatic, 46}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 45, 0, 92, "Title"],
+Cell[CellGroupData[{
+Cell[649, 26, 28, 0, 44, "Subsection"],
+Cell[680, 28, 57, 3, 49, "Text"],
+Cell[740, 33, 319, 9, 49, "Text"],
+Cell[1062, 44, 332, 11, 49, "Text"],
+Cell[1397, 57, 99, 2, 30, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1533, 64, 29, 0, 80, "Section"],
+Cell[CellGroupData[{
+Cell[1587, 68, 320, 11, 35, "Input"],
+Cell[1910, 81, 1004, 33, 78, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2951, 119, 900, 28, 96, "Input"],
+Cell[3854, 149, 427, 14, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4318, 168, 613, 21, 48, "Input"],
+Cell[4934, 191, 286, 10, 60, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5257, 206, 486, 16, 35, "Input"],
+Cell[5746, 224, 286, 10, 60, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6069, 239, 677, 23, 51, "Input"],
+Cell[6749, 264, 477, 16, 59, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7263, 285, 376, 14, 70, "Input"],
+Cell[7642, 301, 309, 11, 70, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7988, 317, 970, 32, 70, "Input"],
+Cell[8961, 351, 160, 4, 70, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9158, 360, 118, 3, 70, "Input"],
+Cell[9279, 365, 82, 2, 70, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9398, 372, 428, 15, 70, "Input"],
+Cell[9829, 389, 82, 2, 70, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

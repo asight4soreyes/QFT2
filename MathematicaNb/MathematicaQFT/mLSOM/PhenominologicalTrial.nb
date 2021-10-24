@@ -1,0 +1,5391 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    173574,       5383]
+NotebookOptionsPosition[    171903,       5346]
+NotebookOutlinePosition[    172245,       5361]
+CellTagsIndexPosition[    172202,       5358]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Z-Prime Decay \[Rule] neutrinos",
+ FontFamily->"Times New Roman",
+ FontWeight->"Regular"]], "Section",
+ CellChangeTimes->{{3.795486375304078*^9, 
+  3.795486425814155*^9}},ExpressionUUID->"35c14b78-d2fa-441d-86e7-\
+f350dee58f90"],
+
+Cell[TextData[{
+ StyleBox[" \[CapitalGamma] ",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ StyleBox["(",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{
+     SubscriptBox["Z", "I"], "'"}],
+    FontSize->16], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"6e01d55c-ebdb-456c-90c2-792661012afc"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Rule]", 
+    RowBox[{"\[Nu]", 
+     OverscriptBox["\[Nu]", "_"]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"929f7092-e005-461b-88c0-8ed9b1ab5c2e"],
+ StyleBox[") ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ StyleBox["=  ",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SubsuperscriptBox[
+       StyleBox["g",
+        FontSize->16], 
+       RowBox[{" ", "PQ"}], "2"], 
+      SubscriptBox[
+       StyleBox["M",
+        FontSize->16], 
+       StyleBox[
+        RowBox[{
+         SubscriptBox["Z", "I"], "'"}],
+        FontSize->10]]}], 
+     StyleBox[
+      RowBox[{
+       StyleBox["12",
+        FontSlant->"Plain"], 
+       StyleBox["\[Pi]",
+        FontSlant->"Plain"], " "}],
+      FontSize->16]],
+    FontFamily->"Times New Roman",
+    FontSize->20], TraditionalForm]],ExpressionUUID->
+  "21526f7f-0043-4aa4-aae3-46d81ae3615e"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    StyleBox[
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SubsuperscriptBox["g", "V", 
+          RowBox[{"\[Nu]", "-", 
+           StyleBox[
+            RowBox[{
+             SubscriptBox["Z", "I"], "'"}],
+            FontSize->10]}]], ")"}], "2"], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SubsuperscriptBox["g", "A", 
+          RowBox[{"\[Nu]", "-", 
+           StyleBox[
+            RowBox[{
+             SubscriptBox["Z", "I"], "'"}],
+            FontSize->10]}]], ")"}], "2"], "+", 
+       RowBox[{"2", " ", 
+        StyleBox[
+         FractionBox[
+          StyleBox[
+           SuperscriptBox[
+            SubscriptBox["m", "\[Nu]"], "2"],
+           FontSize->16], 
+          StyleBox[
+           SubsuperscriptBox["M", 
+            StyleBox[
+             RowBox[{
+              SubscriptBox["Z", "I"], "'"}],
+             FontSize->10], 
+            RowBox[{"   ", "2"}]],
+           FontSize->16]],
+         FontSize->18], " ", 
+        RowBox[{"(", " ", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            SubsuperscriptBox["g", "V", 
+             RowBox[{"\[Nu]", "-", 
+              StyleBox[
+               RowBox[{
+                SubscriptBox["Z", "I"], "'"}],
+               FontSize->10]}]], ")"}], "2"], "-", 
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             SubsuperscriptBox["g", "A", 
+              RowBox[{"\[Nu]", "-", 
+               StyleBox[
+                RowBox[{
+                 SubscriptBox["Z", "I"], "'"}],
+                FontSize->10]}]], ")"}], "2"]}]}], " ", ")"}]}]}],
+      HoldForm],
+     FontFamily->"Times New Roman",
+     FontWeight->"Regular"], 
+    StyleBox[")",
+     FontFamily->"Times New Roman",
+     FontWeight->"Regular"]}], TraditionalForm]],
+  CellChangeTimes->{{3.794508127969803*^9, 3.7945081754994235`*^9}, {
+   3.7945084725542464`*^9, 3.794508585701193*^9}},ExpressionUUID->
+  "5703fca2-cd57-4347-aab8-060ec1deffa6"],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    SqrtBox[
+     RowBox[{"1", "-", 
+      RowBox[{"4", 
+       StyleBox[
+        FractionBox[
+         StyleBox[
+          SuperscriptBox[
+           SubscriptBox["m", "\[Nu]"], "2"],
+          FontSize->14], 
+         StyleBox[
+          SubsuperscriptBox["M", 
+           StyleBox[
+            RowBox[{
+             SubscriptBox["Z", "I"], "'"}],
+            FontSize->10], 
+           RowBox[{"   ", "2"}]],
+          FontSize->16]],
+        FontSize->13]}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14], TraditionalForm]],ExpressionUUID->
+  "e15b1d27-fa09-4020-b1aa-75602493c9e6"],
+ ",\n\n",
+ StyleBox["I = 1, means singular Z\[CloseCurlyQuote] Boson\n\n",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ StyleBox["\[CapitalGamma] ",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ StyleBox["(",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"Z", "'"}],
+    FontSize->16], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"528ff6a0-d30e-4816-adca-6cc161a14914"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Rule]", 
+    RowBox[{"\[Nu]", 
+     OverscriptBox["\[Nu]", "_"]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"642195eb-f8b5-4246-991c-f84c4dec7d15"],
+ StyleBox[")",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ StyleBox[" =  ",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SubsuperscriptBox[
+       StyleBox["g",
+        FontSize->16], 
+       RowBox[{" ", "PQ"}], "2"], 
+      SubscriptBox[
+       StyleBox["M",
+        FontSize->16], 
+       StyleBox[
+        RowBox[{"Z", " ", "'"}],
+        FontSize->10]]}], 
+     StyleBox[
+      RowBox[{
+       StyleBox["12",
+        FontSlant->"Plain"], 
+       StyleBox["\[Pi]",
+        FontSlant->"Plain"], " "}],
+      FontSize->16]],
+    FontFamily->"Times New Roman",
+    FontSize->20], TraditionalForm]],ExpressionUUID->
+  "8dbe155c-0257-4ef6-a281-9997921236ab"],
+ StyleBox[" ",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    StyleBox[
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SubsuperscriptBox["g", "V", 
+          RowBox[{"\[Nu]", "-", 
+           StyleBox[
+            RowBox[{"Z", " ", "'"}],
+            FontSize->10]}]], ")"}], "2"], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SubsuperscriptBox["g", "A", 
+          RowBox[{"\[Nu]", "-", 
+           StyleBox[
+            RowBox[{"Z", " ", "'"}],
+            FontSize->10]}]], ")"}], "2"], "+", 
+       RowBox[{"2", " ", 
+        StyleBox[
+         FractionBox[
+          StyleBox[
+           SuperscriptBox[
+            SubscriptBox["m", "\[Nu]"], "2"],
+           FontSize->16], 
+          StyleBox[
+           SubsuperscriptBox["M", 
+            StyleBox[
+             RowBox[{"Z", " ", "'"}],
+             FontSize->10], 
+            RowBox[{"   ", "2"}]],
+           FontSize->16]],
+         FontSize->18], " ", 
+        RowBox[{"(", " ", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            SubsuperscriptBox["g", "V", 
+             RowBox[{"\[Nu]", "-", 
+              StyleBox[
+               RowBox[{"Z", " ", "'"}],
+               FontSize->10]}]], ")"}], "2"], "-", 
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             SubsuperscriptBox["g", "A", 
+              RowBox[{"\[Nu]", "-", 
+               StyleBox[
+                RowBox[{"Z", " ", "'"}],
+                FontSize->10]}]], ")"}], "2"]}]}], " ", ")"}]}]}],
+      HoldForm],
+     FontFamily->"Times New Roman",
+     FontWeight->"Regular"], 
+    StyleBox[")",
+     FontFamily->"Times New Roman",
+     FontWeight->"Regular"]}], TraditionalForm]],
+  CellChangeTimes->{{3.794508127969803*^9, 3.7945081754994235`*^9}, {
+   3.7945084725542464`*^9, 3.794508585701193*^9}},ExpressionUUID->
+  "8a4b43bc-9c63-4140-9f08-23024bff63d8"],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    SqrtBox[
+     RowBox[{"1", "-", 
+      RowBox[{"4", 
+       StyleBox[
+        FractionBox[
+         StyleBox[
+          SuperscriptBox[
+           SubscriptBox["m", "\[Nu]"], "2"],
+          FontSize->14], 
+         StyleBox[
+          SubsuperscriptBox["M", 
+           StyleBox[
+            RowBox[{"Z", " ", "'"}],
+            FontSize->10], 
+           RowBox[{"   ", "2"}]],
+          FontSize->16]],
+        FontSize->13]}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14], TraditionalForm]],ExpressionUUID->
+  "ee3f0aaf-f3fe-4e75-bb35-488f964454f5"],
+ "\n\n",
+ StyleBox["Massless fermions:",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ "\n\n",
+ StyleBox["\[CapitalGamma] ",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ StyleBox["(",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"Z", "'"}],
+    FontSize->16], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"682a54aa-1f06-4e1c-a5f2-4de09cc8079f"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Rule]", 
+    RowBox[{"\[Nu]", 
+     OverscriptBox["\[Nu]", "_"]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"b96253bc-0275-42d1-ab80-db67a6b30f6d"],
+ StyleBox[")",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ StyleBox[" =  ",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SubsuperscriptBox[
+       StyleBox["g",
+        FontSize->16], 
+       RowBox[{" ", "PQ"}], "2"], 
+      SubscriptBox[
+       StyleBox["M",
+        FontSize->16], 
+       StyleBox[
+        RowBox[{"Z", " ", "'"}],
+        FontSize->10]]}], 
+     StyleBox[
+      RowBox[{
+       StyleBox["12",
+        FontSlant->"Plain"], 
+       StyleBox["\[Pi]",
+        FontSlant->"Plain"], " "}],
+      FontSize->16]],
+    FontFamily->"Times New Roman",
+    FontSize->20], TraditionalForm]],ExpressionUUID->
+  "0d514685-c793-4ad1-840e-49610d58eb61"],
+ StyleBox[" ",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    TagBox[
+     RowBox[{" ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SubsuperscriptBox["g", "V", 
+          RowBox[{"\[Nu]", "-", 
+           StyleBox[
+            RowBox[{"Z", " ", "'"}],
+            FontSize->10]}]], ")"}], "2"], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SubsuperscriptBox["g", "A", 
+          RowBox[{"\[Nu]", "-", 
+           StyleBox[
+            RowBox[{"Z", " ", "'"}],
+            FontSize->10]}]], ")"}], "2"]}], " ", ")"}],
+     HoldForm]}], TraditionalForm]],
+  CellChangeTimes->{{3.794508127969803*^9, 3.7945081754994235`*^9}, {
+   3.7945084725542464`*^9, 3.794508585701193*^9}},
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular",ExpressionUUID->
+  "6e734483-35c3-4011-ab0f-00b83b5a6b84"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["g", "V", 
+     RowBox[{"\[Nu]", "-", 
+      StyleBox[
+       RowBox[{"Z", " ", "'"}],
+       FontSize->10]}]], "=", 
+    RowBox[{
+     StyleBox[
+      FractionBox["1", "2"],
+      FontSize->20], 
+     RowBox[{"(", 
+      RowBox[{
+       SubsuperscriptBox["C", 
+        SubscriptBox["\[Nu]", "Li"], 
+        StyleBox[
+         RowBox[{"Z", " ", "'"}],
+         FontSize->10]], "+", 
+       SubsuperscriptBox["C", 
+        SubscriptBox["\[Nu]", "Ri"], 
+        StyleBox[
+         RowBox[{"Z", " ", "'"}],
+         FontSize->10]]}], ")"}]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "b9dea5d9-f85a-498f-8295-312106ef0c51"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["g", "A", 
+     RowBox[{"\[Nu]", "-", 
+      StyleBox[
+       RowBox[{"Z", " ", "'"}],
+       FontSize->10]}]], "=", 
+    RowBox[{
+     StyleBox[
+      FractionBox["1", "2"],
+      FontSize->20], 
+     RowBox[{"(", 
+      RowBox[{
+       SubsuperscriptBox["C", 
+        SubscriptBox["\[Nu]", "Li"], 
+        StyleBox[
+         RowBox[{"Z", " ", "'"}],
+         FontSize->10]], "-", 
+       SubsuperscriptBox["C", 
+        SubscriptBox["\[Nu]", "Ri"], 
+        StyleBox[
+         RowBox[{"Z", " ", "'"}],
+         FontSize->10]]}], ")"}]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "323bd787-ad15-43c0-8100-3c852a62dd0f"],
+ "\n\n",
+ StyleBox["Bring Back in ",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ StyleBox["I",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular",
+  FontSlant->"Italic"],
+ StyleBox[" index:",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["C", 
+    SubscriptBox["\[Nu]", "Li"], 
+    StyleBox[
+     RowBox[{
+      SubscriptBox["Z", "I"], "'"}],
+     FontSize->10]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "d03ca38c-30a2-4409-b869-ff29d2e0c71e"],
+ Cell[BoxData[
+  RowBox[{"=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      StyleBox[
+       FractionBox[
+        StyleBox["1",
+         FontSize->14.200000000000001`,
+         FontSlant->"Plain"], 
+        StyleBox["4",
+         FontSize->14.200000000000001`,
+         FontSlant->"Plain"]],
+       FontSize->12,
+       FontSlant->"Plain"]}], 
+     SuperscriptBox["g", "2"], 
+     SubscriptBox["\[Epsilon]", 
+      StyleBox["I",
+       FontSize->11.36,
+       FontSlant->"Italic"]]}], "+", 
+    RowBox[{"\[Sum]", 
+     StyleBox[
+      RowBox[{
+       SubsuperscriptBox["q", "J", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "L"], ")"}]], 
+       SubscriptBox["g", "J"], 
+       SubscriptBox["X", "JI"]}],
+      FontSlant->"Italic"]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "c5cce04b-e5e7-46ec-a774-64031535198d"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["C", 
+    SubscriptBox["\[Nu]", "Ri"], 
+    StyleBox[
+     RowBox[{
+      SubscriptBox["Z", "I"], "'"}],
+     FontSize->10]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "18473e32-0caa-4101-a452-4495c609c272"],
+ Cell[BoxData[
+  RowBox[{"=", 
+   RowBox[{"\[Sum]", 
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["q", "J", 
+       RowBox[{"(", 
+        SubscriptBox["\[Nu]", "R"], ")"}]], 
+      SubscriptBox["g", "J"], 
+      SubscriptBox["X", "JI"]}],
+     FontSlant->"Italic"]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "27fa5ba4-2e97-428b-a936-7d7d8784054a"],
+ "\n\n",
+ Cell[BoxData[
+  SubscriptBox["X", "JI"]],
+  FontFamily->"Times New Roman",ExpressionUUID->
+  "6e2cbd45-0db5-4649-aa54-0945c971d8e7"],
+ " ",
+ Cell[BoxData[
+  RowBox[{"=", 
+   RowBox[{
+    SubscriptBox["\[Delta]", 
+     StyleBox["JI",
+      FontSize->11.36,
+      FontSlant->"Italic"]], "+", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"\[Sum]", 
+       RowBox[{
+        StyleBox[
+         FractionBox["1", "2"],
+         FontSize->20], 
+        FractionBox[
+         StyleBox[
+          SubscriptBox[
+           StyleBox["N",
+            FontSize->15], "JI"],
+          FontSize->11.36,
+          FontSlant->"Italic"], 
+         StyleBox[
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["M", "J"], "2"], "-", 
+           SuperscriptBox[
+            SubscriptBox["M", "I"], "2"]}],
+          FontSize->13,
+          FontSlant->"Italic"]]}]}], ",", 
+      StyleBox[
+       RowBox[{"J", "\[NotEqual]", "I"}],
+       FontSize->12]}], ")"}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "85382864-3481-4566-a8fa-884cd4b2f125"],
+ "\n\n",
+ Cell[BoxData[
+  SubscriptBox["\[Epsilon]", 
+   StyleBox["I",
+    FontSize->11.36,
+    FontSlant->"Italic"]]],
+  FontFamily->"Times New Roman",ExpressionUUID->
+  "5c8fb7e6-913f-4bd0-8ef8-288a78f15a7a"],
+ StyleBox[" = ",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    FractionBox[
+     SubscriptBox["x", "I"], 
+     SuperscriptBox[
+      SubscriptBox["M", "I"], "2"]],
+    FontSize->20], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular",ExpressionUUID->
+  "ff3f57cc-7d91-4f61-9a98-5e04a6bf7a52"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    SubscriptBox["M", "I"], "2"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"c6cec772-397e-4b66-b97c-395d935219b6"],
+ StyleBox[" = ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", 
+    RowBox[{"(", " ", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        SubsuperscriptBox["M", 
+         StyleBox[
+          RowBox[{"Z", " ", "'"}],
+          FontSize->10], 
+         RowBox[{"  ", "I"}]], ")"}], "2"], "-", 
+      RowBox[{
+       StyleBox[
+        FractionBox[
+         StyleBox["1",
+          FontSize->14.200000000000001`,
+          FontSlant->"Plain"], 
+         StyleBox["4",
+          FontSize->14.200000000000001`,
+          FontSlant->"Plain"]],
+        FontSize->12,
+        FontSlant->"Plain"], 
+       SubscriptBox["N", 
+        StyleBox["II",
+         FontSize->11.36,
+         FontSlant->"Italic"]]}]}], " ", ")"}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"907e3ef6-0ee9-4f45-b7f6-7e2a68ac3078"],
+ StyleBox["\n\n",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  SubscriptBox[
+   StyleBox["N",
+    FontSlant->"Italic"], 
+   StyleBox["JI",
+    FontSize->11,
+    FontSlant->"Italic"]]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"ed38b4a1-0111-453a-96f9-13c2da67792f"],
+ StyleBox[" = ( ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "u", 
+    RowBox[{" ", "J"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"18599403-1935-45a0-a171-725ac3c36e4c"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["q", "u", 
+     RowBox[{" ", "I"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"76c04fd6-2b31-4d6b-a1ef-c7709f98c5de"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["v", "u", 
+     RowBox[{" ", "2"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"030c820c-65e2-49b8-9695-ef560d5b2c26"],
+ StyleBox[" + ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "d", 
+    RowBox[{" ", "J"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"0e5752d5-fb87-4b6d-bf8f-f5b5c05c76e6"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["q", "d", 
+     RowBox[{" ", "I"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"fed88765-6dfb-4b5d-a4b5-db615f156c93"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["v", "d", 
+     RowBox[{" ", "2"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"d17f08b1-94ed-4852-9db3-7f0ce4c321b0"],
+ StyleBox[" )",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["g", "J"]}], TraditionalForm]],ExpressionUUID->
+  "e13cb071-e60c-4471-ac4c-bc1fca14d5eb"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["g", "I"]}], TraditionalForm]],ExpressionUUID->
+  "b08a5b74-9636-4fd3-8287-590392500aa5"],
+ StyleBox["\n\n",
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox[
+     SubscriptBox["N", 
+      StyleBox["II",
+       FontSize->11,
+       FontSlant->"Italic"]],
+     FontSize->16], 
+    StyleBox["=",
+     FontSlant->"Plain"], 
+    RowBox[{"(", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       SubsuperscriptBox["q", "u", "I"], ")"}], 
+      RowBox[{" ", "2"}]]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"6d791c45-a364-4945-9ac1-5b9f354fa09d"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["v", "u", 
+     RowBox[{"  ", "2"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"cb0a7897-ec63-4e2b-9ee5-ef1605d7662b"],
+ StyleBox[" + ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{
+       RowBox[{"(", 
+        SubsuperscriptBox["q", "d", "I"], ")"}], " "}], "2"], 
+     SubsuperscriptBox["v", "d", 
+      RowBox[{"  ", "2"}]]}], " ", ")"}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"d49db1e9-4c94-4c58-b412-9e087a896612"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      SubscriptBox["g", "I"], ")"}], 
+     RowBox[{" ", "2"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"428cbac2-822b-45e7-b59a-77cd82988b26"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["x", "I"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"d132e86a-c0db-43cd-bbec-91df50d110d5"],
+ StyleBox[" = (",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", 
+    RowBox[{"u", " "}], 
+    RowBox[{" ", "I"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"626bf968-acb2-4fce-b82e-19bf4b53e8d3"],
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["v", "u", 
+    RowBox[{" ", "2"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"c729e97c-235a-44ed-989f-6127892c4f74"],
+ StyleBox["+ ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "d", 
+    RowBox[{" ", "I"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"bebfd0f2-4c22-4e0d-a891-7f73fc61b48a"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["v", "d", 
+     RowBox[{" ", "2"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"8e5b664b-8cd4-4033-b5db-2cb72f13d7e2"],
+ StyleBox[")",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["g", "I"]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"d1296f10-0a41-41a6-81a3-fc47752433a6"]
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJwl0VtM0gEUBnDGrB50RBcRGS2Fpa5IjdTavJS0CSI1Y46l9mCaURoSTSnn
+WhaunMxUkizDcFpabJojkuVcKlhSGXNOS5tLWljkBV1hZrkZ35+Hs9/OzsN3
+dk5orlycTyaRSAe8Bbv7Yu8K+PPJIwPBjTBypbAdnjwT/Bwmpa1aYJbUY4Vb
+5zRvoWefe5qYN0/NwG7JRReMqC7zwE37+5ZhnjtnDT7WdxAGlBeRUr0KhzL9
+4HA1eTPca6cRamLvB8EmATMCdg6boyBj1J4Ma4q2CGH2Wm02dKgWzsF69aFC
++NLklkMO2a6CLfKr9UReza8G6NkWpIOB/AbCpaqnzfCBbJmQweoww49svRX2
+GwdtcM7AnIAlk+GfobGnx0XkzRcswFt+navw4MQFf6HXjOMkKrSXSWmw1yIN
+he3KVA6kq3yO/XsUDbsop+JgZmlUIvzDfMeDWSo2H+orukQwoYAnhryQCQmc
+HbVnw6Irr2RQdLRNAZNMOUpoCzOroE5DfQhTKgaeQGf+RiOMCJh5AduKW4dg
+valuGE4Pvh+DylLdF8gP8fsK48WcH1BWfmcRbvg7tAIdzQZqGvYOXw6ENzKn
+dsApii4GsiebBPDsbNUl2O+WqCErhlsDqZVxWvjhzXojNAlzW6E8PqML0rrl
+o1B9ZOwTrK0cd0DLt2gXLE1sX4KLKc51SDnv87fOSRd5/bnIYkCj6lkYPLxr
+527YYkuIJPqRE1xYvOdmASR/v10CL/O0vZDur7VAT7pMe8yrodzntdbtVnjv
+dN1reH1c4UjHXdPNhPmKPJIYf+DqCP8DyCekOQ==
+  
+  "],ExpressionUUID->"436c5c03-ed24-4e6c-bd99-889f5b1cdf55"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Substitute",
+ FontFamily->"Times New Roman",
+ FontWeight->"Regular"]], "Section",
+ CellChangeTimes->{{3.7954786913715277`*^9, 
+  3.795478694644471*^9}},ExpressionUUID->"05bd9d2d-3509-4b31-a2d1-\
+e16e3f04f776"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["C", 
+    SubscriptBox["\[Nu]", "Li"], 
+    StyleBox[
+     RowBox[{
+      SubscriptBox["Z", "I"], "'"}],
+     FontSize->10]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "6e7e0d8f-5241-4db9-931c-4978cd7c2361"],
+ Cell[BoxData[
+  RowBox[{"=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      StyleBox[
+       FractionBox[
+        StyleBox["1",
+         FontSize->14.200000000000001`,
+         FontSlant->"Plain"], 
+        StyleBox["4",
+         FontSize->14.200000000000001`,
+         FontSlant->"Plain"]],
+       FontSize->12,
+       FontSlant->"Plain"]}], 
+     SuperscriptBox["g", "2"], 
+     FormBox[
+      StyleBox[
+       FractionBox[
+        SubscriptBox["x", "I"], 
+        SuperscriptBox[
+         SubscriptBox["M", "I"], "2"]],
+       FontSize->20],
+      TraditionalForm]}], "+", 
+    RowBox[{"\[Sum]", 
+     RowBox[{
+      StyleBox[
+       SubsuperscriptBox["q", "J", 
+        RowBox[{" ", 
+         RowBox[{"(", 
+          SubscriptBox["\[Nu]", "L"], ")"}]}]],
+       FontSlant->"Italic"], 
+      StyleBox[
+       SubscriptBox["g", "J"],
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Italic"], 
+       RowBox[{
+        StyleBox[
+         SubscriptBox["\[Delta]", 
+          StyleBox["JI",
+           FontSize->11.36,
+           FontSlant->"Italic"]],
+         FontSlant->"Italic"], "+", 
+        StyleBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Sum]", 
+            RowBox[{
+             StyleBox[
+              FractionBox[
+               StyleBox["1",
+                FontSize->14.2,
+                FontSlant->"Plain"], 
+               StyleBox["2",
+                FontSize->14.2,
+                FontSlant->"Plain"]],
+              FontSize->20], 
+             FractionBox[
+              StyleBox[
+               SubscriptBox[
+                StyleBox["N",
+                 FontSize->15], "JI"],
+               FontSize->11.36,
+               FontSlant->"Italic"], 
+              StyleBox[
+               RowBox[{
+                SuperscriptBox[
+                 SubscriptBox["M", "J"], "2"], "-", 
+                SuperscriptBox[
+                 SubscriptBox["M", "I"], "2"]}],
+               FontSize->13,
+               FontSlant->"Italic"]]}]}], ",", 
+           StyleBox[
+            RowBox[{"J", "\[NotEqual]", "I"}],
+            FontSize->12]}], ")"}],
+         FontSlant->"Italic"]}], 
+       StyleBox[")",
+        FontSlant->"Italic"]}]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "87c695e9-4b36-4209-aa25-a5aee4b8aa20"],
+ "\n\n= ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     StyleBox[
+      FractionBox[
+       StyleBox["1",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"], 
+       StyleBox["4",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"]],
+      FontSize->12,
+      FontSlant->"Plain"]}], 
+    SuperscriptBox["g", "2"], 
+    FormBox[
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        RowBox[{
+         StyleBox["(",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"], 
+         RowBox[{
+          RowBox[{
+           FormBox[
+            SubsuperscriptBox["q", 
+             RowBox[{"u", " "}], 
+             RowBox[{" ", "I"}]],
+            TraditionalForm], 
+           FormBox[
+            SubsuperscriptBox["v", "u", 
+             RowBox[{" ", "2"}]],
+            TraditionalForm]}], " ", "+", 
+          StyleBox[" ",
+           FontFamily->"Times New Roman",
+           FontSize->16,
+           FontWeight->"Regular",
+           FontSlant->"Italic"], 
+          RowBox[{
+           FormBox[
+            SubsuperscriptBox["q", "d", 
+             RowBox[{" ", "I"}]],
+            TraditionalForm], 
+           FormBox[
+            RowBox[{" ", 
+             SubsuperscriptBox["v", "d", 
+              RowBox[{" ", "2"}]]}],
+            TraditionalForm]}]}], 
+         StyleBox[")",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"]}], 
+        FormBox[
+         RowBox[{" ", 
+          SubscriptBox["g", "I"]}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             SubsuperscriptBox["M", 
+              StyleBox[
+               RowBox[{"Z", " ", "'"}],
+               FontSize->10], 
+              RowBox[{"  ", "I"}]], ")"}], "2"], "-", 
+           RowBox[{
+            StyleBox[
+             FractionBox["1", "4"],
+             FontSize->20], 
+            SubscriptBox["N", 
+             StyleBox["II",
+              FontSize->11.36,
+              FontSlant->"Italic"]]}]}], 
+          StyleBox[" ",
+           FontFamily->"Times New Roman",
+           FontSize->16,
+           FontWeight->"Regular"], 
+          StyleBox[")",
+           FontFamily->"Times New Roman",
+           FontSize->16,
+           FontWeight->"Regular"]}]}],
+        TraditionalForm]],
+      FontSize->20],
+     TraditionalForm]}], "+", 
+   RowBox[{"\[Sum]", 
+    RowBox[{
+     StyleBox[
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "L"], ")"}]}]],
+      FontSlant->"Italic"], 
+     StyleBox[
+      SubscriptBox["g", "J"],
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox["(",
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox[
+        SubscriptBox["\[Delta]", 
+         StyleBox["JI",
+          FontSize->11.36,
+          FontSlant->"Italic"]],
+        FontSlant->"Italic"], "+", 
+       RowBox[{
+        StyleBox["(",
+         FontSlant->"Italic"], 
+        RowBox[{
+         RowBox[{
+          StyleBox["\[Sum]",
+           FontSlant->"Italic"], 
+          RowBox[{
+           StyleBox[
+            FractionBox[
+             StyleBox["1",
+              FontSize->14.2,
+              FontSlant->"Plain"], 
+             StyleBox["2",
+              FontSize->14.2,
+              FontSlant->"Plain"]],
+            FontSize->20], 
+           StyleBox[
+            FractionBox[
+             RowBox[{
+              RowBox[{
+               StyleBox["(",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[
+                RowBox[{
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox["+",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}]}],
+                FontSize->14.2], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[")",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"]}], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "J"]}],
+                TraditionalForm],
+               FontSize->14.2], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "I"]}],
+                TraditionalForm],
+               FontSize->14.2]}], 
+             StyleBox[
+              RowBox[{
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", " ", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], ")"}], "2"], "-", " ", 
+                   RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                    SubscriptBox["N", "JJ"]}]}], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"], 
+                  StyleBox[")",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"]}]}],
+                TraditionalForm], "-", 
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", " ", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], ")"}], "2"], "-", " ", 
+                   RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                    SubscriptBox["N", 
+                    StyleBox["II",
+                    FontSize->11.36,
+                    FontSlant->"Italic"]]}]}], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"], 
+                  StyleBox[")",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"]}]}],
+                TraditionalForm]}],
+              FontSize->13,
+              FontSlant->"Italic"]],
+            FontSlant->"Italic"]}]}], 
+         StyleBox[",",
+          FontSlant->"Italic"], 
+         StyleBox[
+          RowBox[{"J", "\[NotEqual]", "I"}],
+          FontSize->12,
+          FontSlant->"Italic"]}], 
+        StyleBox[")",
+         FontSlant->"Italic"]}]}], 
+      StyleBox[")",
+       FontSlant->"Italic"]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "2b0d435c-a142-449d-a6c4-db789e9b97da"],
+ "\n\n= ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     StyleBox[
+      FractionBox[
+       StyleBox["1",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"], 
+       StyleBox["4",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"]],
+      FontSize->12,
+      FontSlant->"Plain"]}], 
+    SuperscriptBox["g", "2"], 
+    FormBox[
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        RowBox[{
+         StyleBox["(",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"], 
+         RowBox[{
+          RowBox[{
+           FormBox[
+            SubsuperscriptBox["q", 
+             RowBox[{"u", " "}], 
+             RowBox[{" ", "I"}]],
+            TraditionalForm], 
+           FormBox[
+            SubsuperscriptBox["v", "u", 
+             RowBox[{" ", "2"}]],
+            TraditionalForm]}], " ", "+", 
+          StyleBox[" ",
+           FontFamily->"Times New Roman",
+           FontSize->16,
+           FontWeight->"Regular",
+           FontSlant->"Italic"], 
+          RowBox[{
+           FormBox[
+            SubsuperscriptBox["q", "d", 
+             RowBox[{" ", "I"}]],
+            TraditionalForm], 
+           FormBox[
+            RowBox[{" ", 
+             SubsuperscriptBox["v", "d", 
+              RowBox[{" ", "2"}]]}],
+            TraditionalForm]}]}], 
+         StyleBox[")",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"]}], 
+        FormBox[
+         RowBox[{" ", 
+          SubscriptBox["g", "I"]}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             SubsuperscriptBox["M", 
+              StyleBox[
+               RowBox[{"Z", " ", "'"}],
+               FontSize->10], 
+              RowBox[{"  ", "I"}]], ")"}], "2"], "-", 
+           RowBox[{
+            StyleBox[
+             FractionBox["1", "4"],
+             FontSize->20], 
+            StyleBox[
+             RowBox[{"(", 
+              FormBox[
+               RowBox[{
+                RowBox[{"(", " ", 
+                 RowBox[{
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", "I"], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                   SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontWeight->"Regular",
+                   FontSlant->"Italic"], 
+                  StyleBox["+",
+                   FontFamily->"Times New Roman",
+                   FontWeight->"Regular",
+                   FontSlant->"Italic"], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontWeight->"Regular",
+                   FontSlant->"Italic"], 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", "I"], ")"}], " "}], "2"], 
+                   SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}]}], " ", ")"}], " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  SubscriptBox["g", "I"], ")"}], 
+                 RowBox[{" ", "2"}]]}],
+               TraditionalForm], ")"}],
+             FontSize->14]}]}], 
+          StyleBox[" ",
+           FontSize->14], 
+          StyleBox[")",
+           FontSize->14]}]}],
+        TraditionalForm]],
+      FontSize->20],
+     TraditionalForm]}], "+", 
+   RowBox[{"\[Sum]", 
+    RowBox[{
+     StyleBox[
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "L"], ")"}]}]],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     StyleBox[
+      SubscriptBox["g", "J"],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox["(",
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox[
+        SubscriptBox["\[Delta]", 
+         StyleBox["JI",
+          FontSize->11.36,
+          FontSlant->"Italic"]],
+        FontSlant->"Italic"], "+", 
+       RowBox[{
+        StyleBox["(",
+         FontSlant->"Italic"], 
+        RowBox[{
+         RowBox[{
+          StyleBox["\[Sum]",
+           FontSlant->"Italic"], 
+          RowBox[{
+           StyleBox[
+            FractionBox[
+             StyleBox["1",
+              FontSize->14.2,
+              FontSlant->"Plain"], 
+             StyleBox["2",
+              FontSize->14.2,
+              FontSlant->"Plain"]],
+            FontSize->20], 
+           StyleBox[
+            FractionBox[
+             RowBox[{
+              RowBox[{
+               StyleBox["(",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[
+                RowBox[{
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox["+",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}]}],
+                FontSize->14.2], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[")",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"]}], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "J"]}],
+                TraditionalForm],
+               FontSize->14], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "I"]}],
+                TraditionalForm],
+               FontSize->14]}], 
+             StyleBox[
+              RowBox[{
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", " ", 
+                   StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"], 
+                  StyleBox[")",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"]}]}],
+                TraditionalForm], "-", 
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", " ", 
+                   StyleBox[
+                    RowBox[{
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]], 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", " ", 
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}]}], " ", ")"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                    RowBox[{" ", "2"}]]}], ")"}]}],
+                    FontSize->12,
+                    FontSlant->"Plain"]}], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"], 
+                  StyleBox[")",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular"]}]}],
+                TraditionalForm]}],
+              FontSize->13,
+              FontSlant->"Italic"]],
+            FontSlant->"Italic"]}]}], 
+         StyleBox[",",
+          FontSlant->"Italic"], 
+         StyleBox[
+          RowBox[{"J", "\[NotEqual]", "I"}],
+          FontSize->12,
+          FontSlant->"Italic"]}], 
+        StyleBox[")",
+         FontSlant->"Italic"]}]}], 
+      StyleBox[")",
+       FontSlant->"Italic"]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "be751e94-e72d-46f3-ad35-e64580a052e7"],
+ "\n\n= ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     StyleBox[
+      FractionBox[
+       StyleBox["1",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"], 
+       StyleBox["4",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"]],
+      FontSize->12,
+      FontSlant->"Plain"]}], 
+    SuperscriptBox["g", "2"], 
+    FormBox[
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        StyleBox["(",
+         FontFamily->"Times New Roman",
+         FontSize->16,
+         FontWeight->"Regular",
+         FontSlant->"Italic"], 
+        RowBox[{
+         RowBox[{
+          FormBox[
+           SubsuperscriptBox["q", 
+            RowBox[{"u", " "}], 
+            RowBox[{" ", "I"}]],
+           TraditionalForm], 
+          FormBox[
+           SubsuperscriptBox["v", "u", 
+            RowBox[{" ", "2"}]],
+           TraditionalForm]}], " ", "+", 
+         StyleBox[" ",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"], 
+         RowBox[{
+          FormBox[
+           SubsuperscriptBox["q", "d", 
+            RowBox[{" ", "I"}]],
+           TraditionalForm], 
+          FormBox[
+           RowBox[{" ", 
+            SubsuperscriptBox["v", "d", 
+             RowBox[{" ", "2"}]]}],
+           TraditionalForm]}]}], 
+        StyleBox[")",
+         FontFamily->"Times New Roman",
+         FontSize->16,
+         FontWeight->"Regular",
+         FontSlant->"Italic"]}], 
+       FormBox[
+        RowBox[{"2", 
+         SubscriptBox["g", "I"], " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox[
+              SubsuperscriptBox["M", 
+               StyleBox[
+                RowBox[{"Z", " ", "'"}],
+                FontSize->10], 
+               RowBox[{"  ", "I"}]], 
+              SubscriptBox["g", "I"]], ")"}], "2"], 
+           StyleBox["-",
+            FontSlant->"Plain"], 
+           StyleBox[" ",
+            FontSlant->"Plain"], 
+           RowBox[{
+            StyleBox[
+             FractionBox[
+              StyleBox["1",
+               FontSize->14.200000000000001`,
+               FontSlant->"Plain"], 
+              StyleBox["4",
+               FontSize->14.200000000000001`,
+               FontSlant->"Plain"]],
+             FontSize->12,
+             FontSlant->"Plain"], 
+            StyleBox[
+             RowBox[{"(", 
+              FormBox[
+               RowBox[{" ", 
+                RowBox[{
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                   RowBox[{" ", "2"}]], " ", 
+                  SubsuperscriptBox["v", "u", 
+                   RowBox[{"  ", "2"}]]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], "+", 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                  SubsuperscriptBox["v", "d", 
+                   RowBox[{"  ", "2"}]], " "}]}]}],
+               TraditionalForm], ")"}],
+             FontSize->14]}]}], 
+          StyleBox[" ",
+           FontSize->14], 
+          StyleBox[")",
+           FontSize->14]}]}],
+        TraditionalForm]],
+      FontSize->20],
+     TraditionalForm]}], "+", 
+   RowBox[{"\[Sum]", 
+    RowBox[{
+     StyleBox[
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "L"], ")"}]}]],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     StyleBox[
+      SubscriptBox["g", "J"],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox["(",
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox[
+        SubscriptBox["\[Delta]", 
+         StyleBox["JI",
+          FontSize->11.36,
+          FontSlant->"Italic"]],
+        FontSlant->"Italic"], "+", 
+       RowBox[{
+        StyleBox["(",
+         FontSlant->"Italic"], 
+        RowBox[{
+         RowBox[{
+          StyleBox["\[Sum]",
+           FontSlant->"Italic"], 
+          RowBox[{
+           StyleBox[
+            FractionBox[
+             StyleBox["1",
+              FontSize->14.2,
+              FontSlant->"Plain"], 
+             StyleBox["2",
+              FontSize->14.2,
+              FontSlant->"Plain"]],
+            FontSize->20], 
+           StyleBox[
+            FractionBox[
+             RowBox[{
+              RowBox[{
+               StyleBox["(",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               RowBox[{
+                StyleBox[
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}],
+                 FontSize->14.2], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox["+",
+                 FontSize->14,
+                 FontSlant->"Plain"], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox[
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}],
+                 FontSize->14.2]}], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[")",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"]}], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "J"]}],
+                TraditionalForm],
+               FontSize->14], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "I"]}],
+                TraditionalForm],
+               FontSize->14]}], 
+             StyleBox[
+              RowBox[{
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                   RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], 
+                    StyleBox[
+                    SubscriptBox["g", "J"],
+                    FontSlant->"Plain"]], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    StyleBox["-",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}]}]}],
+                TraditionalForm], "-", 
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                    RowBox[{" ", "2"}]], 
+                   RowBox[{"(", " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], 
+                    SubscriptBox["g", "I"]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", " ", 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], ")"}]}]}]}],
+                TraditionalForm]}],
+              FontSize->13,
+              FontSlant->"Italic"]],
+            FontSlant->"Italic"]}]}], 
+         StyleBox[",",
+          FontSlant->"Italic"], 
+         StyleBox[
+          RowBox[{"J", "\[NotEqual]", "I"}],
+          FontSize->12,
+          FontSlant->"Italic"]}], 
+        StyleBox[")",
+         FontSlant->"Italic"]}]}], 
+      StyleBox[")",
+       FontSlant->"Italic"]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "c4939677-af24-45e2-9fab-c29688fd572a"],
+ "\n\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["C", 
+    SubscriptBox["\[Nu]", "Ri"], 
+    StyleBox[
+     RowBox[{
+      SubscriptBox["Z", "I"], "'"}],
+     FontSize->10]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "a382711c-2132-42ce-a3b2-f4606bdaf64a"],
+ Cell[BoxData[
+  RowBox[{"=", 
+   RowBox[{"\[Sum]", 
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["q", "J", 
+       RowBox[{"(", 
+        SubscriptBox["\[Nu]", "R"], ")"}]], 
+      SubscriptBox["g", "J"], 
+      SubscriptBox["X", "JI"]}],
+     FontSlant->"Italic"]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "f6d4c541-5512-483b-b0a8-e8567404724e"],
+ "\n\n=  ",
+ Cell[BoxData[
+  RowBox[{"\[Sum]", 
+   RowBox[{
+    StyleBox[
+     SubsuperscriptBox["q", "J", 
+      RowBox[{" ", 
+       RowBox[{"(", 
+        SubscriptBox["\[Nu]", "R"], ")"}]}]],
+     FontSlant->"Italic"], 
+    StyleBox[
+     SubscriptBox["g", 
+      RowBox[{"J", " "}]],
+     FontSlant->"Italic"], 
+    RowBox[{
+     StyleBox["(",
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox[
+       SubscriptBox["\[Delta]", 
+        StyleBox["JI",
+         FontSize->11.36,
+         FontSlant->"Italic"]],
+       FontSlant->"Italic"], "+", 
+      StyleBox[
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[Sum]", 
+          RowBox[{
+           StyleBox[
+            FractionBox[
+             StyleBox["1",
+              FontSize->14.2,
+              FontSlant->"Plain"], 
+             StyleBox["2",
+              FontSize->14.2,
+              FontSlant->"Plain"]],
+            FontSize->20], 
+           FractionBox[
+            StyleBox[
+             SubscriptBox[
+              StyleBox["N",
+               FontSize->15], "JI"],
+             FontSize->11.36,
+             FontSlant->"Italic"], 
+            StyleBox[
+             RowBox[{
+              SuperscriptBox[
+               SubscriptBox["M", "J"], "2"], "-", 
+              SuperscriptBox[
+               SubscriptBox["M", "I"], "2"]}],
+             FontSize->13,
+             FontSlant->"Italic"]]}]}], ",", 
+         StyleBox[
+          RowBox[{"J", "\[NotEqual]", "I"}],
+          FontSize->12]}], ")"}],
+       FontSlant->"Italic"]}], 
+     StyleBox[")",
+      FontSlant->"Italic"]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "8dc71393-d56e-44c5-82fd-5b23b91dfe18"],
+ "\n\n=  ",
+ Cell[BoxData[
+  RowBox[{"\[Sum]", 
+   RowBox[{
+    StyleBox[
+     SubsuperscriptBox["q", "J", 
+      RowBox[{" ", 
+       RowBox[{"(", 
+        SubscriptBox["\[Nu]", "R"], ")"}]}]],
+     FontSize->15,
+     FontSlant->"Italic"], 
+    StyleBox[
+     SubscriptBox["g", 
+      RowBox[{"J", " "}]],
+     FontSize->15,
+     FontSlant->"Italic"], 
+    RowBox[{
+     StyleBox["(",
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox[
+       SubscriptBox["\[Delta]", 
+        StyleBox["JI",
+         FontSize->11.36,
+         FontSlant->"Italic"]],
+       FontSlant->"Italic"], "+", 
+      StyleBox[
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[Sum]", 
+          RowBox[{
+           StyleBox[
+            FractionBox[
+             StyleBox["1",
+              FontSize->14.2,
+              FontSlant->"Plain"], 
+             StyleBox["2",
+              FontSize->14.2,
+              FontSlant->"Plain"]],
+            FontSize->20], 
+           FractionBox[
+            RowBox[{
+             RowBox[{
+              StyleBox["(",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"], 
+              StyleBox[" ",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"], 
+              StyleBox[
+               RowBox[{
+                RowBox[{
+                 FormBox[
+                  SubsuperscriptBox["q", "u", 
+                   RowBox[{" ", "J"}]],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                  TraditionalForm]}], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox["+",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                RowBox[{
+                 FormBox[
+                  SubsuperscriptBox["q", "d", 
+                   RowBox[{" ", "J"}]],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                  TraditionalForm]}]}],
+               FontSize->14.2], 
+              StyleBox[" ",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"], 
+              StyleBox[")",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"]}], 
+             StyleBox[
+              FormBox[
+               RowBox[{" ", 
+                SubscriptBox["g", "J"]}],
+               TraditionalForm],
+              FontSize->14], 
+             StyleBox[
+              FormBox[
+               RowBox[{" ", 
+                SubscriptBox["g", "I"]}],
+               TraditionalForm],
+              FontSize->14]}], 
+            StyleBox[
+             RowBox[{
+              FormBox[
+               RowBox[{"2", " ", 
+                RowBox[{"(", " ", 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], ")"}], 
+                   RowBox[{" ", "2"}]], "-", " ", 
+                  StyleBox[
+                   RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                   FontSize->12]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular"], 
+                 StyleBox[")",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular"]}]}],
+               TraditionalForm], "-", 
+              FormBox[
+               RowBox[{"2", " ", 
+                RowBox[{"(", " ", 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], ")"}], 
+                   RowBox[{" ", "2"}]], "-", " ", 
+                  StyleBox[
+                   RowBox[{
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]], 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", " ", 
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}]}], " ", ")"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                    RowBox[{" ", "2"}]]}], ")"}]}],
+                   FontSize->12,
+                   FontSlant->"Plain"]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular"], 
+                 StyleBox[")",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular"]}]}],
+               TraditionalForm]}],
+             FontSize->13,
+             FontSlant->"Italic"]]}]}], ",", 
+         StyleBox[
+          RowBox[{"J", "\[NotEqual]", "I"}],
+          FontSize->12]}], ")"}],
+       FontSlant->"Italic"]}], 
+     StyleBox[")",
+      FontSlant->"Italic"]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "43e2d536-d6a4-4629-b520-34daa1df85ab"],
+ "\n=  ",
+ Cell[BoxData[
+  RowBox[{"\[Sum]", 
+   RowBox[{
+    StyleBox[
+     SubsuperscriptBox["q", "J", 
+      RowBox[{" ", 
+       RowBox[{"(", 
+        SubscriptBox["\[Nu]", "R"], ")"}]}]],
+     FontSize->15,
+     FontSlant->"Italic"], 
+    StyleBox[
+     SubscriptBox["g", 
+      RowBox[{"J", " "}]],
+     FontSize->15,
+     FontSlant->"Italic"], 
+    RowBox[{
+     StyleBox["(",
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox[
+       SubscriptBox["\[Delta]", 
+        StyleBox["JI",
+         FontSize->11.36,
+         FontSlant->"Italic"]],
+       FontSlant->"Italic"], 
+      StyleBox["+",
+       FontSlant->"Plain"], 
+      StyleBox[
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[Sum]", 
+          RowBox[{
+           StyleBox[
+            FractionBox[
+             StyleBox["1",
+              FontSize->14.2,
+              FontSlant->"Plain"], 
+             StyleBox["2",
+              FontSize->14.2,
+              FontSlant->"Plain"]],
+            FontSize->20], 
+           FractionBox[
+            RowBox[{
+             RowBox[{
+              StyleBox["(",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"], 
+              StyleBox[" ",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"], 
+              RowBox[{
+               StyleBox[
+                RowBox[{
+                 FormBox[
+                  SubsuperscriptBox["q", "u", 
+                   RowBox[{" ", "J"}]],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                  TraditionalForm]}],
+                FontSize->14.2], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox["+",
+                FontSize->14,
+                FontSlant->"Plain"], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[
+                RowBox[{
+                 FormBox[
+                  SubsuperscriptBox["q", "d", 
+                   RowBox[{" ", "J"}]],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                  TraditionalForm], 
+                 FormBox[
+                  RowBox[{" ", 
+                   SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                  TraditionalForm]}],
+                FontSize->14.2]}], 
+              StyleBox[" ",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"], 
+              StyleBox[")",
+               FontFamily->"Times New Roman",
+               FontSize->16,
+               FontWeight->"Regular",
+               FontSlant->"Italic"]}], 
+             StyleBox[
+              FormBox[
+               RowBox[{" ", 
+                SubscriptBox["g", "J"]}],
+               TraditionalForm],
+              FontSize->14], 
+             StyleBox[
+              FormBox[
+               RowBox[{" ", 
+                SubscriptBox["g", "I"]}],
+               TraditionalForm],
+              FontSize->14]}], 
+            StyleBox[
+             RowBox[{
+              FormBox[
+               RowBox[{"2", " ", 
+                RowBox[{"(", " ", 
+                 RowBox[{
+                  StyleBox[
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                   FontSlant->"Plain"], 
+                  RowBox[{
+                   StyleBox["(",
+                    FontSlant->"Plain"], 
+                   StyleBox[" ",
+                    FontSlant->"Plain"], 
+                   RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], 
+                    StyleBox[
+                    SubscriptBox["g", "J"],
+                    FontSlant->"Plain"]], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    StyleBox["-",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                   StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                   StyleBox[")",
+                    FontSlant->"Plain"]}]}]}]}],
+               TraditionalForm], "-", 
+              FormBox[
+               RowBox[{"2", " ", 
+                RowBox[{"(", " ", 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                   RowBox[{" ", "2"}]], 
+                  RowBox[{"(", " ", 
+                   RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], 
+                    SubscriptBox["g", "I"]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", " ", 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                   StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], ")"}]}]}]}],
+               TraditionalForm]}],
+             FontSize->13,
+             FontSlant->"Italic"]]}]}], ",", 
+         StyleBox[
+          RowBox[{"J", "\[NotEqual]", "I"}],
+          FontSize->12]}], ")"}],
+       FontSlant->"Italic"]}], 
+     StyleBox[")",
+      FontSlant->"Italic"]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->"f1a34729-8daa-465b-ae11-7680ea7795b5"]
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJwlyz1IAnEABfAjKsihphzs+pCIIuqQMBwyIpcwKuJaHK4CzTAQ3WwQAgMJ
++1gcCikjHEwoMvoysuAiClMsvMuwxUiiTwvCIISGfP+Gx29478n1VtZYRFFU
+VSEwYByZ7OvJdtPnFjscM5Q74L5FR7S9jzqhZ/p2Ebr9tjV48dbigzktE4SR
+/A1xQTUfgoEz1yFUOg8uoc5LC1BzL6SggrbeQfNHMg03lUN5+Hmql/TjF3YQ
+zeN8DSxdzjXCFYO9FSa2phh45I21kb4iQ2x+YVTQtbRBrNvJqiGb/Je3Hc/A
+sr1nN5yzSDzkLxN9cDssX4emJ2kQtie+diGnE0JQHdWeQMf1Kg+jD00R+NjV
+EYdpkRPJrniYOFvLSwcKNpS8Ek0xUzXUVE4Qf0UZA/0ZjwLWdw5G4E8qQfyO
+915BzsAK8A8o8tD+
+  "],ExpressionUUID->"38d878ef-2cfe-4261-a07d-80b7be31f5b6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Full Blown",
+ FontFamily->"Times New Roman",
+ FontWeight->"Regular"]], "Section",
+ CellChangeTimes->{{3.795479211839593*^9, 
+  3.7954792148711452`*^9}},ExpressionUUID->"6135a80b-1b68-42b7-bec0-\
+dd339b08565d"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["C", 
+    SubscriptBox["\[Nu]", "Li"], 
+    StyleBox[
+     RowBox[{
+      SubscriptBox["Z", "I"], "'"}],
+     FontSize->10]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "ac8c29e7-0cc5-42a1-9ec1-b236950d5060"],
+ " ",
+ StyleBox["+",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["C", 
+     SubscriptBox["\[Nu]", "Ri"], 
+     StyleBox[
+      RowBox[{
+       SubscriptBox["Z", "I"], "'"}],
+      FontSize->10]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "9faacdc5-8513-445e-b273-317d8d4c2842"],
+ "\n\n=  ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    StyleBox[
+     RowBox[{"-", 
+      StyleBox[
+       FractionBox[
+        StyleBox["1",
+         FontSize->14.200000000000001`,
+         FontSlant->"Plain"], 
+        StyleBox["4",
+         FontSize->14.200000000000001`,
+         FontSlant->"Plain"]],
+       FontSize->12]}],
+     FontSlant->"Plain"], 
+    StyleBox[
+     SuperscriptBox["g", 
+      RowBox[{" ", "2"}]],
+     FontSlant->"Italic"], 
+    StyleBox[
+     FormBox[
+      StyleBox[
+       FractionBox[
+        RowBox[{
+         StyleBox["(",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"], 
+         RowBox[{
+          RowBox[{
+           FormBox[
+            SubsuperscriptBox["q", 
+             RowBox[{"u", " "}], 
+             RowBox[{" ", "I"}]],
+            TraditionalForm], 
+           FormBox[
+            SubsuperscriptBox["v", "u", 
+             RowBox[{" ", "2"}]],
+            TraditionalForm]}], " ", "+", 
+          StyleBox[" ",
+           FontFamily->"Times New Roman",
+           FontSize->16,
+           FontWeight->"Regular",
+           FontSlant->"Italic"], 
+          RowBox[{
+           FormBox[
+            SubsuperscriptBox["q", "d", 
+             RowBox[{" ", "I"}]],
+            TraditionalForm], 
+           FormBox[
+            RowBox[{" ", 
+             SubsuperscriptBox["v", "d", 
+              RowBox[{" ", "2"}]]}],
+            TraditionalForm]}]}], 
+         StyleBox[")",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"]}], 
+        FormBox[
+         RowBox[{"2", 
+          SubscriptBox["g", "I"], " ", 
+          RowBox[{"(", " ", 
+           RowBox[{
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox[
+               SubsuperscriptBox["M", 
+                StyleBox[
+                 RowBox[{"Z", " ", "'"}],
+                 FontSize->10], 
+                RowBox[{"  ", "I"}]], 
+               SubscriptBox["g", "I"]], ")"}], "2"], 
+            StyleBox["-",
+             FontSlant->"Plain"], 
+            RowBox[{
+             StyleBox[
+              FractionBox[
+               StyleBox["1",
+                FontSize->14.200000000000001`,
+                FontSlant->"Plain"], 
+               StyleBox["4",
+                FontSize->14.200000000000001`,
+                FontSlant->"Plain"]],
+              FontSize->12,
+              FontSlant->"Plain"], 
+             StyleBox[
+              RowBox[{"(", 
+               FormBox[
+                RowBox[{" ", 
+                 RowBox[{
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                   SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontWeight->"Regular",
+                   FontSlant->"Italic"], "+", 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontWeight->"Regular",
+                   FontSlant->"Italic"], 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                   SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]], " "}]}]}],
+                TraditionalForm], ")"}],
+              FontSize->14]}]}], 
+           StyleBox[" ",
+            FontSize->14], 
+           StyleBox[")",
+            FontSize->14]}]}],
+         TraditionalForm]],
+       FontSize->20],
+      TraditionalForm],
+     FontSlant->"Italic"]}], "+", 
+   RowBox[{
+    StyleBox["\[Sum]",
+     FontSlant->"Italic"], 
+    RowBox[{
+     StyleBox[
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "L"], ")"}]}]],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     StyleBox[
+      SubscriptBox["g", "J"],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox["(",
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox[
+        SubscriptBox["\[Delta]", 
+         StyleBox["JI",
+          FontSize->11.36,
+          FontSlant->"Italic"]],
+        FontSlant->"Italic"], 
+       StyleBox["+",
+        FontSlant->"Plain"], 
+       StyleBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Sum]", 
+           RowBox[{
+            StyleBox[
+             FractionBox[
+              StyleBox["1",
+               FontSize->14.2,
+               FontSlant->"Plain"], 
+              StyleBox["2",
+               FontSize->14.2,
+               FontSlant->"Plain"]],
+             FontSize->20], 
+            StyleBox[
+             FractionBox[
+              RowBox[{
+               RowBox[{
+                StyleBox["(",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                RowBox[{
+                 StyleBox[
+                  RowBox[{
+                   FormBox[
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                    TraditionalForm]}],
+                  FontSize->14.2], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox["+",
+                  FontSize->14,
+                  FontSlant->"Plain"], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox[
+                  RowBox[{
+                   FormBox[
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                    TraditionalForm]}],
+                  FontSize->14.2]}], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox[")",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"]}], 
+               StyleBox[
+                FormBox[
+                 RowBox[{" ", 
+                  SubscriptBox["g", "J"]}],
+                 TraditionalForm],
+                FontSize->14], 
+               StyleBox[
+                FormBox[
+                 RowBox[{" ", 
+                  SubscriptBox["g", "I"]}],
+                 TraditionalForm],
+                FontSize->14]}], 
+              StyleBox[
+               RowBox[{
+                FormBox[
+                 RowBox[{"2", " ", 
+                  RowBox[{"(", " ", 
+                   RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], 
+                    StyleBox[
+                    SubscriptBox["g", "J"],
+                    FontSlant->"Plain"]], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    StyleBox["-",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}]}]}],
+                 TraditionalForm], "-", 
+                FormBox[
+                 RowBox[{"2", " ", 
+                  RowBox[{"(", " ", 
+                   RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                    RowBox[{" ", "2"}]], 
+                    RowBox[{"(", " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], 
+                    SubscriptBox["g", "I"]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], ")"}]}]}]}],
+                 TraditionalForm]}],
+               FontSize->13,
+               FontSlant->"Italic"]],
+             FontSlant->"Italic"]}]}], ",", 
+          StyleBox[
+           RowBox[{"J", "\[NotEqual]", "I"}],
+           FontSize->12]}], ")"}],
+        FontSlant->"Italic"]}], 
+      StyleBox[")",
+       FontSlant->"Italic"]}]}]}], 
+   StyleBox[" ",
+    FontSlant->"Italic"], "+", 
+   StyleBox["  ",
+    FontSlant->"Italic"], 
+   RowBox[{"\[Sum]", 
+    RowBox[{
+     StyleBox[
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "R"], ")"}]}]],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     StyleBox[
+      SubscriptBox["g", 
+       RowBox[{"J", " "}]],
+      FontSize->15,
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox["(",
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox[
+        SubscriptBox["\[Delta]", 
+         StyleBox["JI",
+          FontSize->11.36,
+          FontSlant->"Italic"]],
+        FontSlant->"Italic"], 
+       StyleBox["+",
+        FontSlant->"Plain"], 
+       StyleBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Sum]", 
+           RowBox[{
+            StyleBox[
+             FractionBox[
+              StyleBox["1",
+               FontSize->14.2,
+               FontSlant->"Plain"], 
+              StyleBox["2",
+               FontSize->14.2,
+               FontSlant->"Plain"]],
+             FontSize->20], 
+            FractionBox[
+             RowBox[{
+              RowBox[{
+               StyleBox["(",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               RowBox[{
+                StyleBox[
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}],
+                 FontSize->14.2], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox["+",
+                 FontSize->14,
+                 FontSlant->"Plain"], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox[
+                 RowBox[{
+                  FormBox[
+                   SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                   TraditionalForm], 
+                  FormBox[
+                   RowBox[{" ", 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                   TraditionalForm]}],
+                 FontSize->14.2]}], 
+               StyleBox[" ",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"], 
+               StyleBox[")",
+                FontFamily->"Times New Roman",
+                FontSize->16,
+                FontWeight->"Regular",
+                FontSlant->"Italic"]}], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "J"]}],
+                TraditionalForm],
+               FontSize->14], 
+              StyleBox[
+               FormBox[
+                RowBox[{" ", 
+                 SubscriptBox["g", "I"]}],
+                TraditionalForm],
+               FontSize->14]}], 
+             StyleBox[
+              RowBox[{
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                   RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], 
+                    StyleBox[
+                    SubscriptBox["g", "J"],
+                    FontSlant->"Plain"]], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    StyleBox["-",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}]}]}],
+                TraditionalForm], "-", 
+               FormBox[
+                RowBox[{"2", " ", 
+                 RowBox[{"(", " ", 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                    RowBox[{" ", "2"}]], 
+                   RowBox[{"(", " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], 
+                    SubscriptBox["g", "I"]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], ")"}]}]}]}],
+                TraditionalForm]}],
+              FontSize->13,
+              FontSlant->"Italic"]]}]}], ",", 
+          StyleBox[
+           RowBox[{"J", "\[NotEqual]", "I"}],
+           FontSize->12]}], ")"}],
+        FontSlant->"Italic"]}], 
+      StyleBox[")",
+       FontSlant->"Italic"]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->"edb4e302-dcca-452f-951f-3c5a9eeda6dc"]
+}], "Text",
+ CellChangeTimes->{{3.795479288828348*^9, 3.795479399970772*^9}, {
+  3.79548103136462*^9, 3.795481050170969*^9}, {3.795481095468893*^9, 
+  3.795481095472055*^9}, {3.7954811360663347`*^9, 3.7954811360709553`*^9}, {
+  3.7954822825739107`*^9, 
+  3.795482315455474*^9}},ExpressionUUID->"7923aa25-01e3-404c-ae1d-\
+7c2ef8eddefc"],
+
+Cell[TextData[{
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["C", 
+     SubscriptBox["\[Nu]", "Li"], 
+     StyleBox[
+      RowBox[{
+       SubscriptBox["Z", "I"], "'"}],
+      FontSize->10]], "-", 
+    SubsuperscriptBox["C", 
+     SubscriptBox["\[Nu]", "Ri"], 
+     StyleBox[
+      RowBox[{
+       SubscriptBox["Z", "I"], "'"}],
+      FontSize->10]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "1699c015-bda4-4390-ac7d-87b4eb8b37d5"],
+ "\n\n=",
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Plain"], 
+   RowBox[{
+    RowBox[{
+     StyleBox[
+      RowBox[{"-", 
+       StyleBox[
+        FractionBox[
+         StyleBox["1",
+          FontSize->14.200000000000001`,
+          FontSlant->"Plain"], 
+         StyleBox["4",
+          FontSize->14.200000000000001`,
+          FontSlant->"Plain"]],
+        FontSize->12]}],
+      FontSlant->"Plain"], 
+     StyleBox[
+      SuperscriptBox["g", 
+       RowBox[{" ", "2"}]],
+      FontSlant->"Italic"], 
+     StyleBox[
+      FormBox[
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          StyleBox["(",
+           FontFamily->"Times New Roman",
+           FontSize->16,
+           FontWeight->"Regular",
+           FontSlant->"Italic"], 
+          RowBox[{
+           RowBox[{
+            FormBox[
+             SubsuperscriptBox["q", 
+              RowBox[{"u", " "}], 
+              RowBox[{" ", "I"}]],
+             TraditionalForm], 
+            FormBox[
+             SubsuperscriptBox["v", "u", 
+              RowBox[{" ", "2"}]],
+             TraditionalForm]}], " ", "+", 
+           StyleBox[" ",
+            FontFamily->"Times New Roman",
+            FontSize->16,
+            FontWeight->"Regular",
+            FontSlant->"Italic"], 
+           RowBox[{
+            FormBox[
+             SubsuperscriptBox["q", "d", 
+              RowBox[{" ", "I"}]],
+             TraditionalForm], 
+            FormBox[
+             RowBox[{" ", 
+              SubsuperscriptBox["v", "d", 
+               RowBox[{" ", "2"}]]}],
+             TraditionalForm]}]}], 
+          StyleBox[")",
+           FontFamily->"Times New Roman",
+           FontSize->16,
+           FontWeight->"Regular",
+           FontSlant->"Italic"]}], 
+         FormBox[
+          RowBox[{"2", 
+           SubscriptBox["g", "I"], " ", 
+           RowBox[{"(", " ", 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{"(", 
+               FractionBox[
+                SubsuperscriptBox["M", 
+                 StyleBox[
+                  RowBox[{"Z", " ", "'"}],
+                  FontSize->10], 
+                 RowBox[{"  ", "I"}]], 
+                SubscriptBox["g", "I"]], ")"}], "2"], 
+             StyleBox["-",
+              FontSlant->"Plain"], 
+             StyleBox[" ",
+              FontSlant->"Plain"], 
+             RowBox[{
+              StyleBox[
+               FractionBox[
+                StyleBox["1",
+                 FontSize->14.200000000000001`,
+                 FontSlant->"Plain"], 
+                StyleBox["4",
+                 FontSize->14.200000000000001`,
+                 FontSlant->"Plain"]],
+               FontSize->12,
+               FontSlant->"Plain"], 
+              StyleBox[
+               RowBox[{"(", 
+                FormBox[
+                 RowBox[{" ", 
+                  RowBox[{
+                   RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}], 
+                   StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], "+", 
+                   StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                   RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]], " "}]}]}],
+                 TraditionalForm], ")"}],
+               FontSize->14]}]}], 
+            StyleBox[" ",
+             FontSize->14], 
+            StyleBox[")",
+             FontSize->14]}]}],
+          TraditionalForm]],
+        FontSize->20],
+       TraditionalForm],
+      FontSlant->"Italic"]}], "+", 
+    RowBox[{
+     StyleBox["\[Sum]",
+      FontSlant->"Italic"], 
+     RowBox[{
+      StyleBox[
+       SubsuperscriptBox["q", "J", 
+        RowBox[{" ", 
+         RowBox[{"(", 
+          SubscriptBox["\[Nu]", "L"], ")"}]}]],
+       FontSize->15,
+       FontSlant->"Italic"], 
+      StyleBox[
+       SubscriptBox["g", "J"],
+       FontSize->15,
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Italic"], 
+       RowBox[{
+        StyleBox[
+         SubscriptBox["\[Delta]", 
+          StyleBox["JI",
+           FontSize->11.36,
+           FontSlant->"Italic"]],
+         FontSlant->"Italic"], "+", 
+        StyleBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Sum]", 
+            RowBox[{
+             StyleBox[
+              FractionBox[
+               StyleBox["1",
+                FontSize->14.2,
+                FontSlant->"Plain"], 
+               StyleBox["2",
+                FontSize->14.2,
+                FontSlant->"Plain"]],
+              FontSize->20], 
+             StyleBox[
+              FractionBox[
+               RowBox[{
+                RowBox[{
+                 StyleBox["(",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 RowBox[{
+                  StyleBox[
+                   RowBox[{
+                    FormBox[
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]],
+                    TraditionalForm], 
+                    FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                    TraditionalForm], 
+                    FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                    TraditionalForm]}],
+                   FontSize->14.2], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular",
+                   FontSlant->"Italic"], 
+                  StyleBox["+",
+                   FontSize->14,
+                   FontSlant->"Plain"], 
+                  StyleBox[" ",
+                   FontFamily->"Times New Roman",
+                   FontSize->16,
+                   FontWeight->"Regular",
+                   FontSlant->"Italic"], 
+                  StyleBox[
+                   RowBox[{
+                    FormBox[
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]],
+                    TraditionalForm], 
+                    FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                    TraditionalForm], 
+                    FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                    TraditionalForm]}],
+                   FontSize->14.2]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox[")",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"]}], 
+                StyleBox[
+                 FormBox[
+                  RowBox[{" ", 
+                   SubscriptBox["g", "J"]}],
+                  TraditionalForm],
+                 FontSize->14], 
+                StyleBox[
+                 FormBox[
+                  RowBox[{" ", 
+                   SubscriptBox["g", "I"]}],
+                  TraditionalForm],
+                 FontSize->14]}], 
+               StyleBox[
+                RowBox[{
+                 FormBox[
+                  RowBox[{"2", " ", 
+                   RowBox[{"(", " ", 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], 
+                    StyleBox[
+                    SubscriptBox["g", "J"],
+                    FontSlant->"Plain"]], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    StyleBox["-",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}]}]}],
+                  TraditionalForm], "-", 
+                 FormBox[
+                  RowBox[{"2", " ", 
+                   RowBox[{"(", " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                    RowBox[{" ", "2"}]], 
+                    RowBox[{"(", " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], 
+                    SubscriptBox["g", "I"]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], ")"}]}]}]}],
+                  TraditionalForm]}],
+                FontSize->13,
+                FontSlant->"Italic"]],
+              FontSlant->"Italic"]}]}], ",", 
+           StyleBox[
+            RowBox[{"J", "\[NotEqual]", "I"}],
+            FontSize->12]}], ")"}],
+         FontSlant->"Italic"]}], 
+       StyleBox[")",
+        FontSlant->"Italic"]}]}]}], 
+    StyleBox[" ",
+     FontSlant->"Italic"], 
+    StyleBox["-",
+     FontSlant->"Italic"], 
+    StyleBox["  ",
+     FontSlant->"Italic"], 
+    RowBox[{"\[Sum]", 
+     RowBox[{
+      StyleBox[
+       SubsuperscriptBox["q", "J", 
+        RowBox[{" ", 
+         RowBox[{"(", 
+          SubscriptBox["\[Nu]", "R"], ")"}]}]],
+       FontSize->15,
+       FontSlant->"Italic"], 
+      StyleBox[
+       SubscriptBox["g", 
+        RowBox[{"J", " "}]],
+       FontSize->15,
+       FontSlant->"Italic"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Italic"], 
+       RowBox[{
+        StyleBox[
+         SubscriptBox["\[Delta]", 
+          StyleBox["JI",
+           FontSize->11.36,
+           FontSlant->"Italic"]],
+         FontSlant->"Italic"], 
+        StyleBox["+",
+         FontSlant->"Plain"], 
+        StyleBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Sum]", 
+            RowBox[{
+             StyleBox[
+              FractionBox[
+               StyleBox["1",
+                FontSize->14.2,
+                FontSlant->"Plain"], 
+               StyleBox["2",
+                FontSize->14.2,
+                FontSlant->"Plain"]],
+              FontSize->20], 
+             FractionBox[
+              RowBox[{
+               RowBox[{
+                StyleBox["(",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                RowBox[{
+                 StyleBox[
+                  RowBox[{
+                   FormBox[
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]]}],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{" ", "2"}]]}],
+                    TraditionalForm]}],
+                  FontSize->14.2], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox["+",
+                  FontSize->14,
+                  FontSlant->"Plain"], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontSize->16,
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 StyleBox[
+                  RowBox[{
+                   FormBox[
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]]}],
+                    TraditionalForm], 
+                   FormBox[
+                    RowBox[{" ", 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{" ", "2"}]]}],
+                    TraditionalForm]}],
+                  FontSize->14.2]}], 
+                StyleBox[" ",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"], 
+                StyleBox[")",
+                 FontFamily->"Times New Roman",
+                 FontSize->16,
+                 FontWeight->"Regular",
+                 FontSlant->"Italic"]}], 
+               StyleBox[
+                FormBox[
+                 RowBox[{" ", 
+                  SubscriptBox["g", "J"]}],
+                 TraditionalForm],
+                FontSize->14], 
+               StyleBox[
+                FormBox[
+                 RowBox[{" ", 
+                  SubscriptBox["g", "I"]}],
+                 TraditionalForm],
+                FontSize->14]}], 
+              StyleBox[
+               RowBox[{
+                FormBox[
+                 RowBox[{"2", " ", 
+                  RowBox[{"(", " ", 
+                   RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "J"], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "J"}]], 
+                    StyleBox[
+                    SubscriptBox["g", "J"],
+                    FontSlant->"Plain"]], ")"}], 
+                    RowBox[{" ", "2"}]],
+                    FontSlant->"Plain"], 
+                    StyleBox["-",
+                    FontSlant->"Plain"], 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "J"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "J"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}]}]}],
+                 TraditionalForm], "-", 
+                FormBox[
+                 RowBox[{"2", " ", 
+                  RowBox[{"(", " ", 
+                   RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubscriptBox["g", "I"], ")"}], 
+                    RowBox[{" ", "2"}]], 
+                    RowBox[{"(", " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    SubsuperscriptBox["M", 
+                    StyleBox[
+                    RowBox[{"Z", "'"}],
+                    FontSize->10], 
+                    RowBox[{"  ", "I"}]], 
+                    SubscriptBox["g", "I"]], ")"}], 
+                    RowBox[{" ", "2"}]], "-", 
+                    StyleBox[
+                    RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    StyleBox["1",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"], 
+                    StyleBox["4",
+                    FontSize->14.200000000000001`,
+                    FontSlant->"Plain"]],
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                    RowBox[{" ", "2"}]], " ", 
+                    SubsuperscriptBox["v", "u", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox["+",
+                    FontSlant->"Plain"], 
+                    StyleBox[" ",
+                    FontFamily->"Times New Roman",
+                    FontWeight->"Regular",
+                    FontSlant->"Italic"], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                    SubsuperscriptBox["v", "d", 
+                    RowBox[{"  ", "2"}]]}],
+                    FontSlant->"Plain"]}], 
+                    StyleBox[" ",
+                    FontSlant->"Plain"], 
+                    StyleBox[")",
+                    FontSlant->"Plain"]}]}],
+                    FontSize->12]}], 
+                    StyleBox[" ",
+                    FontSize->12,
+                    FontSlant->"Plain"], ")"}]}]}]}],
+                 TraditionalForm]}],
+               FontSize->13,
+               FontSlant->"Italic"]]}]}], ",", 
+           StyleBox[
+            RowBox[{"J", "\[NotEqual]", "I"}],
+            FontSize->12]}], ")"}],
+         FontSlant->"Italic"]}], 
+       StyleBox[")",
+        FontSlant->"Italic"]}]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->"4652d767-f807-4f82-a87b-ced7795202e6"]
+}], "Text",
+ CellChangeTimes->{{3.79548117567546*^9, 3.795481193773601*^9}, {
+   3.795481244893778*^9, 3.795481246448367*^9}, {3.7954813028086643`*^9, 
+   3.795481383919773*^9}, {3.795482325858591*^9, 3.7954823813142233`*^9}, 
+   3.795490136664865*^9},ExpressionUUID->"216b33f8-974b-46a1-a2aa-\
+3a0696a4d69e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Define",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ StyleBox[" ",
+  FontFamily->"Times New Roman"],
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "u", 
+    RowBox[{" ", "I"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",ExpressionUUID->
+  "bfae36dd-74b6-4ba7-907b-fccaa17375cd"],
+ StyleBox[",",
+  FontFamily->"Times New Roman"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubsuperscriptBox["q", "d", 
+     RowBox[{" ", "I"}]]}], TraditionalForm]],
+  FontFamily->"Times New Roman",ExpressionUUID->
+  "a3a85ed0-36b1-4761-bbfb-0157c0057dce"],
+ StyleBox[" ",
+  FontFamily->"Times New Roman"]
+}], "Section",
+ CellChangeTimes->{{3.7954828425763273`*^9, 3.795482882142363*^9}, {
+  3.795482921639492*^9, 3.7954830352760887`*^9}, {3.7954830735935087`*^9, 
+  3.795483075415839*^9}},ExpressionUUID->"7ce37e66-a8b1-4c41-9dc0-\
+6c2a71443a58"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "u", 
+    RowBox[{" ", "I"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "f05125b3-411e-4a17-ae92-1680a3a2fadd"],
+ " ",
+ StyleBox["=",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Italic"], 
+   RowBox[{
+    StyleBox["\[Sum]",
+     FontSize->24,
+     FontSlant->"Italic"], 
+    FormBox[
+     RowBox[{" ", 
+      RowBox[{
+       SubsuperscriptBox["q", "u", 
+        RowBox[{"  ", "l"}]], " ", 
+       FractionBox[
+        StyleBox[
+         OverscriptBox[
+          SubscriptBox["g", "l"], "~"],
+         FontSize->14], 
+        StyleBox[
+         SubscriptBox["g", "I"],
+         FontSize->14]], 
+       SubscriptBox["O", 
+        StyleBox["iI",
+         FontSize->11.36,
+         FontSlant->"Italic"]]}]}],
+     TraditionalForm]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "e840873e-1226-4da9-b64f-e51705875aa0"],
+ " ",
+ StyleBox["=",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Italic"], 
+   RowBox[{
+    StyleBox["\[Sum]",
+     FontSize->24,
+     FontSlant->"Italic"], 
+    RowBox[{
+     FormBox[
+      RowBox[{" ", 
+       RowBox[{
+        SubsuperscriptBox["q", "u", 
+         RowBox[{"  ", "l"}]], " ", 
+        FractionBox[
+         StyleBox[
+          OverscriptBox[
+           SubscriptBox["g", "l"], "~"],
+          FontSize->14], 
+         StyleBox[
+          SubscriptBox["g", "I"],
+          FontSize->14]]}]}],
+      TraditionalForm], 
+     StyleBox[
+      SubscriptBox[
+       OverscriptBox["n", "\[RightVector]"], "I"],
+      FontSlant->"Italic"]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "ba61cc10-cdbc-45c0-b231-c83f6d22bc5c"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "d", 
+    RowBox[{" ", "I"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "d485b3e8-2013-41d6-a658-25a92a1d2293"],
+ " ",
+ StyleBox["=",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Italic"], 
+   RowBox[{
+    StyleBox["\[Sum]",
+     FontSize->24,
+     FontSlant->"Italic"], 
+    FormBox[
+     RowBox[{" ", 
+      RowBox[{
+       SubsuperscriptBox["q", "d", 
+        RowBox[{"  ", "l"}]], " ", 
+       FractionBox[
+        StyleBox[
+         OverscriptBox[
+          SubscriptBox["g", "l"], "~"],
+         FontSize->14], 
+        StyleBox[
+         SubscriptBox["g", "I"],
+         FontSize->14]], 
+       SubscriptBox["O", 
+        StyleBox["iI",
+         FontSize->11.36,
+         FontSlant->"Italic"]]}]}],
+     TraditionalForm]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "e1ff712b-ba40-4b99-8dc6-5cf77b0307be"],
+ " ",
+ StyleBox["=",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox["\[Sum]",
+    FontSize->24,
+    FontSlant->"Italic"], 
+   RowBox[{
+    FormBox[
+     RowBox[{" ", 
+      RowBox[{
+       SubsuperscriptBox["q", "u", 
+        RowBox[{"  ", "l"}]], " ", 
+       FractionBox[
+        StyleBox[
+         OverscriptBox[
+          SubscriptBox["g", "l"], "~"],
+         FontSize->14], 
+        StyleBox[
+         SubscriptBox["g", "I"],
+         FontSize->14]]}]}],
+     TraditionalForm], 
+    StyleBox[
+     SubscriptBox[
+      OverscriptBox["n", "\[RightVector]"], "I"],
+     FontSlant->"Italic"]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "eb497cd1-33ca-45ec-a7cd-65d048f51f19"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    OverscriptBox[
+     SubscriptBox["g", "l"], "~"],
+    FontSize->14], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->18,
+  FontWeight->"Regular",ExpressionUUID->
+  "1bb19235-6f1f-487a-b688-8e79a840f342"],
+ " ",
+ StyleBox["= ",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    StyleBox[
+     SubscriptBox["g", "l"],
+     FontSize->15], 
+    StyleBox[
+     SqrtBox[
+      RowBox[{"2", "N"}]],
+     FontSize->14]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "75cada1b-8ef5-41ed-bd72-1fccb3484df3"],
+ "\n\n",
+ StyleBox["l = 1,2,3,4         i = 1,2,3       ",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular",
+  FontSlant->"Italic"],
+ StyleBox["I = ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", ",", "...", ",", 
+    RowBox[{
+     SubscriptBox["N", "a"], ";", " ", 
+     RowBox[{
+      SubscriptBox["N", "a"], "=", "3"}]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"75a26920-f011-4e2e-a1d3-8b7f060f12e8"],
+ "\n\n",
+ StyleBox["All Anomalous:",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["G", "1"], "=", " ", 
+    RowBox[{
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{" ", 
+        RowBox[{"l", "=", "1"}]}], 
+       RowBox[{"  ", "4"}]], 
+      SubscriptBox[
+       RowBox[{"U", "(", "1", ")"}], "l"]}], "=", " ", 
+     RowBox[{
+      SubscriptBox[
+       RowBox[{"U", "(", "1", ")"}], "1"], 
+      SubscriptBox[
+       RowBox[{"U", "(", "1", ")"}], "2"], 
+      SubscriptBox[
+       RowBox[{"U", "(", "1", ")"}], "3"], 
+      SubscriptBox[
+       RowBox[{"U", "(", "1", ")"}], "4"], " "}]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "42fd2318-0214-46ae-9891-68fbb7553ef0"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    SubscriptBox["g", "l"],
+    FontSize->15], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "906fe7c3-96df-45ef-9e63-efae6146b4f2"],
+ " ",
+ StyleBox["is the standard normalized coupling associated SU(N) group\n\n",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "u", 
+    RowBox[{" ", "I"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "7c0fa20c-b8c4-421c-bc03-a2fbfbb5252d"],
+ StyleBox[" =",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Italic"], 
+   RowBox[{
+    FormBox[
+     FractionBox[
+      StyleBox["1",
+       FontSize->14,
+       FontSlant->"Plain"], 
+      StyleBox[
+       SqrtBox[
+        RowBox[{"2", "N"}]],
+       FontSize->14]],
+     TraditionalForm], 
+    RowBox[{
+     StyleBox["\[Sum]",
+      FontSize->24,
+      FontSlant->"Italic"], 
+     FormBox[
+      RowBox[{" ", 
+       RowBox[{
+        SubsuperscriptBox["q", "u", 
+         RowBox[{"  ", "l"}]], " ", 
+        FractionBox[
+         StyleBox[
+          SubscriptBox["g", "l"],
+          FontSize->15], 
+         StyleBox[
+          SubscriptBox["g", "I"],
+          FontSize->14]], 
+        SubscriptBox["O", 
+         StyleBox["iI",
+          FontSize->11.36,
+          FontSlant->"Italic"]]}]}],
+      TraditionalForm]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "802b38ce-0ec1-4bc4-a105-76dc7d6414e8"],
+ StyleBox[" =",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Italic"], 
+   RowBox[{
+    FormBox[
+     FractionBox[
+      StyleBox["1",
+       FontSize->14,
+       FontSlant->"Plain"], 
+      StyleBox[
+       SqrtBox[
+        RowBox[{"2", "N"}]],
+       FontSize->14]],
+     TraditionalForm], 
+    RowBox[{
+     StyleBox["\[Sum]",
+      FontSize->24,
+      FontSlant->"Italic"], 
+     RowBox[{
+      FormBox[
+       RowBox[{" ", 
+        RowBox[{
+         SubsuperscriptBox["q", "u", 
+          RowBox[{"  ", "l"}]], " ", 
+         FractionBox[
+          StyleBox[
+           SubscriptBox["g", "l"],
+           FontSize->15], 
+          StyleBox[
+           SubscriptBox["g", "I"],
+           FontSize->14]]}]}],
+       TraditionalForm], 
+      StyleBox[
+       SubscriptBox[
+        OverscriptBox["n", "\[RightVector]"], "I"],
+       FontSlant->"Italic"]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "2e67856e-a8b6-4a32-ac5f-f3b6560dd465"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["q", "d", 
+    RowBox[{" ", "I"}]], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "09dd9004-c2c0-461e-a26c-93879d28b3d2"],
+ StyleBox[" =",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Italic"], 
+   RowBox[{
+    FormBox[
+     FractionBox[
+      StyleBox["1",
+       FontSize->14,
+       FontSlant->"Plain"], 
+      StyleBox[
+       SqrtBox[
+        RowBox[{"2", "N"}]],
+       FontSize->14]],
+     TraditionalForm], 
+    RowBox[{
+     StyleBox["\[Sum]",
+      FontSize->24,
+      FontSlant->"Italic"], 
+     FormBox[
+      RowBox[{" ", 
+       RowBox[{
+        SubsuperscriptBox["q", "d", 
+         RowBox[{"  ", "l"}]], " ", 
+        FractionBox[
+         StyleBox[
+          SubscriptBox["g", "l"],
+          FontSize->15], 
+         StyleBox[
+          SubscriptBox["g", "I"],
+          FontSize->14]], 
+        SubscriptBox["O", 
+         StyleBox["iI",
+          FontSize->11.36,
+          FontSlant->"Italic"]]}]}],
+      TraditionalForm]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "6a936276-91c0-4ce6-b443-9010ed79a1d3"],
+ StyleBox[" =",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[" ",
+    FontSlant->"Italic"], 
+   RowBox[{
+    FormBox[
+     FractionBox[
+      StyleBox["1",
+       FontSize->14,
+       FontSlant->"Plain"], 
+      StyleBox[
+       SqrtBox[
+        RowBox[{"2", "N"}]],
+       FontSize->14]],
+     TraditionalForm], 
+    RowBox[{
+     StyleBox["\[Sum]",
+      FontSize->24,
+      FontSlant->"Italic"], 
+     RowBox[{
+      FormBox[
+       RowBox[{" ", 
+        RowBox[{
+         SubsuperscriptBox["q", "d", 
+          RowBox[{"  ", "l"}]], " ", 
+         FractionBox[
+          StyleBox[
+           SubscriptBox["g", "l"],
+           FontSize->15], 
+          StyleBox[
+           SubscriptBox["g", "I"],
+           FontSize->14]]}]}],
+       TraditionalForm], 
+      StyleBox[
+       SubscriptBox[
+        OverscriptBox["n", "\[RightVector]"], "I"],
+       FontSlant->"Italic"]}]}]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->"30748f91-78d0-4522-b513-159cf2c82c45"]
+}], "Text",
+ CellChangeTimes->{{3.795483110362775*^9, 3.7954832038346148`*^9}, {
+  3.795483325372067*^9, 3.79548333763295*^9}, {3.795483387073894*^9, 
+  3.7954833870740337`*^9}, {3.795483452321751*^9, 3.795483593104146*^9}, {
+  3.795483651625127*^9, 3.795483713017962*^9}, {3.795483921511895*^9, 
+  3.795483987055043*^9}, {3.795484114740553*^9, 3.795484201130328*^9}, {
+  3.795484492884247*^9, 3.795484649610497*^9}, {3.7954846921231947`*^9, 
+  3.795484699592499*^9}, {3.795484882696349*^9, 3.795484931734439*^9}, {
+  3.795485066790344*^9, 3.795485205763875*^9}, {3.795485259141917*^9, 
+  3.7954852814549913`*^9}, {3.7954860048213663`*^9, 3.795486076754229*^9}, {
+  3.795486108207529*^9, 
+  3.7954861310052233`*^9}},ExpressionUUID->"d991fb25-e42d-4b27-b0d7-\
+a70aa05489a1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Define ",
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["v", "u"], ",", 
+    SubscriptBox["v", "d"], ",", 
+    SubscriptBox["g", "2"], ",", 
+    SubscriptBox["g", "Y"]}], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontWeight->"Regular",ExpressionUUID->"84ae76e1-01ee-43b9-98c1-67afec403712"]
+}], "Section",
+ CellChangeTimes->{{3.795487377525346*^9, 3.795487414054633*^9}, {
+  3.795487614192008*^9, 
+  3.7954876281550903`*^9}},ExpressionUUID->"c1f066d9-136f-41c5-8436-\
+07488325819e"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["v", "u"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"d19c412b-07d2-437f-a0a2-03a43d56293a"],
+ StyleBox[" = ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["v", "u"], "2"], "+", 
+      SuperscriptBox[
+       SubscriptBox["v", "d"], "2"]}]], "cos", " ", "\[Beta]"}], 
+   TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"d87393ec-9647-434b-8657-77dba49af0a8"],
+ StyleBox["\n\n",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["v", "d"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"63ba844f-2d3a-4dac-a4dc-1a9240e4d4e5"],
+ StyleBox[" = ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["v", "u"], "2"], "+", 
+      SuperscriptBox[
+       SubscriptBox["v", "d"], "2"]}]], "sin", " ", "\[Beta]"}], 
+   TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"dcdd2249-b6dc-4395-80db-dad70c9fca75"],
+ StyleBox["\n\n",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["g", "2"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"ae135c4d-5bd9-48e2-a8c2-ad11424bfdb6"],
+ StyleBox[" = ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{
+     StyleBox["g",
+      FontSlant->"Plain"], " ", "cos", " ", 
+     SubscriptBox["\[Theta]", "w"]}],
+    FontFamily->"Times New Roman",
+    FontWeight->"Regular"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"86187084-f75d-4c2d-98c0-f7302ea5be95"],
+ StyleBox[" =",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{" ", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["g", "2"], "2"], "+", 
+       SuperscriptBox[
+        SubscriptBox["g", "Y"], "2"]}]]}],
+    FontFamily->"Times New Roman",
+    FontWeight->"Regular"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"97e388b1-79a4-4daf-878d-38e90904d0ae"],
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"cos", " ", 
+    SubscriptBox["\[Theta]", "w"]}],
+   FontFamily->"Times New Roman",
+   FontWeight->"Regular"]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"fdd3d7c1-1f0c-4281-8119-831bb319aa5d"],
+ StyleBox["\n\n",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["g", "Y"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"58dd9341-3589-4fbb-a551-46e990651bb6"],
+ StyleBox[" = ",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{
+     StyleBox["g",
+      FontSlant->"Plain"], " ", "sin", " ", 
+     SubscriptBox["\[Theta]", "w"]}],
+    FontFamily->"Times New Roman",
+    FontWeight->"Regular"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"30a77b7e-d0ca-4486-843d-bec50a45d898"],
+ StyleBox[" =",
+  FontFamily->"Times New Roman",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{" ", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["g", "2"], "2"], "+", 
+       SuperscriptBox[
+        SubscriptBox["g", "Y"], "2"]}]]}],
+    FontFamily->"Times New Roman",
+    FontWeight->"Regular"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"d5b2104c-d3de-44d4-9840-05149ff9a72b"],
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"sin", " ", 
+    SubscriptBox["\[Theta]", "w"]}],
+   FontFamily->"Times New Roman",
+   FontWeight->"Regular"]],
+  FontFamily->"Times New Roman",
+  FontSize->16,ExpressionUUID->"46e5e19d-a1c9-44fc-9fe7-59ddd77b74cb"]
+}], "Text",
+ CellChangeTimes->{{3.7954877069958687`*^9, 3.795487849899288*^9}, {
+  3.795487889217267*^9, 3.7954879027989264`*^9}, {3.795488450500586*^9, 
+  3.795488454696001*^9}, {3.795488485088619*^9, 3.795488551921616*^9}, {
+  3.795488609338501*^9, 3.795488614908349*^9}, {3.795489668158309*^9, 
+  3.7954896920716963`*^9}},ExpressionUUID->"ceff6680-0536-492e-9fd3-\
+2678a9011dc8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"8b3d186e-dd0e-483b-b35e-29e12471758e"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[
+    RowBox[{"-", 
+     StyleBox[
+      FractionBox[
+       StyleBox["1",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"], 
+       StyleBox["4",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"]],
+      FontSize->12]}],
+    FontSlant->"Plain"], 
+   StyleBox[
+    SuperscriptBox["g", 
+     RowBox[{" ", "2"}]],
+    FontSlant->"Italic"], 
+   StyleBox[
+    FormBox[
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        StyleBox["(",
+         FontFamily->"Times New Roman",
+         FontSize->16,
+         FontWeight->"Regular",
+         FontSlant->"Italic"], 
+        RowBox[{
+         RowBox[{
+          FormBox[
+           SubsuperscriptBox["q", 
+            RowBox[{"u", " "}], 
+            RowBox[{" ", "I"}]],
+           TraditionalForm], 
+          FormBox[
+           SubsuperscriptBox["v", "u", 
+            RowBox[{" ", "2"}]],
+           TraditionalForm]}], " ", "+", 
+         StyleBox[" ",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"], 
+         RowBox[{
+          FormBox[
+           SubsuperscriptBox["q", "d", 
+            RowBox[{" ", "I"}]],
+           TraditionalForm], 
+          FormBox[
+           RowBox[{" ", 
+            SubsuperscriptBox["v", "d", 
+             RowBox[{" ", "2"}]]}],
+           TraditionalForm]}]}], 
+        StyleBox[")",
+         FontFamily->"Times New Roman",
+         FontSize->16,
+         FontWeight->"Regular",
+         FontSlant->"Italic"]}], 
+       FormBox[
+        RowBox[{"2", 
+         SubscriptBox["g", "I"], " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox[
+              SubsuperscriptBox["M", 
+               StyleBox[
+                RowBox[{"Z", " ", "'"}],
+                FontSize->10], 
+               RowBox[{"  ", "I"}]], 
+              SubscriptBox["g", "I"]], ")"}], "2"], 
+           StyleBox["-",
+            FontSlant->"Plain"], 
+           RowBox[{
+            StyleBox[
+             FractionBox[
+              StyleBox["1",
+               FontSize->14.200000000000001`,
+               FontSlant->"Plain"], 
+              StyleBox["4",
+               FontSize->14.200000000000001`,
+               FontSlant->"Plain"]],
+             FontSize->12,
+             FontSlant->"Plain"], 
+            StyleBox[
+             RowBox[{"(", 
+              FormBox[
+               RowBox[{" ", 
+                RowBox[{
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                   RowBox[{" ", "2"}]], " ", 
+                  SubsuperscriptBox["v", "u", 
+                   RowBox[{"  ", "2"}]]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], "+", 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                  SubsuperscriptBox["v", "d", 
+                   RowBox[{"  ", "2"}]], " "}]}]}],
+               TraditionalForm], ")"}],
+             FontSize->14]}]}], 
+          StyleBox[" ",
+           FontSize->14], 
+          StyleBox[")",
+           FontSize->14]}]}],
+        TraditionalForm]],
+      FontSize->20],
+     TraditionalForm],
+    FontSlant->"Italic"]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "944d0bac-ac6c-4f60-8f3f-67ef14bd7552"],
+ "+",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"\[Sum]", 
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "L"], ")"}]}]], 
+      SubscriptBox["g", "J"], " "}],
+     FontSize->15]}],
+   FontSlant->"Italic"]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "22665472-6cc6-4449-b456-2a0f3d6d7c51"],
+ "+",
+ Cell[BoxData[
+  RowBox[{" ", 
+   RowBox[{"\[Sum]", 
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "R"], ")"}]}]], 
+      SubscriptBox["g", 
+       RowBox[{"J", " "}]]}],
+     FontSize->15,
+     FontSlant->"Italic"]}]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "cb30b565-4480-434f-a44b-e60e0f965887"],
+ "\n\n",
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[
+    RowBox[{"-", 
+     StyleBox[
+      FractionBox[
+       StyleBox["1",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"], 
+       StyleBox["4",
+        FontSize->14.200000000000001`,
+        FontSlant->"Plain"]],
+      FontSize->12]}],
+    FontSlant->"Plain"], 
+   StyleBox[
+    SuperscriptBox["g", 
+     RowBox[{" ", "2"}]],
+    FontSlant->"Italic"], 
+   StyleBox[
+    FormBox[
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        StyleBox["(",
+         FontFamily->"Times New Roman",
+         FontSize->16,
+         FontWeight->"Regular",
+         FontSlant->"Italic"], 
+        RowBox[{
+         RowBox[{
+          FormBox[
+           SubsuperscriptBox["q", 
+            RowBox[{"u", " "}], 
+            RowBox[{" ", "I"}]],
+           TraditionalForm], 
+          FormBox[
+           SubsuperscriptBox["v", "u", 
+            RowBox[{" ", "2"}]],
+           TraditionalForm]}], " ", "+", 
+         StyleBox[" ",
+          FontFamily->"Times New Roman",
+          FontSize->16,
+          FontWeight->"Regular",
+          FontSlant->"Italic"], 
+         RowBox[{
+          FormBox[
+           SubsuperscriptBox["q", "d", 
+            RowBox[{" ", "I"}]],
+           TraditionalForm], 
+          FormBox[
+           RowBox[{" ", 
+            SubsuperscriptBox["v", "d", 
+             RowBox[{" ", "2"}]]}],
+           TraditionalForm]}]}], 
+        StyleBox[")",
+         FontFamily->"Times New Roman",
+         FontSize->16,
+         FontWeight->"Regular",
+         FontSlant->"Italic"]}], 
+       FormBox[
+        RowBox[{"2", 
+         SubscriptBox["g", "I"], " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox[
+              SubsuperscriptBox["M", 
+               StyleBox[
+                RowBox[{"Z", " ", "'"}],
+                FontSize->10], 
+               RowBox[{"  ", "I"}]], 
+              SubscriptBox["g", "I"]], ")"}], "2"], 
+           StyleBox["-",
+            FontSlant->"Plain"], 
+           RowBox[{
+            StyleBox[
+             FractionBox[
+              StyleBox["1",
+               FontSize->14.200000000000001`,
+               FontSlant->"Plain"], 
+              StyleBox["4",
+               FontSize->14.200000000000001`,
+               FontSlant->"Plain"]],
+             FontSize->12,
+             FontSlant->"Plain"], 
+            StyleBox[
+             RowBox[{"(", 
+              FormBox[
+               RowBox[{" ", 
+                RowBox[{
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    SubsuperscriptBox["q", "u", 
+                    RowBox[{" ", "I"}]], ")"}], 
+                   RowBox[{" ", "2"}]], " ", 
+                  SubsuperscriptBox["v", "u", 
+                   RowBox[{"  ", "2"}]]}], 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], "+", 
+                 StyleBox[" ",
+                  FontFamily->"Times New Roman",
+                  FontWeight->"Regular",
+                  FontSlant->"Italic"], 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{
+                    RowBox[{"(", 
+                    SubsuperscriptBox["q", "d", 
+                    RowBox[{" ", "I"}]], ")"}], " "}], "2"], 
+                  SubsuperscriptBox["v", "d", 
+                   RowBox[{"  ", "2"}]], " "}]}]}],
+               TraditionalForm], ")"}],
+             FontSize->14]}]}], 
+          StyleBox[" ",
+           FontSize->14], 
+          StyleBox[")",
+           FontSize->14]}]}],
+        TraditionalForm]],
+      FontSize->20],
+     TraditionalForm],
+    FontSlant->"Italic"]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "ed0e533b-e52c-48d1-a8d7-6587775a66dc"],
+ "+",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"\[Sum]", 
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["q", "J", 
+       RowBox[{" ", 
+        RowBox[{"(", 
+         SubscriptBox["\[Nu]", "L"], ")"}]}]], 
+      SubscriptBox["g", "J"]}],
+     FontSize->15]}],
+   FontSlant->"Italic"]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->
+  "cda5e48c-6533-42b7-93a2-57051f2bd238"],
+ "-",
+ Cell[BoxData[
+  RowBox[{"\[Sum]", 
+   StyleBox[
+    RowBox[{
+     SubsuperscriptBox["q", "J", 
+      RowBox[{" ", 
+       RowBox[{"(", 
+        SubscriptBox["\[Nu]", "R"], ")"}]}]], 
+     SubscriptBox["g", 
+      RowBox[{"J", " "}]]}],
+    FontSize->15,
+    FontSlant->"Italic"]}]],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->"Regular",ExpressionUUID->"040b1c72-5334-49a0-8e57-4a1996bb2814"]
+}], "Text",
+ CellChangeTimes->{{3.795536142855899*^9, 3.7955361712159767`*^9}, {
+  3.795536208795948*^9, 3.795536209983056*^9}, {3.795536306726062*^9, 
+  3.7955363226672325`*^9}},ExpressionUUID->"b8e390af-de08-49b1-bb7b-\
+6d2ea5e256a6"]
+}, Open  ]]
+},
+WindowSize->{1584, 841},
+WindowMargins->{{2, Automatic}, {Automatic, 15}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 252, 5, 64, "Section",ExpressionUUID->"35c14b78-d2fa-441d-86e7-f350dee58f90"],
+Cell[835, 29, 23305, 815, 857, "Text",ExpressionUUID->"436c5c03-ed24-4e6c-bd99-889f5b1cdf55"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24177, 849, 233, 5, 64, "Section",ExpressionUUID->"05bd9d2d-3509-4b31-a2d1-e16e3f04f776"],
+Cell[24413, 856, 65806, 1948, 596, "Text",ExpressionUUID->"38d878ef-2cfe-4261-a07d-80b7be31f5b6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[90256, 2809, 233, 5, 64, "Section",ExpressionUUID->"6135a80b-1b68-42b7-bec0-dd339b08565d"],
+Cell[90492, 2816, 26781, 771, 231, "Text",ExpressionUUID->"7923aa25-01e3-404c-ae1d-7c2ef8eddefc"],
+Cell[117276, 3589, 27001, 766, 250, "Text",ExpressionUUID->"216b33f8-974b-46a1-a2aa-3a0696a4d69e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[144314, 4360, 891, 27, 64, "Section",ExpressionUUID->"7ce37e66-a8b1-4c41-9dc0-6c2a71443a58"],
+Cell[145208, 4389, 11708, 447, 458, "Text",ExpressionUUID->"d991fb25-e42d-4b27-b0d7-a70aa05489a1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[156953, 4841, 589, 17, 64, "Section",ExpressionUUID->"c1f066d9-136f-41c5-8436-07488325819e"],
+Cell[157545, 4860, 4403, 144, 198, "Text",ExpressionUUID->"ceff6680-0536-492e-9fd3-2678a9011dc8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[161985, 5009, 74, 0, 67, "Section",ExpressionUUID->"8b3d186e-dd0e-483b-b35e-29e12471758e"],
+Cell[162062, 5011, 9825, 332, 166, "Text",ExpressionUUID->"b8e390af-de08-49b1-bb7b-6d2ea5e256a6"]
+}, Open  ]]
+}
+]
+*)
+

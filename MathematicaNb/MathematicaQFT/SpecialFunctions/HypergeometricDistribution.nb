@@ -1,0 +1,2220 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     66564,       2210]
+NotebookOptionsPosition[     57219,       1958]
+NotebookOutlinePosition[     57810,       1982]
+CellTagsIndexPosition[     57724,       1977]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Hypergeometric Distribution", "Title",ExpressionUUID->"bc5481fc-063d-4dde-a4b0-d3d9ff17e06b"],
+
+Cell[CellGroupData[{
+
+Cell["Author", "Subsection",ExpressionUUID->"bc491c94-9adb-472c-81a3-9f3b1b65952e"],
+
+Cell["\<\
+Eric W. Weisstein
+September 19, 2008\
+\>", "Text",ExpressionUUID->"563f3087-e81f-4836-94b5-ccb5aa12a34c"],
+
+Cell[TextData[{
+ "This notebook downloaded from ",
+ ButtonBox["http://mathworld.wolfram.com/notebooks/Statistics/\
+HypergeometricDistribution.nb",
+  BaseStyle->"Hyperlink",
+  ButtonData:>{
+    URL["http://mathworld.wolfram.com/notebooks/Statistics/\
+HypergeometricDistribution.nb"], None}],
+ "."
+}], "Text",ExpressionUUID->"9da5a650-6bbf-46d7-9741-afc2151944bf"],
+
+Cell[TextData[{
+ "For more information, see Eric's ",
+ StyleBox["MathWorld",
+  FontSlant->"Italic"],
+ " entry ",
+ ButtonBox["http://mathworld.wolfram.com/HypergeometricDistribution.html",
+  BaseStyle->"Hyperlink",
+  ButtonData:>{
+    URL["http://mathworld.wolfram.com/HypergeometricDistribution.html"], 
+    None}],
+ "."
+}], "Text",ExpressionUUID->"b7347f21-a332-4382-925a-ae69d4f2f47d"],
+
+Cell["\<\
+\[Copyright]2008 Wolfram Research, Inc. except for portions noted otherwise\
+\>", "Text",ExpressionUUID->"e7171b51-2ef3-4473-bfe3-bb5ad9821671"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Plot", "Section",ExpressionUUID->"439b5836-2550-4558-bf18-f1669a204917"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BarChart", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"HypergeometricDistribution", "[", 
+        RowBox[{"i", ",", "10", ",", "20"}], "]"}], ",", "i"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "10"}], "}"}]}], "]"}], ",", 
+   RowBox[{"BarGroupSpacing", "\[Rule]", "0"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"Ticks", "\[Rule]", "None"}]}], "]"}]], "Input",ExpressionUUID->\
+"8c57beb4-3ba1-4dbf-b5bf-91186624dd55"],
+
+Cell[GraphicsData["PostScript", "\<\
+%!
+%%Creator: Mathematica
+%%AspectRatio: .61803 
+MathPictureStart
+%% Graphics
+/Courier findfont 10  scalefont  setfont
+% Scaling calculations
+-0.0238095 0.0952381 0.0147151 1.17721 [
+[ -0.001 -0.001 0 0 ]
+[ 1.001 .61903 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+[ ] 0 setdash
+0 g
+p
+p
+.002 w
+0 .01472 m
+1 .01472 L
+s
+P
+p
+.002 w
+.02381 0 m
+.02381 .61803 L
+s
+P
+P
+p
+p
+p
+1 0 0 r
+.02381 .01472 m
+.02381 .60332 L
+.11905 .60332 L
+.11905 .01472 L
+F
+P
+p
+.004 w
+.02381 .01472 m
+.02381 .60332 L
+.11905 .60332 L
+.11905 .01472 L
+.02381 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.11905 .01472 m
+.11905 .29353 L
+.21429 .29353 L
+.21429 .01472 L
+F
+P
+p
+.004 w
+.11905 .01472 m
+.11905 .29353 L
+.21429 .29353 L
+.21429 .01472 L
+.11905 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.21429 .01472 m
+.21429 .13863 L
+.30952 .13863 L
+.30952 .01472 L
+F
+P
+p
+.004 w
+.21429 .01472 m
+.21429 .13863 L
+.30952 .13863 L
+.30952 .01472 L
+.21429 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.30952 .01472 m
+.30952 .06574 L
+.40476 .06574 L
+.40476 .01472 L
+F
+P
+p
+.004 w
+.30952 .01472 m
+.30952 .06574 L
+.40476 .06574 L
+.40476 .01472 L
+.30952 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.40476 .01472 m
+.40476 .03385 L
+.5 .03385 L
+.5 .01472 L
+F
+P
+p
+.004 w
+.40476 .01472 m
+.40476 .03385 L
+.5 .03385 L
+.5 .01472 L
+.40476 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.5 .01472 m
+.5 .02109 L
+.59524 .02109 L
+.59524 .01472 L
+F
+P
+p
+.004 w
+.5 .01472 m
+.5 .02109 L
+.59524 .02109 L
+.59524 .01472 L
+.5 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.59524 .01472 m
+.59524 .01654 L
+.69048 .01654 L
+.69048 .01472 L
+F
+P
+p
+.004 w
+.59524 .01472 m
+.59524 .01654 L
+.69048 .01654 L
+.69048 .01472 L
+.59524 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.69048 .01472 m
+.69048 .01514 L
+.78571 .01514 L
+.78571 .01472 L
+F
+P
+p
+.004 w
+.69048 .01472 m
+.69048 .01514 L
+.78571 .01514 L
+.78571 .01472 L
+.69048 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.78571 .01472 m
+.78571 .01479 L
+.88095 .01479 L
+.88095 .01472 L
+F
+P
+p
+.004 w
+.78571 .01472 m
+.78571 .01479 L
+.88095 .01479 L
+.88095 .01472 L
+.78571 .01472 L
+s
+P
+P
+p
+p
+1 0 0 r
+.88095 .01472 m
+.88095 .01472 L
+.97619 .01472 L
+.97619 .01472 L
+F
+P
+p
+.004 w
+.88095 .01472 m
+.88095 .01472 L
+.97619 .01472 L
+.97619 .01472 L
+.88095 .01472 L
+s
+P
+P
+P
+0 0 m
+1 0 L
+1 .61803 L
+0 .61803 L
+closepath
+clip
+newpath
+% End of Graphics
+MathPictureEnd
+\
+\>"], "Graphics",
+ CellDingbat->None,
+ Evaluatable->False,
+ AspectRatioFixed->True,
+ ImageSize->{282, 174},
+ ImageMargins->{{69, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 
+  1}},ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJztmkEKgkAUQP/QonWrQlt4mlp1CJFAF5GYt4iuEa06Q3SN6BjR0pzhEwku
+Cm2CeILf8c/z/T+uRF3EZbpcxWWWxNG8iPM0SzbRbF3UqYERMYGIHCOx46oe
+anBbaIPI0B0G1TNfn7k48jNvdwlsMC0X6PzExWZu3JLrwjVy2mjuuaWpHRU/
+ug+65u3/lne3d+dhfbqWPaUoRanPSoV2dOi5b+3xhBYtWrRo0faidY+U5w79
+aO0LChQoUKBAgQIFChQoXt8JXd+so84bODg4ODg4ODg4ODg4ODj413D3Reze
+cr2yLnr6uVDMA3A2GqE=\
+\>"],ImageRangeCache->{{{0., 281.}, {173., 0.}} -> {0., 0., 0., \
+0.}},ExpressionUUID->"5c3307d6-5735-47db-9679-bc76bbde8db4"],
+
+Cell[OutputFormData["\<\
+Graphics[\"<<>>\"]\
+\>", "\<\
+-Graphics-\
+\>"], "Output",
+ CellDingbat->None,
+ Evaluatable->False,
+ AspectRatioFixed->
+  True,ExpressionUUID->"dbd327b7-545e-4327-92be-93b9e15a7f4d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["36 Pick-6 Lottery", "Section",ExpressionUUID->"12dc8e8a-f782-4d27-9f6b-f5507f2058a6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "HypergeometricDistribution"}]], "Input",ExpressionUUID->"00cd8c72-a7d8-4fc1-9c06-82671561ae25"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\!\(\*RowBox[{\\\"HypergeometricDistribution\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"n\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], StyleBox[\\\"succ\\\", \\\"TI\\\
+\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], \
+StyleBox[\\\"tot\\\", \\\"TI\\\"]]}], \\\"]\\\"}]\) represents a \
+hypergeometric distribution.\"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/HypergeometricDistribution"]}]], "Print", \
+"PrintUsage",
+ CellTags->
+  "Info3430823481-6111641",ExpressionUUID->"214f0924-7344-4eb8-a3e5-\
+58ac40fdf77e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{
+   RowBox[{"HypergeometricDistribution", "[", 
+    RowBox[{"N", ",", "n", ",", "res"}], "]"}], ",", "i"}], "]"}]], "Input",Ex\
+pressionUUID->"2f9024d0-6a1b-4137-9545-16f0770ad93a"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"n", ",", "i"}], "]"}], " ", 
+   RowBox[{"Binomial", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "n"}], "+", "res"}], ",", 
+     RowBox[{
+      RowBox[{"-", "i"}], "+", "N"}]}], "]"}]}], 
+  RowBox[{"Binomial", "[", 
+   RowBox[{"res", ",", "N"}], "]"}]]], "Output",ExpressionUUID->"efb3b572-\
+4bef-41e5-8dd4-ed561eb6f49c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"p", "=", 
+  RowBox[{"With", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"N", "=", "6"}], ",", 
+      RowBox[{"res", "=", "36"}], ",", 
+      RowBox[{"n", "=", "6"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"PDF", "[", 
+       RowBox[{
+        RowBox[{"HypergeometricDistribution", "[", 
+         RowBox[{"N", ",", "n", ",", "res"}], "]"}], ",", "i"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "0", ",", "N"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",ExpressionUUID->"371a63dc-815e-\
+4a58-af8a-2bfb9c0b027b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox["28275", "92752"], ",", 
+   FractionBox["10179", "23188"], ",", 
+   FractionBox["19575", "92752"], ",", 
+   FractionBox["725", "17391"], ",", 
+   FractionBox["2175", "649264"], ",", 
+   FractionBox["15", "162316"], ",", 
+   FractionBox["1", "1947792"]}], "}"}]], "Output",ExpressionUUID->"39e29b1b-\
+ce58-4bfd-ad7b-8015d0fbf50b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"p", "//", "N"}]], "Input",ExpressionUUID->"721dc009-3d6f-4e85-804e-2122d2e27bbb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.3048451785406245`", ",", "0.4389770570984992`", ",", 
+   "0.21104666206658618`", ",", "0.04168822954401702`", ",", 
+   "0.003349947016929939`", ",", "0.00009241233150151556`", ",", 
+   "5.134018416750865`*^-7"}], "}"}]], "Output",ExpressionUUID->"43fcec6b-\
+bd85-4491-b025-d6d102f88dc6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"1", "/", "#"}], "-", "1"}], "&"}], "/@", "p"}]], "Input",Expressi\
+onUUID->"7a2aff6c-5766-40fd-ab17-cf3d74580b7e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2.280353669319186`", ",", "1.2780233814716575`", ",", "3.738288633461047`",
+    ",", "22.98758620689655`", ",", "297.512183908046`", ",", 
+   "10820.066666666666`", ",", "1.947791`*^6"}], "}"}]], "Output",ExpressionUU\
+ID->"96df7a1e-cc93-419a-b667-3bab1d4aa77d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plus", "@@", "p"}]], "Input",ExpressionUUID->"0a65f74c-7122-4112-861f-a932dac9380d"],
+
+Cell[BoxData["1.`"], "Output",ExpressionUUID->"4a861dac-fc18-440d-bf36-0fce46f15009"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Stats", "Section",ExpressionUUID->"b22ec43f-90e6-41a4-808b-ed696a2343fb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Stats", "[", 
+     RowBox[{
+      RowBox[{"HypergeometricDistribution", "[", 
+       RowBox[{"N", ",", "n", ",", 
+        RowBox[{"m", "+", "n"}]}], "]"}], ",", "i"}], "]"}], "//", 
+    "FullSimplify"}], "//", "StatsForm"}], "//", "TraditionalForm"}]], "Input",\
+ExpressionUUID->"5b503047-4735-4ac5-bd8d-84df8c414173"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   FormBox[
+    TagBox[GridBox[{
+       {"Domain", 
+        TagBox[
+         RowBox[{"Range", "[", 
+          RowBox[{
+           RowBox[{"Max", "(", 
+            RowBox[{"0", ",", 
+             RowBox[{"N", "-", "m"}]}], ")"}], ",", 
+           RowBox[{"Min", "(", 
+            RowBox[{"n", ",", "N"}], ")"}]}], "]"}],
+         HoldForm]},
+       {
+        RowBox[{"P", "(", "i", ")"}], 
+        FractionBox[
+         RowBox[{
+          TagBox[
+           RowBox[{"(", GridBox[{
+              {
+               TagBox["m",
+                Identity,
+                Editable->True]},
+              {
+               TagBox[
+                RowBox[{"N", "-", "i"}],
+                Identity,
+                Editable->True]}
+             }], ")"}],
+           InterpretTemplate[Binomial[#, #2]& ],
+           Editable->False], " ", 
+          TagBox[
+           RowBox[{"(", GridBox[{
+              {
+               TagBox["n",
+                Identity,
+                Editable->True]},
+              {
+               TagBox["i",
+                Identity,
+                Editable->True]}
+             }], ")"}],
+           InterpretTemplate[Binomial[#, #2]& ],
+           Editable->False]}], 
+         TagBox[
+          RowBox[{"(", GridBox[{
+             {
+              TagBox[
+               RowBox[{"m", "+", "n"}],
+               Identity,
+               Editable->True]},
+             {
+              TagBox["N",
+               Identity,
+               Editable->True]}
+            }], ")"}],
+          InterpretTemplate[Binomial[#, #2]& ],
+          Editable->False]]},
+       {
+        RowBox[{"D", "(", "i", ")"}], 
+        FractionBox[
+         RowBox[{
+          RowBox[{"\[CapitalGamma]", "(", 
+           RowBox[{"m", "+", "1"}], ")"}], " ", 
+          RowBox[{"\[CapitalGamma]", "(", 
+           RowBox[{"n", "+", "1"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             TagBox[
+              TagBox[
+               RowBox[{
+                RowBox[{
+                 SubscriptBox["\[InvisiblePrefixScriptBase]", 
+                  FormBox["3",
+                   TraditionalForm]], 
+                 SubscriptBox[
+                  OverscriptBox["F", "~"], 
+                  FormBox["2",
+                   TraditionalForm]]}], "\[InvisibleApplication]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  TagBox[
+                   TagBox[
+                    RowBox[{
+                    TagBox["1",
+                    HypergeometricPFQRegularized,
+                    Editable->True], ",", 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"Max", "(", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"N", "-", "m"}]}], ")"}], "-", "n"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True], ",", 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"Max", "(", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"N", "-", "m"}]}], ")"}], "-", "N"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True]}],
+                    InterpretTemplate[{
+                    SlotSequence[1]}& ]],
+                   HypergeometricPFQRegularized,
+                   Editable->False], ";", 
+                  TagBox[
+                   TagBox[
+                    RowBox[{
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"Max", "(", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"N", "-", "m"}]}], ")"}], "+", "1"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True], ",", 
+                    TagBox[
+                    RowBox[{"m", "-", "N", "+", 
+                    RowBox[{"Max", "(", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"N", "-", "m"}]}], ")"}], "+", "1"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True]}],
+                    InterpretTemplate[{
+                    SlotSequence[1]}& ]],
+                   HypergeometricPFQRegularized,
+                   Editable->False], ";", 
+                  TagBox["1",
+                   HypergeometricPFQRegularized,
+                   Editable->True]}], ")"}]}],
+               InterpretTemplate[HypergeometricPFQRegularized[#, #2, #3]& ],
+               Editable->False],
+              HypergeometricPFQRegularized], 
+             RowBox[{
+              RowBox[{"\[CapitalGamma]", "(", 
+               RowBox[{"n", "-", 
+                RowBox[{"Max", "(", 
+                 RowBox[{"0", ",", 
+                  RowBox[{"N", "-", "m"}]}], ")"}], "+", "1"}], ")"}], " ", 
+              RowBox[{"\[CapitalGamma]", "(", 
+               RowBox[{"N", "-", 
+                RowBox[{"Max", "(", 
+                 RowBox[{"0", ",", 
+                  RowBox[{"N", "-", "m"}]}], ")"}], "+", "1"}], ")"}]}]], "-", 
+            FractionBox[
+             TagBox[
+              TagBox[
+               RowBox[{
+                RowBox[{
+                 SubscriptBox["\[InvisiblePrefixScriptBase]", 
+                  FormBox["3",
+                   TraditionalForm]], 
+                 SubscriptBox[
+                  OverscriptBox["F", "~"], 
+                  FormBox["2",
+                   TraditionalForm]]}], "\[InvisibleApplication]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  TagBox[
+                   TagBox[
+                    RowBox[{
+                    TagBox["1",
+                    HypergeometricPFQRegularized,
+                    Editable->True], ",", 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"-", "n"}], "+", 
+                    RowBox[{"Min", "(", 
+                    RowBox[{"n", ",", "N", ",", 
+                    RowBox[{"\[LeftFloor]", "i", "\[RightFloor]"}]}], ")"}], 
+                    "+", "1"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True], ",", 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"-", "N"}], "+", 
+                    RowBox[{"Min", "(", 
+                    RowBox[{"n", ",", "N", ",", 
+                    RowBox[{"\[LeftFloor]", "i", "\[RightFloor]"}]}], ")"}], 
+                    "+", "1"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True]}],
+                    InterpretTemplate[{
+                    SlotSequence[1]}& ]],
+                   HypergeometricPFQRegularized,
+                   Editable->False], ";", 
+                  TagBox[
+                   TagBox[
+                    RowBox[{
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"Min", "(", 
+                    RowBox[{"n", ",", "N", ",", 
+                    RowBox[{"\[LeftFloor]", "i", "\[RightFloor]"}]}], ")"}], 
+                    "+", "2"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True], ",", 
+                    TagBox[
+                    RowBox[{"m", "-", "N", "+", 
+                    RowBox[{"Min", "(", 
+                    RowBox[{"n", ",", "N", ",", 
+                    RowBox[{"\[LeftFloor]", "i", "\[RightFloor]"}]}], ")"}], 
+                    "+", "2"}],
+                    HypergeometricPFQRegularized,
+                    Editable->True]}],
+                    InterpretTemplate[{
+                    SlotSequence[1]}& ]],
+                   HypergeometricPFQRegularized,
+                   Editable->False], ";", 
+                  TagBox["1",
+                   HypergeometricPFQRegularized,
+                   Editable->True]}], ")"}]}],
+               InterpretTemplate[HypergeometricPFQRegularized[#, #2, #3]& ],
+               Editable->False],
+              HypergeometricPFQRegularized], 
+             RowBox[{
+              RowBox[{"\[CapitalGamma]", "(", 
+               RowBox[{"n", "-", 
+                RowBox[{"Min", "(", 
+                 RowBox[{"n", ",", "N", ",", 
+                  RowBox[{"\[LeftFloor]", "i", "\[RightFloor]"}]}], ")"}]}], 
+               ")"}], " ", 
+              RowBox[{"\[CapitalGamma]", "(", 
+               RowBox[{"N", "-", 
+                RowBox[{"Min", "(", 
+                 RowBox[{"n", ",", "N", ",", 
+                  RowBox[{"\[LeftFloor]", "i", "\[RightFloor]"}]}], ")"}]}], 
+               ")"}]}]]}], ")"}]}], 
+         TagBox[
+          RowBox[{"(", GridBox[{
+             {
+              TagBox[
+               RowBox[{"m", "+", "n"}],
+               Identity,
+               Editable->True]},
+             {
+              TagBox["N",
+               Identity,
+               Editable->True]}
+            }], ")"}],
+          InterpretTemplate[Binomial[#, #2]& ],
+          Editable->False]]},
+       {"\[Mu]", 
+        FractionBox[
+         RowBox[{"n", " ", "N"}], 
+         RowBox[{"m", "+", "n"}]]},
+       {
+        SuperscriptBox["\[Sigma]", "2"], 
+        FractionBox[
+         RowBox[{"m", " ", "n", " ", 
+          RowBox[{"(", 
+           RowBox[{"m", "+", "n", "-", "N"}], ")"}], " ", "N"}], 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"m", "+", "n", "-", "1"}], ")"}], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"m", "+", "n"}], ")"}], "2"]}]]},
+       {
+        SubscriptBox["\[Gamma]", "1"], 
+        FractionBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"m", "-", "n"}], ")"}], " ", 
+          SqrtBox[
+           RowBox[{"m", "+", "n", "-", "1"}]], " ", 
+          RowBox[{"(", 
+           RowBox[{"m", "+", "n", "-", 
+            RowBox[{"2", " ", "N"}]}], ")"}]}], 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"m", "+", "n", "-", "2"}], ")"}], " ", 
+          SqrtBox[
+           RowBox[{"m", " ", "n", " ", 
+            RowBox[{"(", 
+             RowBox[{"m", "+", "n", "-", "N"}], ")"}], " ", "N"}]]}]]},
+       {
+        SubscriptBox["\[Gamma]", "2"], 
+        RowBox[{
+         FractionBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"m", "+", "n", "-", "1"}], ")"}], " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"m", "+", "n"}], ")"}], "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"m", "+", "n"}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"m", "+", "n", "+", "1"}], ")"}]}], "-", 
+             RowBox[{"6", " ", 
+              RowBox[{"(", 
+               RowBox[{"m", "+", "n", "-", "N"}], ")"}], " ", "N"}], "+", 
+             FractionBox[
+              RowBox[{"3", " ", "m", " ", "n", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"-", "2"}], " ", 
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    RowBox[{"m", "+", "n"}], ")"}], "2"]}], "+", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"m", "+", "n", "+", "6"}], ")"}], " ", "N", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"m", "+", "n"}], ")"}]}], "-", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"m", "+", "n", "+", "6"}], ")"}], " ", 
+                  SuperscriptBox["N", "2"]}]}], ")"}]}], 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{"m", "+", "n"}], ")"}], "2"]]}], ")"}]}], 
+          RowBox[{"m", " ", "n", " ", 
+           RowBox[{"(", 
+            RowBox[{"m", "+", "n", "-", "3"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"m", "+", "n", "-", "2"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"m", "+", "n", "-", "N"}], ")"}], " ", "N"}]], "-", 
+         "3"}]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[2.0999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Function[BoxForm`e$, 
+      TableForm[BoxForm`e$]]],
+    TraditionalForm],
+   TraditionalForm,
+   Editable->True], TraditionalForm]], "Output",ExpressionUUID->"e79d5455-\
+2de0-4c1d-ab58-6ef25dc14f35"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["PDF", "Section",ExpressionUUID->"649df707-ada8-4971-be65-308675c781b5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{
+   RowBox[{"HypergeometricDistribution", "[", 
+    RowBox[{"N", ",", "n", ",", 
+     RowBox[{"m", "+", "n"}]}], "]"}], ",", "i"}], "]"}]], "Input",ExpressionU\
+UID->"973edd68-424c-4adc-8ee0-133231318260"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"m", ",", 
+     RowBox[{
+      RowBox[{"-", "i"}], "+", "N"}]}], "]"}], " ", 
+   RowBox[{"Binomial", "[", 
+    RowBox[{"n", ",", "i"}], "]"}]}], 
+  RowBox[{"Binomial", "[", 
+   RowBox[{
+    RowBox[{"m", "+", "n"}], ",", "N"}], "]"}]]], "Output",ExpressionUUID->\
+"747d8ef8-f2e4-4d48-945d-00e35cf1ec9b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FunctionExpand", "[", "%", "]"}], "/.", 
+  RowBox[{
+   RowBox[{"Gamma", "[", "x_", "]"}], "\[RuleDelayed]", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "-", "1"}], ")"}], "!"}]}]}]], "Input",ExpressionUUID->\
+"4dde75ee-2d05-43f0-91ea-7c945ce52ae2"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"m", "!"}], " ", 
+   RowBox[{"n", "!"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"m", "+", "n", "-", "N"}], ")"}], "!"}], " ", 
+   RowBox[{"N", "!"}]}], 
+  RowBox[{
+   RowBox[{"i", "!"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "i"}], "+", "n"}], ")"}], "!"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"m", "+", "n"}], ")"}], "!"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"i", "+", "m", "-", "N"}], ")"}], "!"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "i"}], "+", "N"}], ")"}], "!"}]}]]], "Output",ExpressionUUI\
+D->"3dad0e22-d39d-422e-a718-931f349ccbde"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CDF", "Section",ExpressionUUID->"a1482f78-763c-42eb-a953-009b7a85f990"],
+
+Cell[CellGroupData[{
+
+Cell["V6", "Subsubsection",ExpressionUUID->"f4329a0c-1bd1-49a8-bc82-546fcbd47957"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CDF", "[", 
+  RowBox[{
+   RowBox[{"HypergeometricDistribution", "[", 
+    RowBox[{"N", ",", "n", ",", 
+     RowBox[{"m", "+", "n"}]}], "]"}], ",", "i"}], "]"}]], "Input",ExpressionU\
+UID->"785044cc-610a-49cf-acb8-36e79b5cc5f5"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"Binomial", "[", 
+    RowBox[{
+     RowBox[{"m", "+", "n"}], ",", "N"}], "]"}]], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", "m"}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", "n"}], "]"}], " ", 
+       RowBox[{"HypergeometricPFQ", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{
+            RowBox[{"-", "n"}], "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], ",", 
+           RowBox[{
+            RowBox[{"-", "N"}], "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], ",", 
+           RowBox[{"1", "+", "m", "-", "N", "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}]}], "}"}], ",", "1"}],
+         "]"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", "n", "-", 
+         RowBox[{"Max", "[", 
+          RowBox[{"0", ",", 
+           RowBox[{
+            RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", "N", "-", 
+         RowBox[{"Max", "[", 
+          RowBox[{"0", ",", 
+           RowBox[{
+            RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", 
+         RowBox[{"Max", "[", 
+          RowBox[{"0", ",", 
+           RowBox[{
+            RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", "m", "-", "N", "+", 
+         RowBox[{"Max", "[", 
+          RowBox[{"0", ",", 
+           RowBox[{
+            RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], "]"}]}], ")"}]}], "-", 
+    
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"m", " ", 
+       RowBox[{"Gamma", "[", "m", "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", "n"}], "]"}], " ", 
+       RowBox[{"HypergeometricPFQ", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"1", "-", "n", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", 
+              RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], ",", 
+           RowBox[{"1", "-", "N", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", 
+              RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"2", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", 
+              RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], ",", 
+           RowBox[{"2", "+", "m", "-", "N", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", 
+              RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}]}], "}"}], ",", 
+         "1"}], "]"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Gamma", "[", 
+        RowBox[{"n", "-", 
+         RowBox[{"Min", "[", 
+          RowBox[{"n", ",", "N", ",", 
+           RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"N", "-", 
+         RowBox[{"Min", "[", 
+          RowBox[{"n", ",", "N", ",", 
+           RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"2", "+", 
+         RowBox[{"Min", "[", 
+          RowBox[{"n", ",", "N", ",", 
+           RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"2", "+", "m", "-", "N", "+", 
+         RowBox[{"Min", "[", 
+          RowBox[{"n", ",", "N", ",", 
+           RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], "]"}]}], ")"}]}]}], 
+   ")"}]}]], "Output",ExpressionUUID->"4092abbd-6293-4137-9af9-664cb57156b3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"$3", "=", 
+      RowBox[{"Max", "[", 
+       RowBox[{"0", ",", 
+        RowBox[{
+         RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], 
+     RowBox[{"Min", "[", 
+      RowBox[{"n", ",", "N", ",", "x"}], "]"}]], 
+    FractionBox[
+     RowBox[{
+      RowBox[{"Binomial", "[", 
+       RowBox[{
+        RowBox[{"m", "+", "n", "-", "N"}], ",", 
+        RowBox[{
+         RowBox[{"-", "$3"}], "+", "n"}]}], "]"}], " ", 
+      RowBox[{"Binomial", "[", 
+       RowBox[{"N", ",", "$3"}], "]"}]}], 
+     RowBox[{"Binomial", "[", 
+      RowBox[{
+       RowBox[{"m", "+", "n"}], ",", "n"}], "]"}]]}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"m", "|", "n", "|", "N", "|", "x"}], ")"}], "\[Element]", 
+     "Integers"}], "&&", 
+    RowBox[{"N", "\[LessEqual]", 
+     RowBox[{"m", "+", "n"}]}], "&&", 
+    RowBox[{"N", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"m", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"n", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"x", ">", "0"}]}]}], "]"}]], "Input",ExpressionUUID->"b3bce131-\
+ad79-4d99-890e-d2a568a2b74f"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"Binomial", "[", 
+    RowBox[{
+     RowBox[{"m", "+", "n"}], ",", "n"}], "]"}]], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"m", "+", "n", "-", "N"}], ")"}], "!"}], " ", 
+    RowBox[{"N", "!"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"HypergeometricPFQRegularized", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{
+            RowBox[{"-", "n"}], "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], ",", 
+           RowBox[{
+            RowBox[{"-", "N"}], "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], ",", 
+           RowBox[{"1", "+", "m", "-", "N", "+", 
+            RowBox[{"Max", "[", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}]}], "}"}], ",", "1"}],
+         "]"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Gamma", "[", 
+          RowBox[{"1", "+", "n", "-", 
+           RowBox[{"Max", "[", 
+            RowBox[{"0", ",", 
+             RowBox[{
+              RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], "]"}], " ", 
+         RowBox[{"Gamma", "[", 
+          RowBox[{"1", "+", "N", "-", 
+           RowBox[{"Max", "[", 
+            RowBox[{"0", ",", 
+             RowBox[{
+              RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], "]"}]}], ")"}]}], 
+      "-", 
+      RowBox[{
+       RowBox[{"HypergeometricPFQRegularized", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"1", "-", "n", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", "x"}], "]"}]}], ",", 
+           RowBox[{"1", "-", "N", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", "x"}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"2", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", "x"}], "]"}]}], ",", 
+           RowBox[{"2", "+", "m", "-", "N", "+", 
+            RowBox[{"Min", "[", 
+             RowBox[{"n", ",", "N", ",", "x"}], "]"}]}]}], "}"}], ",", "1"}], 
+        "]"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Gamma", "[", 
+          RowBox[{"n", "-", 
+           RowBox[{"Min", "[", 
+            RowBox[{"n", ",", "N", ",", "x"}], "]"}]}], "]"}], " ", 
+         RowBox[{"Gamma", "[", 
+          RowBox[{"N", "-", 
+           RowBox[{"Min", "[", 
+            RowBox[{"n", ",", "N", ",", "x"}], "]"}]}], "]"}]}], ")"}]}]}], 
+     ")"}]}], ")"}]}]], "Output",ExpressionUUID->"98814b1d-69b0-425a-8f7f-\
+3a2822031d4b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["V7", "Subsubsection",ExpressionUUID->"d6b772dd-8457-4cd2-be52-4de6c7929dc0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CDF", "[", 
+  RowBox[{
+   RowBox[{"HypergeometricDistribution", "[", 
+    RowBox[{"N", ",", "n", ",", 
+     RowBox[{"m", "+", "n"}]}], "]"}], ",", "i"}], "]"}]], "Input",ExpressionU\
+UID->"7b5b46e8-5c99-4811-8656-a1a91a4c7aba"],
+
+Cell[BoxData[
+ RowBox[{"\[Piecewise]", GridBox[{
+    {
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"Binomial", "[", 
+        RowBox[{
+         RowBox[{"m", "+", "n"}], ",", "N"}], "]"}]], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"n", " ", 
+            RowBox[{"m", "!"}], " ", 
+            RowBox[{"Gamma", "[", "n", "]"}], " ", 
+            RowBox[{"HypergeometricPFQRegularized", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"1", ",", 
+                RowBox[{"1", "-", "N", "+", 
+                 RowBox[{"Min", "[", 
+                  RowBox[{"n", ",", "N", ",", 
+                   RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], ",", 
+                RowBox[{"1", "-", "n", "+", 
+                 RowBox[{"Min", "[", 
+                  RowBox[{"n", ",", "N", ",", 
+                   RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}]}], "}"}], ",", 
+              
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"2", "+", 
+                 RowBox[{"Min", "[", 
+                  RowBox[{"n", ",", "N", ",", 
+                   RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], ",", 
+                RowBox[{"2", "+", "m", "-", "N", "+", 
+                 RowBox[{"Min", "[", 
+                  RowBox[{"n", ",", "N", ",", 
+                   RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}]}], "}"}], ",", 
+              "1"}], "]"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gamma", "[", 
+             RowBox[{"n", "-", 
+              RowBox[{"Min", "[", 
+               RowBox[{"n", ",", "N", ",", 
+                RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], "]"}], " ", 
+            RowBox[{"Gamma", "[", 
+             RowBox[{"N", "-", 
+              RowBox[{"Min", "[", 
+               RowBox[{"n", ",", "N", ",", 
+                RowBox[{"Floor", "[", "i", "]"}]}], "]"}]}], "]"}]}], 
+           ")"}]}]}], "+", 
+        RowBox[{
+         RowBox[{"HypergeometricPFQ", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1", ",", 
+             RowBox[{
+              RowBox[{"-", "n"}], "+", 
+              RowBox[{"Max", "[", 
+               RowBox[{"0", ",", 
+                RowBox[{
+                 RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], ",", 
+             RowBox[{
+              RowBox[{"-", "N"}], "+", 
+              RowBox[{"Max", "[", 
+               RowBox[{"0", ",", 
+                RowBox[{
+                 RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1", "+", 
+              RowBox[{"Max", "[", 
+               RowBox[{"0", ",", 
+                RowBox[{
+                 RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}], ",", 
+             RowBox[{"1", "+", "m", "-", "N", "+", 
+              RowBox[{"Max", "[", 
+               RowBox[{"0", ",", 
+                RowBox[{
+                 RowBox[{"-", "m"}], "+", "N"}]}], "]"}]}]}], "}"}], ",", 
+           "1"}], "]"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"\[Piecewise]", GridBox[{
+             {
+              FractionBox[
+               RowBox[{"n", "!"}], 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"m", "+", "n", "-", "N"}], ")"}], "!"}], " ", 
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"1", "-", "m", "+", "N"}], "]"}]}]], 
+              RowBox[{
+               RowBox[{"n", "+", "N"}], ">", 
+               RowBox[{"m", "+", "n"}]}]},
+             {
+              FractionBox[
+               RowBox[{"m", "!"}], 
+               RowBox[{
+                RowBox[{"N", "!"}], " ", 
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"1", "+", "m", "-", "N"}], "]"}]}]], 
+              TagBox["True",
+               "PiecewiseDefault",
+               AutoDelete->False,
+               DeletionWarning->True]}
+            },
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{1.}}, "RowsIndexed" -> {}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.84]}, 
+                Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[0.4]}, 
+                Offset[0.2]}, "RowsIndexed" -> {}}]}], ")"}]}]}], ")"}]}], 
+     RowBox[{"i", "\[LessEqual]", 
+      RowBox[{"Min", "[", 
+       RowBox[{"n", ",", "N"}], "]"}]}]},
+    {"1", 
+     RowBox[{"i", ">", 
+      RowBox[{"Min", "[", 
+       RowBox[{"n", ",", "N"}], "]"}]}]},
+    {"0", 
+     TagBox["True",
+      "PiecewiseDefault",
+      AutoDelete->False,
+      DeletionWarning->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.84]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}]}]], "Output",ExpressionUUID->\
+"b56e8477-d150-4a78-ad0c-0873a4312dbf"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Characteristic Function", "Section",ExpressionUUID->"68b22120-e302-42ae-9617-44131913890d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CharacteristicFunction", "[", 
+  RowBox[{
+   RowBox[{"HypergeometricDistribution", "[", 
+    RowBox[{"N", ",", "n", ",", 
+     RowBox[{"m", "+", "n"}]}], "]"}], ",", "t"}], "]"}]], "Input",ExpressionU\
+UID->"75b1c7cb-fa44-4b69-af24-00c7d1cf6a21"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"m", "!"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"m", "+", "n", "-", "N"}], ")"}], "!"}], " ", 
+   RowBox[{"Hypergeometric2F1", "[", 
+    RowBox[{
+     RowBox[{"-", "N"}], ",", 
+     RowBox[{"-", "n"}], ",", 
+     RowBox[{"1", "+", "m", "-", "N"}], ",", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"\[ImaginaryI]", " ", "t"}]]}], "]"}]}], 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"m", "+", "n"}], ")"}], "!"}]]], "Output",ExpressionUUID->\
+"15d7cece-4a44-4a04-b9bc-db529567e46b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Mean", "Section",ExpressionUUID->"9a9f5543-6646-4402-8aff-a4e7c998c097"],
+
+Cell[CellGroupData[{
+
+Cell["V6", "Subsubsection",ExpressionUUID->"be35d44e-0988-4bcc-a724-8774e4b69a07"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{"Binomial", "[", 
+        RowBox[{"m", ",", 
+         RowBox[{"N", "-", "i"}]}], "]"}], " ", 
+       RowBox[{"Binomial", "[", 
+        RowBox[{"n", ",", "i"}], "]"}]}], 
+      RowBox[{"Binomial", "[", 
+       RowBox[{
+        RowBox[{"m", "+", "n"}], ",", "N"}], "]"}]], " ", "i"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", "N"}], "}"}]}], "]"}], "]"}]], "Input",Expres\
+sionUUID->"18d8f32c-b331-4237-a6ff-c2cbf23184d3"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"n", " ", "N"}], 
+  RowBox[{"m", "+", "n"}]]], "Output",ExpressionUUID->"ea65c22e-e6b4-4641-\
+b8d7-5a36b00a0f00"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["V7", "Subsubsection",ExpressionUUID->"252b553f-15c9-4abd-8dda-3a0e4ee4999b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"Binomial", "[", 
+       RowBox[{"m", ",", 
+        RowBox[{"N", "-", "i"}]}], "]"}], " ", 
+      RowBox[{"Binomial", "[", 
+       RowBox[{"n", ",", "i"}], "]"}]}], 
+     RowBox[{"Binomial", "[", 
+      RowBox[{
+       RowBox[{"m", "+", "n"}], ",", "N"}], "]"}]], " ", "i"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "0", ",", "N"}], "}"}]}], "]"}]], "Input",ExpressionUUID\
+->"42b607f0-640c-4a81-adee-1a47f64f220b"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"n", " ", "N"}], 
+  RowBox[{"m", "+", "n"}]]], "Output",ExpressionUUID->"2cb6af3e-0bae-453b-\
+a5cf-da4207ac66f5"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Variance", "Section",ExpressionUUID->"a45fee38-4fd1-4a1d-b499-c0a439a69c0f"],
+
+Cell[CellGroupData[{
+
+Cell["V6", "Subsubsection",ExpressionUUID->"dea519e0-6db2-477c-95de-a1430f2b7ca8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{"Binomial", "[", 
+        RowBox[{"m", ",", 
+         RowBox[{"N", "-", "i"}]}], "]"}], " ", 
+       RowBox[{"Binomial", "[", 
+        RowBox[{"n", ",", "i"}], "]"}]}], 
+      RowBox[{"Binomial", "[", 
+       RowBox[{
+        RowBox[{"m", "+", "n"}], ",", "N"}], "]"}]], " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"i", "-", 
+        FractionBox[
+         RowBox[{"n", " ", "N"}], 
+         RowBox[{"m", "+", "n"}]]}], ")"}], "^", "2"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", "N"}], "}"}]}], "]"}], "]"}]], "Input",Expres\
+sionUUID->"4554cadc-ce8f-4a78-ba78-6d6b2b66c6b1"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"m", " ", "n", " ", 
+   RowBox[{"(", 
+    RowBox[{"m", "+", "n", "-", "N"}], ")"}], " ", "N"}], 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "m", "+", "n"}], ")"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"m", "+", "n"}], ")"}], "2"]}]]], "Output",ExpressionUUID->\
+"739ecf92-8cbd-4f28-8c6e-da58977b6f65"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["V7", "Subsubsection",ExpressionUUID->"3da3ab25-a8d9-4637-ba79-e67ded644288"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"Binomial", "[", 
+       RowBox[{"m", ",", 
+        RowBox[{"N", "-", "i"}]}], "]"}], " ", 
+      RowBox[{"Binomial", "[", 
+       RowBox[{"n", ",", "i"}], "]"}]}], 
+     RowBox[{"Binomial", "[", 
+      RowBox[{
+       RowBox[{"m", "+", "n"}], ",", "N"}], "]"}]], " ", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"i", "-", 
+       FractionBox[
+        RowBox[{"n", " ", "N"}], 
+        RowBox[{"m", "+", "n"}]]}], ")"}], "^", "2"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "0", ",", "N"}], "}"}]}], "]"}]], "Input",ExpressionUUID\
+->"2559e2a4-ddbe-4762-818d-9e3c48c48c45"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"m", " ", "n", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"m", " ", "N"}], "+", 
+     RowBox[{"n", " ", "N"}], "-", 
+     SuperscriptBox["N", "2"]}], ")"}]}], 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "m", "+", "n"}], ")"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"m", "+", "n"}], ")"}], "2"]}]]], "Output",ExpressionUUID->\
+"ced3091b-9a90-48b0-aec8-0948a7df4ecc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", "%", "]"}]], "Input",ExpressionUUID->"8479c9a6-226e-42a0-a1af-8adae74b7352"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"m", " ", "n", " ", 
+   RowBox[{"(", 
+    RowBox[{"m", "+", "n", "-", "N"}], ")"}], " ", "N"}], 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "m", "+", "n"}], ")"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"m", "+", "n"}], ")"}], "2"]}]]], "Output",ExpressionUUID->\
+"97b0a1c4-7b57-49ca-b828-dcb2e50694ec"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Covariance", "Section",ExpressionUUID->"8f4a2ac4-d59a-4705-ad0d-c738a36c2630"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{"Piecewise", "[", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"m", " ", "n"}], 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"n", "+", "m"}], ")"}], "2"], 
+          RowBox[{"(", 
+           RowBox[{"n", "+", "m", "-", "1"}], ")"}]}]]}], ",", 
+       RowBox[{"i", "\[NotEqual]", "j"}]}], "}"}], "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "N"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"j", ",", "N"}], "}"}]}], "]"}]], "Input",ExpressionUUID->\
+"65e4c57c-61df-4659-b271-2dbf31e60c77"],
+
+Cell[BoxData["$Aborted"], "Output",ExpressionUUID->"acfb7e12-b226-4821-976a-ee4f8713ee3d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cov", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Piecewise", "[", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"i", "\[NotEqual]", "j"}]}], "}"}], "}"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "N"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "N"}], "}"}]}], "]"}]}]], "Input",ExpressionUUID->\
+"30ea68ff-0180-45b9-9c3f-e50ba46b2b63"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", " ", 
+   RowBox[{"(", 
+    RowBox[{"\[Piecewise]", GridBox[{
+       {"N", 
+        RowBox[{"N", "\[GreaterEqual]", "2"}]},
+       {"0", 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->False,
+         DeletionWarning->True]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}]}], ")"}]}], "+", 
+  RowBox[{"\[Piecewise]", GridBox[{
+     {
+      RowBox[{"-", "x"}], 
+      RowBox[{"N", ">", "1"}]},
+     {"0", 
+      TagBox["True",
+       "PiecewiseDefault",
+       AutoDelete->False,
+       DeletionWarning->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.84]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}]}], "+", 
+  RowBox[{"\[Piecewise]", GridBox[{
+     {
+      RowBox[{"-", "x"}], 
+      RowBox[{"N", "\[GreaterEqual]", "2"}]},
+     {"0", 
+      TagBox["True",
+       "PiecewiseDefault",
+       AutoDelete->False,
+       DeletionWarning->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.84]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}]}], "+", 
+  RowBox[{"\[Piecewise]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "2"}], "+", "N"}], ")"}]}], " ", "x"}], 
+      RowBox[{"N", ">", "2"}]},
+     {"0", 
+      TagBox["True",
+       "PiecewiseDefault",
+       AutoDelete->False,
+       DeletionWarning->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.84]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}]}], "+", 
+  RowBox[{"\[Piecewise]", GridBox[{
+     {
+      RowBox[{"N", " ", "x"}], 
+      RowBox[{"N", ">", "1"}]},
+     {"0", 
+      TagBox["True",
+       "PiecewiseDefault",
+       AutoDelete->False,
+       DeletionWarning->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.84]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}]}], "+", 
+  RowBox[{"\[Piecewise]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "2"}], "+", "N"}], ")"}], " ", "N", " ", "x"}], 
+      RowBox[{"N", ">", "2"}]},
+     {"0", 
+      TagBox["True",
+       "PiecewiseDefault",
+       AutoDelete->False,
+       DeletionWarning->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.84]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}]}], "+", 
+  RowBox[{"\[Piecewise]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "2"}], "-", "N", "+", 
+         SuperscriptBox["N", "2"]}], ")"}], " ", "x"}], 
+      RowBox[{"N", ">", "2"}]},
+     {"0", 
+      TagBox["True",
+       "PiecewiseDefault",
+       AutoDelete->False,
+       DeletionWarning->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.84]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}]}], "+", 
+  RowBox[{"\[Piecewise]", GridBox[{
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "2"}], "-", "N", "+", 
+         SuperscriptBox["N", "2"]}], ")"}], " ", "x"}], 
+      RowBox[{"N", ">", "2"}]},
+     {"0", 
+      TagBox["True",
+       "PiecewiseDefault",
+       AutoDelete->False,
+       DeletionWarning->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.84]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}]}]}]], "Output",ExpressionUUID->\
+"f8db88cb-3ad7-4a2d-9f63-1a1bf31c9449"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", "cov", "]"}]], "Input",ExpressionUUID->"1a3642a5-8a93-4ff7-b782-d459744a64dc"],
+
+Cell[BoxData[
+ RowBox[{"\[Piecewise]", GridBox[{
+    {
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "N"}], ")"}], " ", "x"}], 
+     RowBox[{"1", "<", "N", "<", "2"}]},
+    {
+     RowBox[{"2", " ", "x"}], 
+     RowBox[{"N", "\[Equal]", "2"}]},
+    {
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "N"}], ")"}], " ", "N", " ", "x"}], 
+     RowBox[{"N", ">", "2"}]},
+    {"0", 
+     TagBox["True",
+      "PiecewiseDefault",
+      AutoDelete->False,
+      DeletionWarning->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.84]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}]}]], "Output",ExpressionUUID->\
+"e5d30a87-d9ba-4db7-8ccb-476bcbd3029a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{"cov", ",", 
+   RowBox[{"N", "\[Equal]", "1"}]}], "]"}]], "Input",ExpressionUUID->\
+"bf287fbb-034e-4a5a-850a-9de4c1fb2e71"],
+
+Cell[BoxData["0"], "Output",ExpressionUUID->"9fdc0b8d-4bd5-4783-ac8e-0859e3b7a3f6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{"cov", ",", 
+   RowBox[{"N", ">", "1"}]}], "]"}]], "Input",ExpressionUUID->"fe21b26b-ff76-\
+4799-862a-dbbf122d12e5"],
+
+Cell[BoxData[
+ RowBox[{"\[Piecewise]", GridBox[{
+    {
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "N"}], ")"}], " ", "x"}], 
+     RowBox[{"N", "<", "2"}]},
+    {
+     RowBox[{"2", " ", "x"}], 
+     RowBox[{"N", "\[Equal]", "2"}]},
+    {
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "N"}], ")"}], " ", "N", " ", "x"}], 
+     TagBox["True",
+      "PiecewiseDefault",
+      AutoDelete->False,
+      DeletionWarning->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.84]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}]}]], "Output",ExpressionUUID->\
+"349f3105-5be1-4fa1-b4e1-ce1cf4e70bc0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{"cov", ",", 
+   RowBox[{"N", ">", "2"}]}], "]"}]], "Input",ExpressionUUID->"20bcff8f-cf84-\
+4188-8af9-ce766cbcd7c6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", "N"}], ")"}], " ", "N", " ", "x"}]], "Output",Exp\
+ressionUUID->"4de90063-c254-42ef-893a-61c18a8ce595"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{997, 731},
+WindowMargins->{{36, Automatic}, {Automatic, 44}},
+ShowSelection->True,
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 2, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3430823481-6111641"->{
+  Cell[5940, 356, 707, 16, 
+  43, "Print", "ExpressionUUID" -> "214f0924-7344-4eb8-a3e5-58ac40fdf77e",
+   CellTags->"Info3430823481-6111641"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3430823481-6111641", 57557, 1970}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 99, 0, 92, "Title", "ExpressionUUID" -> \
+"bc5481fc-063d-4dde-a4b0-d3d9ff17e06b"],
+Cell[CellGroupData[{
+Cell[704, 26, 83, 0, 44, "Subsection", "ExpressionUUID" -> \
+"bc491c94-9adb-472c-81a3-9f3b1b65952e"],
+Cell[790, 28, 115, 3, 49, "Text", "ExpressionUUID" -> \
+"563f3087-e81f-4836-94b5-ccb5aa12a34c"],
+Cell[908, 33, 362, 9, 30, "Text", "ExpressionUUID" -> \
+"9da5a650-6bbf-46d7-9741-afc2151944bf"],
+Cell[1273, 44, 387, 11, 30, "Text", "ExpressionUUID" -> \
+"b7347f21-a332-4382-925a-ae69d4f2f47d"],
+Cell[1663, 57, 154, 2, 30, "Text", "ExpressionUUID" -> \
+"e7171b51-2ef3-4473-bfe3-bb5ad9821671"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1854, 64, 78, 0, 64, "Section", "ExpressionUUID" -> \
+"439b5836-2550-4558-bf18-f1669a204917"],
+Cell[CellGroupData[{
+Cell[1957, 68, 563, 14, 54, "Input", "ExpressionUUID" -> \
+"8c57beb4-3ba1-4dbf-b5bf-91186624dd55"],
+Cell[2523, 84, 2916, 249, 182, 2254, 234, "GraphicsData", "PostScript", \
+"Graphics", "ExpressionUUID" -> "5c3307d6-5735-47db-9679-bc76bbde8db4",
+ Evaluatable->False],
+Cell[5442, 335, 206, 8, 37, "Output", "ExpressionUUID" -> \
+"dbd327b7-545e-4327-92be-93b9e15a7f4d",
+ Evaluatable->False]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5697, 349, 91, 0, 64, "Section", "ExpressionUUID" -> \
+"12dc8e8a-f782-4d27-9f6b-f5507f2058a6"],
+Cell[CellGroupData[{
+Cell[5813, 353, 124, 1, 32, "Input", "ExpressionUUID" -> \
+"00cd8c72-a7d8-4fc1-9c06-82671561ae25"],
+Cell[5940, 356, 707, 16, 43, "Print", "ExpressionUUID" -> \
+"214f0924-7344-4eb8-a3e5-58ac40fdf77e",
+ CellTags->"Info3430823481-6111641"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6684, 377, 227, 5, 32, "Input", "ExpressionUUID" -> \
+"2f9024d0-6a1b-4137-9545-16f0770ad93a"],
+Cell[6914, 384, 409, 13, 52, "Output", "ExpressionUUID" -> \
+"efb3b572-4bef-41e5-8dd4-ed561eb6f49c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7360, 402, 644, 18, 70, "Input", "ExpressionUUID" -> \
+"371a63dc-815e-4a58-af8a-2bfb9c0b027b"],
+Cell[8007, 422, 384, 10, 70, "Output", "ExpressionUUID" -> \
+"39e29b1b-ce58-4bfd-ad7b-8015d0fbf50b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8428, 437, 105, 1, 70, "Input", "ExpressionUUID" -> \
+"721dc009-3d6f-4e85-804e-2122d2e27bbb"],
+Cell[8536, 440, 332, 7, 70, "Output", "ExpressionUUID" -> \
+"43fcec6b-bd85-4491-b025-d6d102f88dc6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8905, 452, 174, 5, 70, "Input", "ExpressionUUID" -> \
+"7a2aff6c-5766-40fd-ab17-cf3d74580b7e"],
+Cell[9082, 459, 305, 6, 70, "Output", "ExpressionUUID" -> \
+"96df7a1e-cc93-419a-b667-3bab1d4aa77d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9424, 470, 108, 1, 70, "Input", "ExpressionUUID" -> \
+"0a65f74c-7122-4112-861f-a932dac9380d"],
+Cell[9535, 473, 85, 0, 70, "Output", "ExpressionUUID" -> \
+"4a861dac-fc18-440d-bf36-0fce46f15009"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9669, 479, 79, 0, 70, "Section", "ExpressionUUID" -> \
+"b22ec43f-90e6-41a4-808b-ed696a2343fb"],
+Cell[CellGroupData[{
+Cell[9773, 483, 378, 10, 70, "Input", "ExpressionUUID" -> \
+"5b503047-4735-4ac5-bd8d-84df8c414173"],
+Cell[10154, 495, 12505, 343, 70, "Output", "ExpressionUUID" -> \
+"e79d5455-2de0-4c1d-ab58-6ef25dc14f35"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22708, 844, 77, 0, 70, "Section", "ExpressionUUID" -> \
+"649df707-ada8-4971-be65-308675c781b5"],
+Cell[CellGroupData[{
+Cell[22810, 848, 251, 6, 70, "Input", "ExpressionUUID" -> \
+"973edd68-424c-4adc-8ee0-133231318260"],
+Cell[23064, 856, 382, 12, 70, "Output", "ExpressionUUID" -> \
+"747d8ef8-f2e4-4d48-945d-00e35cf1ec9b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23483, 873, 288, 8, 70, "Input", "ExpressionUUID" -> \
+"4dde75ee-2d05-43f0-91ea-7c945ce52ae2"],
+Cell[23774, 883, 691, 25, 70, "Output", "ExpressionUUID" -> \
+"3dad0e22-d39d-422e-a718-931f349ccbde"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24514, 914, 77, 0, 70, "Section", "ExpressionUUID" -> \
+"a1482f78-763c-42eb-a953-009b7a85f990"],
+Cell[CellGroupData[{
+Cell[24616, 918, 82, 0, 70, "Subsubsection", "ExpressionUUID" -> \
+"f4329a0c-1bd1-49a8-bc82-546fcbd47957"],
+Cell[CellGroupData[{
+Cell[24723, 922, 251, 6, 70, "Input", "ExpressionUUID" -> \
+"785044cc-610a-49cf-acb8-36e79b5cc5f5"],
+Cell[24977, 930, 4310, 122, 70, "Output", "ExpressionUUID" -> \
+"4092abbd-6293-4137-9af9-664cb57156b3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29324, 1057, 1181, 35, 70, "Input", "ExpressionUUID" -> \
+"b3bce131-ad79-4d99-890e-d2a568a2b74f"],
+Cell[30508, 1094, 3086, 90, 70, "Output", "ExpressionUUID" -> \
+"98814b1d-69b0-425a-8f7f-3a2822031d4b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33643, 1190, 82, 0, 70, "Subsubsection", "ExpressionUUID" -> \
+"d6b772dd-8457-4cd2-be52-4de6c7929dc0"],
+Cell[CellGroupData[{
+Cell[33750, 1194, 251, 6, 70, "Input", "ExpressionUUID" -> \
+"7b5b46e8-5c99-4811-8656-a1a91a4c7aba"],
+Cell[34004, 1202, 5571, 150, 70, "Output", "ExpressionUUID" -> \
+"b56e8477-d150-4a78-ad0c-0873a4312dbf"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39636, 1359, 97, 0, 70, "Section", "ExpressionUUID" -> \
+"68b22120-e302-42ae-9617-44131913890d"],
+Cell[CellGroupData[{
+Cell[39758, 1363, 270, 6, 70, "Input", "ExpressionUUID" -> \
+"75b1c7cb-fa44-4b69-af24-00c7d1cf6a21"],
+Cell[40031, 1371, 552, 17, 70, "Output", "ExpressionUUID" -> \
+"15d7cece-4a44-4a04-b9bc-db529567e46b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40632, 1394, 78, 0, 70, "Section", "ExpressionUUID" -> \
+"9a9f5543-6646-4402-8aff-a4e7c998c097"],
+Cell[CellGroupData[{
+Cell[40735, 1398, 82, 0, 70, "Subsubsection", "ExpressionUUID" -> \
+"be35d44e-0988-4bcc-a724-8774e4b69a07"],
+Cell[CellGroupData[{
+Cell[40842, 1402, 577, 17, 70, "Input", "ExpressionUUID" -> \
+"18d8f32c-b331-4237-a6ff-c2cbf23184d3"],
+Cell[41422, 1421, 151, 4, 70, "Output", "ExpressionUUID" -> \
+"ea65c22e-e6b4-4641-b8d7-5a36b00a0f00"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41622, 1431, 82, 0, 70, "Subsubsection", "ExpressionUUID" -> \
+"252b553f-15c9-4abd-8dda-3a0e4ee4999b"],
+Cell[CellGroupData[{
+Cell[41729, 1435, 524, 16, 70, "Input", "ExpressionUUID" -> \
+"42b607f0-640c-4a81-adee-1a47f64f220b"],
+Cell[42256, 1453, 151, 4, 70, "Output", "ExpressionUUID" -> \
+"2cb6af3e-0bae-453b-a5cf-da4207ac66f5"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42468, 1464, 82, 0, 70, "Section", "ExpressionUUID" -> \
+"a45fee38-4fd1-4a1d-b499-c0a439a69c0f"],
+Cell[CellGroupData[{
+Cell[42575, 1468, 82, 0, 70, "Subsubsection", "ExpressionUUID" -> \
+"dea519e0-6db2-477c-95de-a1430f2b7ca8"],
+Cell[CellGroupData[{
+Cell[42682, 1472, 745, 23, 70, "Input", "ExpressionUUID" -> \
+"4554cadc-ce8f-4a78-ba78-6d6b2b66c6b1"],
+Cell[43430, 1497, 386, 12, 70, "Output", "ExpressionUUID" -> \
+"739ecf92-8cbd-4f28-8c6e-da58977b6f65"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43865, 1515, 82, 0, 70, "Subsubsection", "ExpressionUUID" -> \
+"3da3ab25-a8d9-4637-ba79-e67ded644288"],
+Cell[CellGroupData[{
+Cell[43972, 1519, 686, 22, 70, "Input", "ExpressionUUID" -> \
+"2559e2a4-ddbe-4762-818d-9e3c48c48c45"],
+Cell[44661, 1543, 455, 15, 70, "Output", "ExpressionUUID" -> \
+"ced3091b-9a90-48b0-aec8-0948a7df4ecc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45153, 1563, 120, 1, 70, "Input", "ExpressionUUID" -> \
+"8479c9a6-226e-42a0-a1af-8adae74b7352"],
+Cell[45276, 1566, 386, 12, 70, "Output", "ExpressionUUID" -> \
+"97b0a1c4-7b57-49ca-b828-dcb2e50694ec"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45723, 1585, 84, 0, 70, "Section", "ExpressionUUID" -> \
+"8f4a2ac4-d59a-4705-ad0d-c738a36c2630"],
+Cell[CellGroupData[{
+Cell[45832, 1589, 672, 21, 70, "Input", "ExpressionUUID" -> \
+"65e4c57c-61df-4659-b271-2dbf31e60c77"],
+Cell[46507, 1612, 90, 0, 70, "Output", "ExpressionUUID" -> \
+"acfb7e12-b226-4821-976a-ee4f8713ee3d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46634, 1617, 432, 13, 70, "Input", "ExpressionUUID" -> \
+"30ea68ff-0180-45b9-9c3f-e50ba46b2b63"],
+Cell[47069, 1632, 6823, 205, 70, "Output", "ExpressionUUID" -> \
+"f8db88cb-3ad7-4a2d-9f63-1a1bf31c9449"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53929, 1842, 122, 1, 70, "Input", "ExpressionUUID" -> \
+"1a3642a5-8a93-4ff7-b782-d459744a64dc"],
+Cell[54054, 1845, 1137, 36, 70, "Output", "ExpressionUUID" -> \
+"e5d30a87-d9ba-4db7-8ccb-476bcbd3029a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55228, 1886, 174, 4, 70, "Input", "ExpressionUUID" -> \
+"bf287fbb-034e-4a5a-850a-9de4c1fb2e71"],
+Cell[55405, 1892, 83, 0, 70, "Output", "ExpressionUUID" -> \
+"9fdc0b8d-4bd5-4783-ac8e-0859e3b7a3f6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55525, 1897, 171, 4, 70, "Input", "ExpressionUUID" -> \
+"fe21b26b-ff76-4799-862a-dbbf122d12e5"],
+Cell[55699, 1903, 1085, 34, 70, "Output", "ExpressionUUID" -> \
+"349f3105-5be1-4fa1-b4e1-ce1cf4e70bc0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[56821, 1942, 171, 4, 70, "Input", "ExpressionUUID" -> \
+"20bcff8f-cf84-4188-8af9-ce766cbcd7c6"],
+Cell[56995, 1948, 184, 5, 70, "Output", "ExpressionUUID" -> \
+"4de90063-c254-42ef-893a-61c18a8ce595"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

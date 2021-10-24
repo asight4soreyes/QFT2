@@ -1,0 +1,5739 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    168395,       5731]
+NotebookOptionsPosition[    160168,       5584]
+NotebookOutlinePosition[    160538,       5600]
+CellTagsIndexPosition[    160495,       5597]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["General Cross Section d-dimension (2 initial)",
+ FontFamily->"Times New Roman"]], "Section",
+ CellChangeTimes->{{3.7910456824852357`*^9, 3.791045703097827*^9}, {
+  3.7910459825913877`*^9, 
+  3.7910459927124653`*^9}},ExpressionUUID->"9181591c-b536-4498-82f8-\
+d455349fb0f8"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"\[Sigma]", "\[Equal]", " ", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"2", 
+      SqrtBox[
+       RowBox[{"s", 
+        RowBox[{"(", 
+         RowBox[{"s", "-", 
+          RowBox[{"4", 
+           SubscriptBox["m", "1"], 
+           SubscriptBox["m", "2"]}]}], ")"}]}]]}]], 
+    RowBox[{
+     UnderscriptBox["\[Sum]", "spins"], 
+     RowBox[{
+      FractionBox["1", "4"], 
+      RowBox[{"\[Integral]", 
+       RowBox[{
+        UnderoverscriptBox["\[Product]", 
+         RowBox[{"i", "=", "1"}], "n"], 
+        RowBox[{
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["\[DifferentialD]", 
+            RowBox[{"d", "-", "1"}]], 
+           SubscriptBox["k", "i"]}], 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"2", "\[Pi]"}], ")"}], 
+            RowBox[{"d", "-", "1"}]], "2", 
+           SuperscriptBox[
+            SubscriptBox["k", "i"], "0"]}]], 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"2", "\[Pi]"}], ")"}], "d"], 
+         SuperscriptBox[
+          RowBox[{"\[Delta]", " "}], "d"], 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            UnderoverscriptBox["\[Sum]", 
+             RowBox[{"i", "=", "1"}], "n"], 
+            SubscriptBox["k", "i"]}], "-", 
+           SubscriptBox["p", "1"], "-", 
+           SubscriptBox["p", "2"]}], ")"}], 
+         SuperscriptBox["M", "\[Dagger]"], "M"}]}]}]}]}]}]}], "Text",
+  FontFamily->"Times New Roman",
+  FontSize->14,
+  FontWeight->"Regular"]], "Input",
+ CellChangeTimes->{{3.791045748305745*^9, 3.7910457555693283`*^9}, {
+   3.791045805906187*^9, 3.7910458880230694`*^9}, {3.7910459200377274`*^9, 
+   3.791045952008468*^9}, {3.791046001598488*^9, 3.791046021423325*^9}, {
+   3.7910461496237507`*^9, 3.7910463580779996`*^9}, 3.7910464011792192`*^9, {
+   3.7910465117503695`*^9, 3.7910465190668716`*^9}, {3.7910465591029153`*^9, 
+   3.791046636872645*^9}, {3.7910466993254423`*^9, 3.791046729116601*^9}, 
+   3.7910573849975767`*^9, {3.791061945333516*^9, 3.791061946726269*^9}, {
+   3.7910620002756233`*^9, 
+   3.7910620014005632`*^9}},ExpressionUUID->"153fabd6-f740-42e3-92a5-\
+73a430439ba8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Born Cross Section d-dimension (2\[Rule]2 final)",
+ FontFamily->"Times New Roman"]], "Section",
+ CellChangeTimes->{{3.7910456824852357`*^9, 3.791045703097827*^9}, {
+  3.7910459825913877`*^9, 3.7910459927124653`*^9}, {3.791073348404807*^9, 
+  3.791073391651883*^9}, {3.791073974066327*^9, 
+  3.7910739741511946`*^9}},ExpressionUUID->"1263ba02-fcf4-4767-8125-\
+1454878c4afa"],
+
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  StyleBox[
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"8", 
+      SqrtBox[
+       RowBox[{"s", 
+        RowBox[{"(", 
+         RowBox[{"s", "-", 
+          RowBox[{"4", 
+           SubscriptBox["m", "e"], 
+           SubscriptBox["m", "e"]}]}], ")"}]}]]}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]], 
+    RowBox[{"\[Integral]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["\[DifferentialD]", 
+         RowBox[{"d", "-", "1"}]], 
+        SubscriptBox["k", "1"]}], 
+       RowBox[{"2", 
+        SuperscriptBox[
+         SubscriptBox["k", "1"], "0"]}]], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["\[DifferentialD]", 
+         RowBox[{"d", "-", "1"}]], 
+        SubscriptBox["k", "2"]}], 
+       RowBox[{"2", 
+        SuperscriptBox[
+         SubscriptBox["k", "2"], "0"]}]], 
+      SuperscriptBox[
+       RowBox[{"\[Delta]", " "}], 
+       RowBox[{"d", "-", "3"}]], 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["k", "1"], 
+         StyleBox["0",
+          FontFamily->"Times New Roman",
+          FontSize->9.23,
+          FontWeight->"Regular"]], "-", 
+        SuperscriptBox[
+         SubscriptBox["k", "2"], 
+         StyleBox["0",
+          FontFamily->"Times New Roman",
+          FontSize->9.23,
+          FontWeight->"Regular"]], "-", 
+        SqrtBox["s"]}], ")"}], 
+      SuperscriptBox[
+       RowBox[{"\[Delta]", " "}], 
+       RowBox[{"d", "-", "1"}]], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["k", "1"], "-", 
+        SubscriptBox["k", "2"]}], ")"}], 
+      SuperscriptBox["M", "\[Dagger]"], "M"}]}]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Regular"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  StyleBox[
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"8", 
+      SqrtBox[
+       RowBox[{"s", 
+        RowBox[{"(", 
+         RowBox[{"s", "-", 
+          RowBox[{"4", 
+           SubscriptBox["m", "e"], 
+           SubscriptBox["m", "e"]}]}], ")"}]}]]}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]], 
+    RowBox[{"\[Integral]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["\[DifferentialD]", 
+         RowBox[{"d", "-", "1"}]], 
+        SubscriptBox["k", "1"]}], 
+       RowBox[{"2", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["k", "1"], "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "q"], "2"]}]], "2", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["k", "1"], "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "qb"], "2"]}]]}]], 
+      SuperscriptBox[
+       RowBox[{"\[Delta]", " "}], 
+       RowBox[{"d", "-", "3"}]], 
+      RowBox[{"(", 
+       RowBox[{
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["k", "1"], "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "q"], "2"]}]], "-", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["k", "1"], "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "qb"], "2"]}]], "-", 
+        SqrtBox["s"]}], ")"}], 
+      SuperscriptBox["M", "\[Dagger]"], "M"}]}]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Regular"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  StyleBox[
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"8", 
+      SqrtBox[
+       RowBox[{"s", 
+        RowBox[{"(", 
+         RowBox[{"s", "-", 
+          RowBox[{"4", 
+           SubscriptBox["m", "e"], 
+           SubscriptBox["m", "e"]}]}], ")"}]}]]}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]], 
+    RowBox[{"\[Integral]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["k", 
+         RowBox[{"d", "-", "2"}]], 
+        RowBox[{"\[DifferentialD]", "k"}], " ", 
+        SubscriptBox["d\[CapitalOmega]", 
+         RowBox[{"d", "-", "1"}]]}], 
+       RowBox[{"2", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "q"], "2"]}]], "2", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "qb"], "2"]}]]}]], 
+      SuperscriptBox[
+       RowBox[{"\[Delta]", " "}], 
+       RowBox[{"d", "-", "3"}]], 
+      RowBox[{"(", 
+       RowBox[{
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "q"], "2"]}]], "-", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "qb"], "2"]}]], "-", 
+        SqrtBox["s"]}], ")"}], 
+      SuperscriptBox["M", "\[Dagger]"], "M"}]}]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Regular"]}]}], "Input",
+ CellChangeTimes->{{3.791045748305745*^9, 3.7910457555693283`*^9}, {
+   3.791045805906187*^9, 3.7910458880230694`*^9}, {3.7910459200377274`*^9, 
+   3.791045952008468*^9}, {3.791046001598488*^9, 3.791046021423325*^9}, {
+   3.7910461496237507`*^9, 3.7910463580779996`*^9}, 3.7910464011792192`*^9, {
+   3.7910465117503695`*^9, 3.7910465190668716`*^9}, {3.7910465591029153`*^9, 
+   3.791046636872645*^9}, {3.7910466993254423`*^9, 3.791046729116601*^9}, 
+   3.7910573849975767`*^9, {3.791061945333516*^9, 3.791061946726269*^9}, {
+   3.7910620002756233`*^9, 3.7910620014005632`*^9}, {3.791073437318079*^9, 
+   3.7910734499831657`*^9}, {3.7910735514609766`*^9, 3.791073588178145*^9}, {
+   3.791073696794613*^9, 3.7910736975314603`*^9}, {3.791073738696673*^9, 
+   3.7910737979424253`*^9}, {3.7910738298763885`*^9, 
+   3.7910738513456326`*^9}, {3.791073888582641*^9, 3.7910738886515274`*^9}, {
+   3.791073968778641*^9, 3.7910741301543293`*^9}, {3.7910741644095507`*^9, 
+   3.7910741644934187`*^9}, {3.7910741958601027`*^9, 
+   3.7910742204552355`*^9}, {3.791074435434929*^9, 3.7910745139479275`*^9}, {
+   3.7910753652564545`*^9, 3.7910753670706043`*^9}, {3.791075883903927*^9, 
+   3.7910759780980773`*^9}},ExpressionUUID->"bcc407a3-efd8-4bb3-aee8-\
+6f30cd89b987"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["\[Delta] (",
+  FontFamily->"Times New Roman"],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{
+     SqrtBox["s"], "-", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox["k", "2"], "+", 
+       SuperscriptBox[
+        SubscriptBox["m", "1"], "2"]}]], "-", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox["k", "2"], "+", 
+       SuperscriptBox[
+        SubscriptBox["m", "2"], "2"]}]]}],
+    FontSize->24], TraditionalForm]],
+  FontFamily->"Times New Roman",ExpressionUUID->
+  "bfc1444c-841b-43a4-ac36-55e781d8a04b"],
+ StyleBox[")",
+  FontFamily->"Times New Roman"]
+}], "Section",
+ CellChangeTimes->{{3.79029390419728*^9, 3.790293952040141*^9}, {
+   3.7902939847367883`*^9, 3.7902940043669586`*^9}, {3.790294034637415*^9, 
+   3.7902940438818927`*^9}, 3.7902983314249783`*^9, {3.7910743941878476`*^9, 
+   3.791074418278903*^9}},ExpressionUUID->"5b730840-0b19-4532-aae5-\
+b564afb82e8c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     SqrtBox["s"], ")"}], "2"], "\[Equal]", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["k", "2"], "+", 
+        SuperscriptBox[
+         SubscriptBox["m", "1"], "2"]}]], "+", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["k", "2"], "+", 
+        SuperscriptBox[
+         SubscriptBox["m", "2"], "2"]}]]}], ")"}], "2"]}], "//", 
+  "Expand"}]], "Input",
+ CellChangeTimes->{{3.790266827113894*^9, 3.790266922585948*^9}, {
+  3.791074567444818*^9, 3.7910745840387745`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"a0d2a12d-ed85-4d7f-b380-e0103bf608ca"],
+
+Cell[BoxData[
+ RowBox[{"s", "\[Equal]", 
+  RowBox[{
+   RowBox[{"2", " ", 
+    SuperscriptBox["k", "2"]}], "+", 
+   SubsuperscriptBox["m", "1", "2"], "+", 
+   SubsuperscriptBox["m", "2", "2"], "+", 
+   RowBox[{"2", " ", 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["k", "2"], "+", 
+      SubsuperscriptBox["m", "1", "2"]}]], " ", 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["k", "2"], "+", 
+      SubsuperscriptBox["m", "2", "2"]}]]}]}]}]], "Output",
+ CellChangeTimes->{{3.790266913402372*^9, 3.790266924626746*^9}, 
+   3.7910745903258886`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"fc90137d-54ba-4974-af85-390b870e8a26"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"s", "-", 
+      SuperscriptBox[
+       SubscriptBox["m", "1"], "2"], "-", 
+      SuperscriptBox[
+       SubscriptBox["m", "2"], "2"], "-", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["k", "2"]}]}], ")"}], "2"], "\[Equal]", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"2", " ", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["m", "1"], "2"], "+", 
+        SuperscriptBox["k", "2"]}]], " ", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["m", "2"], "2"], "+", 
+        SuperscriptBox["k", "2"]}]]}], ")"}], "2"]}], "//", 
+  "Expand"}]], "Input",
+ CellChangeTimes->{{3.7902669598953514`*^9, 3.790267005436819*^9}, {
+  3.791074622409444*^9, 3.791074654536929*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"a06e20a7-ad10-4ca7-8059-28facb8eea16"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "4"]}], "-", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "2"], " ", "s"}], "+", 
+   SuperscriptBox["s", "2"], "+", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "2"], " ", 
+    SubsuperscriptBox["m", "1", "2"]}], "-", 
+   RowBox[{"2", " ", "s", " ", 
+    SubsuperscriptBox["m", "1", "2"]}], "+", 
+   SubsuperscriptBox["m", "1", "4"], "+", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "2"], " ", 
+    SubsuperscriptBox["m", "2", "2"]}], "-", 
+   RowBox[{"2", " ", "s", " ", 
+    SubsuperscriptBox["m", "2", "2"]}], "+", 
+   RowBox[{"2", " ", 
+    SubsuperscriptBox["m", "1", "2"], " ", 
+    SubsuperscriptBox["m", "2", "2"]}], "+", 
+   SubsuperscriptBox["m", "2", "4"]}], "\[Equal]", 
+  RowBox[{
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "4"]}], "+", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "2"], " ", 
+    SubsuperscriptBox["m", "1", "2"]}], "+", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "2"], " ", 
+    SubsuperscriptBox["m", "2", "2"]}], "+", 
+   RowBox[{"4", " ", 
+    SubsuperscriptBox["m", "1", "2"], " ", 
+    SubsuperscriptBox["m", "2", "2"]}]}]}]], "Output",
+ CellChangeTimes->{{3.790266998095347*^9, 3.79026700648218*^9}, 
+   3.7910746561424026`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"2fa885f2-30c0-4bf0-92c7-f21ba9dc259b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox[
+    SubscriptBox["m", "1"], "4"], "+", 
+   RowBox[{"2", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "2"], "2"], " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "2"], "2"]}], "+", 
+   SuperscriptBox[
+    SubscriptBox["m", "2"], "4"], "+", 
+   RowBox[{"4", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "1"], "2"], " ", 
+    SuperscriptBox["k", "2"]}], "+", 
+   RowBox[{"4", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "2"], "2"], " ", 
+    SuperscriptBox["k", "2"]}], "+", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "4"]}], "-", 
+   RowBox[{"2", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "1"], "2"], " ", "s"}], "-", 
+   RowBox[{"2", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "2"], "2"], " ", "s"}], "-", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "2"], " ", "s"}], "+", 
+   SuperscriptBox["s", "2"], "-", 
+   RowBox[{"4", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "1"], "2"], " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "2"], "2"]}], "-", 
+   RowBox[{"4", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "1"], "2"], " ", 
+    SuperscriptBox["k", "2"]}], "-", 
+   RowBox[{"4", " ", 
+    SuperscriptBox[
+     SubscriptBox["m", "2"], "2"], " ", 
+    SuperscriptBox["k", "2"]}], "-", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "4"]}]}], "\[Equal]", "0"}]], "Input",
+ CellChangeTimes->{{3.790267044801997*^9, 3.790267064870472*^9}, {
+  3.7910746783714514`*^9, 3.7910747587774186`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"0524a799-1c03-413d-945d-6e24a5b0bf20"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "4"}], " ", 
+    SuperscriptBox["k", "2"], " ", "s"}], "+", 
+   SuperscriptBox["s", "2"], "-", 
+   RowBox[{"2", " ", "s", " ", 
+    SubsuperscriptBox["m", "1", "2"]}], "+", 
+   SubsuperscriptBox["m", "1", "4"], "-", 
+   RowBox[{"2", " ", "s", " ", 
+    SubsuperscriptBox["m", "2", "2"]}], "-", 
+   RowBox[{"4", " ", 
+    SubsuperscriptBox["m", "1", "2"], " ", 
+    SubsuperscriptBox["m", "2", "2"]}], "+", 
+   RowBox[{"3", " ", 
+    SubsuperscriptBox["m", "2", "4"]}]}], "\[Equal]", "0"}]], "Output",
+ CellChangeTimes->{3.7902670668853087`*^9, 3.7902671325671463`*^9, 
+  3.79107476017023*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"b2ce506b-d89c-4192-a556-d0c1927a9539"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+     SuperscriptBox[
+      SubscriptBox["m", "1"], "4"], "-", 
+     RowBox[{"2", " ", 
+      SuperscriptBox[
+       SubscriptBox["m", "1"], "2"], " ", 
+      SuperscriptBox[
+       SubscriptBox["m", "2"], "2"]}], "+", 
+     SuperscriptBox[
+      SubscriptBox["m", "2"], "4"]}], "]"}], "+", 
+   RowBox[{"Factor", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], " ", 
+      SuperscriptBox[
+       SubscriptBox["m", "1"], "2"], " ", "s"}], "-", 
+     RowBox[{"2", " ", 
+      SuperscriptBox[
+       SubscriptBox["m", "2"], "2"], " ", "s"}]}], "]"}], "-", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["k", "2"], " ", "s"}], "+", 
+   SuperscriptBox["s", "2"]}], "\[Equal]", "0"}]], "Input",
+ CellChangeTimes->{{3.790267153777836*^9, 3.790267205738221*^9}, {
+  3.7910748138468285`*^9, 3.791074847611223*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"f124456f-941d-4583-99f5-d570912a0351"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "4"}], " ", 
+    SuperscriptBox["k", "2"], " ", "s"}], "+", 
+   SuperscriptBox["s", "2"], "+", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      SubsuperscriptBox["m", "1", "2"], "-", 
+      SubsuperscriptBox["m", "2", "2"]}], ")"}], "2"], "-", 
+   RowBox[{"2", " ", "s", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SubsuperscriptBox["m", "1", "2"], "+", 
+      SubsuperscriptBox["m", "2", "2"]}], ")"}]}]}], "\[Equal]", 
+  "0"}]], "Output",
+ CellChangeTimes->{{3.790267163029309*^9, 3.7902672068195224`*^9}, 
+   3.791074850558015*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"b6f5c10c-b75a-4df4-b0bd-eb692748f935"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MultiplySides", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "4"}], " ", 
+     SuperscriptBox["k", "2"], " ", "s"}], "\[Equal]", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["s", "2"]}], "+", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["m", "1"], "2"], "+", 
+        SuperscriptBox[
+         SubscriptBox["m", "2"], "2"]}], ")"}], " ", "s"}], "-", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["m", "1"], "2"], "-", 
+        SuperscriptBox[
+         SubscriptBox["m", "2"], "2"]}], ")"}], "2"]}]}], ",", 
+   RowBox[{"-", "1"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7902672427021713`*^9, 3.7902672570486383`*^9}, {
+  3.7902672965485973`*^9, 3.79026735337834*^9}, {3.7910748776429977`*^9, 
+  3.7910748961918335`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"5e65faa7-8776-4030-9900-4618ae8c808f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"4", " ", 
+   SuperscriptBox["k", "2"], " ", "s"}], "\[Equal]", 
+  RowBox[{
+   SuperscriptBox["s", "2"], "+", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      SubsuperscriptBox["m", "1", "2"], "-", 
+      SubsuperscriptBox["m", "2", "2"]}], ")"}], "2"], "-", 
+   RowBox[{"2", " ", "s", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SubsuperscriptBox["m", "1", "2"], "+", 
+      SubsuperscriptBox["m", "2", "2"]}], ")"}]}]}]}]], "Output",
+ CellChangeTimes->{3.7902673541181784`*^9, 3.791074902100546*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"02dd5b5b-a593-4091-8267-cd8ca1b00231"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Divide", "[", 
+    RowBox[{
+     RowBox[{"4", " ", 
+      SuperscriptBox["k", "2"], " ", "s"}], ",", "s"}], "]"}], "\[Equal]", 
+   RowBox[{"Divide", "[", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox[
+          SubscriptBox["m", "1"], "2"], "-", 
+         SuperscriptBox[
+          SubscriptBox["m", "2"], "2"]}], ")"}], "2"], "-", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox[
+          SubscriptBox["m", "1"], "2"], "+", 
+         SuperscriptBox[
+          SubscriptBox["m", "2"], "2"]}], ")"}], " ", "s"}], "+", 
+      SuperscriptBox["s", "2"]}], ",", "s"}], "]"}]}], "//", 
+  "Expand"}]], "Input",
+ CellChangeTimes->{{3.7902674085037584`*^9, 3.7902674769312873`*^9}, {
+  3.7902692750730963`*^9, 3.7902693131812425`*^9}, {3.7910749133798122`*^9, 
+  3.791074935037756*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"7ea027b8-7a92-45b4-98b0-7afcffa99e6d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"4", " ", 
+   SuperscriptBox["k", "2"]}], "\[Equal]", 
+  RowBox[{"s", "-", 
+   RowBox[{"2", " ", 
+    SubsuperscriptBox["m", "1", "2"]}], "+", 
+   FractionBox[
+    SubsuperscriptBox["m", "1", "4"], "s"], "-", 
+   RowBox[{"2", " ", 
+    SubsuperscriptBox["m", "2", "2"]}], "-", 
+   FractionBox[
+    RowBox[{"2", " ", 
+     SubsuperscriptBox["m", "1", "2"], " ", 
+     SubsuperscriptBox["m", "2", "2"]}], "s"], "+", 
+   FractionBox[
+    SubsuperscriptBox["m", "2", "4"], "s"]}]}]], "Output",
+ CellChangeTimes->{{3.790267421014107*^9, 3.790267477394555*^9}, {
+   3.79026928064834*^9, 3.790269314161707*^9}, 3.7902694026247683`*^9, 
+   3.7910749375681477`*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"bd39e960-c589-4a88-bf8f-4220b955dff9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"4", " ", 
+   SuperscriptBox["k", "2"]}], "\[Equal]", 
+  RowBox[{
+   RowBox[{"Factor", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], " ", 
+      SuperscriptBox[
+       SubscriptBox["m", "1"], "2"]}], "-", 
+     RowBox[{"2", " ", 
+      SuperscriptBox[
+       SubscriptBox["m", "2"], "2"]}]}], "]"}], "+", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       SubscriptBox["m", "1"], "4"], "s"], "-", 
+     FractionBox[
+      RowBox[{"2", " ", 
+       SuperscriptBox[
+        SubscriptBox["m", "1"], "2"], " ", 
+       SuperscriptBox[
+        SubscriptBox["m", "2"], "2"]}], "s"], "+", 
+     FractionBox[
+      SuperscriptBox[
+       SubscriptBox["m", "2"], "4"], "s"]}], "]"}], "+", "s"}]}]], "Input",
+ CellChangeTimes->{{3.790269424388584*^9, 3.7902694748243675`*^9}, {
+  3.791075164495716*^9, 3.791075198483405*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"f3e3d535-fc73-4d1d-b266-1d3975f37a57"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"4", " ", 
+   SuperscriptBox["k", "2"]}], "\[Equal]", 
+  RowBox[{"s", "+", 
+   FractionBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SubsuperscriptBox["m", "1", "2"], "-", 
+       SubsuperscriptBox["m", "2", "2"]}], ")"}], "2"], "s"], "-", 
+   RowBox[{"2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SubsuperscriptBox["m", "1", "2"], "+", 
+      SubsuperscriptBox["m", "2", "2"]}], ")"}]}]}]}]], "Output",
+ CellChangeTimes->{{3.7902694418222003`*^9, 3.7902694757419195`*^9}, 
+   3.7910752014617147`*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"916ee2bd-ac42-41ea-af44-b2279970b7aa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MultiplySides", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"4", " ", 
+     SuperscriptBox["k", "2"]}], "\[Equal]", 
+    RowBox[{"s", ".", 
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["m", "1"], "2"], "+", 
+           SuperscriptBox[
+            SubscriptBox["m", "2"], "2"]}], ")"}]}], "s"], "+", 
+       FractionBox[
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["m", "1"], "2"], "-", 
+           SuperscriptBox[
+            SubscriptBox["m", "2"], "2"]}], ")"}], "2"], 
+        SuperscriptBox["s", "2"]]}], ")"}]}]}], ",", 
+   RowBox[{"1", "/", "4"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7902695322062454`*^9, 3.7902696110863523`*^9}, {
+  3.790269762821035*^9, 3.7902697697801065`*^9}, {3.791075214210672*^9, 
+  3.7910752357500134`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"f4cefd36-d580-40ea-b4ac-cbd00d17780d"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["k", "2"], "\[Equal]", 
+  RowBox[{
+   FractionBox["1", "4"], " ", 
+   RowBox[{"s", ".", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubsuperscriptBox["m", "1", "2"], "-", 
+          SubsuperscriptBox["m", "2", "2"]}], ")"}], "2"], 
+       SuperscriptBox["s", "2"]], "-", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubsuperscriptBox["m", "1", "2"], "+", 
+          SubsuperscriptBox["m", "2", "2"]}], ")"}]}], "s"]}], 
+     ")"}]}]}]}]], "Output",
+ CellChangeTimes->{3.7902696124681797`*^9, 3.7902697703162622`*^9, 
+  3.7910752391456747`*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"7ec8a42e-a147-4584-9d2f-eb553817cb38"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"PowerExpand", "[", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     SuperscriptBox["k", "2"], ")"}], 
+    RowBox[{"1", "/", "2"}]], "]"}], "\[Equal]", 
+  RowBox[{
+   RowBox[{"PowerExpand", "[", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox["s", "4"], " ", ")"}], 
+     RowBox[{"1", "/", "2"}]], "]"}], ".", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["m", "1"], "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["m", "2"], "2"]}], ")"}]}], "s"], "+", 
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["m", "1"], "2"], "-", 
+          SuperscriptBox[
+           SubscriptBox["m", "2"], "2"]}], ")"}], "2"], 
+       SuperscriptBox["s", "2"]]}], ")"}], 
+    RowBox[{"1", "/", "2"}]]}]}], "\[IndentingNewLine]", 
+ RowBox[{"%", "//", "TraditionalForm"}]}], "Input",
+ CellChangeTimes->{{3.7902696750778418`*^9, 3.7902697500640707`*^9}, {
+  3.7902697899674025`*^9, 3.7902698871367826`*^9}, {3.791075255252348*^9, 
+  3.791075311496643*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"c294a7c0-b2a1-43dd-95f0-b550d7efd975"],
+
+Cell[BoxData[
+ RowBox[{"k", "\[Equal]", 
+  RowBox[{
+   FractionBox[
+    SqrtBox["s"], "2"], ".", 
+   SqrtBox[
+    RowBox[{"1", "+", 
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         SubsuperscriptBox["m", "1", "2"], "-", 
+         SubsuperscriptBox["m", "2", "2"]}], ")"}], "2"], 
+      SuperscriptBox["s", "2"]], "-", 
+     FractionBox[
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SubsuperscriptBox["m", "1", "2"], "+", 
+         SubsuperscriptBox["m", "2", "2"]}], ")"}]}], "s"]}]]}]}]], "Output",
+ CellChangeTimes->{{3.79026971318799*^9, 3.790269750516359*^9}, {
+  3.7902698181351557`*^9, 3.7902698878686333`*^9}, {3.7910752960977764`*^9, 
+  3.7910753128365364`*^9}},
+ CellLabel->"Out[29]=",ExpressionUUID->"aeab9cd1-ecee-4534-b87b-ed4a914427e8"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"k", "\[LongEqual]", 
+   RowBox[{
+    FractionBox[
+     SqrtBox["s"], "2"], ".", 
+    SqrtBox[
+     RowBox[{
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubsuperscriptBox["m", "1", "2"], "-", 
+          SubsuperscriptBox["m", "2", "2"]}], ")"}], "2"], 
+       SuperscriptBox["s", "2"]], "-", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubsuperscriptBox["m", "1", "2"], "+", 
+          SubsuperscriptBox["m", "2", "2"]}], ")"}]}], "s"], "+", "1"}]]}]}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.79026971318799*^9, 3.790269750516359*^9}, {
+  3.7902698181351557`*^9, 3.7902698878686333`*^9}, {3.7910752960977764`*^9, 
+  3.7910753128684855`*^9}},
+ CellLabel->
+  "Out[30]//TraditionalForm=",ExpressionUUID->"adc5568c-1d61-499f-a0a5-\
+2806946f635b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Rewrite integral with new delta solution",
+ FontFamily->"Times New Roman"]], "Section",
+ CellChangeTimes->{{3.79107551990756*^9, 
+  3.7910755527604947`*^9}},ExpressionUUID->"8e1e0b14-872c-4107-a14e-\
+307b3f6e2398"],
+
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  StyleBox[
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"8", 
+      SqrtBox[
+       RowBox[{"s", 
+        RowBox[{"(", 
+         RowBox[{"s", "-", 
+          RowBox[{"4", 
+           SubscriptBox["m", "e"], 
+           SubscriptBox["m", "e"]}]}], ")"}]}]]}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]], 
+    RowBox[{"\[Integral]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["k", 
+         RowBox[{"d", "-", "2"}]], 
+        RowBox[{"\[DifferentialD]", "k"}], " ", 
+        SubscriptBox["d\[CapitalOmega]", 
+         RowBox[{"d", "-", "1"}]]}], 
+       RowBox[{"2", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "q"], "2"]}]], "2", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "qb"], "2"]}]]}]], "\[Delta]", " ", 
+      RowBox[{"(", 
+       RowBox[{"k", "-", 
+        RowBox[{
+         FractionBox[
+          SqrtBox["s"], "2"], ".", 
+         SqrtBox[
+          RowBox[{"1", "-", 
+           FractionBox[
+            RowBox[{"2", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox[
+                SubscriptBox["M", "q"], "2"], "+", 
+               SuperscriptBox[
+                SubscriptBox["M", "qb"], "2"]}], ")"}]}], "s"], "+", 
+           FractionBox[
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox[
+                SubscriptBox["M", "q"], "2"], "-", 
+               SuperscriptBox[
+                SubscriptBox["M", "qb"], "2"]}], ")"}], "2"], 
+            SuperscriptBox["s", "2"]]}]]}]}], ")"}], 
+      SuperscriptBox["M", "\[Dagger]"], "M"}]}]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Regular"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  RowBox[{
+   StyleBox[
+    FractionBox["1", 
+     RowBox[{"8", 
+      SqrtBox[
+       RowBox[{"s", 
+        RowBox[{"(", 
+         RowBox[{"s", "-", 
+          RowBox[{"4", 
+           SubscriptBox["m", "e"], 
+           SubscriptBox["m", "e"]}]}], ")"}]}]]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   RowBox[{
+    StyleBox["\[Integral]",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"], 
+    RowBox[{
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["k", 
+         RowBox[{"d", "-", "2"}]], 
+        RowBox[{"\[DifferentialD]", "k"}], " ", 
+        SubscriptBox["d\[CapitalOmega]", 
+         RowBox[{"d", "-", "1"}]]}], 
+       RowBox[{"4", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "q"], "2"]}]], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["k", "2"], "+", 
+          SuperscriptBox[
+           SubscriptBox["M", "qb"], "2"]}]]}]],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], 
+     SuperscriptBox[
+      StyleBox[
+       RowBox[{
+        StyleBox["(",
+         FontWeight->"Regular"], 
+        RowBox[{
+         StyleBox[
+          FractionBox["k", 
+           SubscriptBox["E", "1"]],
+          FontWeight->"Regular"], 
+         StyleBox["+",
+          FontWeight->"Regular"], 
+         StyleBox[
+          FractionBox[
+           StyleBox["k",
+            FontFamily->"Times New Roman",
+            FontSize->14,
+            FontWeight->"Regular"], 
+           SubscriptBox["E", "2"]],
+          FontWeight->"Plain"]}], 
+        StyleBox[")",
+         FontWeight->"Regular"]}],
+       FontFamily->"Times New Roman",
+       FontSize->14], 
+      StyleBox[
+       RowBox[{"-", "1"}],
+       FontFamily->"Times New Roman",
+       FontSize->9,
+       FontWeight->"Plain"]], 
+     StyleBox["\[Delta]",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], 
+     StyleBox[" ",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], 
+     StyleBox[
+      RowBox[{"(", 
+       RowBox[{"k", "-", 
+        RowBox[{
+         FractionBox[
+          SqrtBox["s"], "2"], ".", "\[Beta]"}]}], ")"}],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], 
+     StyleBox[
+      SuperscriptBox["M", "\[Dagger]"],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], 
+     StyleBox["M",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"]}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  StyleBox[
+   RowBox[{
+    StyleBox[
+     FractionBox["1", 
+      RowBox[{"8", 
+       SqrtBox[
+        RowBox[{"s", 
+         RowBox[{"(", 
+          RowBox[{"s", "-", 
+           RowBox[{"4", 
+            SubscriptBox["m", "e"], 
+            SubscriptBox["m", "e"]}]}], ")"}]}]]}]],
+     FontWeight->"Regular"], 
+    StyleBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"2", "\[Pi]"}], ")"}], 
+      RowBox[{"2", "-", "d"}]],
+     FontWeight->"Regular"], 
+    RowBox[{
+     StyleBox["\[Integral]",
+      FontWeight->"Regular"], 
+     RowBox[{
+      StyleBox[
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["k", 
+          RowBox[{"d", "-", "2"}]], 
+         RowBox[{"\[DifferentialD]", "k"}], " ", 
+         SubscriptBox["d\[CapitalOmega]", 
+          RowBox[{"d", "-", "1"}]]}], 
+        RowBox[{"4", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox["k", "2"], "+", 
+           SuperscriptBox[
+            SubscriptBox["M", "q"], "2"]}]], 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox["k", "2"], "+", 
+           SuperscriptBox[
+            SubscriptBox["M", "qb"], "2"]}]]}]],
+       FontWeight->"Regular"], 
+      StyleBox[
+       FractionBox[
+        StyleBox["1",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Regular"], "k"],
+       FontWeight->"Plain"], 
+      RowBox[{
+       StyleBox["(",
+        FontWeight->"Plain"], 
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          SubscriptBox["E", "1"], 
+          SubscriptBox["E", "2"]}], 
+         RowBox[{
+          SubscriptBox["E", "1"], "+", 
+          SubscriptBox["E", "2"]}]],
+        FontWeight->"Regular"], 
+       StyleBox[")",
+        FontWeight->"Plain"]}], 
+      StyleBox["\[Delta]",
+       FontWeight->"Regular"], 
+      StyleBox[" ",
+       FontWeight->"Regular"], 
+      StyleBox[
+       RowBox[{"(", 
+        RowBox[{"k", "-", 
+         RowBox[{
+          FractionBox[
+           SqrtBox["s"], "2"], ".", "\[Beta]"}]}], ")"}],
+       FontWeight->"Regular"], 
+      StyleBox[
+       SuperscriptBox["M", "\[Dagger]"],
+       FontWeight->"Regular"], 
+      StyleBox["M",
+       FontWeight->"Regular"]}]}]}],
+   FontFamily->"Times New Roman",
+   FontSize->14]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     SuperscriptBox["s", "2"]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+      StyleBox[
+       StyleBox[" ", "Text",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Regular"],
+       FontWeight->"Plain"], 
+      StyleBox[" ",
+       FontWeight->"Regular"]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14], 
+   StyleBox[
+    FractionBox["1", 
+     RowBox[{"8", 
+      SqrtBox[
+       RowBox[{"s", 
+        RowBox[{"(", 
+         RowBox[{"s", "-", 
+          RowBox[{"4", 
+           SubscriptBox["m", "e"], 
+           SubscriptBox["m", "e"]}]}], ")"}]}]]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   RowBox[{
+    StyleBox["\[Integral]",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"], 
+    RowBox[{
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox[
+            SqrtBox["s"], "2"], ".", "\[Beta]"}], ")"}], 
+         RowBox[{"d", "-", "3"}]], " ", 
+        SubscriptBox["d\[CapitalOmega]", 
+         RowBox[{"d", "-", "1"}]]}], 
+       RowBox[{"4", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["E", "1"], "+", 
+          SubscriptBox["E", "2"]}], ")"}]}]],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], 
+     RowBox[{
+      StyleBox["Tr",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Plain"], 
+      StyleBox["[",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Plain"], 
+      RowBox[{
+       SuperscriptBox[
+        StyleBox["\[Gamma]",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Plain"], "\[Mu]"], 
+       RowBox[{
+        StyleBox["(",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Plain"], 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times New Roman",
+           FontSize->14,
+           FontWeight->"Plain"], 
+          StyleBox[
+           RowBox[{"2", "slash"}],
+           FontFamily->"Times New Roman",
+           FontSize->9,
+           FontWeight->"Plain"]], 
+         StyleBox["-",
+          FontFamily->"Times New Roman",
+          FontSize->14,
+          FontWeight->"Plain"], 
+         StyleBox[
+          SubscriptBox["m", "e"],
+          FontFamily->"Times New Roman",
+          FontSize->14,
+          FontWeight->"Plain"]}], 
+        StyleBox[")",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Plain"]}], 
+       SuperscriptBox[
+        StyleBox["\[Gamma]",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Plain"], "\[Nu]"], 
+       StyleBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox[
+           StyleBox["p",
+            FontFamily->"Times New Roman",
+            FontSize->14,
+            FontWeight->"Plain"], 
+           RowBox[{"1", "slash"}]], "+", 
+          SubscriptBox["m", "e"]}], ")"}],
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"]}], 
+      StyleBox["]",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Plain"]}], 
+     RowBox[{
+      StyleBox["Tr",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Plain"], 
+      StyleBox["[",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Plain"], 
+      RowBox[{
+       SubscriptBox[
+        StyleBox["\[Gamma]",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Plain"], "\[Mu]"], 
+       StyleBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["k", 
+           RowBox[{"1", "slash"}]], "+", 
+          SubscriptBox["M", "q"]}], ")"}],
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], 
+       SubscriptBox[
+        StyleBox["\[Gamma]",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Plain"], "\[Nu]"], 
+       StyleBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["k", 
+           StyleBox[
+            RowBox[{"2", "slash"}],
+            FontFamily->"Times New Roman",
+            FontSize->9,
+            FontWeight->"Plain"]], "-", 
+          SubscriptBox["M", "qb"]}], ")"}],
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"]}], 
+      StyleBox["]",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Plain"]}]}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"32", 
+      SuperscriptBox["s", "2"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+      StyleBox[
+       StyleBox[" ", "Text",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Regular"],
+       FontWeight->"Plain"], 
+      StyleBox[" ",
+       FontWeight->"Regular"]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14], 
+   StyleBox[
+    FractionBox["1", 
+     SqrtBox[
+      RowBox[{"s", 
+       RowBox[{"(", 
+        RowBox[{"s", "-", 
+         RowBox[{"4", 
+          SubscriptBox["m", "e"], 
+          SubscriptBox["m", "e"]}]}], ")"}]}]]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        SqrtBox["s"], "2"], ".", "\[Beta]"}], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    SuperscriptBox["L", "\[Mu]\[Nu]"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     StyleBox["\[Integral]",
+      FontWeight->"Regular"], 
+     StyleBox[" ",
+      FontWeight->"Regular"], 
+     RowBox[{
+      StyleBox[
+       SubscriptBox["d\[CapitalOmega]", 
+        RowBox[{"d", "-", "1"}]],
+       FontWeight->"Regular"], 
+      StyleBox[
+       SubscriptBox[
+        StyleBox["K",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Regular"], "\[Mu]\[Nu]"],
+       FontWeight->"Plain"]}]}],
+    FontFamily->"Times New Roman",
+    FontSize->14]}]}]}], "Input",
+ CellChangeTimes->{{3.7910756604462805`*^9, 3.7910756878851347`*^9}, {
+   3.79107577741755*^9, 3.791075810514761*^9}, {3.7910758455886106`*^9, 
+   3.7910758642412844`*^9}, {3.7910760039005065`*^9, 
+   3.7910761973376384`*^9}, {3.791076311971469*^9, 3.7910763676089883`*^9}, {
+   3.79107641425559*^9, 3.7910764431541505`*^9}, {3.791076553913354*^9, 
+   3.791076752851715*^9}, {3.791076817041828*^9, 3.7910768293744326`*^9}, {
+   3.7910768797999077`*^9, 3.791076951258033*^9}, {3.7910770511153226`*^9, 
+   3.791077077589692*^9}, {3.791077151642536*^9, 3.7910771607025623`*^9}, {
+   3.7910772080591097`*^9, 3.791077215153948*^9}, {3.7910772644605184`*^9, 
+   3.791077269463659*^9}, {3.79107730598623*^9, 3.7910773270231504`*^9}, {
+   3.7910773984237366`*^9, 3.7910774062899747`*^9}, {3.7910774438599033`*^9, 
+   3.7910774450330567`*^9}, {3.791077487203817*^9, 3.791077692234049*^9}, {
+   3.791077738198675*^9, 3.7910778168219366`*^9}, {3.7910778613464966`*^9, 
+   3.7910778644846253`*^9}, 3.791079727824606*^9, {3.791079757994*^9, 
+   3.7910797833361483`*^9}, 3.7910798563011756`*^9, {3.791081470473983*^9, 
+   3.791081476065192*^9}, {3.7910815222405877`*^9, 3.791081560980006*^9}, {
+   3.791081620202858*^9, 3.791081670977538*^9}, {3.7910818636623535`*^9, 
+   3.7910819398581085`*^9}, 3.7910819879295745`*^9, {3.7910820582892404`*^9, 
+   3.7910822432832336`*^9}, {3.7911140586980724`*^9, 3.7911140725453014`*^9}, 
+   3.7911196908835144`*^9, {3.79111981782692*^9, 
+   3.7911198194353895`*^9}},ExpressionUUID->"5e9f5328-ebc4-4b19-84b3-\
+81d88c504979"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Contract ",
+  FontFamily->"Times New Roman"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["K", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontFamily->"Times New Roman",ExpressionUUID->
+  "5a6e2aa7-bbe1-4556-82e3-b843c72ab250"]
+}], "Section",
+ CellChangeTimes->{{3.7911227799307275`*^9, 
+  3.7911227877304587`*^9}},ExpressionUUID->"a93a2b95-3569-46d9-a05e-\
+125759e632ef"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tr", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"GSD", "[", "k1", "]"}], "+", "m1"}], ")"}], ".", 
+   RowBox[{"GAD", "[", "\[Mu]", "]"}], ".", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"GSD", "[", "k2", "]"}], "-", "m2"}], ")"}], ".", 
+   RowBox[{"GAD", "[", "\[Nu]", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7910780881801825`*^9, 3.7910782311340246`*^9}, {
+  3.79107826388253*^9, 3.79107827950097*^9}, {3.791078353879157*^9, 
+  3.7910784144868145`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"75813609-82b1-4294-9ed2-94443b4ddd01"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"-", "4"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"m1", " ", "m2", " ", 
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "-", 
+     RowBox[{
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm]}], "-", 
+     RowBox[{
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm]}]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.7910782219864035`*^9, 3.791078231600285*^9}, {
+   3.791078266705092*^9, 3.791078280020155*^9}, 3.7910784166843596`*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"75429412-be61-4bb1-a0b7-1738376c3fbf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Tr", "[", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"GSD", "[", "p2", "]"}], "-", "m1"}], ")"}], ".", 
+    RowBox[{"GAD", "[", "\[Mu]", "]"}], ".", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"GSD", "[", "p1", "]"}], "+", "m2"}], ")"}], ".", 
+    RowBox[{"GAD", "[", "\[Nu]", "]"}]}], "]"}], 
+  RowBox[{"Tr", "[", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"GSD", "[", "k1", "]"}], "+", "M1"}], ")"}], ".", 
+    RowBox[{"GAD", "[", "\[Mu]", "]"}], ".", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"GSD", "[", "k2", "]"}], "-", "M2"}], ")"}], ".", 
+    RowBox[{"GAD", "[", "\[Nu]", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7910785107364283`*^9, 3.7910785720533905`*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"8526c0f2-bfe7-4126-9311-2307c89917a1"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"16", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"M1", " ", "M2", " ", 
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "-", 
+     RowBox[{
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm]}], "-", 
+     RowBox[{
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm]}]}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"m1", " ", "m2", " ", 
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "+", 
+     RowBox[{
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm]}], "-", 
+     RowBox[{
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox[
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]],
+       TraditionalForm]}]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7910785786280565`*^9, 3.791078660351242*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"46d1ebf0-97ea-4af7-ac44-0627606ab96b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Expand", "[", "%43", "]"}], "//", "Contract"}]], "Input",
+ CellChangeTimes->{{3.7910786477628317`*^9, 3.791078652319665*^9}},
+ NumberMarks->False,
+ CellLabel->"In[48]:=",ExpressionUUID->"10c55314-4b34-45fb-95f5-b74e7d792deb"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"16", " ", "D", " ", "m1", " ", "m2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}], "+", 
+   RowBox[{"16", " ", "D", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["p1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}], "+", 
+   RowBox[{"16", " ", "D", " ", "m1", " ", "M1", " ", "m2", " ", "M2"}], "+", 
+   RowBox[{"16", " ", "D", " ", "M1", " ", "M2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["p1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}], "-", 
+   RowBox[{"32", " ", "m1", " ", "m2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}], "+", 
+   RowBox[{"32", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p1",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}], "+", 
+   RowBox[{"32", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p1",
+        TraditionalForm],
+       TraditionalForm]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}], "-", 
+   RowBox[{"64", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["p1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}], "-", 
+   RowBox[{"32", " ", "M1", " ", "M2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       FormBox["p1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p2",
+        TraditionalForm],
+       TraditionalForm]}], ")"}]}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.791078584005595*^9, {3.791078653872219*^9, 3.7910786651157484`*^9}},
+ CellLabel->"Out[48]=",ExpressionUUID->"0b827f8b-62ef-4a89-bd56-c05ce9622308"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "//", "Factor"}]], "Input",
+ CellChangeTimes->{{3.791078678124302*^9, 3.7910786802180023`*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"955822c6-3272-4163-8df9-f019a0ff8994"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"16", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"D", " ", "m1", " ", "m2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"D", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"D", " ", "m1", " ", "M1", " ", "m2", " ", "M2"}], "+", 
+     RowBox[{"D", " ", "M1", " ", "M2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{"2", " ", "m1", " ", "m2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{"4", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{"2", " ", "M1", " ", "M2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7910786813512225`*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"b96ac7cd-8f04-499d-bde7-7d79a07529bb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"%", "/.", 
+   RowBox[{"{", 
+    RowBox[{"m1", "\[Rule]", "0"}], "}"}]}], "/.", 
+  RowBox[{"{", 
+   RowBox[{"m2", "\[Rule]", "0"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.7910787309053063`*^9, 3.7910787563822503`*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"504a45ec-a983-4f0f-89e9-2fd9c9822651"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"16", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"D", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"D", " ", "M1", " ", "M2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{"4", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{"2", " ", "M1", " ", "M2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7910787576802073`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"a2855e31-2a0f-45e2-a952-eeb6b6ae02b5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"%", "/.", 
+   RowBox[{"{", 
+    RowBox[{"M1", "\[Rule]", "0"}], "}"}]}], "/.", 
+  RowBox[{"{", 
+   RowBox[{"M2", "\[Rule]", "0"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.791078795360839*^9, 3.791078799723979*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"0a6b057d-aac3-4311-8eb1-87de911da428"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"16", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"D", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{"4", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["p1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["p2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7910788009839973`*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"5ae651a7-cc11-4d24-a795-c66fdc7bdd0c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"MTD", "[", 
+    RowBox[{"\[Mu]", ",", "\[Nu]"}], "]"}], ".", 
+   RowBox[{"Tr", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"GSD", "[", "k1", "]"}], "+", "m1"}], ")"}], ".", 
+     RowBox[{"GAD", "[", "\[Mu]", "]"}], ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"GSD", "[", "k2", "]"}], "-", "m2"}], ")"}], ".", 
+     RowBox[{"GAD", "[", "\[Nu]", "]"}]}], "]"}]}], "//", 
+  "Contract"}], "\[IndentingNewLine]", 
+ RowBox[{"%", "/.", 
+  RowBox[{"{", 
+   RowBox[{"m1", "\[Rule]", "0"}], "}"}]}]}], "Input",
+ CellChangeTimes->{{3.7910828554461555`*^9, 3.791082878019946*^9}, {
+  3.791083012924381*^9, 3.7910830134425635`*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"07bdb05c-1c38-4306-ab5c-e2c74189b4bd"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"-", "4"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"D", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "+", 
+     RowBox[{"D", " ", "m1", " ", "m2"}], "-", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.791082879456684*^9, 3.7910830140825586`*^9},
+ CellLabel->"Out[55]=",ExpressionUUID->"e87dcb52-b0fd-4bc3-9729-4b8e0b56dff4"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"-", "4"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"D", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}], "-", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FormBox[
+         FormBox["k1",
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox["\<\"\[CenterDot]\"\>",
+         TraditionalForm], 
+        FormBox[
+         FormBox["k2",
+          TraditionalForm],
+         TraditionalForm]}], ")"}]}]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.791082879456684*^9, 3.7910830141015253`*^9},
+ CellLabel->"Out[56]=",ExpressionUUID->"9d66bc80-c6cd-4827-bcd1-b3b8c3893652"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"%", "//", "StandardForm"}], ";"}]], "Input",
+ CellChangeTimes->{{3.7910829917985935`*^9, 3.791083002872183*^9}, 
+   3.7911228194905224`*^9},
+ CellLabel->"In[71]:=",ExpressionUUID->"da31c82c-66cc-4128-b512-6c1c3523eac8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    FormBox[
+     FormBox[
+      SuperscriptBox["g", 
+       RowBox[{
+        FormBox[
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]}]],
+      TraditionalForm],
+     TraditionalForm],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], ".", 
+   SubscriptBox[
+    StyleBox["K",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"], "\[Mu]\[Nu]"]}], "==", 
+  RowBox[{"-", 
+   RowBox[{"4", " ", ".", 
+    RowBox[{"Pair", "[", 
+     RowBox[{
+      RowBox[{"Momentum", "[", 
+       RowBox[{"k1", ",", "D"}], "]"}], ",", 
+      RowBox[{"Momentum", "[", 
+       RowBox[{"k2", ",", "D"}], "]"}]}], "]"}], ".", 
+    RowBox[{"(", 
+     RowBox[{"D", "-", "2"}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.791082969799636*^9, 3.7910829821048346`*^9}, {
+  3.7910830553626523`*^9, 3.7910831177331944`*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"78295414-ee7c-4b2e-8907-fe1f25fa3dd0"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["g", 
+     RowBox[{"\[Mu]", " ", "\[Nu]"}]], ".", 
+    SubscriptBox["K", "\[Mu]\[Nu]"]}], "\[LongEqual]", 
+   RowBox[{"-", 
+    RowBox[{"4", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       FormBox[
+        FormBox["k1",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox["\<\"\[CenterDot]\"\>",
+        TraditionalForm], 
+       FormBox[
+        FormBox["k2",
+         TraditionalForm],
+        TraditionalForm]}], ")"}], ".", 
+     RowBox[{"(", 
+      RowBox[{"D", "-", "2"}], ")"}]}]}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.7910831038789816`*^9, 3.7910831181555333`*^9}},
+ CellLabel->"Out[60]=",ExpressionUUID->"99272a37-eea1-4c64-bd95-9fae2081ce68"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Contract ",
+  FontFamily->"Times New Roman"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["L", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontFamily->"Times New Roman",ExpressionUUID->
+  "daabbbbe-d602-49dc-9482-e5f866569c8a"]
+}], "Section",
+ CellChangeTimes->{{3.791126528531268*^9, 
+  3.791126531525565*^9}},ExpressionUUID->"b0b4a4b6-1c8d-48ca-a30b-\
+de763c01330b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"MTD", "[", 
+       RowBox[{"\[Mu]", ",", "\[Nu]"}], "]"}]}], 
+     RowBox[{"Tr", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"GSD", "[", "p1", "]"}], ")"}], ".", 
+       RowBox[{"GAD", "[", "\[Mu]", "]"}], ".", 
+       RowBox[{"(", 
+        RowBox[{"GSD", "[", "p2", "]"}], ")"}], ".", 
+       RowBox[{"GAD", "[", "\[Nu]", "]"}]}], "]"}]}], "//", "Expand"}], "//", 
+   "Contract"}], "//", "Factor"}]], "Input",
+ CellChangeTimes->{{3.791122940838726*^9, 3.791122999814992*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"fe225b2e-b721-485c-949c-a74ffdb39b68"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"4", " ", 
+   RowBox[{"(", 
+    RowBox[{"D", "-", "2"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FormBox[
+      FormBox["p1",
+       TraditionalForm],
+      TraditionalForm], 
+     FormBox["\<\"\[CenterDot]\"\>",
+      TraditionalForm], 
+     FormBox[
+      FormBox["p2",
+       TraditionalForm],
+      TraditionalForm]}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.7911229878737693`*^9, 3.7911230006337056`*^9}},
+ CellLabel->"Out[73]=",ExpressionUUID->"c89e49f4-5f6b-439f-b909-5cbaf489c7b1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"FVD", "[", 
+         RowBox[{"q", ",", "\[Mu]"}], "]"}], 
+        RowBox[{"FVD", "[", 
+         RowBox[{"q", ",", "\[Nu]"}], "]"}]}], 
+       SuperscriptBox["Q", "2"]], ")"}], ".", 
+     RowBox[{"Tr", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"GSD", "[", "p1", "]"}], ")"}], ".", 
+       RowBox[{"GAD", "[", "\[Mu]", "]"}], ".", 
+       RowBox[{"(", 
+        RowBox[{"GSD", "[", "p2", "]"}], ")"}], ".", 
+       RowBox[{"GAD", "[", "\[Nu]", "]"}]}], "]"}]}], "//", "Expand"}], "//", 
+   "Contract"}], "//", "Factor"}]], "Input",
+ CellChangeTimes->{{3.791123032779169*^9, 3.791123096897355*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"1e4ec052-3151-4db4-80f6-08e97b4db7d1"],
+
+Cell[BoxData[
+ FormBox[
+  FractionBox[
+   RowBox[{"4", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FormBox[
+          FormBox["p1",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox["\<\"\[CenterDot]\"\>",
+          TraditionalForm], 
+         FormBox[
+          FormBox["q",
+           TraditionalForm],
+          TraditionalForm]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FormBox[
+          FormBox["p2",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox["\<\"\[CenterDot]\"\>",
+          TraditionalForm], 
+         FormBox[
+          FormBox["q",
+           TraditionalForm],
+          TraditionalForm]}], ")"}]}], "-", 
+      RowBox[{
+       SuperscriptBox[
+        FormBox[
+         FormBox["q",
+          TraditionalForm],
+         TraditionalForm], "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FormBox[
+          FormBox["p1",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox["\<\"\[CenterDot]\"\>",
+          TraditionalForm], 
+         FormBox[
+          FormBox["p2",
+           TraditionalForm],
+          TraditionalForm]}], ")"}]}]}], ")"}]}], 
+   SuperscriptBox["Q", "2"]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.791123098527789*^9},
+ CellLabel->"Out[74]=",ExpressionUUID->"c841a3fe-1b65-4df5-830b-05fa76917679"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Massless Electrons, Massless Quarks",
+ FontFamily->"Times New Roman"]], "Section",
+ CellChangeTimes->{{3.7910793190500994`*^9, 
+  3.7910793344778423`*^9}},ExpressionUUID->"255d958d-201d-4bbd-b341-\
+9f5f16b5a7cf"],
+
+Cell[TextData[{
+ "\[Beta] ",
+ StyleBox["= ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  SqrtBox[
+   RowBox[{"1", "-", 
+    FractionBox[
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["M", "q"], "2"], "+", 
+        SuperscriptBox[
+         SubscriptBox["M", "qb"], "2"]}], ")"}]}], "s"], "+", 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["M", "q"], "2"], "-", 
+        SuperscriptBox[
+         SubscriptBox["M", "qb"], "2"]}], ")"}], "2"], 
+     SuperscriptBox["s", "2"]]}]]],
+  CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQ/c69T/O53RtHtuA/OiB6UoyuBYh+UxFgA6KfXd3k
+AKJn7WB3BtGfL9SEgOj3Z1flgGg3sf9VIPpqzedGEH1a90Q7iD77LqUbRBtZ
+2c4E0Q6O0ptA9IowxV0gOur36t0g+saMnwdB9DnHF6dA9M4NyddB9KF7m26B
+1fd/eQyiU6rFnoJoqyeMr0G0ytsnYHriHr5PINr72jowbdRv/x1EL9v74CfY
+3v6zTC+AdKX7SWYQHdJSzQGiz/ItBNOrW5/xgsVr29VBdE+0my6I9vOVMgfR
+DWKrbUA0bxO/LYgGACkeqRo=
+   "],
+  FontFamily->"Times New Roman",
+  FontSize->14,ExpressionUUID->"491dc583-1978-4b02-a189-ff3a14fb0a4f"],
+ ", ",
+ StyleBox["then \[Beta] = 1",
+  FontFamily->"Times New Roman",
+  FontSize->14]
+}], "Text",
+ CellChangeTimes->{{3.791079364200111*^9, 3.7910793879017305`*^9}, {
+  3.7910794194870696`*^9, 
+  3.791079434098096*^9}},ExpressionUUID->"ceb835fd-f2d8-40ba-b836-\
+b12b6dc4b296"],
+
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      StyleBox[" ", "Text",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"],
+      FontWeight->"Plain"], 
+     StyleBox[" ",
+      FontWeight->"Regular"]}]],
+   FontFamily->"Times New Roman",
+   FontSize->14], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"32", 
+      SuperscriptBox["s", "2"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+      StyleBox[
+       StyleBox[" ", "Text",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Regular"],
+       FontWeight->"Plain"], 
+      StyleBox[" ",
+       FontWeight->"Regular"]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14], 
+   StyleBox[
+    FractionBox["1", 
+     SqrtBox[
+      RowBox[{"s", 
+       RowBox[{"(", 
+        RowBox[{"s", "-", 
+         RowBox[{"4", 
+          SubscriptBox["m", "e"], 
+          SubscriptBox["m", "e"]}]}], ")"}]}]]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        SqrtBox["s"], "2"], ".", "\[Beta]"}], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    SuperscriptBox["L", "\[Mu]\[Nu]"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     StyleBox["\[Integral]",
+      FontWeight->"Regular"], 
+     StyleBox[" ",
+      FontWeight->"Regular"], 
+     RowBox[{
+      StyleBox[
+       SubscriptBox["d\[CapitalOmega]", 
+        RowBox[{"d", "-", "1"}]],
+       FontWeight->"Regular"], 
+      StyleBox[
+       SubscriptBox[
+        StyleBox["K",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Regular"], "\[Mu]\[Nu]"],
+       FontWeight->"Plain"]}]}],
+    FontFamily->"Times New Roman",
+    FontSize->14]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"32", 
+      SuperscriptBox["s", "3"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox["L", "\[Mu]\[Nu]"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox["q", "\[Mu]"], 
+        SubscriptBox["q", "\[Nu]"]}], 
+       SuperscriptBox["Q", "2"]], "-", 
+      SubscriptBox[
+       StyleBox["g",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], "\[Mu]\[Nu]"]}], ")"}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   RowBox[{
+    StyleBox[
+     FormBox[
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm],
+      TraditionalForm],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], ".", 
+    SubscriptBox[
+     StyleBox["K",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], "\[Mu]\[Nu]"]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    RowBox[{
+     StyleBox["-", "Text",
+      FontWeight->"Regular"], 
+     StyleBox[
+      FractionBox[
+       RowBox[{"4", 
+        SuperscriptBox[
+         SubscriptBox["Q", "f"], "2"], 
+        SuperscriptBox["e", "4"]}], 
+       RowBox[{"32", 
+        SuperscriptBox["s", "3"], 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["E", "1"], "+", 
+          SubscriptBox["E", "2"]}], ")"}]}]],
+      FontWeight->"Plain"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    FractionBox["1", "2"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{"d", "-", "2"}], 
+      RowBox[{"d", "-", "1"}]], ".", 
+     SuperscriptBox["Q", "2"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   RowBox[{
+    StyleBox[
+     FormBox[
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm],
+      TraditionalForm],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], ".", 
+    SubscriptBox[
+     StyleBox["K",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], "\[Mu]\[Nu]"]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{"16", 
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"32", 
+      SuperscriptBox["s", "3"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    FractionBox["1", "2"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"d", "-", "2"}], ")"}], "2"], 
+      RowBox[{"d", "-", "1"}]], ".", 
+     SuperscriptBox["Q", "2"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox[
+       StyleBox["k",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], "1"], ".", 
+      SubscriptBox["k", "2"]}], ")"}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"2", 
+      SuperscriptBox["s", "3"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    FractionBox["1", "2"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"d", "-", "2"}], ")"}], "2"], 
+      RowBox[{"d", "-", "1"}]], ".", 
+     FractionBox[
+      SuperscriptBox[
+       StyleBox["Q",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], "4"], "2"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"2", 
+      SuperscriptBox["s", "3"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   StyleBox[
+    RowBox[{"(", 
+     FractionBox[
+      SqrtBox["s"], "2"], ")"}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "4"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    FractionBox["1", "2"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"d", "-", "2"}], ")"}], "2"], 
+      RowBox[{"d", "-", "1"}]], ".", 
+     FractionBox[
+      SuperscriptBox["s", "2"], "2"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "s"}]], 
+    SuperscriptBox[
+     StyleBox[
+      RowBox[{"(", 
+       RowBox[{"2", "\[Pi]"}], ")"}],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Plain"], 
+     RowBox[{"-", "1"}]], 
+    SuperscriptBox[
+     StyleBox[
+      RowBox[{"(", 
+       RowBox[{"2", "\[Pi]"}], ")"}],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Plain"], 
+     RowBox[{"-", "1"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"4", "-", "d"}]], 
+    SuperscriptBox[
+     StyleBox[
+      RowBox[{"(", 
+       FractionBox[
+        SqrtBox["s"], "2"], ")"}],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Plain"], 
+     RowBox[{"d", "-", "4"}]], 
+    FractionBox[
+     StyleBox[
+      SuperscriptBox["\[Pi]", 
+       RowBox[{" ", 
+        RowBox[{"d", "/", "2"}]}]],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{
+      SqrtBox["\[Pi]"], 
+      RowBox[{"\[CapitalGamma]", "[", 
+       FractionBox[
+        RowBox[{"d", "-", "1"}], "2"], "]"}]}]], " ", 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "s"}]], 
+    SuperscriptBox["2", 
+     RowBox[{"-", "2"}]], 
+    SuperscriptBox[
+     StyleBox[
+      RowBox[{"(", 
+       FractionBox[
+        SqrtBox["s"], 
+        RowBox[{"4", "\[Pi]"}]], ")"}],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Plain"], 
+     RowBox[{"d", "-", "4"}]], 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", "\[Pi]", ")"}], 
+       RowBox[{"-", "2"}]], 
+      StyleBox[
+       SuperscriptBox["\[Pi]", 
+        RowBox[{" ", 
+         RowBox[{"d", "/", "2"}]}]],
+       FontFamily->"Times New Roman",
+       FontSize->14]}], 
+     RowBox[{
+      SqrtBox["\[Pi]"], 
+      RowBox[{"\[CapitalGamma]", "[", 
+       FractionBox[
+        RowBox[{"d", "-", "1"}], "2"], "]"}]}]], " ", 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "s"}]], 
+    SuperscriptBox["2", 
+     RowBox[{"-", "2"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox["1", "2"], ")"}], 
+     RowBox[{"d", "-", "4"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], 
+       RowBox[{"2", "\[Pi]"}]], ")"}], 
+     RowBox[{"d", "-", "4"}]], 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", "\[Pi]", ")"}], 
+       RowBox[{"-", "2"}]], 
+      StyleBox[
+       SuperscriptBox["\[Pi]", 
+        RowBox[{" ", 
+         RowBox[{"d", "/", "2"}]}]],
+       FontFamily->"Times New Roman",
+       FontSize->14]}], 
+     RowBox[{
+      SqrtBox["\[Pi]"], 
+      RowBox[{"\[CapitalGamma]", "[", 
+       FractionBox[
+        RowBox[{"d", "-", "1"}], "2"], "]"}]}]], " ", 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "s"}]], 
+    SuperscriptBox["2", "2"], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox["s", 
+       RowBox[{"4", 
+        SuperscriptBox["\[Pi]", "2"]}]], ")"}], 
+     FractionBox[
+      RowBox[{"d", "-", "4"}], "2"]], 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", 
+       RowBox[{"-", "d"}]], 
+      SuperscriptBox[
+       RowBox[{"(", "\[Pi]", ")"}], 
+       RowBox[{"-", "2"}]], 
+      StyleBox[
+       SuperscriptBox["\[Pi]", 
+        RowBox[{" ", 
+         RowBox[{"d", "/", "2"}]}]],
+       FontFamily->"Times New Roman",
+       FontSize->14]}], 
+     RowBox[{
+      SqrtBox["\[Pi]"], 
+      RowBox[{"\[CapitalGamma]", "[", 
+       FractionBox[
+        RowBox[{"d", "-", "1"}], "2"], "]"}]}]], " ", 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", "2"], 
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "s"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox["s", 
+       RowBox[{"4", "\[Pi]"}]], ")"}], 
+     FractionBox[
+      RowBox[{"d", "-", "4"}], "2"]], 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]], 
+    FractionBox[
+     SuperscriptBox["2", 
+      RowBox[{"-", "d"}]], 
+     RowBox[{
+      SqrtBox["\[Pi]"], 
+      RowBox[{"\[CapitalGamma]", "[", 
+       FractionBox[
+        RowBox[{"d", "-", "1"}], "2"], "]"}]}]], " "}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}]}], "Input",
+ CellChangeTimes->{{3.7910794656315165`*^9, 3.79107947121174*^9}, {
+   3.791079525569585*^9, 3.791079605919769*^9}, {3.7910799001132107`*^9, 
+   3.7910799389611278`*^9}, 3.791080008202031*^9, {3.7910800390714955`*^9, 
+   3.791080064985752*^9}, {3.7910822747306204`*^9, 3.7910822918377237`*^9}, 
+   3.791082377014222*^9, {3.7910824435581703`*^9, 3.791082446297864*^9}, {
+   3.791082501621233*^9, 3.791082505240361*^9}, {3.791082568897853*^9, 
+   3.791082613972355*^9}, {3.791082648505855*^9, 3.791082649590151*^9}, 
+   3.7910827196709576`*^9, {3.7910831824995995`*^9, 3.7910832058359103`*^9}, {
+   3.79108328318546*^9, 3.791083313254651*^9}, {3.79108335452392*^9, 
+   3.7910834786531897`*^9}, {3.791083534886774*^9, 3.7910836353536215`*^9}, {
+   3.791083840124675*^9, 3.791083870364126*^9}, {3.79108459135352*^9, 
+   3.7910846359805946`*^9}, {3.791084675900313*^9, 3.7910846832207947`*^9}, {
+   3.7910847335696287`*^9, 3.7910847561371455`*^9}, {3.7910849282447386`*^9, 
+   3.7910849419731627`*^9}, {3.7910850085148687`*^9, 
+   3.7910850573010807`*^9}, {3.7910852120401735`*^9, 
+   3.7910853452404203`*^9}, {3.791085778680386*^9, 3.791085793716821*^9}, {
+   3.7911117222879524`*^9, 3.791111751922763*^9}, {3.791111785702653*^9, 
+   3.791111788998468*^9}, {3.791111890224886*^9, 3.791111918812344*^9}, {
+   3.791113741128973*^9, 3.7911137947316914`*^9}, {3.7911140908315487`*^9, 
+   3.791114110526583*^9}, {3.791114145222028*^9, 3.7911141459149375`*^9}, {
+   3.791114177866701*^9, 3.7911141842606487`*^9}, {3.791114276885013*^9, 
+   3.7911143748949103`*^9}, {3.791114508531793*^9, 3.7911145221413937`*^9}, {
+   3.7911146772834597`*^9, 3.7911147052644706`*^9}, {3.79111473964441*^9, 
+   3.791114822005909*^9}, {3.7911149008958683`*^9, 3.79111491909226*^9}, {
+   3.791115298775276*^9, 3.7911153116879735`*^9}, {3.7911154092665453`*^9, 
+   3.791115412481491*^9}, {3.791115562754219*^9, 3.7911155676125765`*^9}, {
+   3.791119865594814*^9, 3.791119907488943*^9}, 3.7911199786939845`*^9, {
+   3.7911200832485876`*^9, 
+   3.791120150233268*^9}},ExpressionUUID->"f5f24ccd-761f-45b7-a2de-\
+153d91ecacf0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Gamma Simplifications and Identities",
+ FontFamily->"Times New Roman"]], "Section",
+ CellChangeTimes->{{3.7911189300378103`*^9, 
+  3.7911189445410085`*^9}},ExpressionUUID->"1ac22b75-354f-4af7-8c92-\
+dc963d2f7f32"],
+
+Cell[TextData[{
+ StyleBox["Using Legendre Duplication Formula:\n\[CapitalGamma](z)\
+\[CapitalGamma](z+1) = ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["2", 
+     RowBox[{"1", "-", 
+      RowBox[{"2", "z"}]}]], 
+    SqrtBox["\[Pi]"], 
+    RowBox[{"\[CapitalGamma]", "(", 
+     RowBox[{"2", "z"}], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "e1e73eed-3ff9-410d-950f-ec7e223da05d"],
+ StyleBox[", ",
+  FontFamily->"Times New Roman",
+  FontSize->14,
+  FontWeight->"Regular"],
+ StyleBox["   z = ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"d", "-", "2"}], "2"], TraditionalForm]],
+  FontFamily->"Times New Roman",
+  FontSize->14,ExpressionUUID->"b589d451-4df2-4e35-9870-af475416b709"]
+}], "Text",
+ CellChangeTimes->{{3.791123686558567*^9, 
+  3.791123834107569*^9}},ExpressionUUID->"c9bac594-1977-40c0-b95c-\
+9363881e7f1f"],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "d", "]"}]], "Input",
+ CellChangeTimes->{{3.7911156796903563`*^9, 3.791115687017832*^9}},
+ CellLabel->"In[62]:=",ExpressionUUID->"6acee940-2b74-4d24-b666-d99c43decac6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"Gamma", "[", 
+    FractionBox[
+     RowBox[{"d", "-", "2"}], "2"], "]"}], 
+   RowBox[{
+    SuperscriptBox["2", 
+     RowBox[{"3", "-", "d"}]], 
+    SqrtBox["\[Pi]"], 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"d", "-", "2"}], "]"}]}]], "//", "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.7911156221368484`*^9, 3.791115668261324*^9}, {
+  3.791115704879749*^9, 3.791115716023225*^9}, {3.791117749599832*^9, 
+  3.791117815943516*^9}},
+ CellLabel->"In[65]:=",ExpressionUUID->"afdd3619-3303-449d-bf89-a330cec77472"],
+
+Cell[BoxData[
+ FormBox[
+  FractionBox["1", 
+   TemplateBox[{FractionBox[
+      RowBox[{"d", "-", "1"}], "2"]},
+    "Gamma"]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.791115669773944*^9, 3.791115717271268*^9}, 
+   3.7911178239669065`*^9},
+ CellLabel->"Out[65]=",ExpressionUUID->"c2a355e9-c630-4d51-9d88-013356150bad"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["Using General Recursive Formula:\n\
+(z)\[CapitalGamma](z) = \[CapitalGamma](z+1)",
+ FontFamily->"Times New Roman",
+ FontSize->14]], "Text",
+ CellChangeTimes->{{3.791123864470828*^9, 3.7911238871731405`*^9}, {
+  3.791123975901621*^9, 
+  3.7911239764916945`*^9}},ExpressionUUID->"66ef5fc6-4470-44b7-9786-\
+d35bd114e749"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"(", 
+    FractionBox[
+     RowBox[{"d", "-", "2"}], "2"], ")"}], 
+   RowBox[{"Gamma", "[", 
+    FractionBox[
+     RowBox[{"d", "-", "2"}], "2"], "]"}]}], "//", "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.791118874212582*^9, 3.7911189050640745`*^9}},
+ CellLabel->"In[66]:=",ExpressionUUID->"d7be3304-20fe-4f23-95e4-99ab963207aa"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{FractionBox["d", "2"]},
+   "Gamma"], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7911189061952944`*^9},
+ CellLabel->"Out[66]=",ExpressionUUID->"59785a90-8993-400c-8e8c-d0ed5207b003"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"Gamma", "[", 
+    FractionBox[
+     RowBox[{"d", "-", "1"}], "2"], "]"}]], "==", 
+  FractionBox[
+   RowBox[{"Gamma", "[", 
+    FractionBox[
+     RowBox[{"d", "-", "2"}], "2"], "]"}], 
+   RowBox[{
+    SuperscriptBox["2", 
+     RowBox[{"3", "-", "d"}]], 
+    SqrtBox["\[Pi]"], 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"d", "-", "2"}], "]"}]}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Gamma", "[", 
+   FractionBox[
+    RowBox[{"d", "-", "2"}], "2"], "]"}], "\[Equal]", 
+  RowBox[{
+   RowBox[{"(", 
+    FractionBox["2", 
+     RowBox[{"d", "-", "2"}]], ")"}], ".", 
+   RowBox[{"Gamma", "[", 
+    FractionBox["d", "2"], "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.7911191049168406`*^9, 3.7911191473061943`*^9}},
+ CellLabel->"In[69]:=",ExpressionUUID->"7d56449a-a3ea-4984-8b48-dad45c5de07a"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["1", 
+    TemplateBox[{FractionBox[
+       RowBox[{"d", "-", "1"}], "2"]},
+     "Gamma"]], "\[LongEqual]", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["2", 
+      RowBox[{"d", "-", "3"}]], " ", 
+     TemplateBox[{FractionBox[
+        RowBox[{"d", "-", "2"}], "2"]},
+      "Gamma"]}], 
+    RowBox[{
+     SqrtBox["\[Pi]"], " ", 
+     TemplateBox[{RowBox[{"d", "-", "2"}]},
+      "Gamma"]}]]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.791119149539678*^9},
+ CellLabel->"Out[69]=",ExpressionUUID->"a2f681b2-25d0-4d5b-9969-328b63fca4d7"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   TemplateBox[{FractionBox[
+      RowBox[{"d", "-", "2"}], "2"]},
+    "Gamma"], "\[LongEqual]", 
+   RowBox[{
+    FractionBox["2", 
+     RowBox[{"d", "-", "2"}]], ".", 
+    TemplateBox[{FractionBox["d", "2"]},
+     "Gamma"]}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7911191495696287`*^9},
+ CellLabel->"Out[70]=",ExpressionUUID->"6de3f48c-8f35-460e-97ec-de29ee5a0069"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Final Born Cross Section d-dimension",
+ FontFamily->"Times New Roman"]], "Section",
+ CellChangeTimes->{{3.7911195560874586`*^9, 
+  3.7911195766341505`*^9}},ExpressionUUID->"5fcd61d9-581a-4182-998a-\
+ed16a687d25f"],
+
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", "2"], 
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "s"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox["s", 
+       RowBox[{"4", "\[Pi]"}]], ")"}], 
+     FractionBox[
+      RowBox[{"d", "-", "4"}], "2"]], 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]], 
+    FractionBox[
+     SuperscriptBox["2", 
+      RowBox[{"-", "d"}]], 
+     SqrtBox["\[Pi]"]], " ", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", 
+       RowBox[{"d", "-", "3"}]], " ", 
+      TemplateBox[{FractionBox[
+         RowBox[{"d", "-", "2"}], "2"]},
+       "Gamma"]}], 
+     RowBox[{
+      SqrtBox["\[Pi]"], " ", 
+      TemplateBox[{RowBox[{"d", "-", "2"}]},
+       "Gamma"]}]]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", "2"], 
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "\[Pi]", " ", "s"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox["s", 
+       RowBox[{"4", "\[Pi]"}]], ")"}], 
+     FractionBox[
+      RowBox[{"d", "-", "4"}], "2"]], 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]], 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", 
+       RowBox[{"-", "d"}]], "*", 
+      SuperscriptBox["2", 
+       RowBox[{"d", "-", "3"}]]}], 
+     TemplateBox[{RowBox[{"d", "-", "2"}]},
+      "Gamma"]], " ", 
+    RowBox[{
+     FractionBox["2", 
+      RowBox[{"d", "-", "2"}]], ".", 
+     TemplateBox[{FractionBox["d", "2"]},
+      "Gamma"]}]}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox[
+    StyleBox[
+     StyleBox["\[Sigma]", "Text",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox["B",
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    StyleBox["\[Equal]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["2", "2"], 
+       SuperscriptBox[
+        SubscriptBox["Q", "f"], "2"], 
+       SuperscriptBox["e", "4"]}], 
+      RowBox[{"8", "\[Pi]", " ", "s"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["s", 
+        RowBox[{"4", "\[Pi]"}]], ")"}], 
+      FractionBox[
+       RowBox[{"d", "-", "4"}], "2"]], 
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], 
+      RowBox[{"d", "-", "1"}]], 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["2", 
+        RowBox[{"-", "2"}]], 
+       TemplateBox[{FractionBox["d", "2"]},
+        "Gamma"]}], 
+      TemplateBox[{RowBox[{"d", "-", "2"}]},
+       "Gamma"]]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}], 
+  StyleBox[" ",
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  StyleBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"8", "\[Pi]", " ", "s"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox["s", 
+       RowBox[{"4", "\[Pi]"}]], ")"}], 
+     FractionBox[
+      RowBox[{"d", "-", "4"}], "2"]], 
+    FractionBox[
+     RowBox[{"(", 
+      RowBox[{"d", "-", "2"}], ")"}], 
+     RowBox[{"d", "-", "1"}]], 
+    FractionBox[
+     TemplateBox[{FractionBox["d", "2"]},
+      "Gamma"], 
+     TemplateBox[{RowBox[{"d", "-", "2"}]},
+      "Gamma"]], " "}],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}]}], "Input",
+ CellChangeTimes->{{3.7911192465202007`*^9, 3.7911192610403614`*^9}, {
+  3.7911193139711423`*^9, 3.7911194445458345`*^9}, {3.791119476832073*^9, 
+  3.7911195329418516`*^9}, {3.791120162000766*^9, 3.7911201684466286`*^9}, {
+  3.791123348290002*^9, 3.791123358561856*^9}, {3.7911235049513397`*^9, 
+  3.791123515653512*^9}},ExpressionUUID->"62536332-bd10-4f58-b6de-\
+b2320d72eef2"],
+
+Cell[TextData[{
+ StyleBox["if ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["e", "2"], "=", 
+     RowBox[{"4", "\[Pi]", " ", "\[Alpha]"}]}], ",", " ", 
+    RowBox[{
+     SuperscriptBox["e", "4"], "=", 
+     RowBox[{"16", 
+      SuperscriptBox["\[Pi]", "2"], 
+      SuperscriptBox["\[Alpha]", "2"]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontFamily->"Times New Roman",
+  FontSize->14,ExpressionUUID->"70b5ade8-0a0f-44d8-b0eb-be392fbc9676"]
+}], "Text",
+ CellChangeTimes->{{3.7911233678199525`*^9, 
+  3.7911234385377636`*^9}},ExpressionUUID->"f2362f4f-4e37-4de2-a328-\
+3d329eeb9fcf"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   SubscriptBox[
+    StyleBox[
+     StyleBox["\[Sigma]", "Text",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox["B",
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    StyleBox["\[Equal]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{"16", 
+       SuperscriptBox["\[Pi]", "2"], 
+       SuperscriptBox["\[Alpha]", "2"], 
+       SuperscriptBox[
+        SubscriptBox["Q", "f"], "2"]}], 
+      RowBox[{"8", "\[Pi]", " ", "s"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["s", 
+        RowBox[{"4", "\[Pi]"}]], ")"}], 
+      FractionBox[
+       RowBox[{"d", "-", "4"}], "2"]], 
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], 
+      RowBox[{"d", "-", "1"}]], 
+     FractionBox[
+      TemplateBox[{FractionBox["d", "2"]},
+       "Gamma"], 
+      TemplateBox[{RowBox[{"d", "-", "2"}]},
+       "Gamma"]]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}], 
+  StyleBox[" ",
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox[
+    StyleBox[
+     StyleBox["\[Sigma]", "Text",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox["B",
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    StyleBox["\[Equal]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]\[Alpha]", "2"], 
+       SuperscriptBox[
+        SubscriptBox["Q", "f"], "2"]}], 
+      RowBox[{" ", "s"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"4", "\[Pi]", " "}], "s"], ")"}], 
+      FractionBox[
+       RowBox[{"4", "-", "d"}], "2"]], 
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], 
+      RowBox[{"d", "-", "1"}]], 
+     FractionBox[
+      TemplateBox[{FractionBox["d", "2"]},
+       "Gamma"], 
+      TemplateBox[{RowBox[{"d", "-", "2"}]},
+       "Gamma"]]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}], 
+  StyleBox[" ",
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7911234918858786`*^9, 3.7911235847840395`*^9}, 
+   3.791125050780568*^9, 
+   3.7911251007430096`*^9},ExpressionUUID->"6635fbfc-6dc6-48ba-8ffc-\
+55de0598011d"],
+
+Cell[TextData[{
+ StyleBox["If writing ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[
+    SuperscriptBox["L", "\[Mu]\[Nu]"],
+    FontSize->15], 
+   StyleBox[
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox["q", "\[Mu]"], 
+        SubscriptBox["q", "\[Nu]"]}], 
+       SuperscriptBox["Q", "2"]], "-", 
+      SubscriptBox[
+       StyleBox["g",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], "\[Mu]\[Nu]"]}], ")"}],
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      FormBox[
+       FormBox[
+        SuperscriptBox["g", 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Mu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Nu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Plain"], ".", 
+     SubscriptBox[
+      StyleBox["K",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"], "\[Mu]\[Nu]"]}],
+    FontSize->16]}]],
+  CellChangeTimes->{{3.7910794656315165`*^9, 3.79107947121174*^9}, {
+    3.791079525569585*^9, 3.791079605919769*^9}, {3.7910799001132107`*^9, 
+    3.7910799389611278`*^9}, 3.791080008202031*^9, {3.7910800390714955`*^9, 
+    3.791080064985752*^9}, {3.7910822747306204`*^9, 3.7910822918377237`*^9}, 
+    3.791082377014222*^9, {3.7910824435581703`*^9, 3.791082446297864*^9}, {
+    3.791082501621233*^9, 3.791082505240361*^9}, {3.791082568897853*^9, 
+    3.791082613972355*^9}, {3.791082648505855*^9, 3.791082649590151*^9}, 
+    3.7910827196709576`*^9, {3.7910831824995995`*^9, 
+    3.7910832058359103`*^9}, {3.79108328318546*^9, 3.791083313254651*^9}, {
+    3.79108335452392*^9, 3.7910834786531897`*^9}, {3.791083534886774*^9, 
+    3.7910836353536215`*^9}, {3.791083840124675*^9, 3.791083870364126*^9}, {
+    3.79108459135352*^9, 3.7910846359805946`*^9}, {3.791084675900313*^9, 
+    3.7910846832207947`*^9}, {3.7910847335696287`*^9, 
+    3.7910847561371455`*^9}, {3.7910849282447386`*^9, 
+    3.7910849419731627`*^9}, {3.7910850085148687`*^9, 
+    3.7910850573010807`*^9}, {3.7910852120401735`*^9, 
+    3.7910853452404203`*^9}, {3.791085778680386*^9, 3.791085793716821*^9}, {
+    3.7911117222879524`*^9, 3.791111751922763*^9}, {3.791111785702653*^9, 
+    3.791111788998468*^9}, {3.791111890224886*^9, 3.791111918812344*^9}, {
+    3.791113741128973*^9, 3.7911137947316914`*^9}, {3.7911140908315487`*^9, 
+    3.791114110526583*^9}, {3.791114145222028*^9, 3.7911141459149375`*^9}, {
+    3.791114177866701*^9, 3.7911141842606487`*^9}, {3.791114276885013*^9, 
+    3.7911143748949103`*^9}, {3.791114508531793*^9, 3.7911145221413937`*^9}, {
+    3.7911146772834597`*^9, 3.7911147052644706`*^9}, {3.79111473964441*^9, 
+    3.791114822005909*^9}, {3.7911149008958683`*^9, 3.79111491909226*^9}, {
+    3.791115298775276*^9, 3.7911153116879735`*^9}, {3.7911154092665453`*^9, 
+    3.791115412481491*^9}, {3.791115562754219*^9, 3.7911155676125765`*^9}, {
+    3.791119865594814*^9, 3.791119907488943*^9}, 3.7911199786939845`*^9, {
+    3.7911200832485876`*^9, 3.791120150233268*^9}},
+  FontFamily->"Times New Roman",
+  FontSize->14,ExpressionUUID->"b1e623ba-ec53-4fff-99d7-6980e51d07aa"],
+ " ",
+ StyleBox["= ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{
+    StyleBox[" ",
+     FontSize->14], 
+    StyleBox[
+     RowBox[{
+      RowBox[{
+       FractionBox[
+        RowBox[{"d", "-", "2"}], 
+        RowBox[{"d", "-", "1"}]], ".", 
+       SuperscriptBox["Q", "2"]}], 
+      RowBox[{
+       StyleBox[
+        FormBox[
+         FormBox[
+          SuperscriptBox["g", 
+           RowBox[{
+            FormBox[
+             FormBox[
+              FormBox["\[Mu]",
+               TraditionalForm],
+              TraditionalForm],
+             TraditionalForm], 
+            FormBox[
+             FormBox[
+              FormBox["\[Nu]",
+               TraditionalForm],
+              TraditionalForm],
+             TraditionalForm]}]],
+          TraditionalForm],
+         TraditionalForm],
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], ".", 
+       SubscriptBox[
+        StyleBox["K",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Regular"], "\[Mu]\[Nu]"]}]}],
+     FontSize->16]}],
+   FontFamily->"Times New Roman"]],
+  CellChangeTimes->{{3.7910794656315165`*^9, 3.79107947121174*^9}, {
+    3.791079525569585*^9, 3.791079605919769*^9}, {3.7910799001132107`*^9, 
+    3.7910799389611278`*^9}, 3.791080008202031*^9, {3.7910800390714955`*^9, 
+    3.791080064985752*^9}, {3.7910822747306204`*^9, 3.7910822918377237`*^9}, 
+    3.791082377014222*^9, {3.7910824435581703`*^9, 3.791082446297864*^9}, {
+    3.791082501621233*^9, 3.791082505240361*^9}, {3.791082568897853*^9, 
+    3.791082613972355*^9}, {3.791082648505855*^9, 3.791082649590151*^9}, 
+    3.7910827196709576`*^9, {3.7910831824995995`*^9, 
+    3.7910832058359103`*^9}, {3.79108328318546*^9, 3.791083313254651*^9}, {
+    3.79108335452392*^9, 3.7910834786531897`*^9}, {3.791083534886774*^9, 
+    3.7910836353536215`*^9}, {3.791083840124675*^9, 3.791083870364126*^9}, {
+    3.79108459135352*^9, 3.7910846359805946`*^9}, {3.791084675900313*^9, 
+    3.7910846832207947`*^9}, {3.7910847335696287`*^9, 
+    3.7910847561371455`*^9}, {3.7910849282447386`*^9, 
+    3.7910849419731627`*^9}, {3.7910850085148687`*^9, 
+    3.7910850573010807`*^9}, {3.7910852120401735`*^9, 
+    3.7910853452404203`*^9}, {3.791085778680386*^9, 3.791085793716821*^9}, {
+    3.7911117222879524`*^9, 3.791111751922763*^9}, {3.791111785702653*^9, 
+    3.791111788998468*^9}, {3.791111890224886*^9, 3.791111918812344*^9}, {
+    3.791113741128973*^9, 3.7911137947316914`*^9}, {3.7911140908315487`*^9, 
+    3.791114110526583*^9}, {3.791114145222028*^9, 3.7911141459149375`*^9}, {
+    3.791114177866701*^9, 3.7911141842606487`*^9}, {3.791114276885013*^9, 
+    3.7911143748949103`*^9}, {3.791114508531793*^9, 3.7911145221413937`*^9}, {
+    3.7911146772834597`*^9, 3.7911147052644706`*^9}, {3.79111473964441*^9, 
+    3.791114822005909*^9}, {3.7911149008958683`*^9, 3.79111491909226*^9}, {
+    3.791115298775276*^9, 3.7911153116879735`*^9}, {3.7911154092665453`*^9, 
+    3.791115412481491*^9}, {3.791115562754219*^9, 3.7911155676125765`*^9}, {
+    3.791119865594814*^9, 3.791119907488943*^9}, 3.7911199786939845`*^9, {
+    3.7911200832485876`*^9, 3.791120150233268*^9}},ExpressionUUID->
+  "6d7dac80-52b4-4cbc-9364-89e607893831"],
+ " \n",
+ StyleBox["instead of",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ " ",
+ Cell[BoxData[
+  RowBox[{
+   StyleBox[
+    SuperscriptBox["L", "\[Mu]\[Nu]"],
+    FontSize->15], 
+   StyleBox[
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox["q", "\[Mu]"], 
+        SubscriptBox["q", "\[Nu]"]}], 
+       SuperscriptBox["Q", "2"]], "-", 
+      SubscriptBox[
+       StyleBox["g",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], "\[Mu]\[Nu]"]}], ")"}],
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      FormBox[
+       FormBox[
+        SuperscriptBox["g", 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Mu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Nu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm],
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Plain"], ".", 
+     SubscriptBox[
+      StyleBox["K",
+       FontFamily->"Times New Roman",
+       FontSize->14,
+       FontWeight->"Regular"], "\[Mu]\[Nu]"]}],
+    FontSize->16]}]],
+  CellChangeTimes->{{3.7910794656315165`*^9, 3.79107947121174*^9}, {
+    3.791079525569585*^9, 3.791079605919769*^9}, {3.7910799001132107`*^9, 
+    3.7910799389611278`*^9}, 3.791080008202031*^9, {3.7910800390714955`*^9, 
+    3.791080064985752*^9}, {3.7910822747306204`*^9, 3.7910822918377237`*^9}, 
+    3.791082377014222*^9, {3.7910824435581703`*^9, 3.791082446297864*^9}, {
+    3.791082501621233*^9, 3.791082505240361*^9}, {3.791082568897853*^9, 
+    3.791082613972355*^9}, {3.791082648505855*^9, 3.791082649590151*^9}, 
+    3.7910827196709576`*^9, {3.7910831824995995`*^9, 
+    3.7910832058359103`*^9}, {3.79108328318546*^9, 3.791083313254651*^9}, {
+    3.79108335452392*^9, 3.7910834786531897`*^9}, {3.791083534886774*^9, 
+    3.7910836353536215`*^9}, {3.791083840124675*^9, 3.791083870364126*^9}, {
+    3.79108459135352*^9, 3.7910846359805946`*^9}, {3.791084675900313*^9, 
+    3.7910846832207947`*^9}, {3.7910847335696287`*^9, 
+    3.7910847561371455`*^9}, {3.7910849282447386`*^9, 
+    3.7910849419731627`*^9}, {3.7910850085148687`*^9, 
+    3.7910850573010807`*^9}, {3.7910852120401735`*^9, 
+    3.7910853452404203`*^9}, {3.791085778680386*^9, 3.791085793716821*^9}, {
+    3.7911117222879524`*^9, 3.791111751922763*^9}, {3.791111785702653*^9, 
+    3.791111788998468*^9}, {3.791111890224886*^9, 3.791111918812344*^9}, {
+    3.791113741128973*^9, 3.7911137947316914`*^9}, {3.7911140908315487`*^9, 
+    3.791114110526583*^9}, {3.791114145222028*^9, 3.7911141459149375`*^9}, {
+    3.791114177866701*^9, 3.7911141842606487`*^9}, {3.791114276885013*^9, 
+    3.7911143748949103`*^9}, {3.791114508531793*^9, 3.7911145221413937`*^9}, {
+    3.7911146772834597`*^9, 3.7911147052644706`*^9}, {3.79111473964441*^9, 
+    3.791114822005909*^9}, {3.7911149008958683`*^9, 3.79111491909226*^9}, {
+    3.791115298775276*^9, 3.7911153116879735`*^9}, {3.7911154092665453`*^9, 
+    3.791115412481491*^9}, {3.791115562754219*^9, 3.7911155676125765`*^9}, {
+    3.791119865594814*^9, 3.791119907488943*^9}, 3.7911199786939845`*^9, {
+    3.7911200832485876`*^9, 3.791120150233268*^9}},
+  FontFamily->"Times New Roman",
+  FontSize->14,ExpressionUUID->"fbdb88fc-1025-404d-ac9e-0c38738c7103"],
+ " ",
+ StyleBox["= ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{
+    StyleBox[" ",
+     FontSize->14], 
+    StyleBox[
+     RowBox[{
+      FractionBox["1", "2"], 
+      RowBox[{
+       FractionBox[
+        RowBox[{"d", "-", "2"}], 
+        RowBox[{"d", "-", "1"}]], ".", 
+       SuperscriptBox["Q", "2"]}], 
+      RowBox[{
+       StyleBox[
+        FormBox[
+         FormBox[
+          SuperscriptBox["g", 
+           RowBox[{
+            FormBox[
+             FormBox[
+              FormBox["\[Mu]",
+               TraditionalForm],
+              TraditionalForm],
+             TraditionalForm], 
+            FormBox[
+             FormBox[
+              FormBox["\[Nu]",
+               TraditionalForm],
+              TraditionalForm],
+             TraditionalForm]}]],
+          TraditionalForm],
+         TraditionalForm],
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], ".", 
+       SubscriptBox[
+        StyleBox["K",
+         FontFamily->"Times New Roman",
+         FontSize->14,
+         FontWeight->"Regular"], "\[Mu]\[Nu]"]}]}],
+     FontSize->16]}],
+   FontFamily->"Times New Roman"]],
+  CellChangeTimes->{{3.7910794656315165`*^9, 3.79107947121174*^9}, {
+    3.791079525569585*^9, 3.791079605919769*^9}, {3.7910799001132107`*^9, 
+    3.7910799389611278`*^9}, 3.791080008202031*^9, {3.7910800390714955`*^9, 
+    3.791080064985752*^9}, {3.7910822747306204`*^9, 3.7910822918377237`*^9}, 
+    3.791082377014222*^9, {3.7910824435581703`*^9, 3.791082446297864*^9}, {
+    3.791082501621233*^9, 3.791082505240361*^9}, {3.791082568897853*^9, 
+    3.791082613972355*^9}, {3.791082648505855*^9, 3.791082649590151*^9}, 
+    3.7910827196709576`*^9, {3.7910831824995995`*^9, 
+    3.7910832058359103`*^9}, {3.79108328318546*^9, 3.791083313254651*^9}, {
+    3.79108335452392*^9, 3.7910834786531897`*^9}, {3.791083534886774*^9, 
+    3.7910836353536215`*^9}, {3.791083840124675*^9, 3.791083870364126*^9}, {
+    3.79108459135352*^9, 3.7910846359805946`*^9}, {3.791084675900313*^9, 
+    3.7910846832207947`*^9}, {3.7910847335696287`*^9, 
+    3.7910847561371455`*^9}, {3.7910849282447386`*^9, 
+    3.7910849419731627`*^9}, {3.7910850085148687`*^9, 
+    3.7910850573010807`*^9}, {3.7910852120401735`*^9, 
+    3.7910853452404203`*^9}, {3.791085778680386*^9, 3.791085793716821*^9}, {
+    3.7911117222879524`*^9, 3.791111751922763*^9}, {3.791111785702653*^9, 
+    3.791111788998468*^9}, {3.791111890224886*^9, 3.791111918812344*^9}, {
+    3.791113741128973*^9, 3.7911137947316914`*^9}, {3.7911140908315487`*^9, 
+    3.791114110526583*^9}, {3.791114145222028*^9, 3.7911141459149375`*^9}, {
+    3.791114177866701*^9, 3.7911141842606487`*^9}, {3.791114276885013*^9, 
+    3.7911143748949103`*^9}, {3.791114508531793*^9, 3.7911145221413937`*^9}, {
+    3.7911146772834597`*^9, 3.7911147052644706`*^9}, {3.79111473964441*^9, 
+    3.791114822005909*^9}, {3.7911149008958683`*^9, 3.79111491909226*^9}, {
+    3.791115298775276*^9, 3.7911153116879735`*^9}, {3.7911154092665453`*^9, 
+    3.791115412481491*^9}, {3.791115562754219*^9, 3.7911155676125765`*^9}, {
+    3.791119865594814*^9, 3.791119907488943*^9}, 3.7911199786939845`*^9, {
+    3.7911200832485876`*^9, 3.791120150233268*^9}},ExpressionUUID->
+  "25d4a1a2-0598-4866-8c6f-40fb9c51c165"],
+ StyleBox[":",
+  FontFamily->"Times New Roman",
+  FontSize->14]
+}], "Text",
+ CellChangeTimes->{{3.791124064283656*^9, 3.7911240875560675`*^9}, {
+   3.7911241276340485`*^9, 3.7911241287103615`*^9}, 3.791124173875341*^9, 
+   3.791124239348392*^9, {3.791124281804644*^9, 3.791124323513061*^9}, {
+   3.7911244388437276`*^9, 3.791124450598241*^9}, {3.791124486022549*^9, 
+   3.791124526396065*^9}, {3.7911250566812873`*^9, 
+   3.7911250607329187`*^9}},ExpressionUUID->"7e840ad8-c120-4f96-a3b0-\
+33ccc1bc239b"],
+
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    RowBox[{
+     StyleBox["-", "Text",
+      FontWeight->"Regular"], 
+     StyleBox[
+      FractionBox[
+       RowBox[{"4", 
+        SuperscriptBox[
+         SubscriptBox["Q", "f"], "2"], 
+        SuperscriptBox["e", "4"]}], 
+       RowBox[{"32", 
+        SuperscriptBox["s", "3"], 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["E", "1"], "+", 
+          SubscriptBox["E", "2"]}], ")"}]}]],
+      FontWeight->"Plain"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{"d", "-", "2"}], 
+      RowBox[{"d", "-", "1"}]], ".", 
+     SuperscriptBox["Q", "2"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   RowBox[{
+    StyleBox[
+     FormBox[
+      FormBox[
+       SuperscriptBox["g", 
+        RowBox[{
+         FormBox[
+          FormBox[
+           FormBox["\[Mu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox[
+           FormBox["\[Nu]",
+            TraditionalForm],
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm],
+      TraditionalForm],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], ".", 
+    SubscriptBox[
+     StyleBox["K",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"], "\[Mu]\[Nu]"]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{"16", 
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"32", 
+      SuperscriptBox["s", "3"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "3"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"d", "-", "2"}], ")"}], "2"], 
+      RowBox[{"d", "-", "1"}]], ".", 
+     SuperscriptBox["Q", "2"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox[
+       StyleBox["k",
+        FontFamily->"Times New Roman",
+        FontSize->14,
+        FontWeight->"Plain"], "1"], ".", 
+      SubscriptBox["k", "2"]}], ")"}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"2", 
+      SuperscriptBox["s", "3"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["E", "1"], "+", 
+        SubscriptBox["E", "2"]}], ")"}]}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   StyleBox[
+    RowBox[{"(", 
+     FractionBox[
+      SqrtBox["s"], "2"], ")"}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "4"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"d", "-", "2"}], ")"}], "2"], 
+      RowBox[{"d", "-", "1"}]], ".", 
+     FractionBox[
+      SuperscriptBox["s", "2"], "2"]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox[
+   StyleBox[
+    StyleBox["\[Sigma]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox["B",
+    FontFamily->"Times New Roman",
+    FontSize->9,
+    FontWeight->"Plain"]], 
+  StyleBox[
+   StyleBox["\[Equal]", "Text",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"],
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], 
+  RowBox[{
+   StyleBox[
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["Q", "f"], "2"], 
+      SuperscriptBox["e", "4"]}], 
+     RowBox[{"4", "s"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "\[Pi]"}], ")"}], 
+     RowBox[{"2", "-", "d"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Regular"], 
+   SuperscriptBox[
+    StyleBox[
+     RowBox[{"(", 
+      FractionBox[
+       SqrtBox["s"], "2"], ")"}],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox[
+     RowBox[{"d", "-", "4"}],
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    FractionBox[
+     StyleBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Pi]", 
+        FractionBox[
+         RowBox[{"d", "-", "1"}], "2"]]}],
+      FontFamily->"Times New Roman",
+      FontSize->14], 
+     RowBox[{"\[CapitalGamma]", "[", 
+      FractionBox[
+       RowBox[{"d", "-", "1"}], "2"], "]"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[" ",
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], "2"], 
+     RowBox[{"d", "-", "1"}]],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}]}]}], "Input",
+ CellChangeTimes->{
+  3.7911245645790358`*^9, {3.7911247341943436`*^9, 3.791124742524248*^9}, {
+   3.7911248358754673`*^9, 3.7911248427157116`*^9}, {3.7911248740184927`*^9, 
+   3.7911249125329375`*^9}, {3.7911249916006165`*^9, 
+   3.7911250211092176`*^9}},ExpressionUUID->"da9c65ba-c0d1-4326-86ab-\
+10dfd866c7c9"],
+
+Cell[TextData[StyleBox["Same Gamma Simplifications:",
+ FontFamily->"Times New Roman",
+ FontSize->14]], "Text",
+ CellChangeTimes->{{3.791125027269532*^9, 3.791125034637953*^9}, 
+   3.7911252202011194`*^9},ExpressionUUID->"2fac05fe-676e-4a8b-9454-\
+33a60906ae6b"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   SubscriptBox[
+    StyleBox[
+     StyleBox["\[Sigma]", "Text",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox["B",
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    StyleBox["\[Equal]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["Q", "f"], "2"], 
+       SuperscriptBox["e", "4"]}], 
+      RowBox[{"4", "\[Pi]", " ", "s"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["s", 
+        RowBox[{"4", "\[Pi]"}]], ")"}], 
+      FractionBox[
+       RowBox[{"d", "-", "4"}], "2"]], 
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], 
+      RowBox[{"d", "-", "1"}]], 
+     FractionBox[
+      TemplateBox[{FractionBox["d", "2"]},
+       "Gamma"], 
+      TemplateBox[{RowBox[{"d", "-", "2"}]},
+       "Gamma"]]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}], 
+  StyleBox[" ",
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox[
+    StyleBox[
+     StyleBox["\[Sigma]", "Text",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox["B",
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    StyleBox["\[Equal]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{"4", "\[Pi]", " ", 
+       SuperscriptBox["\[Alpha]", "2"], 
+       SuperscriptBox[
+        SubscriptBox["Q", "f"], "2"]}], 
+      RowBox[{" ", "s"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"4", "\[Pi]", " "}], "s"], ")"}], 
+      FractionBox[
+       RowBox[{"4", "-", "d"}], "2"]], 
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{"d", "-", "2"}], ")"}], 
+      RowBox[{"d", "-", "1"}]], 
+     FractionBox[
+      TemplateBox[{FractionBox["d", "2"]},
+       "Gamma"], 
+      TemplateBox[{RowBox[{"d", "-", "2"}]},
+       "Gamma"]]}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}], 
+  StyleBox[" ",
+   FontFamily->"Times New Roman",
+   FontSize->14,
+   FontWeight->"Plain"], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox["\[Therefore]",
+   FontFamily->"Times New Roman",
+   FontSize->16,
+   FontWeight->"Bold"], 
+  RowBox[{
+   SubscriptBox[
+    StyleBox[
+     StyleBox["\[Sigma]", "Text",
+      FontFamily->"Times New Roman",
+      FontSize->14,
+      FontWeight->"Regular"],
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Plain"], 
+    StyleBox["B",
+     FontFamily->"Times New Roman",
+     FontSize->9,
+     FontWeight->"Plain"]], 
+   StyleBox[
+    StyleBox["\[Equal]", "Text",
+     FontFamily->"Times New Roman",
+     FontSize->14,
+     FontWeight->"Regular"],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"], 
+   StyleBox[
+    RowBox[{
+     FractionBox[
+      RowBox[{"4", "\[Pi]", " ", 
+       SuperscriptBox["\[Alpha]", "2"], 
+       SuperscriptBox[
+        SubscriptBox["Q", "f"], "2"]}], 
+      RowBox[{"3", " ", "s"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"4", "\[Pi]", " "}], "s"], ")"}], 
+      FractionBox[
+       RowBox[{"4", "-", "d"}], "2"]], 
+     FractionBox[
+      RowBox[{"3", 
+       RowBox[{"(", 
+        RowBox[{"d", "-", "2"}], ")"}]}], 
+      RowBox[{"d", "-", "1"}]], 
+     FractionBox[
+      TemplateBox[{FractionBox["d", "2"]},
+       "Gamma"], 
+      TemplateBox[{RowBox[{"d", "-", "2"}]},
+       "Gamma"]], " "}],
+    FontFamily->"Times New Roman",
+    FontSize->14,
+    FontWeight->"Plain"]}]}]}], "Input",
+ CellChangeTimes->{{3.791125072699104*^9, 3.7911250899040537`*^9}, {
+  3.7911252810524387`*^9, 3.7911252819220715`*^9}, {3.7911253213710423`*^9, 
+  3.7911253342048674`*^9}},ExpressionUUID->"95764f04-66b3-4d7d-a6f6-\
+0ffa2e0e313b"]
+}, Open  ]]
+},
+WindowSize->{1540, 731},
+WindowMargins->{{Automatic, 218}, {Automatic, 634}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 297, 5, 95, "Section",ExpressionUUID->"9181591c-b536-4498-82f8-d455349fb0f8"],
+Cell[880, 29, 2199, 60, 88, "Input",ExpressionUUID->"153fabd6-f740-42e3-92a5-73a430439ba8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3116, 94, 397, 6, 95, "Section",ExpressionUUID->"1263ba02-fcf4-4767-8125-1454878c4afa"],
+Cell[3516, 102, 8793, 297, 260, "Input",ExpressionUUID->"bcc407a3-efd8-4bb3-aee8-6f30cd89b987"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12346, 404, 919, 28, 109, "Section",ExpressionUUID->"5b730840-0b19-4532-aae5-b564afb82e8c"],
+Cell[CellGroupData[{
+Cell[13290, 436, 691, 22, 67, "Input",ExpressionUUID->"a0d2a12d-ed85-4d7f-b380-e0103bf608ca"],
+Cell[13984, 460, 631, 18, 61, "Output",ExpressionUUID->"fc90137d-54ba-4974-af85-390b870e8a26"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14652, 483, 898, 28, 67, "Input",ExpressionUUID->"a06e20a7-ad10-4ca7-8059-28facb8eea16"],
+Cell[15553, 513, 1342, 37, 53, "Output",ExpressionUUID->"2fa885f2-30c0-4bf0-92c7-f21ba9dc259b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16932, 555, 1566, 48, 46, "Input",ExpressionUUID->"0524a799-1c03-413d-945d-6e24a5b0bf20"],
+Cell[18501, 605, 735, 19, 53, "Output",ExpressionUUID->"b2ce506b-d89c-4192-a556-d0c1927a9539"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19273, 629, 966, 28, 49, "Input",ExpressionUUID->"f124456f-941d-4583-99f5-d570912a0351"],
+Cell[20242, 659, 686, 20, 56, "Output",ExpressionUUID->"b6f5c10c-b75a-4df4-b0bd-eb692748f935"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20965, 684, 967, 28, 50, "Input",ExpressionUUID->"5e65faa7-8776-4030-9900-4618ae8c808f"],
+Cell[21935, 714, 623, 17, 56, "Output",ExpressionUUID->"02dd5b5b-a593-4091-8267-cd8ca1b00231"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22595, 736, 1010, 29, 50, "Input",ExpressionUUID->"7ea027b8-7a92-45b4-98b0-7afcffa99e6d"],
+Cell[23608, 767, 769, 20, 75, "Output",ExpressionUUID->"bd39e960-c589-4a88-bf8f-4220b955dff9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24414, 792, 980, 30, 73, "Input",ExpressionUUID->"f3e3d535-fc73-4d1d-b266-1d3975f37a57"],
+Cell[25397, 824, 637, 18, 79, "Output",ExpressionUUID->"916ee2bd-ac42-41ea-af44-b2279970b7aa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26071, 847, 1058, 30, 88, "Input",ExpressionUUID->"f4cefd36-d580-40ea-b4ac-cbd00d17780d"],
+Cell[27132, 879, 805, 24, 87, "Output",ExpressionUUID->"7ec8a42e-a147-4584-9d2f-eb553817cb38"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27974, 908, 1301, 38, 123, "Input",ExpressionUUID->"c294a7c0-b2a1-43dd-95f0-b550d7efd975"],
+Cell[29278, 948, 815, 23, 88, "Output",ExpressionUUID->"aeab9cd1-ecee-4534-b87b-ed4a914427e8"],
+Cell[30096, 973, 891, 27, 126, "Output",ExpressionUUID->"adc5568c-1d61-499f-a0a5-2806946f635b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31036, 1006, 238, 4, 95, "Section",ExpressionUUID->"8e1e0b14-872c-4107-a14e-307b3f6e2398"],
+Cell[31277, 1012, 19867, 704, 467, "Input",ExpressionUUID->"5e9f5328-ebc4-4b19-84b3-81d88c504979"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51181, 1721, 422, 12, 100, "Section",ExpressionUUID->"a93a2b95-3569-46d9-a05e-125759e632ef"],
+Cell[CellGroupData[{
+Cell[51628, 1737, 583, 14, 46, "Input",ExpressionUUID->"75813609-82b1-4294-9ed2-94443b4ddd01"],
+Cell[52214, 1753, 2790, 108, 47, "Output",ExpressionUUID->"75429412-be61-4bb1-a0b7-1738376c3fbf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55041, 1866, 831, 23, 46, "Input",ExpressionUUID->"8526c0f2-bfe7-4126-9311-2307c89917a1"],
+Cell[55875, 1891, 5177, 208, 48, "Output",ExpressionUUID->"46d1ebf0-97ea-4af7-ac44-0627606ab96b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[61089, 2104, 260, 5, 46, "Input",ExpressionUUID->"10c55314-4b34-45fb-95f5-b74e7d792deb"],
+Cell[61352, 2111, 4060, 158, 73, "Output",ExpressionUUID->"0b827f8b-62ef-4a89-bd56-c05ce9622308"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65449, 2274, 202, 3, 46, "Input",ExpressionUUID->"955822c6-3272-4163-8df9-f019a0ff8994"],
+Cell[65654, 2279, 4318, 159, 73, "Output",ExpressionUUID->"b96ac7cd-8f04-499d-bde7-7d79a07529bb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70009, 2443, 333, 8, 46, "Input",ExpressionUUID->"504a45ec-a983-4f0f-89e9-2fd9c9822651"],
+Cell[70345, 2453, 3532, 132, 48, "Output",ExpressionUUID->"a2855e31-2a0f-45e2-a952-eeb6b6ae02b5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73914, 2590, 329, 8, 46, "Input",ExpressionUUID->"0a6b057d-aac3-4311-8eb1-87de911da428"],
+Cell[74246, 2600, 2816, 106, 48, "Output",ExpressionUUID->"5ae651a7-cc11-4d24-a795-c66fdc7bdd0c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77099, 2711, 781, 21, 78, "Input",ExpressionUUID->"07bdb05c-1c38-4306-ab5c-e2c74189b4bd"],
+Cell[77883, 2734, 992, 34, 47, "Output",ExpressionUUID->"e87dcb52-b0fd-4bc3-9729-4b8e0b56dff4"],
+Cell[78878, 2770, 944, 33, 47, "Output",ExpressionUUID->"9d66bc80-c6cd-4827-bcd1-b3b8c3893652"]
+}, Open  ]],
+Cell[79837, 2806, 254, 5, 46, "Input",ExpressionUUID->"da31c82c-66cc-4128-b512-6c1c3523eac8"],
+Cell[CellGroupData[{
+Cell[80116, 2815, 1207, 42, 47, "Input",ExpressionUUID->"78295414-ee7c-4b2e-8907-fe1f25fa3dd0"],
+Cell[81326, 2859, 751, 24, 50, "Output",ExpressionUUID->"99272a37-eea1-4c64-bd95-9fae2081ce68"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82126, 2889, 418, 12, 100, "Section",ExpressionUUID->"b0b4a4b6-1c8d-48ca-a30b-de763c01330b"],
+Cell[CellGroupData[{
+Cell[82569, 2905, 663, 18, 46, "Input",ExpressionUUID->"fe225b2e-b721-485c-949c-a74ffdb39b68"],
+Cell[83235, 2925, 551, 18, 48, "Output",ExpressionUUID->"c89e49f4-5f6b-439f-b909-5cbaf489c7b1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83823, 2948, 820, 23, 74, "Input",ExpressionUUID->"1e4ec052-3151-4db4-80f6-08e97b4db7d1"],
+Cell[84646, 2973, 1415, 51, 82, "Output",ExpressionUUID->"c841a3fe-1b65-4df5-830b-05fa76917679"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86110, 3030, 236, 4, 95, "Section",ExpressionUUID->"255d958d-201d-4bbd-b341-9f5f16b5a7cf"],
+Cell[86349, 3036, 1391, 43, 83, "Text",ExpressionUUID->"ceb835fd-f2d8-40ba-b836-b12b6dc4b296"],
+Cell[87743, 3081, 27736, 1035, 935, "Input",ExpressionUUID->"f5f24ccd-761f-45b7-a2de-153d91ecacf0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[115516, 4121, 237, 4, 95, "Section",ExpressionUUID->"1ac22b75-354f-4af7-8c92-dc963d2f7f32"],
+Cell[115756, 4127, 948, 31, 84, "Text",ExpressionUUID->"c9bac594-1977-40c0-b95c-9363881e7f1f"],
+Cell[116707, 4160, 205, 3, 46, "Input",ExpressionUUID->"6acee940-2b74-4d24-b666-d99c43decac6"],
+Cell[CellGroupData[{
+Cell[116937, 4167, 563, 15, 89, "Input",ExpressionUUID->"afdd3619-3303-449d-bf89-a330cec77472"],
+Cell[117503, 4184, 327, 8, 85, "Output",ExpressionUUID->"c2a355e9-c630-4d51-9d88-013356150bad"]
+}, Open  ]],
+Cell[117845, 4195, 342, 7, 76, "Text",ExpressionUUID->"66ef5fc6-4470-44b7-9786-d35bd114e749"],
+Cell[CellGroupData[{
+Cell[118212, 4206, 381, 10, 69, "Input",ExpressionUUID->"d7be3304-20fe-4f23-95e4-99ab963207aa"],
+Cell[118596, 4218, 227, 5, 71, "Output",ExpressionUUID->"59785a90-8993-400c-8e8c-d0ed5207b003"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[118860, 4228, 849, 27, 158, "Input",ExpressionUUID->"7d56449a-a3ea-4984-8b48-dad45c5de07a"],
+Cell[119712, 4257, 597, 19, 96, "Output",ExpressionUUID->"a2f681b2-25d0-4d5b-9969-328b63fca4d7"],
+Cell[120312, 4278, 415, 12, 71, "Output",ExpressionUUID->"6de3f48c-8f35-460e-97ec-de29ee5a0069"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[120776, 4296, 237, 4, 95, "Section",ExpressionUUID->"5fcd61d9-581a-4182-998a-ed16a687d25f"],
+Cell[121016, 4302, 6177, 229, 294, "Input",ExpressionUUID->"62536332-bd10-4f58-b6de-b2320d72eef2"],
+Cell[127196, 4533, 679, 21, 47, "Text",ExpressionUUID->"f2362f4f-4e37-4de2-a328-3d329eeb9fcf"],
+Cell[127878, 4556, 3038, 111, 187, "Input",ExpressionUUID->"6635fbfc-6dc6-48ba-8ffc-55de0598011d"],
+Cell[130919, 4669, 14045, 332, 114, "Text",ExpressionUUID->"7e840ad8-c120-4f96-a3b0-33ccc1bc239b"],
+Cell[144967, 5003, 10424, 405, 357, "Input",ExpressionUUID->"da9c65ba-c0d1-4326-86ab-10dfd866c7c9"],
+Cell[155394, 5410, 261, 5, 47, "Text",ExpressionUUID->"2fac05fe-676e-4a8b-9454-33a60906ae6b"],
+Cell[155658, 5417, 4494, 164, 255, "Input",ExpressionUUID->"95764f04-66b3-4d7d-a6f6-0ffa2e0e313b"]
+}, Open  ]]
+}
+]
+*)
+

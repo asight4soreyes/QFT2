@@ -1,0 +1,2098 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     87885,       2090]
+NotebookOptionsPosition[     79356,       1933]
+NotebookOutlinePosition[     79718,       1949]
+CellTagsIndexPosition[     79675,       1946]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "r", "]"}], ",", 
+         RowBox[{"Sin", "[", "r", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0", ",", 
+         RowBox[{"2", "\[Pi]"}], ",", 
+         RowBox[{"(", "\[Pi]", ")"}]}], "}"}]}], "]"}], "]"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.742484407719231*^9, 3.7424844646204853`*^9}},
+ CellLabel->
+  "In[172]:=",ExpressionUUID->"00898f46-ceec-459b-aa9b-be2b156b0470"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[{{1, 0}, {-1, 0}, {1, 0}}]}]], "Output",
+ CellChangeTimes->{{3.742484409951359*^9, 3.7424844203309526`*^9}, 
+   3.742484465830555*^9},
+ CellLabel->
+  "Out[172]=",ExpressionUUID->"2bf8264e-dae2-4895-8396-adb49033a841"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "3"}]}], "}"}]}],
+       "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742484507910962*^9, 3.742484651893197*^9}, {
+   3.7424847044332023`*^9, 3.7424847218451977`*^9}, 3.7424849339283285`*^9, {
+   3.7424852649412613`*^9, 3.742485278292025*^9}, {3.742489017261015*^9, 
+   3.7424890610235186`*^9}},
+ CellLabel->
+  "In[421]:=",ExpressionUUID->"e7bc8a2c-65a4-43c1-91a2-331616eb6649"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {1, 0}}, {{1, 
+      0}, {-0.5, 0.8660254037844386}, {-0.5, -0.8660254037844386}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{{3.7424845234268494`*^9, 3.742484652978259*^9}, {
+   3.7424847063883142`*^9, 3.742484722366228*^9}, 3.742484934971388*^9, {
+   3.742485265664303*^9, 3.7424852790730696`*^9}, {3.7424890202871885`*^9, 
+   3.7424890616665554`*^9}},
+ CellLabel->
+  "Out[421]=",ExpressionUUID->"c8349ff8-afee-48d3-93b6-37dfec6e77a5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "r", "]"}], ",", 
+         RowBox[{"Sin", "[", "r", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+         FractionBox[
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "4"]}], "}"}]}], 
+      "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424841655923824`*^9, 3.742484188547695*^9}, {
+  3.7424843609415555`*^9, 3.7424843914983034`*^9}, {3.742484662448801*^9, 
+  3.7424846787657337`*^9}, {3.7424852912227645`*^9, 3.7424853020853863`*^9}, {
+  3.7424890694029975`*^9, 3.7424890778454804`*^9}, {3.7424891263292537`*^9, 
+  3.7424892125491853`*^9}, {3.7424896274389153`*^9, 3.7424896303060794`*^9}},
+ CellLabel->
+  "In[445]:=",ExpressionUUID->"92bae49d-f17f-436e-8ba7-7e7d1e686a49"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[{{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 0}}]}]], "Output",
+ CellChangeTimes->{{3.742484174498892*^9, 3.742484189958776*^9}, {
+   3.742484362117623*^9, 3.7424843926943717`*^9}, 3.742484680124812*^9, {
+   3.74248529219382*^9, 3.7424853033044558`*^9}, {3.7424890721321535`*^9, 
+   3.7424890787435317`*^9}, {3.7424891269582896`*^9, 3.742489213197222*^9}, 
+   3.7424896312851353`*^9},
+ CellLabel->
+  "Out[445]=",ExpressionUUID->"a2ce593e-d8f8-49a6-b510-a2c120e03039"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+     RowBox[{"Polygon", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Cos", "[", "r", "]"}], ",", 
+          RowBox[{"Sin", "[", "r", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"r", ",", "0", ",", 
+          RowBox[{
+           SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+          FractionBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "5"]}], "}"}]}], 
+       "]"}], "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.74248401588982*^9, 3.742484046561574*^9}, {
+  3.7424841368537383`*^9, 3.7424841434101133`*^9}, {3.742484747840685*^9, 
+  3.742484754493066*^9}, {3.7424892237858276`*^9, 3.742489260980955*^9}, {
+  3.7425101830766306`*^9, 3.7425101835606585`*^9}},
+ CellLabel->
+  "In[785]:=",ExpressionUUID->"8432fc2f-0bb5-41ec-b115-a07d9018e569"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {
+      Rational[1, 4] (-1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {1, 0}}, {{1, 0}, {
+      0.30901699437494745`, 0.9510565162951535}, {-0.8090169943749475, 
+      0.5877852522924731}, {-0.8090169943749475, -0.5877852522924731}, {
+      0.30901699437494745`, -0.9510565162951535}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{{3.7424840256463776`*^9, 3.742484048748699*^9}, 
+   3.742484143941144*^9, 3.7424847559921513`*^9, {3.7424892500213284`*^9, 
+   3.742489262215026*^9}, 3.7425101847427263`*^9},
+ CellLabel->
+  "Out[785]=",ExpressionUUID->"709a65ec-1734-4687-a679-de9dc34bf8ef"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"b", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+     RowBox[{"Polygon", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Cos", "[", "t", "]"}], ",", 
+          RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "0", ",", 
+          RowBox[{
+           SuperscriptBox["2", "2"], "\[Pi]"}], ",", 
+          FractionBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["2", "2"], "\[Pi]"}], ")"}], "5"]}], "}"}]}], 
+       "]"}], "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742484059866335*^9, 3.742484069689897*^9}, {
+  3.7424847639846087`*^9, 3.742484768764882*^9}, {3.742485313220023*^9, 
+  3.742485326545785*^9}, {3.742486489918326*^9, 3.742486495520646*^9}, {
+  3.7424888033656473`*^9, 3.7424888229127655`*^9}, {3.7424892708485193`*^9, 
+  3.742489281292117*^9}, {3.7424894636395464`*^9, 3.742489508715125*^9}, {
+  3.7424896107969637`*^9, 3.7424896109129705`*^9}, {3.742491288856943*^9, 
+  3.74249129229414*^9}, {3.7425101917871284`*^9, 3.7425101937932434`*^9}},
+ CellLabel->
+  "In[786]:=",ExpressionUUID->"45893b9b-71bd-4f59-bd15-6c8120b5d947"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {1, 0}}, {{1, 0}, {-0.8090169943749475, 
+      0.5877852522924731}, {0.30901699437494745`, -0.9510565162951535}, {
+      0.30901699437494745`, 
+      0.9510565162951535}, {-0.8090169943749475, -0.5877852522924731}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{
+  3.7424840714309964`*^9, 3.742484769400918*^9, {3.7424853185653286`*^9, 
+   3.7424853292159376`*^9}, {3.7424864920764494`*^9, 3.742486496891725*^9}, {
+   3.7424888042236967`*^9, 3.7424888259299383`*^9}, 3.7424892821291647`*^9, {
+   3.7424894843897333`*^9, 3.7424895096841803`*^9}, 3.7424896119950323`*^9, 
+   3.7424912926181583`*^9, 3.742510194884306*^9},
+ CellLabel->
+  "Out[786]=",ExpressionUUID->"a5aac592-5679-4bf2-93ce-a810abe666be"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "6"}]}], "}"}]}],
+       "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424848233480034`*^9, 3.74248485213265*^9}, {
+  3.7424850713511887`*^9, 3.7424851742190723`*^9}, {3.7424853396525345`*^9, 
+  3.7424854406553116`*^9}, {3.7424854811686287`*^9, 3.742485481606654*^9}, {
+  3.742489303512388*^9, 3.7424893096367383`*^9}},
+ CellLabel->
+  "In[448]:=",ExpressionUUID->"9a9c309c-1a66-4df5-8a8c-72448185d8a0"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {Rational[1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+      Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {-1, 0}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+      Rational[1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {1, 0}}, {{1, 0}, {
+      0.5, 0.8660254037844386}, {-0.5, 0.8660254037844386}, {-1, 
+      0}, {-0.5, -0.8660254037844386}, {0.5, -0.8660254037844386}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{3.7424897214732943`*^9},
+ CellLabel->
+  "Out[448]=",ExpressionUUID->"79273547-e2bb-4d6c-9966-bfded99910e6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          FractionBox["5", "3"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "\[Pi]"}], ")"}], "/", "6"}]}], "}"}]}], "]"}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424896958728294`*^9, 3.742489698977007*^9}, {
+  3.7424905706548643`*^9, 3.7424906086820393`*^9}, {3.74249108984456*^9, 
+  3.742491271622957*^9}},
+ CellLabel->
+  "In[514]:=",ExpressionUUID->"22f55ee0-485f-4a6b-88b3-4bdb3c26e8b8"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {Rational[1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+      Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {-1, 0}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+      Rational[1, 2], Rational[-1, 2] 3^Rational[1, 2]}}, {{1, 0}, {0.5, 
+      0.8660254037844386}, {-0.5, 0.8660254037844386}, {-1, 
+      0}, {-0.5, -0.8660254037844386}, {
+      0.5, -0.8660254037844386}}]]}]], "Output",
+ CellChangeTimes->{{3.7424848244820685`*^9, 3.7424848529296956`*^9}, {
+   3.7424850735843163`*^9, 3.7424850937984724`*^9}, 3.7424851757911625`*^9, {
+   3.742485341474639*^9, 3.742485405079277*^9}, {3.742485436066049*^9, 
+   3.7424854415303617`*^9}, 3.7424854823986993`*^9, 3.7424893102847753`*^9, 
+   3.7424896998230553`*^9, {3.7424905809234514`*^9, 3.7424906093170757`*^9}, {
+   3.7424910997561274`*^9, 3.742491272203991*^9}},
+ CellLabel->
+  "Out[514]=",ExpressionUUID->"c611686b-e8cd-458e-9206-f86bfdab3e52"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"c", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+     RowBox[{"Polygon", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Cos", "[", "t", "]"}], ",", 
+          RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "0", ",", 
+          RowBox[{
+           SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "7"}]}], 
+         "}"}]}], "]"}], "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQzcAgbWz56LWjFftHMN3F1p8Aor0qJ4PpQ7cmV4Ho
+H9wzwPTXez/rQHTD7OouEC2z/NhUEL2g+exiED0vbuZaEC2pvHoLiF5b67gL
+RG/Ic9kDohO3xxwA0RHnZY+C6NzDDedAdI/dRDDtXlnxD0RHpm1lsgLZw3jf
+DUSr87S7g+jLMZ9CQbTBrV9RIFq56Vk8iObYrZYCog96xCwA0UfnsK4A0R1R
+qzeC6BU7FA+D6Dmn3U+C6Lk6ZmdA9Nr3UZdA9Lk5ey+D6LuSGvdA9M8vH1is
+gbRIwrEYEL2BTyoeRCfkvagG0Yc0emtBdOC5fVNdQeLnDoFpAIU7uB0=
+  "],
+ CellLabel->
+  "In[789]:=",ExpressionUUID->"d4b1c09a-2b65-4aaf-8bb1-4f58970a8064"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Sin[Rational[3, 14] Pi], Cos[Rational[3, 14] Pi]}, {-
+       Sin[Rational[1, 14] Pi], Cos[Rational[1, 14] Pi]}, {-
+       Cos[Rational[1, 7] Pi], Sin[Rational[1, 7] Pi]}, {-
+       Cos[Rational[1, 7] Pi], -Sin[Rational[1, 7] Pi]}, {-
+       Sin[Rational[1, 14] Pi], -Cos[Rational[1, 14] Pi]}, {
+      Sin[Rational[3, 14] Pi], -Cos[Rational[3, 14] Pi]}, {1, 0}}, {{1, 0}, {
+      0.6234898018587335, 0.7818314824680298}, {-0.2225209339563144, 
+      0.9749279121818236}, {-0.9009688679024191, 
+      0.4338837391175581}, {-0.9009688679024191, -0.4338837391175581}, \
+{-0.2225209339563144, -0.9749279121818236}, {
+      0.6234898018587335, -0.7818314824680298}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{{3.742486125228467*^9, 3.7424861338029575`*^9}, {
+   3.742486517891926*^9, 3.7424865507668066`*^9}, 3.74248710121529*^9, {
+   3.7424872398802214`*^9, 3.7424872503318195`*^9}, 3.7424873300543795`*^9, {
+   3.7424878206514397`*^9, 3.7424878727504196`*^9}, {3.742487950067842*^9, 
+   3.7424880895078173`*^9}, {3.7424881545655384`*^9, 3.742488162496992*^9}, {
+   3.742488214870988*^9, 3.7424882223864174`*^9}, {3.74248831439168*^9, 
+   3.742488616273947*^9}, 3.742489338133368*^9, {3.742489571711728*^9, 
+   3.7424895813452787`*^9}, 3.7425102553747663`*^9},
+ CellLabel->
+  "Out[789]=",ExpressionUUID->"d4fcfc0d-093e-47fe-b218-eda3bf4ae25b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "r", "]"}], ",", 
+         RowBox[{"Sin", "[", "r", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "2"], "\[Pi]"}], ",", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["2", "2"], "\[Pi]"}], "7"]}], "}"}]}], "]"}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742486138184208*^9, 3.742486422921494*^9}, {
+  3.742488752383732*^9, 3.742488758177063*^9}, {3.742489656120556*^9, 
+  3.7424896646970463`*^9}},
+ CellLabel->
+  "In[446]:=",ExpressionUUID->"2048a752-0fd2-4a7c-8989-2007579be1b2"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 
+      0}, {-Sin[Rational[1, 14] Pi], Cos[Rational[1, 14] Pi]}, {-
+       Cos[Rational[1, 7] Pi], -Sin[Rational[1, 7] Pi]}, {
+      Sin[Rational[3, 14] Pi], -Cos[Rational[3, 14] Pi]}, {
+      Sin[Rational[3, 14] Pi], Cos[Rational[3, 14] Pi]}, {-
+       Cos[Rational[1, 7] Pi], Sin[Rational[1, 7] Pi]}, {-
+       Sin[Rational[1, 14] Pi], -Cos[Rational[1, 14] Pi]}, {1, 0}}, {{1, 
+      0}, {-0.2225209339563144, 
+      0.9749279121818236}, {-0.9009688679024191, -0.4338837391175581}, {
+      0.6234898018587335, -0.7818314824680298}, {0.6234898018587335, 
+      0.7818314824680298}, {-0.9009688679024191, 
+      0.4338837391175581}, {-0.2225209339563144, -0.9749279121818236}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{{3.7424861893261333`*^9, 3.7424864242815723`*^9}, 
+   3.7424887588621025`*^9, 3.742489666717162*^9},
+ CellLabel->
+  "Out[446]=",ExpressionUUID->"c70f4f2b-e64a-4796-a330-546655ecd4aa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"d", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+     RowBox[{"Polygon", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Cos", "[", "t", "]"}], ",", 
+          RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "0", ",", 
+          RowBox[{
+           SuperscriptBox["2", "3"], "\[Pi]"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["2", "3"], "\[Pi]"}], ")"}], "/", "7"}]}], 
+         "}"}]}], "]"}], "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742483473699808*^9, 3.7424835410296593`*^9}, {
+  3.7424835720414333`*^9, 3.742483630404771*^9}, {3.7424860622238636`*^9, 
+  3.742486062803897*^9}, {3.742488864993306*^9, 3.742488880887215*^9}, {
+  3.7424897613965774`*^9, 3.742489778888578*^9}, {3.7425102631862125`*^9, 
+  3.742510264168269*^9}},
+ CellLabel->
+  "In[790]:=",ExpressionUUID->"d645e1ed-94a9-4112-bfe7-09d5d72a0a49"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {-Cos[Rational[1, 7] Pi], -Sin[Rational[1, 7] Pi]}, {
+      Sin[Rational[3, 14] Pi], Cos[Rational[3, 14] Pi]}, {-
+       Sin[Rational[1, 14] Pi], -Cos[Rational[1, 14] Pi]}, {-
+       Sin[Rational[1, 14] Pi], Cos[Rational[1, 14] Pi]}, {
+      Sin[Rational[3, 14] Pi], -Cos[Rational[3, 14] Pi]}, {-
+       Cos[Rational[1, 7] Pi], Sin[Rational[1, 7] Pi]}, {1, 0}}, {{1, 
+      0}, {-0.9009688679024191, -0.4338837391175581}, {0.6234898018587335, 
+      0.7818314824680298}, {-0.2225209339563144, -0.9749279121818236}, \
+{-0.2225209339563144, 0.9749279121818236}, {
+      0.6234898018587335, -0.7818314824680298}, {-0.9009688679024191, 
+      0.4338837391175581}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{{3.7424834755389137`*^9, 3.7424836309328012`*^9}, 
+   3.7424860639639626`*^9, {3.742488867908473*^9, 3.742488882055282*^9}, {
+   3.7424897649127784`*^9, 3.7424897808446894`*^9}, 3.742510265302334*^9},
+ CellLabel->
+  "Out[790]=",ExpressionUUID->"6c68bacd-9848-43f2-8f17-a8fa344aa791"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "8"}]}], "}"}]}],
+       "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424849715664816`*^9, 3.7424849756987176`*^9}, {
+  3.742489362728775*^9, 3.742489367307037*^9}},
+ CellLabel->
+  "In[438]:=",ExpressionUUID->"ef782586-dd67-4830-bfae-d94c9fd5264d"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {2^Rational[-1, 2], 2^Rational[-1, 2]}, {0, 
+      1}, {-2^Rational[-1, 2], 2^Rational[-1, 2]}, {-1, 
+      0}, {-2^Rational[-1, 2], -2^Rational[-1, 2]}, {0, -1}, {
+      2^Rational[-1, 2], -2^Rational[-1, 2]}, {1, 0}}, {{1, 0}, {
+      0.7071067811865475, 0.7071067811865475}, {0, 1}, {-0.7071067811865475, 
+      0.7071067811865475}, {-1, 
+      0}, {-0.7071067811865475, -0.7071067811865475}, {0, -1}, {
+      0.7071067811865475, -0.7071067811865475}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{3.7424842560765576`*^9, 3.742484976688774*^9, 
+  3.7424893768445826`*^9},
+ CellLabel->
+  "Out[438]=",ExpressionUUID->"460551d7-656c-464f-9cdc-66283bde18e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          FractionBox["5", "2"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "\[Pi]"}], ")"}], "/", "8"}]}], "}"}]}], "]"}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.74248981615971*^9, 3.742489874792063*^9}, {
+  3.7424913206787634`*^9, 3.742491415710199*^9}, {3.7424914599107265`*^9, 
+  3.74249175089937*^9}},
+ CellLabel->
+  "In[551]:=",ExpressionUUID->"f82ca2ca-a341-4703-bd81-92d3ee4b3dab"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Sin[Rational[1, 8] Pi], Cos[Rational[1, 8] Pi]}, {-2^Rational[-1, 2], 2^
+       Rational[-1, 2]}, {-Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      0, -1}, {Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      2^Rational[-1, 2], 2^Rational[-1, 2]}}, {{1, 0}, {0.3826834323650898, 
+      0.9238795325112867}, {-0.7071067811865475, 
+      0.7071067811865475}, {-0.9238795325112867, -0.3826834323650898}, {
+      0, -1}, {0.9238795325112867, -0.3826834323650898}, {0.7071067811865475, 
+      0.7071067811865475}}]]}]], "Output",
+ CellChangeTimes->{{3.7424898208209763`*^9, 3.7424898758981266`*^9}, {
+  3.7424913300522995`*^9, 3.7424914174392977`*^9}, {3.742491462311864*^9, 
+  3.742491752363454*^9}},
+ CellLabel->
+  "Out[551]=",ExpressionUUID->"3c6ce9d2-af49-4fac-a9ba-8b57f989babd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          FractionBox["13", "2"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "\[Pi]"}], ")"}], "/", "8"}]}], "}"}]}], "]"}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424842747366247`*^9, 3.7424843299587836`*^9}, {
+  3.74249065851889*^9, 3.742490676122897*^9}, {3.7424910450759993`*^9, 
+  3.742491058072743*^9}},
+ CellLabel->
+  "In[492]:=",ExpressionUUID->"e15cf5ea-e2c6-46ab-9061-3eecc10763f0"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {-2^Rational[-1, 2], 2^Rational[-1, 2]}, {0, -1}, {
+      2^Rational[-1, 2], 2^Rational[-1, 2]}, {-1, 0}, {
+      2^Rational[-1, 2], -2^Rational[-1, 2]}, {0, 
+      1}, {-2^Rational[-1, 2], -2^Rational[-1, 2]}, {1, 0}}, {{1, 
+      0}, {-0.7071067811865475, 0.7071067811865475}, {0, -1}, {
+      0.7071067811865475, 0.7071067811865475}, {-1, 0}, {
+      0.7071067811865475, -0.7071067811865475}, {0, 
+      1}, {-0.7071067811865475, -0.7071067811865475}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{{3.742484275926693*^9, 3.742484330803832*^9}, {
+  3.7424906688074784`*^9, 3.7424906769099417`*^9}, {3.742491052153404*^9, 
+  3.7424910588367867`*^9}},
+ CellLabel->
+  "Out[492]=",ExpressionUUID->"6e3fc380-dd66-4560-b832-3609c07962cf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "9"}]}], "}"}]}],
+       "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424838452510595`*^9, 3.742483856386697*^9}, {
+  3.7424898945231915`*^9, 3.7424899091110263`*^9}},
+ CellLabel->
+  "In[456]:=",ExpressionUUID->"59568c6e-5ec4-4909-a8a1-3021b395d633"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {Cos[Rational[2, 9] Pi], Sin[Rational[2, 9] Pi]}, {
+      Sin[Rational[1, 18] Pi], Cos[Rational[1, 18] Pi]}, {
+      Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {-
+       Cos[Rational[1, 9] Pi], Sin[Rational[1, 9] Pi]}, {-
+       Cos[Rational[1, 9] Pi], -Sin[Rational[1, 9] Pi]}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+      Sin[Rational[1, 18] Pi], -Cos[Rational[1, 18] Pi]}, {
+      Cos[Rational[2, 9] Pi], -Sin[Rational[2, 9] Pi]}, {1, 0}}, {{1, 0}, {
+      0.766044443118978, 0.6427876096865393}, {0.17364817766693033`, 
+      0.984807753012208}, {-0.5, 0.8660254037844386}, {-0.9396926207859084, 
+      0.3420201433256687}, {-0.9396926207859084, -0.3420201433256687}, {-0.5, \
+-0.8660254037844386}, {0.17364817766693033`, -0.984807753012208}, {
+      0.766044443118978, -0.6427876096865393}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{3.74248385784978*^9, 3.742489910778122*^9},
+ CellLabel->
+  "Out[456]=",ExpressionUUID->"0a5f5ecc-5aab-4eba-8ebd-6473d8ce48e7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "2"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "2"], "\[Pi]"}], ")"}], "/", "9"}]}], "}"}]}],
+       "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424839500430536`*^9, 3.7424839577854967`*^9}, {
+  3.7424899231628304`*^9, 3.742489973534711*^9}},
+ CellLabel->
+  "In[458]:=",ExpressionUUID->"37794d2b-8bd2-47b1-80ab-0bb644842615"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Sin[Rational[1, 18] Pi], Cos[Rational[1, 18] Pi]}, {-
+       Cos[Rational[1, 9] Pi], Sin[Rational[1, 9] Pi]}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+      Cos[Rational[2, 9] Pi], -Sin[Rational[2, 9] Pi]}, {
+      Cos[Rational[2, 9] Pi], Sin[Rational[2, 9] Pi]}, {
+      Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {-
+       Cos[Rational[1, 9] Pi], -Sin[Rational[1, 9] Pi]}, {
+      Sin[Rational[1, 18] Pi], -Cos[Rational[1, 18] Pi]}, {1, 0}}, {{1, 0}, {
+      0.17364817766693033`, 0.984807753012208}, {-0.9396926207859084, 
+      0.3420201433256687}, {-0.5, -0.8660254037844386}, {
+      0.766044443118978, -0.6427876096865393}, {0.766044443118978, 
+      0.6427876096865393}, {-0.5, 
+      0.8660254037844386}, {-0.9396926207859084, -0.3420201433256687}, {
+      0.17364817766693033`, -0.984807753012208}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{
+  3.742483959402589*^9, {3.7424899477952385`*^9, 3.7424899747557807`*^9}},
+ CellLabel->
+  "Out[458]=",ExpressionUUID->"ffb36388-8e25-4685-8e8d-6cc8a7d4edff"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "3"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "3"], "\[Pi]"}], ")"}], "/", "9"}]}], "}"}]}],
+       "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742483984195007*^9, 3.7424839919704514`*^9}, {
+  3.7424899845623417`*^9, 3.7424899994551935`*^9}},
+ CellLabel->
+  "In[459]:=",ExpressionUUID->"35ed2f6c-21da-4c8d-819e-0c60d9e26680"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {-Cos[Rational[1, 9] Pi], Sin[Rational[1, 9] Pi]}, {
+      Cos[Rational[2, 9] Pi], -Sin[Rational[2, 9] Pi]}, {
+      Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+      Sin[Rational[1, 18] Pi], -Cos[Rational[1, 18] Pi]}, {
+      Sin[Rational[1, 18] Pi], Cos[Rational[1, 18] Pi]}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+      Cos[Rational[2, 9] Pi], Sin[Rational[2, 9] Pi]}, {-
+       Cos[Rational[1, 9] Pi], -Sin[Rational[1, 9] Pi]}, {1, 0}}, {{1, 
+      0}, {-0.9396926207859084, 0.3420201433256687}, {
+      0.766044443118978, -0.6427876096865393}, {-0.5, 0.8660254037844386}, {
+      0.17364817766693033`, -0.984807753012208}, {0.17364817766693033`, 
+      0.984807753012208}, {-0.5, -0.8660254037844386}, {0.766044443118978, 
+      0.6427876096865393}, {-0.9396926207859084, -0.3420201433256687}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{3.7424839932195234`*^9, 3.7424900008942757`*^9},
+ CellLabel->
+  "Out[459]=",ExpressionUUID->"f30b3e09-8717-4903-815c-8bfd4d46ee60"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "10"}]}], 
+        "}"}]}], "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424900498800774`*^9, 3.7424900574465103`*^9}},
+ CellLabel->
+  "In[460]:=",ExpressionUUID->"3a37346c-86dd-4ae0-a492-7c4db8594b16"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Rational[1, 4] (1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {-1, 0}, {
+      Rational[1, 4] (-1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {
+      Rational[1, 4] (1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {
+      Rational[1, 4] (-1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {1, 0}}, {{1, 
+      0}, {0.8090169943749475, 0.5877852522924731}, {0.30901699437494745`, 
+      0.9510565162951535}, {-0.30901699437494745`, 
+      0.9510565162951535}, {-0.8090169943749475, 0.5877852522924731}, {-1, 
+      0}, {-0.8090169943749475, -0.5877852522924731}, {-0.30901699437494745`, \
+-0.9510565162951535}, {0.30901699437494745`, -0.9510565162951535}, {
+      0.8090169943749475, -0.5877852522924731}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{3.742490058615577*^9},
+ CellLabel->
+  "Out[460]=",ExpressionUUID->"45ba8ed0-33b3-43f9-8291-98184f0e733b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          FractionBox["13", "2"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "\[Pi]"}], ")"}], "/", "10"}]}], "}"}]}], "]"}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424900840220304`*^9, 3.7424901194940596`*^9}, {
+  3.7424905298475304`*^9, 3.742490546170464*^9}, {3.7424917981150713`*^9, 
+  3.7424918096987333`*^9}, {3.7424918484389496`*^9, 3.742491952165882*^9}},
+ CellLabel->
+  "In[565]:=",ExpressionUUID->"2c3c7db6-a965-4aa0-be8a-ecc016f49730"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 
+      0}, {(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2],
+        Rational[1, 4] (1 + 5^Rational[1, 2])}, {
+      Rational[1, 4] (1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^
+       Rational[1, 2]}, {-(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+        Rational[1, 2], Rational[1, 4] (-1 + 5^Rational[1, 2])}, {
+      Rational[1, 4] (-1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {0, -1}, {
+      Rational[1, 4] (1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {(Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2], 
+       Rational[1, 4] (-1 + 5^Rational[1, 2])}, {
+      Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^
+       Rational[1, 2]}, {-(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+        Rational[1, 2], Rational[1, 4] (1 + 5^Rational[1, 2])}, {-1, 
+      0}, {-(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+        Rational[1, 2], Rational[1, 4] (-1 - 5^Rational[1, 2])}, {
+      Rational[1, 4] (-1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {(Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2], 
+       Rational[1, 4] (1 - 5^Rational[1, 2])}, {
+      Rational[1, 4] (1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {0, 1}, {
+      Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^
+       Rational[1, 2]}, {-(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+        Rational[1, 2], Rational[1, 4] (1 - 5^Rational[1, 2])}, {
+      Rational[1, 4] (1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+       Rational[1, 2], Rational[1, 4] (-1 - 5^Rational[1, 2])}, {1, 
+      0}, {(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2],
+        Rational[1, 4] (1 + 5^Rational[1, 2])}}, {{1, 0}, {0.5877852522924731,
+       0.8090169943749475}, {-0.30901699437494745`, 
+      0.9510565162951535}, {-0.9510565162951535, 
+      0.30901699437494745`}, {-0.8090169943749475, -0.5877852522924731}, {
+      0, -1}, {0.8090169943749475, -0.5877852522924731}, {0.9510565162951535, 
+      0.30901699437494745`}, {0.30901699437494745`, 
+      0.9510565162951535}, {-0.5877852522924731, 0.8090169943749475}, {-1, 
+      0}, {-0.5877852522924731, -0.8090169943749475}, {
+      0.30901699437494745`, -0.9510565162951535}, {
+      0.9510565162951535, -0.30901699437494745`}, {0.8090169943749475, 
+      0.5877852522924731}, {0, 1}, {-0.8090169943749475, 
+      0.5877852522924731}, {-0.9510565162951535, -0.30901699437494745`}, \
+{-0.30901699437494745`, -0.9510565162951535}, {
+      0.5877852522924731, -0.8090169943749475}, {1, 0}, {0.5877852522924731, 
+      0.8090169943749475}}]]}]], "Output",
+ CellChangeTimes->{{3.742490092549518*^9, 3.742490120167098*^9}, {
+   3.7424905337177515`*^9, 3.742490547079516*^9}, 3.7424918111028137`*^9, {
+   3.7424918510480986`*^9, 3.742491952792918*^9}},
+ CellLabel->
+  "Out[565]=",ExpressionUUID->"ee63f558-91af-4b42-a592-98c4c3c9b260"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          FractionBox["13", "2"], "\[Pi]"}], ",", 
+         FractionBox[
+          RowBox[{"(", 
+           RowBox[{"6", "\[Pi]"}], ")"}], "10"]}], "}"}]}], "]"}], "]"}]}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742490136266019*^9, 3.742490144599495*^9}, {
+  3.7424902067290487`*^9, 3.742490210125243*^9}, {3.74249077321345*^9, 
+  3.7424908773764076`*^9}, {3.7424909888367825`*^9, 3.742490994152087*^9}},
+ CellLabel->
+  "In[490]:=",ExpressionUUID->"d56c6a52-9fc9-4454-8778-005bd04d3b1c"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Rational[1, 4] (1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {
+      Rational[1, 4] (1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {-1, 0}, {
+      Rational[1, 4] (-1 + 
+        5^Rational[1, 2]), -(Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+      Rational[1, 4] (1 - 5^
+        Rational[1, 2]), -(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+        Rational[1, 2]}, {1, 0}}, {{1, 0}, {-0.30901699437494745`, 
+      0.9510565162951535}, {-0.8090169943749475, -0.5877852522924731}, {
+      0.8090169943749475, -0.5877852522924731}, {0.30901699437494745`, 
+      0.9510565162951535}, {-1, 0}, {
+      0.30901699437494745`, -0.9510565162951535}, {0.8090169943749475, 
+      0.5877852522924731}, {-0.8090169943749475, 
+      0.5877852522924731}, {-0.30901699437494745`, -0.9510565162951535}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{
+  3.7424879296876764`*^9, {3.7424901377371025`*^9, 3.74249014678062*^9}, 
+   3.74249021164933*^9, 3.7424908056443048`*^9, {3.742490840471297*^9, 
+   3.7424908784944715`*^9}, 3.7424909957871804`*^9},
+ CellLabel->
+  "Out[490]=",ExpressionUUID->"e7d9c1c8-aecd-440c-9eaf-1391296c4a7c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "11"}]}], 
+        "}"}]}], "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742490243798169*^9, 3.7424902897017946`*^9}},
+ CellLabel->
+  "In[469]:=",ExpressionUUID->"5af7da9e-3ca2-43c3-9ecb-d34ab25f9ed6"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {Cos[Rational[2, 11] Pi], Sin[Rational[2, 11] Pi]}, {
+      Sin[Rational[3, 22] Pi], Cos[Rational[3, 22] Pi]}, {-
+       Sin[Rational[1, 22] Pi], Cos[Rational[1, 22] Pi]}, {-
+       Sin[Rational[5, 22] Pi], Cos[Rational[5, 22] Pi]}, {-
+       Cos[Rational[1, 11] Pi], Sin[Rational[1, 11] Pi]}, {-
+       Cos[Rational[1, 11] Pi], -Sin[Rational[1, 11] Pi]}, {-
+       Sin[Rational[5, 22] Pi], -Cos[Rational[5, 22] Pi]}, {-
+       Sin[Rational[1, 22] Pi], -Cos[Rational[1, 22] Pi]}, {
+      Sin[Rational[3, 22] Pi], -Cos[Rational[3, 22] Pi]}, {
+      Cos[Rational[2, 11] Pi], -Sin[Rational[2, 11] Pi]}, {1, 0}}, {{1, 0}, {
+      0.8412535328311812, 0.5406408174555976}, {0.4154150130018864, 
+      0.9096319953545184}, {-0.14231483827328514`, 
+      0.9898214418809327}, {-0.654860733945285, 
+      0.7557495743542584}, {-0.9594929736144974, 
+      0.28173255684142967`}, {-0.9594929736144974, -0.28173255684142967`}, \
+{-0.654860733945285, -0.7557495743542584}, {-0.14231483827328514`, \
+-0.9898214418809327}, {0.4154150130018864, -0.9096319953545184}, {
+      0.8412535328311812, -0.5406408174555976}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{{3.7424902516896205`*^9, 3.7424902904808393`*^9}},
+ CellLabel->
+  "Out[469]=",ExpressionUUID->"d5e59ec5-54c5-4d01-8c10-cf1c31ec7394"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "2"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "2"], "\[Pi]"}], ")"}], "/", "11"}]}], 
+        "}"}]}], "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424903402546864`*^9, 3.742490349477214*^9}},
+ CellLabel->
+  "In[471]:=",ExpressionUUID->"c6355230-09cc-442e-a990-479167c8eb7b"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Sin[Rational[3, 22] Pi], Cos[Rational[3, 22] Pi]}, {-
+       Sin[Rational[5, 22] Pi], Cos[Rational[5, 22] Pi]}, {-
+       Cos[Rational[1, 11] Pi], -Sin[Rational[1, 11] Pi]}, {-
+       Sin[Rational[1, 22] Pi], -Cos[Rational[1, 22] Pi]}, {
+      Cos[Rational[2, 11] Pi], -Sin[Rational[2, 11] Pi]}, {
+      Cos[Rational[2, 11] Pi], Sin[Rational[2, 11] Pi]}, {-
+       Sin[Rational[1, 22] Pi], Cos[Rational[1, 22] Pi]}, {-
+       Cos[Rational[1, 11] Pi], Sin[Rational[1, 11] Pi]}, {-
+       Sin[Rational[5, 22] Pi], -Cos[Rational[5, 22] Pi]}, {
+      Sin[Rational[3, 22] Pi], -Cos[Rational[3, 22] Pi]}, {1, 0}}, {{1, 0}, {
+      0.4154150130018864, 0.9096319953545184}, {-0.654860733945285, 
+      0.7557495743542584}, {-0.9594929736144974, -0.28173255684142967`}, \
+{-0.14231483827328514`, -0.9898214418809327}, {
+      0.8412535328311812, -0.5406408174555976}, {0.8412535328311812, 
+      0.5406408174555976}, {-0.14231483827328514`, 
+      0.9898214418809327}, {-0.9594929736144974, 
+      0.28173255684142967`}, {-0.654860733945285, -0.7557495743542584}, {
+      0.4154150130018864, -0.9096319953545184}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{3.7424903504672704`*^9},
+ CellLabel->
+  "Out[471]=",ExpressionUUID->"0affc6fc-5456-4d41-bc54-0eef2b913f16"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{
+          SuperscriptBox["2", "3"], "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["2", "3"], "\[Pi]"}], ")"}], "/", "11"}]}], 
+        "}"}]}], "]"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424874514463224`*^9, 3.742487495305831*^9}, 
+   3.742487556534333*^9, {3.7424903555425606`*^9, 3.7424903593247766`*^9}},
+ CellLabel->
+  "In[472]:=",ExpressionUUID->"986b128e-cc15-49e8-bce2-3d6b1b64d3b8"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 
+      0}, {-Sin[Rational[5, 22] Pi], Cos[Rational[5, 22] Pi]}, {-
+       Sin[Rational[1, 22] Pi], -Cos[Rational[1, 22] Pi]}, {
+      Cos[Rational[2, 11] Pi], Sin[Rational[2, 11] Pi]}, {-
+       Cos[Rational[1, 11] Pi], Sin[Rational[1, 11] Pi]}, {
+      Sin[Rational[3, 22] Pi], -Cos[Rational[3, 22] Pi]}, {
+      Sin[Rational[3, 22] Pi], Cos[Rational[3, 22] Pi]}, {-
+       Cos[Rational[1, 11] Pi], -Sin[Rational[1, 11] Pi]}, {
+      Cos[Rational[2, 11] Pi], -Sin[Rational[2, 11] Pi]}, {-
+       Sin[Rational[1, 22] Pi], Cos[Rational[1, 22] Pi]}, {-
+       Sin[Rational[5, 22] Pi], -Cos[Rational[5, 22] Pi]}, {1, 0}}, {{1, 
+      0}, {-0.654860733945285, 
+      0.7557495743542584}, {-0.14231483827328514`, -0.9898214418809327}, {
+      0.8412535328311812, 0.5406408174555976}, {-0.9594929736144974, 
+      0.28173255684142967`}, {0.4154150130018864, -0.9096319953545184}, {
+      0.4154150130018864, 
+      0.9096319953545184}, {-0.9594929736144974, -0.28173255684142967`}, {
+      0.8412535328311812, -0.5406408174555976}, {-0.14231483827328514`, 
+      0.9898214418809327}, {-0.654860733945285, -0.7557495743542584}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{3.7424903620149307`*^9},
+ CellLabel->
+  "Out[472]=",ExpressionUUID->"a035a298-f14b-4b7e-ac29-dd0bd9d2cc46"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"h", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+     RowBox[{"Polygon", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Cos", "[", "t", "]"}], ",", 
+          RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "0", ",", 
+          RowBox[{
+           SuperscriptBox["2", "1"], "\[Pi]"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["2", "1"], "\[Pi]"}], ")"}], "/", "12"}]}], 
+         "}"}]}], "]"}], "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742486979457326*^9, 3.742486984364607*^9}, {
+  3.7424903026335344`*^9, 3.7424903141401925`*^9}, {3.742511142086483*^9, 
+  3.7425111428905287`*^9}},
+ CellLabel->
+  "In[815]:=",ExpressionUUID->"77624701-3778-40c8-98fb-64fd39fab6dd"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+      Rational[1, 2], Rational[1, 2] 3^Rational[1, 2]}, {0, 1}, {
+      Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+      Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}, {-1, 0}, {
+      Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {0, -1}, {
+      Rational[1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+      Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {1, 0}}, {{1, 0}, {
+      0.8660254037844386, 0.5}, {0.5, 0.8660254037844386}, {0, 1}, {-0.5, 
+      0.8660254037844386}, {-0.8660254037844386, 0.5}, {-1, 
+      0}, {-0.8660254037844386, -0.5}, {-0.5, -0.8660254037844386}, {0, -1}, {
+      0.5, -0.8660254037844386}, {0.8660254037844386, -0.5}, {1, 
+      0}}]]}]], "Output",
+ CellChangeTimes->{3.742485648696211*^9, 3.7424865854837923`*^9, 
+  3.742486985661681*^9, 3.742490314703225*^9, 3.742511144220605*^9},
+ CellLabel->
+  "Out[815]=",ExpressionUUID->"75905514-b2a0-41d7-80f5-ead42fc5fced"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"7", "\[Pi]"}], ",", 
+         FractionBox[
+          RowBox[{"(", 
+           RowBox[{"29", "\[Pi]"}], ")"}], "12"]}], "}"}]}], "]"}], "]"}]}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7425113729846897`*^9, 3.742511378448002*^9}, {
+  3.742511427994836*^9, 3.7425122634196196`*^9}, {3.7425123305664597`*^9, 
+  3.7425123654734564`*^9}},
+ CellLabel->
+  "In[903]:=",ExpressionUUID->"eb195eff-d4bd-4a6b-9781-e3c73a4957ea"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Rational[1, 2] 2^Rational[-1, 2] (-1 + 3^Rational[1, 2]), 
+       Rational[1, 2] 2^Rational[-1, 2] (1 + 3^Rational[1, 2])}, {
+      Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{1, 0}, {
+      0.2588190451025207, 0.9659258262890682}, {-0.8660254037844386, 
+      0.5}}]]}]], "Output",
+ CellChangeTimes->{
+  3.742511386577467*^9, {3.742511430091956*^9, 3.7425116566379137`*^9}, {
+   3.7425116870906553`*^9, 3.7425122641126595`*^9}, {3.742512332414566*^9, 
+   3.742512366702527*^9}},
+ CellLabel->
+  "Out[903]=",ExpressionUUID->"791bb7ec-4c01-4610-9e46-0bd767ab1ce1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"i", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+     RowBox[{"Polygon", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Cos", "[", "t", "]"}], ",", 
+          RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "0", ",", 
+          RowBox[{"13", "\[Pi]"}], ",", 
+          FractionBox[
+           RowBox[{"(", 
+            RowBox[{"14", "\[Pi]"}], ")"}], 
+           RowBox[{"12", "\[IndentingNewLine]"}]]}], "}"}]}], "]"}], "]"}]}], 
+    "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742487640682146*^9, 3.7424877036287465`*^9}, {
+  3.7424904802636943`*^9, 3.74249048649205*^9}, {3.7425111615175943`*^9, 
+  3.7425111622586365`*^9}, {3.74251140568456*^9, 3.7425114136320143`*^9}},
+ CellLabel->
+  "In[819]:=",ExpressionUUID->"29168468-fd6f-49ba-9ae9-8b37d1b02761"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+      Rational[1, 2], Rational[1, 2] 3^Rational[1, 2]}, {0, -1}, {
+      Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+      Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {-1, 0}, {
+      Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+      Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {0, 1}, {
+      Rational[1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+      Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{1, 
+      0}, {-0.8660254037844386, -0.5}, {0.5, 0.8660254037844386}, {
+      0, -1}, {-0.5, 0.8660254037844386}, {0.8660254037844386, -0.5}, {-1, 
+      0}, {0.8660254037844386, 0.5}, {-0.5, -0.8660254037844386}, {0, 1}, {
+      0.5, -0.8660254037844386}, {-0.8660254037844386, 0.5}}]]}]], "Output",
+ CellChangeTimes->{
+  3.7424858337297945`*^9, {3.7424876430142794`*^9, 3.74248770421878*^9}, 
+   3.742490487823127*^9, 3.742511163066683*^9, 3.7425114187573075`*^9},
+ CellLabel->
+  "Out[819]=",ExpressionUUID->"0172fad3-acb8-46b4-a865-9141ac32817c"]
+}, Open  ]],
+
+Cell[BoxData["}"], "Input",
+ CellChangeTimes->{
+  3.7424876470215087`*^9},ExpressionUUID->"44b3920c-cb84-47e6-9682-\
+310f351b9729"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"27", "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"14", "\[Pi]"}], ")"}], "/", "13"}]}], "}"}]}], "]"}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7424875755374203`*^9, 3.7424876127135468`*^9}},
+ CellLabel->
+  "In[318]:=",ExpressionUUID->"2f1589d0-41cc-44da-a67f-8774db144ac2"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {-Cos[Rational[1, 13] Pi], -Sin[Rational[1, 13] Pi]}, {
+      Cos[Rational[2, 13] Pi], Sin[Rational[2, 13] Pi]}, {-
+       Cos[Rational[3, 13] Pi], -Sin[Rational[3, 13] Pi]}, {
+      Sin[Rational[5, 26] Pi], Cos[Rational[5, 26] Pi]}, {-
+       Sin[Rational[3, 26] Pi], -Cos[Rational[3, 26] Pi]}, {
+      Sin[Rational[1, 26] Pi], Cos[Rational[1, 26] Pi]}, {
+      Sin[Rational[1, 26] Pi], -Cos[Rational[1, 26] Pi]}, {-
+       Sin[Rational[3, 26] Pi], Cos[Rational[3, 26] Pi]}, {
+      Sin[Rational[5, 26] Pi], -Cos[Rational[5, 26] Pi]}, {-
+       Cos[Rational[3, 13] Pi], Sin[Rational[3, 13] Pi]}, {
+      Cos[Rational[2, 13] Pi], -Sin[Rational[2, 13] Pi]}, {-
+       Cos[Rational[1, 13] Pi], Sin[Rational[1, 13] Pi]}, {1, 
+      0}, {-Cos[Rational[1, 13] Pi], -Sin[Rational[1, 13] Pi]}, {
+      Cos[Rational[2, 13] Pi], Sin[Rational[2, 13] Pi]}, {-
+       Cos[Rational[3, 13] Pi], -Sin[Rational[3, 13] Pi]}, {
+      Sin[Rational[5, 26] Pi], Cos[Rational[5, 26] Pi]}, {-
+       Sin[Rational[3, 26] Pi], -Cos[Rational[3, 26] Pi]}, {
+      Sin[Rational[1, 26] Pi], Cos[Rational[1, 26] Pi]}, {
+      Sin[Rational[1, 26] Pi], -Cos[Rational[1, 26] Pi]}, {-
+       Sin[Rational[3, 26] Pi], Cos[Rational[3, 26] Pi]}, {
+      Sin[Rational[5, 26] Pi], -Cos[Rational[5, 26] Pi]}, {-
+       Cos[Rational[3, 13] Pi], Sin[Rational[3, 13] Pi]}, {
+      Cos[Rational[2, 13] Pi], -Sin[Rational[2, 13] Pi]}, {-
+       Cos[Rational[1, 13] Pi], Sin[Rational[1, 13] Pi]}}, {{1, 
+      0}, {-0.970941817426052, -0.23931566428755777`}, {0.8854560256532099, 
+      0.46472317204376856`}, {-0.7485107481711011, -0.6631226582407952}, {
+      0.5680647467311558, 
+      0.8229838658936564}, {-0.3546048870425356, -0.9350162426854148}, {
+      0.12053668025532306`, 0.992708874098054}, {
+      0.12053668025532306`, -0.992708874098054}, {-0.3546048870425356, 
+      0.9350162426854148}, {
+      0.5680647467311558, -0.8229838658936564}, {-0.7485107481711011, 
+      0.6631226582407952}, {
+      0.8854560256532099, -0.46472317204376856`}, {-0.970941817426052, 
+      0.23931566428755777`}, {1, 
+      0}, {-0.970941817426052, -0.23931566428755777`}, {0.8854560256532099, 
+      0.46472317204376856`}, {-0.7485107481711011, -0.6631226582407952}, {
+      0.5680647467311558, 
+      0.8229838658936564}, {-0.3546048870425356, -0.9350162426854148}, {
+      0.12053668025532306`, 0.992708874098054}, {
+      0.12053668025532306`, -0.992708874098054}, {-0.3546048870425356, 
+      0.9350162426854148}, {
+      0.5680647467311558, -0.8229838658936564}, {-0.7485107481711011, 
+      0.6631226582407952}, {
+      0.8854560256532099, -0.46472317204376856`}, {-0.970941817426052, 
+      0.23931566428755777`}}]]}]], "Output",
+ CellChangeTimes->{{3.742487587345095*^9, 3.7424876135025916`*^9}},
+ CellLabel->
+  "Out[318]=",ExpressionUUID->"4aa4989a-4e70-483b-9a50-4fe5190ff056"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"8", "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2.828427", "\[Pi]"}], ")"}], "/", "6"}]}], "}"}]}], "]"}],
+      "]"}]}], "}"}], "]"}]], "Input",
+ CellLabel->
+  "In[366]:=",ExpressionUUID->"a5a810e5-c1f8-4d40-b25b-d74b6e054e31"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[{{1., 0.}, {0.08971462683576134, 
+    0.9959675123876883}, {-0.9839025714634402, 
+    0.17870570742880593`}, {-0.2662555309189382, -0.9639024806768962}, {
+    0.93612854026474, -0.3516580101487907}, {0.43422437623925286`, 
+    0.9008047463682858}, {-0.8582159845101487, 
+    0.5132887334934172}, {-0.5882134298288803, -0.8087057319995605}, {
+    0.752673287796386, -0.6583941994259812}, {0.7232650361166759, 
+    0.6905705521748979}, {-0.6228983821592635, 
+    0.7823027582102546}, {-0.8350312279407129, -0.5502025521240566}, {
+    0.47306935213744755`, -0.8810251915060406}, {0.919913708729605, 
+    0.39212085954631837`}, {-0.30800992193789, 
+    0.9513831446834734}, {-0.9751796991463444, -0.2214148919400978}, {
+    0.13303415632444263`, -0.9911114534960453}}]}]], "Output",
+ CellChangeTimes->{3.7424882769705396`*^9},
+ CellLabel->
+  "Out[366]=",ExpressionUUID->"c6afb99f-0214-47fd-a777-c2b870220c9b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "t", "]"}], ",", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"18", "\[Pi]"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "\[Pi]"}], ")"}], "/", "8"}]}], "}"}]}], "]"}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellLabel->
+  "In[524]:=",ExpressionUUID->"04787949-3d19-4a4c-9f28-a21976989b7d"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+   PolygonBox[
+    NCache[{{1, 0}, {
+      Sin[Rational[1, 8] Pi], Cos[Rational[1, 8] Pi]}, {-2^Rational[-1, 2], 2^
+       Rational[-1, 2]}, {-Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      0, -1}, {Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      2^Rational[-1, 2], 2^Rational[-1, 2]}, {-Sin[Rational[1, 8] Pi], Cos[
+       Rational[1, 8] Pi]}, {-1, 
+      0}, {-Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}, {
+      2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+      Cos[Rational[1, 8] Pi], Sin[Rational[1, 8] Pi]}, {0, 
+      1}, {-Cos[Rational[1, 8] Pi], Sin[
+       Rational[1, 8] Pi]}, {-2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+      Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}, {1, 0}, {
+      Sin[Rational[1, 8] Pi], Cos[Rational[1, 8] Pi]}, {-2^Rational[-1, 2], 2^
+       Rational[-1, 2]}, {-Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      0, -1}, {Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      2^Rational[-1, 2], 2^Rational[-1, 2]}, {-Sin[Rational[1, 8] Pi], Cos[
+       Rational[1, 8] Pi]}, {-1, 
+      0}, {-Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}, {
+      2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+      Cos[Rational[1, 8] Pi], Sin[Rational[1, 8] Pi]}, {0, 
+      1}, {-Cos[Rational[1, 8] Pi], Sin[
+       Rational[1, 8] Pi]}, {-2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+      Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}, {1, 0}, {
+      Sin[Rational[1, 8] Pi], Cos[Rational[1, 8] Pi]}, {-2^Rational[-1, 2], 2^
+       Rational[-1, 2]}, {-Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      0, -1}, {Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+      2^Rational[-1, 2], 2^Rational[-1, 2]}, {-Sin[Rational[1, 8] Pi], Cos[
+       Rational[1, 8] Pi]}, {-1, 
+      0}, {-Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}, {
+      2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+      Cos[Rational[1, 8] Pi], Sin[Rational[1, 8] Pi]}, {0, 
+      1}, {-Cos[Rational[1, 8] Pi], Sin[
+       Rational[1, 8] Pi]}, {-2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+      Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}, {1, 0}}, {{1, 0}, {
+      0.3826834323650898, 0.9238795325112867}, {-0.7071067811865475, 
+      0.7071067811865475}, {-0.9238795325112867, -0.3826834323650898}, {
+      0, -1}, {0.9238795325112867, -0.3826834323650898}, {0.7071067811865475, 
+      0.7071067811865475}, {-0.3826834323650898, 0.9238795325112867}, {-1, 
+      0}, {-0.3826834323650898, -0.9238795325112867}, {
+      0.7071067811865475, -0.7071067811865475}, {0.9238795325112867, 
+      0.3826834323650898}, {0, 1}, {-0.9238795325112867, 
+      0.3826834323650898}, {-0.7071067811865475, -0.7071067811865475}, {
+      0.3826834323650898, -0.9238795325112867}, {1, 0}, {0.3826834323650898, 
+      0.9238795325112867}, {-0.7071067811865475, 
+      0.7071067811865475}, {-0.9238795325112867, -0.3826834323650898}, {
+      0, -1}, {0.9238795325112867, -0.3826834323650898}, {0.7071067811865475, 
+      0.7071067811865475}, {-0.3826834323650898, 0.9238795325112867}, {-1, 
+      0}, {-0.3826834323650898, -0.9238795325112867}, {
+      0.7071067811865475, -0.7071067811865475}, {0.9238795325112867, 
+      0.3826834323650898}, {0, 1}, {-0.9238795325112867, 
+      0.3826834323650898}, {-0.7071067811865475, -0.7071067811865475}, {
+      0.3826834323650898, -0.9238795325112867}, {1, 0}, {0.3826834323650898, 
+      0.9238795325112867}, {-0.7071067811865475, 
+      0.7071067811865475}, {-0.9238795325112867, -0.3826834323650898}, {
+      0, -1}, {0.9238795325112867, -0.3826834323650898}, {0.7071067811865475, 
+      0.7071067811865475}, {-0.3826834323650898, 0.9238795325112867}, {-1, 
+      0}, {-0.3826834323650898, -0.9238795325112867}, {
+      0.7071067811865475, -0.7071067811865475}, {0.9238795325112867, 
+      0.3826834323650898}, {0, 1}, {-0.9238795325112867, 
+      0.3826834323650898}, {-0.7071067811865475, -0.7071067811865475}, {
+      0.3826834323650898, -0.9238795325112867}, {1, 0}}]]}]], "Output",
+ CellChangeTimes->{3.7424914363493795`*^9},
+ CellLabel->
+  "Out[524]=",ExpressionUUID->"14b2995a-17ff-407d-871c-7cef7b08a9f4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Overlay", "[", 
+  RowBox[{"{", 
+   RowBox[{"a", ",", "b"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742509874643989*^9, 3.7425099147722845`*^9}, 
+   3.7425099537025113`*^9, 3.7425099858843517`*^9, {3.742510086537109*^9, 
+   3.7425101529529076`*^9}, {3.7425102091931243`*^9, 3.742510229835305*^9}},
+ CellLabel->
+  "In[788]:=",ExpressionUUID->"6ddc8f87-0dc8-46fe-a01d-7498bcc128b0"],
+
+Cell[BoxData[
+ OverlayBox[{
+  GraphicsBox[
+   {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+    PolygonBox[
+     NCache[{{1, 0}, {
+       Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 - 5^
+         Rational[1, 2]), -(Rational[5, 8] + 
+          Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 + 
+         5^Rational[1, 2]), -(Rational[5, 8] + 
+          Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {1, 0}}, {{1, 
+       0}, {0.30901699437494745`, 0.9510565162951535}, {-0.8090169943749475, 
+       0.5877852522924731}, {-0.8090169943749475, -0.5877852522924731}, {
+       0.30901699437494745`, -0.9510565162951535}, {1, 0}}]]}], 
+  GraphicsBox[
+   {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+    PolygonBox[
+     NCache[{{1, 0}, {
+       Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 + 
+         5^Rational[1, 2]), -(Rational[5, 8] + 
+          Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 - 5^
+         Rational[1, 2]), -(Rational[5, 8] + 
+          Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {1, 0}}, {{1, 
+       0}, {-0.8090169943749475, 0.5877852522924731}, {
+       0.30901699437494745`, -0.9510565162951535}, {0.30901699437494745`, 
+       0.9510565162951535}, {-0.8090169943749475, -0.5877852522924731}, {1, 
+       0}}]]}]}]], "Output",
+ CellChangeTimes->{
+  3.7425099880104733`*^9, {3.742510089679289*^9, 3.7425101286975203`*^9}, {
+   3.7425102173495913`*^9, 3.742510232398452*^9}},
+ CellLabel->
+  "Out[788]=",ExpressionUUID->"81600cb5-3ed7-472e-8771-94a8652d6add"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Overlay", "[", 
+  RowBox[{"{", 
+   RowBox[{"c", ",", "d"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742510323599668*^9, 3.74251033062407*^9}},
+ CellLabel->
+  "In[791]:=",ExpressionUUID->"1a4d6601-2f60-481f-b2b2-9e4f44993bc5"],
+
+Cell[BoxData[
+ OverlayBox[{
+  GraphicsBox[
+   {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+    PolygonBox[
+     NCache[{{1, 0}, {
+       Sin[Rational[3, 14] Pi], Cos[Rational[3, 14] Pi]}, {-
+        Sin[Rational[1, 14] Pi], Cos[Rational[1, 14] Pi]}, {-
+        Cos[Rational[1, 7] Pi], Sin[Rational[1, 7] Pi]}, {-
+        Cos[Rational[1, 7] Pi], -Sin[Rational[1, 7] Pi]}, {-
+        Sin[Rational[1, 14] Pi], -Cos[Rational[1, 14] Pi]}, {
+       Sin[Rational[3, 14] Pi], -Cos[Rational[3, 14] Pi]}, {1, 0}}, {{1, 0}, {
+       0.6234898018587335, 0.7818314824680298}, {-0.2225209339563144, 
+       0.9749279121818236}, {-0.9009688679024191, 
+       0.4338837391175581}, {-0.9009688679024191, -0.4338837391175581}, \
+{-0.2225209339563144, -0.9749279121818236}, {
+       0.6234898018587335, -0.7818314824680298}, {1, 0}}]]}], 
+  GraphicsBox[
+   {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+    PolygonBox[
+     NCache[{{1, 0}, {-Cos[Rational[1, 7] Pi], -Sin[Rational[1, 7] Pi]}, {
+       Sin[Rational[3, 14] Pi], Cos[Rational[3, 14] Pi]}, {-
+        Sin[Rational[1, 14] Pi], -Cos[Rational[1, 14] Pi]}, {-
+        Sin[Rational[1, 14] Pi], Cos[Rational[1, 14] Pi]}, {
+       Sin[Rational[3, 14] Pi], -Cos[Rational[3, 14] Pi]}, {-
+        Cos[Rational[1, 7] Pi], Sin[Rational[1, 7] Pi]}, {1, 0}}, {{1, 
+       0}, {-0.9009688679024191, -0.4338837391175581}, {0.6234898018587335, 
+       0.7818314824680298}, {-0.2225209339563144, -0.9749279121818236}, \
+{-0.2225209339563144, 0.9749279121818236}, {
+       0.6234898018587335, -0.7818314824680298}, {-0.9009688679024191, 
+       0.4338837391175581}, {1, 0}}]]}]}]], "Output",
+ CellChangeTimes->{3.742510331604126*^9},
+ CellLabel->
+  "Out[791]=",ExpressionUUID->"f15494fc-afc3-4a9c-ad1b-7c5697c9bb9a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"e", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thick", ",", "Blue"}], "}"}], "]"}], ",", 
+     RowBox[{"FaceForm", "[", "]"}], ",", 
+     RowBox[{"Disk", "[", "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7425105921720295`*^9, 3.742510631549282*^9}, {
+  3.7425106751077733`*^9, 3.742510675972823*^9}},
+ CellLabel->
+  "In[797]:=",ExpressionUUID->"6804d9a8-c211-4901-8c1a-af4fc4e1cbda"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {EdgeForm[{RGBColor[0, 0, 1], Thickness[Large]}], FaceForm[None], 
+   DiskBox[{0, 0}]}]], "Output",
+ CellChangeTimes->{{3.7425105957572346`*^9, 3.7425106322583227`*^9}, 
+   3.7425106793140135`*^9},
+ CellLabel->
+  "Out[797]=",ExpressionUUID->"aec6c8ab-b964-4a25-a969-132b5a98e641"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.742510648365244*^9, 3.742510667021311*^9}, {
+  3.742510986980611*^9, 
+  3.742510987642649*^9}},ExpressionUUID->"c361efcf-bb4d-45ce-a7dd-\
+bcc196394040"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7425109971581936`*^9, 
+  3.742511000874406*^9}},ExpressionUUID->"b55a1989-0fa1-46b9-ba2f-\
+cca124cbe6c9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{"Circle", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}], ",", "2"}], "]"}], "}"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.742510819127011*^9, 3.7425108751862173`*^9}, {
+  3.742510910216221*^9, 3.7425109487794266`*^9}, {3.742511009725912*^9, 
+  3.7425110104109516`*^9}, {3.7425110743496084`*^9, 3.7425111185781384`*^9}},
+ CellLabel->
+  "In[814]:=",ExpressionUUID->"1e795978-c865-4e0a-b874-7eb5ff241814"],
+
+Cell[BoxData[
+ GraphicsBox[CircleBox[{0, 0}, 2]]], "Output",
+ CellChangeTimes->{
+  3.742510821132125*^9, {3.7425108635645523`*^9, 3.7425108797564783`*^9}, {
+   3.742510914738479*^9, 3.7425109494884667`*^9}, 3.7425110155722466`*^9, {
+   3.7425110778968115`*^9, 3.7425111221393423`*^9}},
+ CellLabel->
+  "Out[814]=",ExpressionUUID->"2fe14f31-142c-42ed-929a-82f55f178dce"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.742510347701047*^9, 
+  3.742510378830827*^9}},ExpressionUUID->"8d4f49b2-a97f-47f2-bdf1-\
+7387b27409a6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Overlay", "[", 
+  RowBox[{"{", 
+   RowBox[{"b", ",", "f"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742510919898774*^9, 3.742510920610815*^9}, {
+  3.7425110354703846`*^9, 3.7425110385795627`*^9}},
+ CellLabel->
+  "In[810]:=",ExpressionUUID->"6bf4ec10-6be8-4634-b963-d0a6619077eb"],
+
+Cell[BoxData[
+ OverlayBox[{
+  GraphicsBox[
+   {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+    PolygonBox[
+     NCache[{{1, 0}, {
+       Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 + 
+         5^Rational[1, 2]), -(Rational[5, 8] + 
+          Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+       Rational[1, 4] (-1 - 5^
+         Rational[1, 2]), -(Rational[5, 8] + 
+          Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {1, 0}}, {{1, 
+       0}, {-0.8090169943749475, 0.5877852522924731}, {
+       0.30901699437494745`, -0.9510565162951535}, {0.30901699437494745`, 
+       0.9510565162951535}, {-0.8090169943749475, -0.5877852522924731}, {1, 
+       0}}]]}], 
+  GraphicsBox[CircleBox[{0, 0}, 6]]}]], "Output",
+ CellChangeTimes->{{3.742510922808941*^9, 3.7425109588950047`*^9}, {
+  3.7425110314601555`*^9, 3.742511040925697*^9}},
+ CellLabel->
+  "Out[810]=",ExpressionUUID->"349d606a-a22b-4548-891b-846967bbe0d2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Overlay", "[", 
+  RowBox[{"{", 
+   RowBox[{"h", ",", "i"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7425111812967253`*^9, 3.7425111858819876`*^9}},
+ CellLabel->
+  "In[817]:=",ExpressionUUID->"479eae71-1367-4b24-a08f-efa824106969"],
+
+Cell[BoxData[
+ OverlayBox[{
+  GraphicsBox[
+   {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+    PolygonBox[
+     NCache[{{1, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+       Rational[1, 2], Rational[1, 2] 3^Rational[1, 2]}, {0, 1}, {
+       Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+       Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}, {-1, 0}, {
+       Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+       Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {0, -1}, {
+       Rational[1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+       Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {1, 0}}, {{1, 0}, {
+       0.8660254037844386, 0.5}, {0.5, 0.8660254037844386}, {0, 1}, {-0.5, 
+       0.8660254037844386}, {-0.8660254037844386, 0.5}, {-1, 
+       0}, {-0.8660254037844386, -0.5}, {-0.5, -0.8660254037844386}, {
+       0, -1}, {0.5, -0.8660254037844386}, {0.8660254037844386, -0.5}, {1, 
+       0}}]]}], 
+  GraphicsBox[
+   {GrayLevel[1], EdgeForm[GrayLevel[0]], 
+    PolygonBox[
+     NCache[{{1, 0}, {Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+       Rational[1, 2], Rational[1, 2] 3^Rational[1, 2]}, {0, -1}, {
+       Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+       Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {-1, 0}, {
+       Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+       Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {0, 1}, {
+       Rational[1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {
+       Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{1, 
+       0}, {-0.8660254037844386, -0.5}, {0.5, 0.8660254037844386}, {
+       0, -1}, {-0.5, 0.8660254037844386}, {0.8660254037844386, -0.5}, {-1, 
+       0}, {0.8660254037844386, 0.5}, {-0.5, -0.8660254037844386}, {0, 1}, {
+       0.5, -0.8660254037844386}, {-0.8660254037844386, 0.5}}]]}]}]], "Output",
+ CellChangeTimes->{3.742511186563027*^9},
+ CellLabel->
+  "Out[817]=",ExpressionUUID->"578b6109-771d-408a-9625-05700df1606d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
+      RowBox[{"Polygon", "[", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Cos", "[", "t", "]"}], ",", 
+           RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "0", ",", 
+           RowBox[{"u", "*", "\[Pi]"}], ",", 
+           FractionBox[
+            RowBox[{"(", 
+             RowBox[{"v", "*", "\[Pi]"}], ")"}], 
+            RowBox[{"s", "\[IndentingNewLine]"}]]}], "}"}]}], "]"}], "]"}]}], 
+     "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"u", ",", "0", ",", "20"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"v", ",", "0", ",", "21"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "16"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7425124035906367`*^9, 3.742512413941229*^9}, {
+  3.7425124536454997`*^9, 3.742512570313173*^9}, {3.7425127714516773`*^9, 
+  3.742512776206949*^9}, {3.742513150425353*^9, 3.7425131589088383`*^9}, {
+  3.7425132005792217`*^9, 3.7425132091397114`*^9}, {3.742513750508676*^9, 
+  3.7425137629923897`*^9}, {3.742513935178239*^9, 3.742513969374194*^9}},
+ CellLabel->
+  "In[911]:=",ExpressionUUID->"f11c83c1-585d-47d0-995b-57210b8290e1"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 5.88, $CellContext`u$$ = 
+    20., $CellContext`v$$ = 5.6, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`u$$], 0, 20}, {
+      Hold[$CellContext`v$$], 0, 21}, {
+      Hold[$CellContext`s$$], 0, 16}}, Typeset`size$$ = {540., {266., 275.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`u$201826$$ = 0, $CellContext`v$201827$$ = 
+    0, $CellContext`s$201828$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`s$$ = 0, $CellContext`u$$ = 
+        0, $CellContext`v$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`u$$, $CellContext`u$201826$$, 0], 
+        Hold[$CellContext`v$$, $CellContext`v$201827$$, 0], 
+        Hold[$CellContext`s$$, $CellContext`s$201828$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{
+         EdgeForm[Black], White, 
+         Polygon[
+          Table[{
+            Cos[$CellContext`t], 
+            Sin[$CellContext`t]}, {$CellContext`t, 0, $CellContext`u$$ 
+            Pi, $CellContext`v$$ Pi/$CellContext`s$$}]]}], 
+      "Specifications" :> {{$CellContext`u$$, 0, 20}, {$CellContext`v$$, 0, 
+         21}, {$CellContext`s$$, 0, 16}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{612., {419., 428.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.74251254823391*^9, 3.7425125724172935`*^9}, 
+   3.7425126125985913`*^9, 3.742512654104965*^9, 3.7425127771920056`*^9, {
+   3.742512913535804*^9, 3.742512915270903*^9}, 3.7425131606059356`*^9, {
+   3.7425132104817886`*^9, 3.742513230685944*^9}, {3.7425137537998643`*^9, 
+   3.742513784068596*^9}, {3.7425139713643084`*^9, 3.7425139805938363`*^9}},
+ CellLabel->
+  "Out[911]=",ExpressionUUID->"898b8bb9-6906-4415-9f15-4c49a1d82034"]
+}, Open  ]]
+},
+WindowSize->{1675, 968},
+WindowMargins->{{30, Automatic}, {Automatic, 2}},
+Magnification->1.5,
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 686, 19, 43, "Input",ExpressionUUID->"00898f46-ceec-459b-aa9b-be2b156b0470"],
+Cell[1269, 43, 301, 7, 565, "Output",ExpressionUUID->"2bf8264e-dae2-4895-8396-adb49033a841"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1607, 55, 994, 26, 47, "Input",ExpressionUUID->"e7bc8a2c-65a4-43c1-91a2-331616eb6649"],
+Cell[2604, 83, 660, 13, 645, "Output",ExpressionUUID->"c8349ff8-afee-48d3-93b6-37dfec6e77a5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3301, 101, 1122, 27, 70, "Input",ExpressionUUID->"92bae49d-f17f-436e-8ba7-7e7d1e686a49"],
+Cell[4426, 130, 545, 10, 565, "Output",ExpressionUUID->"a2ce593e-d8f8-49a6-b510-a2c120e03039"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5008, 145, 1054, 27, 70, "Input",ExpressionUUID->"8432fc2f-0bb5-41ec-b115-a07d9018e569"],
+Cell[6065, 174, 1143, 22, 592, "Output",ExpressionUUID->"709a65ec-1734-4687-a679-de9dc34bf8ef"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7245, 201, 1301, 30, 70, "Input",ExpressionUUID->"45893b9b-71bd-4f59-bd15-6c8120b5d947"],
+Cell[8549, 233, 1333, 26, 625, "Output",ExpressionUUID->"a5aac592-5679-4bf2-93ce-a810abe666be"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9919, 264, 1018, 26, 47, "Input",ExpressionUUID->"9a9c309c-1a66-4df5-8a8c-72448185d8a0"],
+Cell[10940, 292, 653, 13, 496, "Output",ExpressionUUID->"79273547-e2bb-4d6c-9966-bfded99910e6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11630, 310, 877, 24, 63, "Input",ExpressionUUID->"22f55ee0-485f-4a6b-88b3-4bdb3c26e8b8"],
+Cell[12510, 336, 1021, 18, 496, "Output",ExpressionUUID->"c611686b-e8cd-458e-9206-f86bfdab3e52"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13568, 359, 1195, 31, 47, "Input",ExpressionUUID->"d4b1c09a-2b65-4aaf-8bb1-4f58970a8064"],
+Cell[14766, 392, 1451, 25, 578, "Output",ExpressionUUID->"d4fcfc0d-093e-47fe-b218-eda3bf4ae25b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16254, 422, 876, 24, 67, "Input",ExpressionUUID->"2048a752-0fd2-4a7c-8989-2007579be1b2"],
+Cell[17133, 448, 1010, 20, 578, "Output",ExpressionUUID->"c70f4f2b-e64a-4796-a330-546655ecd4aa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18180, 473, 1108, 28, 47, "Input",ExpressionUUID->"d645e1ed-94a9-4112-bfe7-09d5d72a0a49"],
+Cell[19291, 503, 1091, 19, 611, "Output",ExpressionUUID->"6c68bacd-9848-43f2-8f17-a8fa344aa791"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20419, 527, 865, 24, 47, "Input",ExpressionUUID->"ef782586-dd67-4830-bfae-d94c9fd5264d"],
+Cell[21287, 553, 759, 15, 565, "Output",ExpressionUUID->"460551d7-656c-464f-9cdc-66283bde18e3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22083, 573, 874, 24, 63, "Input",ExpressionUUID->"f82ca2ca-a341-4703-bd81-92d3ee4b3dab"],
+Cell[22960, 599, 908, 17, 565, "Output",ExpressionUUID->"3c6ce9d2-af49-4fac-a9ba-8b57f989babd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23905, 621, 878, 24, 63, "Input",ExpressionUUID->"e15cf5ea-e2c6-46ab-9061-3eecc10763f0"],
+Cell[24786, 647, 836, 16, 565, "Output",ExpressionUUID->"6e3fc380-dd66-4560-b832-3609c07962cf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25659, 668, 867, 24, 47, "Input",ExpressionUUID->"59568c6e-5ec4-4909-a8a1-3021b395d633"],
+Cell[26529, 694, 1101, 19, 573, "Output",ExpressionUUID->"0a5f5ecc-5aab-4eba-8ebd-6473d8ce48e7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27667, 718, 867, 24, 47, "Input",ExpressionUUID->"37794d2b-8bd2-47b1-80ab-0bb644842615"],
+Cell[28537, 744, 1152, 22, 573, "Output",ExpressionUUID->"ffb36388-8e25-4685-8e8d-6cc8a7d4edff"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29726, 771, 867, 24, 47, "Input",ExpressionUUID->"35ed2f6c-21da-4c8d-819e-0c60d9e26680"],
+Cell[30596, 797, 1117, 20, 573, "Output",ExpressionUUID->"f30b3e09-8717-4903-815c-8bfd4d46ee60"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31750, 822, 819, 23, 47, "Input",ExpressionUUID->"3a37346c-86dd-4ae0-a492-7c4db8594b16"],
+Cell[32572, 847, 1720, 33, 540, "Output",ExpressionUUID->"45ba8ed0-33b3-43f9-8291-98184f0e733b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34329, 885, 932, 24, 63, "Input",ExpressionUUID->"2c3c7db6-a965-4aa0-be8a-ecc016f49730"],
+Cell[35264, 911, 3480, 60, 565, "Output",ExpressionUUID->"ee63f558-91af-4b42-a592-98c4c3c9b260"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38781, 976, 921, 24, 63, "Input",ExpressionUUID->"d56c6a52-9fc9-4454-8778-005bd04d3b1c"],
+Cell[39705, 1002, 1909, 37, 540, "Output",ExpressionUUID->"e7d9c1c8-aecd-440c-9eaf-1391296c4a7c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41651, 1044, 817, 23, 47, "Input",ExpressionUUID->"5af7da9e-3ca2-43c3-9ecb-d34ab25f9ed6"],
+Cell[42471, 1069, 1382, 24, 570, "Output",ExpressionUUID->"d5e59ec5-54c5-4d01-8c10-cf1c31ec7394"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43890, 1098, 817, 23, 47, "Input",ExpressionUUID->"c6355230-09cc-442e-a990-479167c8eb7b"],
+Cell[44710, 1123, 1368, 25, 570, "Output",ExpressionUUID->"0affc6fc-5456-4d41-bc54-0eef2b913f16"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46115, 1153, 893, 24, 47, "Input",ExpressionUUID->"986b128e-cc15-49e8-bce2-3d6b1b64d3b8"],
+Cell[47011, 1179, 1379, 26, 570, "Output",ExpressionUUID->"a035a298-f14b-4b7e-ac29-dd0bd9d2cc46"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48427, 1210, 961, 26, 47, "Input",ExpressionUUID->"77624701-3778-40c8-98fb-64fd39fab6dd"],
+Cell[49391, 1238, 1140, 20, 565, "Output",ExpressionUUID->"75905514-b2a0-41d7-80f5-ead42fc5fced"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50568, 1263, 849, 23, 63, "Input",ExpressionUUID->"eb195eff-d4bd-4a6b-9781-e3c73a4957ea"],
+Cell[51420, 1288, 685, 15, 316, "Output",ExpressionUUID->"791bb7ec-4c01-4610-9e46-0bd767ab1ce1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52142, 1308, 981, 25, 100, "Input",ExpressionUUID->"29168468-fd6f-49ba-9ae9-8b37d1b02761"],
+Cell[53126, 1335, 1148, 20, 565, "Output",ExpressionUUID->"0172fad3-acb8-46b4-a865-9141ac32817c"]
+}, Open  ]],
+Cell[54289, 1358, 131, 3, 43, "Input",ExpressionUUID->"44b3920c-cb84-47e6-9682-310f351b9729"],
+Cell[CellGroupData[{
+Cell[54445, 1365, 752, 21, 43, "Input",ExpressionUUID->"2f1589d0-41cc-44da-a67f-8774db144ac2"],
+Cell[55200, 1388, 2942, 52, 569, "Output",ExpressionUUID->"4aa4989a-4e70-483b-9a50-4fe5190ff056"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58179, 1445, 686, 20, 43, "Input",ExpressionUUID->"a5a810e5-c1f8-4d40-b25b-d74b6e054e31"],
+Cell[58868, 1467, 989, 18, 566, "Output",ExpressionUUID->"c6afb99f-0214-47fd-a777-c2b870220c9b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[59894, 1490, 680, 20, 43, "Input",ExpressionUUID->"04787949-3d19-4a4c-9f28-a21976989b7d"],
+Cell[60577, 1512, 4154, 67, 565, "Output",ExpressionUUID->"14b2995a-17ff-407d-871c-7cef7b08a9f4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[64768, 1584, 410, 8, 43, "Input",ExpressionUUID->"6ddc8f87-0dc8-46fe-a01d-7498bcc128b0"],
+Cell[65181, 1594, 1999, 41, 592, "Output",ExpressionUUID->"81600cb5-3ed7-472e-8771-94a8652d6add"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67217, 1640, 255, 6, 43, "Input",ExpressionUUID->"1a4d6601-2f60-481f-b2b2-9e4f44993bc5"],
+Cell[67475, 1648, 1729, 33, 578, "Output",ExpressionUUID->"f15494fc-afc3-4a9c-ad1b-7c5697c9bb9a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69241, 1686, 507, 13, 43, "Input",ExpressionUUID->"6804d9a8-c211-4901-8c1a-af4fc4e1cbda"],
+Cell[69751, 1701, 310, 7, 565, "Output",ExpressionUUID->"aec6c8ab-b964-4a25-a969-132b5a98e641"]
+}, Open  ]],
+Cell[70076, 1711, 201, 4, 43, "Input",ExpressionUUID->"c361efcf-bb4d-45ce-a7dd-bcc196394040"],
+Cell[70280, 1717, 154, 3, 43, InheritFromParent,ExpressionUUID->"b55a1989-0fa1-46b9-ba2f-cca124cbe6c9"],
+Cell[CellGroupData[{
+Cell[70459, 1724, 531, 13, 43, "Input",ExpressionUUID->"1e795978-c865-4e0a-b874-7eb5ff241814"],
+Cell[70993, 1739, 368, 7, 565, "Output",ExpressionUUID->"2fe14f31-142c-42ed-929a-82f55f178dce"]
+}, Open  ]],
+Cell[71376, 1749, 152, 3, 43, "Input",ExpressionUUID->"8d4f49b2-a97f-47f2-bdf1-7387b27409a6"],
+Cell[CellGroupData[{
+Cell[71553, 1756, 309, 7, 43, "Input",ExpressionUUID->"6bf4ec10-6be8-4634-b963-d0a6619077eb"],
+Cell[71865, 1765, 1148, 24, 592, "Output",ExpressionUUID->"349d606a-a22b-4548-891b-846967bbe0d2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73050, 1794, 260, 6, 43, "Input",ExpressionUUID->"479eae71-1367-4b24-a08f-efa824106969"],
+Cell[73313, 1802, 1970, 35, 565, "Output",ExpressionUUID->"578b6109-771d-408a-9625-05700df1606d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75320, 1842, 1394, 34, 146, "Input",ExpressionUUID->"f11c83c1-585d-47d0-995b-57210b8290e1"],
+Cell[76717, 1878, 2623, 52, 908, "Output",ExpressionUUID->"898b8bb9-6906-4415-9f15-4c49a1d82034"]
+}, Open  ]]
+}
+]
+*)
+
